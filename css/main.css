@@ -6,14 +6,19 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+
+:root {
+  --main-bg-color: #e0003b;
+  --main-overlay-color: rgba(0, 0, 59, 0.8);
+}
 ::-moz-selection {
   /* Code for Firefox */
-  background-color: #e0003b;
+  background-color: var(--main-bg-color);
   color: #fff;
 }
 
 ::selection {
-  background-color: #e0003b;
+  background-color: var(--main-bg-color);
   color: #fff;
 }
 
@@ -1919,7 +1924,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #e0003b;
+  color: var(--main-bg-color);
 }
 
 .white-menubar .menu-bar span {
@@ -1935,7 +1940,7 @@ nav a:hover {
 }
 
 .dup-body {
-  background: #e0003b;
+  background: var(--main-bg-color);
 }
 
 .dup-body-wrap {
@@ -1978,7 +1983,7 @@ nav a:hover {
   padding-right: 60px;
   border-radius: 25px;
   background: transparent;
-  border: 1px solid #e0003b;
+  border: 1px solid var(--main-bg-color);
   color: #222222;
   display: inline-block;
   font-weight: 500;
@@ -2009,7 +2014,7 @@ nav a:hover {
 }
 
 .primary-btn:hover {
-  background: #e0003b;
+  background: var(--main-bg-color);
   color: #fff;
 }
 
@@ -2029,11 +2034,11 @@ nav a:hover {
 
 .primary-btn.white:hover {
   background: #fff;
-  color: #e0003b;
+  color: var(--main-bg-color);
 }
 
 .primary-btn.white:hover span {
-  color: #e0003b;
+  color: var(--main-bg-color);
 }
 
 .banner-area {
@@ -2093,7 +2098,7 @@ nav a:hover {
 }
 
 .generic-banner.element-banner {
-  background: #e0003b;
+  background: var(--main-bg-color);
 }
 
 .generic-banner .height {
@@ -2134,7 +2139,7 @@ nav a:hover {
 }
 
 .studio-area .overlay-bg {
-  background: rgba(224, 0, 59, 0.8);
+  background: var(--main-overlay-color);
 }
 
 .studio-area .studio-thumb {
@@ -2244,7 +2249,7 @@ nav a:hover {
 }
 
 .achivement-area .single-achivement:hover .achivement-link {
-  background: #e0003b;
+  background: var(--main-bg-color);
 }
 
 .achivement-area .single-achivement:hover .achivement-link i {
@@ -2257,7 +2262,7 @@ nav a:hover {
 }
 
 .video-area .overlay-bg {
-  background: rgba(224, 0, 59, 0.8);
+  background: var(--main-overlay-color);
 }
 
 .video-area .video-content {
@@ -2291,7 +2296,7 @@ nav a:hover {
 }
 
 .single-progressbar .progress-bar {
-  background: #e0003b;
+  background: var(--main-bg-color);
   height: 5px;
   line-height: 5px;
 }
@@ -2302,7 +2307,7 @@ nav a:hover {
 }
 
 .carousel-area .overlay-bg {
-  background: rgba(224, 0, 59, 0.8);
+  background: var(--main-overlay-color);
 }
 
 .active-bottle-carousel {
@@ -2423,7 +2428,7 @@ nav a:hover {
   top: 50%;
   transform: translateY(-50%);
   right: 5px;
-  background: #e0003b;
+  background: var(--main-bg-color);
   color: #fff;
 }
 
@@ -2469,7 +2474,7 @@ nav a:hover {
 } 
 
 .footer-widget-area .overlay-bg {
-  background: rgba(224, 0, 59, 0.8);
+  background: var(--main-overlay-color);
 }
 
 .footer-widget-area .container {
@@ -2564,7 +2569,7 @@ nav a:hover {
 }
 
 .footer-social a:hover i {
-  color: #e0003b;
+  color: var(--main-bg-color);
 }
 
 .about-generic-area {
@@ -2573,7 +2578,7 @@ nav a:hover {
 }
 
 .about-generic-area .overlay-bg {
-  background: rgba(224, 0, 59, 0.8);
+  background: var(--main-overlay-color);
 }
 
 .about-generic-area .container {
