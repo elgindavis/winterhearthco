@@ -3351,7 +3351,6 @@ dl.accordion.time-line:before {
 /* =================================== */
 /*============ Start Blog Home Styles  =============*/
 .blog-home-banner {
-  background: url(../img/blog/blog-home-banner.jpg) bottom;
   background-size: cover;
   padding: 130px 0px;
 }

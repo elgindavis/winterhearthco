@@ -2,6 +2,12 @@ class WHHeader extends HTMLElement {
 	constructor() {
     // Always call super first in constructor
     	super();
+
+    	this.changeLinkDirectory = this.getAttribute('changeLinkDirectory');
+	}
+
+	get isNotRootDirectory() {
+		return this.hasAttribute('changeLinkDirectory');
 	}
 
 	connectedCallback() {
@@ -14,6 +20,8 @@ class WHHeader extends HTMLElement {
 
 customElements.define('wh-header', class extends WHHeader {
   connectedCallback() {
+
+  	console.log(this.isNotRootDirectory);
     this.innerHTML = `<header id="header">
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
@@ -22,17 +30,17 @@ customElements.define('wh-header', class extends WHHeader {
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
-			          <li><a href="./">Home</a></li>
-			          <li><a href="about.html">Our Story</a></li>
+			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : "./"}">Home</a></li>
+			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}about.html">Our Story</a></li>
 			          <!-- <li class="menu-has-children"><a href="">Blog</a> -->
 			            <!-- <ul> -->
-			          <li><a href="comics.html">Comics</a></li>
-			              <li><a href="blog.html">Blog</a></li>
+			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}comics.html">Comics</a></li>
+			              <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}blog.html">Blog</a></li>
 			              <!-- <li><a href="newsletter.html">Newsletter</a></li> -->
 			            <!-- </ul> -->
 			          <!-- </li>	 -->
 			        <!--   <li><a href="services.html">Shop</a></li> -->
-			          <li><a href="games/">Games</a></li>
+			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}games/">Games</a></li>
 			       <!--    <li class="menu-has-children"><a href="">Pages</a>
 			            <ul>
 		            	  <li><a href="elements.html">Elements</a></li>
