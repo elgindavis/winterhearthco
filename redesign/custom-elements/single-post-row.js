@@ -111,7 +111,7 @@ customElements.define('single-post-row', class extends SinglePostRow {
 			<p class="excerpt">
 				${this.excerpt}
 			</p>
-			<a href="${this.articleLink}" class="primary-btn">View More</a>
+			<a href="${this.articleLink}" class="primary-btn">Read Article</a>
 		</div>
 	</div>
     `;

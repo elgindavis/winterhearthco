@@ -5,13 +5,14 @@ class PopularPostItem extends HTMLElement {
     	this.imgURL = this.getAttribute('imgURL');
     	this.articleTitle = this.getAttribute('articleTitle');
     	this.articleLink = this.getAttribute('articleLink');
-    	this.imgAltText = this.getAttribute('imgAltText');
+      this.imgAltText = this.getAttribute('imgAltText');
+    	this.articleDescription = this.getAttribute('articleDescription');
 
     	// console.log(this.author, this.date, this.tags, this.imgURL, this.articleTitle, this.excerpt, this.authorURL, this.articleLink, this.imgAltText);
 	}
 
 	static get observedAttributes() {
-		return ['imgURL', 'articleTitle', 'authorURL', 'imgAltText'];
+		return ['imgURL', 'articleTitle', 'authorURL', 'imgAltText', 'articleDescription'];
 	}
 
   	get hasImgURL() {
@@ -27,7 +28,11 @@ class PopularPostItem extends HTMLElement {
   	}
 
   	get hasArticleTitle() {
-  		return this.hasAttribute('articleTitle');
+      return this.hasAttribute('articleTitle');
+    }
+
+    get hasArticleTitle() {
+  		return this.hasAttribute('articleDescription');
   	}
 
 
@@ -54,7 +59,7 @@ customElements.define('popular-post-item', class extends PopularPostItem {
       </div>
       <div class="details">
         <a href="${this.articleLink}"><h6>${this.articleTitle}</h6></a>
-        <p></p>
+        <p>${this.articleDescription}</p>
       </div>
     </div>
     `;
