@@ -154,6 +154,7 @@
 		                        </ul>
 		                    </nav> -->
 						</div>
+
 						<div class="col-lg-4 sidebar-widgets">
 							<div class="widget-wrap">
 								<div class="single-sidebar-widget search-widget">
@@ -305,14 +306,65 @@
 					</div>
 				</div>	
 			</section>
+			<!-- If site starts to get heavy and slow loading images, check out:
+			http://dinbror.dk/blazy/?ref=github
+			https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video
+			  -->
 			<!-- End post-content Area -->
-			
+			<section class="recent-blog-area section-gap">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-8 pb-30 header-text">
+							<h1>Latest posts from our blog</h1>
+							<!-- <p>							</p> -->
+						</div>
+					</div>
+					<div class="row">	
+						<single-recent-post class="col-lg-4 col-md-4"
+							authorImgURL="img/user.png"
+							imgURL="img/b1.jpg"
+							author="Elgin Davis"
+							date="17th Jan, 2020"
+							articleLink="#"
+							articleTitle="X Daily Questions to Supercharge Your EQ"
+							excerpt="Lots of people are talking about the benefits of having high emotional intelligence and what a high EQ might look like in the real world, but the real question is:<strong> How can we improve it?</strong>"
+							imgAltText="Supercharge Your EQ"
+						></single-recent-post>
+						
+					</div>
+				</div>	
+			</section>
+			<section class="recent-blog-area section-gap">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-8 pb-30 header-text">
+							<h1>All blog posts</h1>
+							<!-- <p>							</p> -->
+						</div>
+					</div>
+					<div class="row">	
+						<single-recent-post class="col-lg-4 col-md-4"
+							authorImgURL="img/user.png"
+							imgURL="img/b1.jpg"
+							author="Elgin Davis"
+							date="17th Jan, 2020"
+							articleLink="#"
+							articleTitle="X Daily Questions to Supercharge Your EQ"
+							excerpt="Lots of people are talking about the benefits of having high emotional intelligence and what a high EQ might look like in the real world, but the real question is:<strong> How can we improve it?</strong>"
+							imgAltText="Supercharge Your EQ"
+						></single-recent-post>
+						
+					</div>
+				</div>	
+			</section>
             <!-- start footer Area -->
             <wh-footer></wh-footer>
             <!-- End footer Area -->		
             <script type="text/javascript" src="custom-elements/footer.js"></script>
+
             <script type="text/javascript" src="custom-elements/header.js"></script>
             <script type="text/javascript" src="custom-elements/single-post-row.js"></script>
+            <script type="text/javascript" src="custom-elements/single-recent-blog.js"></script>
             <script type="text/javascript" src="custom-elements/popular-post-thumbnail.js"></script>
             <script type="text/javascript" src="custom-elements/blog-home-hero.js"></script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>

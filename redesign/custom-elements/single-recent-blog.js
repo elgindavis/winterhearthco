@@ -1,4 +1,4 @@
-class SinglePostRow extends HTMLElement {
+class SingleRecentBlog extends HTMLElement {
 	constructor() {
     // Always call super first in constructor
     	super();
@@ -59,7 +59,7 @@ class SinglePostRow extends HTMLElement {
 	} 
 }
 
-customElements.define('single-recent-post', class extends SinglePostRow {
+customElements.define('single-recent-post', class extends SingleRecentBlog {
   
 
   connectedCallback() {

@@ -94,7 +94,7 @@ $black			: #.222;
 body {
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
@@ -2327,7 +2327,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #008000;
 }
 
-.p1-gradient-bg, .banner-left .primary-btn, .home-about-right .primary-btn, .facts-area, .thumb .overlay-bg, .price-area .single-price:hover, .brands-area, .about-banner, .sb_bar {
+.p1-gradient-bg, .facts-area, .thumb .overlay-bg, .price-area .single-price:hover, .brands-area, .about-banner, .sb_bar {
   background: -moz-linear-gradient(0deg, var(--primary-color) 0%, #62bdfc 100%);
   background: -webkit-linear-gradient(0deg, var(--primary-color) 0%, #62bdfc 100%);
   background: -ms-linear-gradient(0deg, var(--primary-color) 0%, #62bdfc 100%);

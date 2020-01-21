@@ -81,10 +81,12 @@ customElements.define('single-post-row', class extends SinglePostRow {
   	let tagsHTML = "Tags: &nbsp;";
 
   	for (var i = tags.length - 1; i >= 1; i--) {
-  		tagsHTML += `<li><a href="#">${tags[i]},&nbsp; </a></li>`
+      tagsHTML += `<li>${tags[i]},&nbsp;</li>`
+  		// tagsHTML += `<li><a href="#">${tags[i]},&nbsp; </a></li>`
   	}
 
-  	tagsHTML += `<li><a href="#">${tags[0]}</a></li>`
+    tagsHTML += `<li>${tags[0]}</li>`
+  	// tagsHTML += `<li><a href="#">${tags[0]}</a></li>`
 
   
 
