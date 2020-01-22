@@ -135,17 +135,17 @@ a, a:focus, a:hover {
 }
 
 .home-hero-image {
-  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/1920x1080.png");*/
-  background-image: url("img/1920x1080.png");
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/1920x1080.png");*/
+  background: url("../img/1920x1080.png") !important;
 
   /* Set a specific height */
   height: 100%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative !important;
 }
 
 /* Place text in the middle of the image */
