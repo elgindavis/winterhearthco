@@ -22,7 +22,7 @@ customElements.define('wh-footer', class extends WHFooter {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-6">
-                            <div class="single-footer-widget">
+                            <div class="single-footer-widget text-white">
                                 <h4>Winter Hearth Studios</h4>
                                 <p>
                                     Change the heart, change the world.
