@@ -162,6 +162,10 @@ a, a:focus, a:hover {
   margin: 36px 0 12px 0;
 }
 
+.user-details {
+  font-size: 15px;
+}
+
 .title-line {
   margin-top: .5rem;
   margin-bottom: 2rem;
