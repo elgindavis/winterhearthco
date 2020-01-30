@@ -61,7 +61,7 @@ customElements.define('banner-blog-item', class extends BlogPostHero {
               <p class="text-white">
                 ${this.articleDescription}
               </p>
-              <a href="${this.articleLink}" class="primary-btn">View More</a>
+              <a href="${this.articleLink}" class="primary-btn">Read Article</a>
             </div>  
           </div>
         </div>

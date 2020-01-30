@@ -35,7 +35,7 @@ customElements.define('wh-header', class extends WHHeader {
 			          <!-- <li class="menu-has-children"><a href="">Blog</a> -->
 			            <!-- <ul> -->
 			          <!-- <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}comics.html">Comics</a></li> -->
-			              <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}blog.html">Blog</a></li>
+			              <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}blog/">Blog</a></li>
 			              <!-- <li><a href="newsletter.html">Newsletter</a></li> -->
 			            <!-- </ul> -->
 			          <!-- </li>	 -->
