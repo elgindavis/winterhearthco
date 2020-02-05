@@ -158,6 +158,46 @@ a, a:focus, a:hover {
   color: white;
 }
 
+.mc-field-group {
+  margin: 12px 0;
+}
+
+.form-label {
+  width: 130px;
+}
+
+.input-fields {
+  border-radius: 4px;
+  border: 1px solid #ABB0B2;
+}
+
+#mc_embed_signup{
+      padding-bottom: 10px;
+    }
+
+   /* .mc-field-group input{
+      border-color: #E0003B;
+      border-radius: 25px;
+    }*/
+
+    #mc-embedded-subscribe{
+      margin-top: 3%;
+    }
+
+    #mc-embedded-subscribe:hover, #subscribe-button.primary-button:hover{
+        background: #fff;
+        color: #222
+    }
+
+    #mc-embedded-subscribe {
+      margin: 0;
+    }
+
+    #mc_embed_signup div#mce-responses {
+      margin: 0;
+      padding: 0;
+    }
+
 .article-header {
   margin: 36px 0 12px 0;
 }
