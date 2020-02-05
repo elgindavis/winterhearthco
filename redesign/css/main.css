@@ -36,7 +36,7 @@ $black			: #.222;
 
 :root {
 
-  --primary-color: #4B2282;
+  --primary-color: #8f2492;
   --title-color: #222222;
   --text-color: #444;
 
@@ -186,6 +186,10 @@ a, a:focus, a:hover {
 .card-panel {
   margin: 0;
   padding: 60px;
+}
+
+.primary-btn {
+  border-radius: 20px;
 }
 
 /**
