@@ -71,7 +71,7 @@ customElements.define('popular-post-item', class extends PopularPostItem {
     //                     <img class="img-fluid" src="img/blog/pp2.jpg" alt="">
     //                   </div>
     //                   <div class="details">
-    //                     <a href="blog-single.html"><h6>The Amazing Hubble</h6></a>
+    //                     <a href="blog-single"><h6>The Amazing Hubble</h6></a>
     //                     <p>02 Hours ago</p>
     //                   </div>
     // `;

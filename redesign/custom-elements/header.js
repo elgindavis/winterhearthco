@@ -26,24 +26,24 @@ customElements.define('wh-header', class extends WHHeader {
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
-			        <a href="index.html"><img style="max-height: 60px;" src="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}img/logo.png" alt="" title="" /></a>
+			        <a href="index"><img style="max-height: 60px;" src="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}img/logo.png" alt="" title="" /></a>
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
 			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : "./"}">Home</a></li>
-			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}about.html">Our Story</a></li>
+			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}about">Our Story</a></li>
 			          <!-- <li class="menu-has-children"><a href="">Blog</a> -->
 			            <!-- <ul> -->
-			          <!-- <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}comics.html">Comics</a></li> -->
+			          <!-- <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}comics">Comics</a></li> -->
 			              <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}blog/">Blog</a></li>
-			              <!-- <li><a href="newsletter.html">Newsletter</a></li> -->
+			              <!-- <li><a href="newsletter">Newsletter</a></li> -->
 			            <!-- </ul> -->
 			          <!-- </li>	 -->
-			        <!--   <li><a href="services.html">Shop</a></li> -->
+			        <!--   <li><a href="services">Shop</a></li> -->
 			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}games/">Games</a></li>
 			       <!--    <li class="menu-has-children"><a href="">Pages</a>
 			            <ul>
-		            	  <li><a href="elements.html">Elements</a></li>
+		            	  <li><a href="elements">Elements</a></li>
 				          <li class="menu-has-children"><a href="">Level 2 </a>
 				            <ul>
 				              <li><a href="#">Item One</a></li>
@@ -52,7 +52,7 @@ customElements.define('wh-header', class extends WHHeader {
 				          </li>					                		
 			            </ul>
 			          </li>					          					          		          
-			          <li><a href="contact.html">Contact</a></li> -->
+			          <li><a href="contact">Contact</a></li> -->
 			        </ul>
 			      </nav><!-- #nav-menu-container -->		    		
 		    	</div>
