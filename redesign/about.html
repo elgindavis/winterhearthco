@@ -20,7 +20,8 @@
 				border-radius: 4px;
 			}
 		</style>
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+		<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> 
 			<!--
 			CSS
 			============================================= -->
@@ -109,7 +110,15 @@
 			<script src="js/owl.carousel.min.js"></script>							
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>
-
-
+			<script> 
+                $(document).ready(function(){
+                    // console.log("its working");
+                    $( "#mc-embedded-subscribe" ).click(function() {
+                      $( "#mc_embed_signup" ).hide();
+                      $( "#signup-success" ).show();
+                    });
+                });
+            </script>	
+			
 		</body>
 	</html>

@@ -198,6 +198,15 @@
 			<script src="../js/simple-skillbar.js"></script>							
 			<script src="../js/owl.carousel.min.js"></script>							
 			<script src="../js/mail-script.js"></script>	
-			<script src="../js/main.js"></script>	
+			<script src="../js/main.js"></script>
+			<script> 
+                $(document).ready(function(){
+                    // console.log("its working");
+                    $( "#mc-embedded-subscribe" ).click(function() {
+                      $( "#mc_embed_signup" ).hide();
+                      $( "#signup-success" ).show();
+                    });
+                });
+            </script>		
 		</body>
 	</html>

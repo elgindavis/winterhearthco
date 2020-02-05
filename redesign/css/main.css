@@ -3635,13 +3635,13 @@ dl.accordion.time-line:before {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  border-radius: 0px !important;
+  border-radius: 25px !important;
 }
 
 .post-content-area .single-post .primary-btn:hover {
   background: var(--white) !important;
   color: #222 !important;
-  border-radius: 1px !important;
+  border-radius: 25px !important;
 }
 
 .posts-list .posts-title h3 {
