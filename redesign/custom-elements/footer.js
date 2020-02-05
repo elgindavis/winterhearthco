@@ -77,7 +77,7 @@ Copyright &copy;2020 All rights reserved | This template is made with <i class="
                                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_82935dc1a750f772912d12316_31c5d4e468" tabindex="-1" value="">
                                             </div>
                                             <div class="clear">
-                                                <button style="margin-bottom: 40px;" type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="primary-btn">JOIN THE TEAM
+                                                <button style="margin: 40px 0;" type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="primary-btn">JOIN THE TEAM
                                                 </button>
                                             </div>
 
