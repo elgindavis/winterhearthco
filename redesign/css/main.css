@@ -136,18 +136,41 @@ a, a:focus, a:hover {
   outline: 0;
 }
 
-.home-hero-image {
-  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/1920x1080.png");*/
-  background: url("../img/aubbie-crystal-ball.png") !important;
+@media (min-width: 425px) {
 
-  /* Set a specific width */
-  width: 100%;
+  .home-hero-image {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/1920x1080.png");*/
+    background: url("../img/aubbie-crystal-ball.png") !important;
 
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  position: relative !important;
+    /* Set a specific width */
+    width: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative !important;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .home-hero-image {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/1920x1080.png");*/
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(00, 0, 0, 0.5)
+    ), url("../img/aubbie-ball-sm.png") !important;
+
+    /* Set a specific width */
+    width: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative !important;
+  }
 }
 
 /* Place text in the middle of the image */
