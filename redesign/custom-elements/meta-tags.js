@@ -40,7 +40,7 @@ customElements.define('wh-meta-tags', class extends WHMeta {
 
 
 		<meta property="title" content="${this.pageTitle}" />
-		<meta property="og:title" content="${this.pageTitle}" />
+		<meta property="og:title" content="${this.pageTitle}" />`
 
   }
 });
