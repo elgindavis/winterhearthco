@@ -26,11 +26,11 @@ customElements.define('wh-header', class extends WHHeader {
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
-			        <a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}."><img style="max-height: 60px;" src="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}img/logo.png" alt="" title="" /></a>
+			        <a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}."><img style="max-height: 56px;" src="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}img/logo.png" alt="" title="" /></a>
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
-			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : "./"}">Home</a></li>
+			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : "."}">Home</a></li>
 			          <li><a href="${this.isNotRootDirectory ? this.changeLinkDirectory : ""}about">Our Story</a></li>
 			          <!-- <li class="menu-has-children"><a href="">Blog</a> -->
 			            <!-- <ul> -->
