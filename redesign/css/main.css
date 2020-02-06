@@ -34,9 +34,10 @@ $black			: #.222;
 
 */
 
+
 :root {
 
-  --primary-color: #C06580;
+  --primary-color: hsla(345,57%,60%,1);
   /*--primary-color: #8f2492;*/
   --title-color: #222222;
   --text-color: #444;
