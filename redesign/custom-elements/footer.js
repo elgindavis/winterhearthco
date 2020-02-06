@@ -18,7 +18,7 @@ customElements.define('wh-footer', class extends WHFooter {
 
   	// console.log(this.isNotRootDirectory);
     this.innerHTML = `
-    <footer class="footer-area section-gap">
+    <footer id="wh-footer" class="footer-area section-gap">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-6">

@@ -67,12 +67,12 @@ customElements.define('single-recent-post', class extends SingleRecentBlog {
     this.innerHTML = `
       <div class="single-recent-blog">
         <div class="thumb">
-          <a href="${this.articleLink}"><img style="border-radius:4px;" class="f-img img-fluid mx-auto" src="${this.imgURL}" alt="${this.imgAltText}"> </a>
+          <a target="_blank" href="${this.articleLink}"><img style="border-radius:4px;" class="f-img img-fluid mx-auto" src="${this.imgURL}" alt="${this.imgAltText}"> </a>
         </div>
         <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
           <div>
             <img style="height: 30px; border-radius: 20px;" class="img-fluid" src="${this.authorImgURL}" alt="${this.author}">
-            <a href="${this.articleLink}"><span>by ${this.author}</span></a>
+            <a target="_blank" href="${this.articleLink}"><span>by ${this.author}</span></a>
           </div>
           <div class="meta">
             ${this.date}
