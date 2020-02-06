@@ -175,6 +175,28 @@ a, a:focus, a:hover {
   }
 }
 
+
+
+@media (max-width: 425px) {
+
+  .blog-home-banner {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/1920x1080.png");*/
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(00, 0, 0, 0.5)
+    ), url("../img/blog/dog-love-sm.png") !important;
+
+    /* Set a specific width */
+    width: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative !important;
+  }
+}
+
 /* Place text in the middle of the image */
 .home-hero-text {
   text-align: center;
