@@ -122,6 +122,10 @@ figure {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -3094,6 +3098,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .single-recent-blog .thumb {
   overflow: hidden;
+  /*height: 230px;*/
 }
 
 .single-recent-blog .thumb img {

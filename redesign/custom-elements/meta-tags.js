@@ -41,4 +41,4 @@ customElements.define('wh-meta-tags', class extends WHMeta {
   }
 });
 
-console.log("Welcome to Winter Hearth Studios! I see you know your way around a console ;)");
+// console.log("Welcome to Winter Hearth Studios! I see you know your way around a console ;)");
