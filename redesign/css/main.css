@@ -97,7 +97,7 @@ $black			: #.222;
 body {
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
-  background-color: var(--off-white);
+  background-color: var(--off-white) !important;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.625em;
@@ -269,7 +269,7 @@ a, a:focus, a:hover {
 }
 
 .gray-bg {
-  background: var(--off-white);
+  /*background: var(--off-white);*/
 }
 
 h1, h2, h3,
@@ -932,7 +932,7 @@ td, th {
 /* =================================== */
 /*---------- Start Elements Page -------------*/
 .whole-wrap {
-  background-color: var(--off-white);
+  /*background-color: var(--off-white);*/
 }
 
 .generic-banner {
@@ -1004,7 +1004,7 @@ td, th {
 
 /*---------- End Elements Page -------------*/
 .sample-text-area {
-  background: var(--off-white);
+  /*background: var(--off-white);*/
   padding: 100px 0 70px 0;
 }
 
@@ -1070,7 +1070,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button-area {
-  background: var(--off-white);
+  /*background: var(--off-white);*/
 }
 
 .button-area .border-top-generic {
