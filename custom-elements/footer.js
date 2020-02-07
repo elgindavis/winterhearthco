@@ -53,7 +53,7 @@ Copyright &copy;2020 All rights reserved | This template is made with <i class="
 									</form> 
 								</div> -->
                             </div> 
-                            <div id="mc_embed_signup" class="text-white">
+                            <div id="mc_embed_signup" class="text-white" style="width:90%;">
                                 <form style="padding: 0;" action="https://campaign-archive.us19.list-manage.com/subscribe/post?u=82935dc1a750f772912d12316&amp;id=31c5d4e468" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                 
                                     <div id="mc_embed_signup_scroll">
