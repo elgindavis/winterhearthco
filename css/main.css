@@ -211,6 +211,7 @@ a, a:focus, a:hover {
 
     /* Set a specific width */
     width: 100%;
+    padding: 25% 0 !important;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center !important;
