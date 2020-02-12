@@ -71,7 +71,7 @@ customElements.define('single-recent-post', class extends SingleRecentBlog {
         </div>
         <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
           <div>
-            <img style="height: 30px; border-radius: 20px;" class="img-fluid" src="${this.authorImgURL}" alt="${this.author}">
+            <img style="height: 30px; border-radius: 20px;" class="img-fluid lazyload" data-src="${this.authorImgURL}" alt="${this.author}">
             <a target="_blank" href="${this.articleLink}"><span>by ${this.author}</span></a>
           </div>
           <div class="meta">

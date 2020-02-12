@@ -107,7 +107,7 @@ customElements.define('single-post-row', class extends SinglePostRow {
 		</div>
 		<div class="col-lg-9 col-md-9 ">
 			<div class="feature-img">
-				<a href="${this.articleLink}"><img style="border-radius:4px;" class="img-fluid" src="${this.imgURL}" alt="${this.imgAltText}"></a>
+				<a href="${this.articleLink}"><img style="border-radius:4px;" class="img-fluid lazyload" data-src="${this.imgURL}" alt="${this.imgAltText}"></a>
 			</div>
 			<a class="posts-title" href="${this.articleLink}"><h3>${this.articleTitle}</h3></a>
 			<p class="excerpt">
