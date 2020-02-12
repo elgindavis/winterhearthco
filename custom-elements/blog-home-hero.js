@@ -49,7 +49,7 @@ customElements.define('banner-blog-item', class extends BlogPostHero {
 
     this.innerHTML = `
     <section class="banner-area relative blog-home-banner" id="home"
-    style="background: url(${window.innerWidth < 425 ? "../img/blog/dog-love-sm.png" : this.imgURL}) bottom;"
+    style="background: url(${window.innerWidth < 425 ? "../img/blog/dog-love-sm-800p.png" : this.imgURL}) bottom;"
     > 
         <div class="overlay overlay-bg"></div>
         <div class="container">       
