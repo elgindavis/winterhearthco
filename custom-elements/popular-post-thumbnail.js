@@ -53,7 +53,7 @@ customElements.define('popular-post-item', class extends PopularPostItem {
 
 
     this.innerHTML = `
-    <div class="single-post-list d-flex flex-row align-items-center">
+    <div class="single-post-list d-flex flex-row align-items-center" style="margin-top: 24px;">
       <div class="thumb">
         <a href="${this.articleLink}"><img style="border-radius:4px; height: 80%;" class="img-fluid" src="${this.imgURL}" alt="${this.imgAltText}"></a>
       </div>
@@ -61,7 +61,7 @@ customElements.define('popular-post-item', class extends PopularPostItem {
     <div class=""> 
       <div class="details">
         <a href="${this.articleLink}"><h6>${this.articleTitle}</h6></a>
-        <p style="font-size: 14px; line-height: 1.3rem;">${this.articleDescription}</p>
+        <p style="font-size: 14px; line-height: 1.3rem; margin: 4px 0;">${this.articleDescription}</p>
       </div>
     </div>
     `;
