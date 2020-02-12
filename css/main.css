@@ -229,7 +229,7 @@ a, a:focus, a:hover {
     background: linear-gradient(
       rgba(0, 0, 0, 0.5), 
       rgba(00, 0, 0, 0.5)
-    ), url("../img/blog/dog-love-sm.png") !important;
+    ), url("../img/blog/dog-love-sm-800p.png") !important;
 
     /* Set a specific width */
     width: 100%;
