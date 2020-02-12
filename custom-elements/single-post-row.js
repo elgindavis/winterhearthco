@@ -75,7 +75,7 @@ customElements.define('single-post-row', class extends SinglePostRow {
   	// console.log(this.author);
 
   	// generate tags html
-  	console.log(this.tags);
+  	// console.log(this.tags);
   	let tags = this.tags.split(",");
   	console.log(tags);
   	let tagsHTML = "Tags: &nbsp;";
