@@ -16,20 +16,20 @@ $(document).ready(function() {
 
     //------- Lightbox  js --------//  
 
-    $('.img-pop-up').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
+    // $('.img-pop-up').magnificPopup({
+    //     type: 'image',
+    //     gallery: {
+    //         enabled: true
+    //     }
+    // });
 
-    $('.play-btn').magnificPopup({
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false
-    });
+    // $('.play-btn').magnificPopup({
+    //     type: 'iframe',
+    //     mainClass: 'mfp-fade',
+    //     removalDelay: 160,
+    //     preloader: false,
+    //     fixedContentPos: false
+    // });
 
     //------- Counter  js --------//  
 
@@ -42,30 +42,30 @@ $(document).ready(function() {
 
     //------- Skill  js --------//  
 
-    $('.skill').simpleSkillbar();
+    // $('.skill').simpleSkillbar();
 
     //------- Filter  js --------//  
 
-      $('.filters ul li').click(function(){
-        $('.filters ul li').removeClass('active');
-        $(this).addClass('active');
+      // $('.filters ul li').click(function(){
+      //   $('.filters ul li').removeClass('active');
+      //   $(this).addClass('active');
         
-        var data = $(this).attr('data-filter');
-        $grid.isotope({
-          filter: data
-        })
-      });
+      //   var data = $(this).attr('data-filter');
+      //   $grid.isotope({
+      //     filter: data
+      //   })
+      // });
 
 
-      if(document.getElementById("portfolio")){
-            var $grid = $(".grid").isotope({
-              itemSelector: ".all",
-              percentPosition: true,
-              masonry: {
-                columnWidth: ".all"
-              }
-            })
-      };
+      // if(document.getElementById("portfolio")){
+      //       var $grid = $(".grid").isotope({
+      //         itemSelector: ".all",
+      //         percentPosition: true,
+      //         masonry: {
+      //           columnWidth: ".all"
+      //         }
+      //       })
+      // };
 
 
     //------- Timeline js --------//  
@@ -99,12 +99,12 @@ $(document).ready(function() {
 
     //------- Superfish nav menu  js --------//  
 
-    $('.nav-menu').superfish({
-        animation: {
-            opacity: 'show'
-        },
-        speed: 400
-    });
+    // $('.nav-menu').superfish({
+    //     animation: {
+    //         opacity: 'show'
+    //     },
+    //     speed: 400
+    // });
 
     //------- Accordian Js --------//  
 
@@ -142,62 +142,62 @@ $(document).ready(function() {
 
     //------- Owl Carusel  js --------//  
 
-    $('.active-review-carusel').owlCarousel({
-        items:1,
-        loop:true,
-        autoplay:true,
-        autoplayHoverPause: true,        
-        margin:30,
-        dots: true
-    });
+    // $('.active-review-carusel').owlCarousel({
+    //     items:1,
+    //     loop:true,
+    //     autoplay:true,
+    //     autoplayHoverPause: true,        
+    //     margin:30,
+    //     dots: true
+    // });
 
-     $('.active-testimonial').owlCarousel({
-            items: 2,
-            loop: true,
-            margin: 30,
-            autoplayHoverPause: true,
-            dots: true,
-            autoplay: true,
-            nav: true,
-            navText: ["<span class='lnr lnr-arrow-up'></span>", "<span class='lnr lnr-arrow-down'></span>"],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                480: {
-                    items: 1,
-                },
-                768: {
-                    items: 2,
-                }
-            }
-        });
+    //  $('.active-testimonial').owlCarousel({
+    //         items: 2,
+    //         loop: true,
+    //         margin: 30,
+    //         autoplayHoverPause: true,
+    //         dots: true,
+    //         autoplay: true,
+    //         nav: true,
+    //         navText: ["<span class='lnr lnr-arrow-up'></span>", "<span class='lnr lnr-arrow-down'></span>"],
+    //         responsive: {
+    //             0: {
+    //                 items: 1
+    //             },
+    //             480: {
+    //                 items: 1,
+    //             },
+    //             768: {
+    //                 items: 2,
+    //             }
+    //         }
+    //     });
 
 
 
-    $('.active-brand-carusel').owlCarousel({
-        items: 5,
-        loop: true,
-        autoplayHoverPause: true,
-        autoplay: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            455: {
-                items: 2
-            },            
-            768: {
-                items: 3,
-            },
-            991: {
-                items: 4,
-            },
-            1024: {
-                items: 5,
-            }
-        }
-    }); 
+    // $('.active-brand-carusel').owlCarousel({
+    //     items: 5,
+    //     loop: true,
+    //     autoplayHoverPause: true,
+    //     autoplay: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         455: {
+    //             items: 2
+    //         },            
+    //         768: {
+    //             items: 3,
+    //         },
+    //         991: {
+    //             items: 4,
+    //         },
+    //         1024: {
+    //             items: 5,
+    //         }
+    //     }
+    // }); 
 
     //------- Mobile Nav  js --------//  
 
@@ -473,8 +473,8 @@ $(document).ready(function() {
 
     //------- Mailchimp js --------//  
 
-    $(document).ready(function() {
-        $('#mc_embed_signup').find('form').ajaxChimp();
-    });
+    // $(document).ready(function() {
+        // $('#mc_embed_signup').find('form').ajaxChimp();
+    // });
 
 });
