@@ -51,8 +51,8 @@ customElements.define('wh-header', class extends WHHeader {
 				            </ul>
 				          </li>					                		
 			            </ul>
-			          </li>					          		-->			          		          
-			          <li><a target="_blank" href="https://www.etsy.com/shop/WinterHearthCo">Shop</a></li> 
+			          </li>					          				          		          
+			          <li><a target="_blank" href="https://www.etsy.com/shop/WinterHearthCo">Shop</a></li> -->	
 			        </ul>
 			      </nav><!-- #nav-menu-container -->		    		
 		    	</div>
