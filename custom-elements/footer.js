@@ -35,7 +35,7 @@ Copyright &copy;2020 All rights reserved | This template is made by <a href="htt
                                 <button style="background: black; width: 165px; height: 30px; border-radius: 3px; border: 1px solid black; font-family: Roboto, Arial; font-size: 10px; color: white; font-weight: 600; box-sizing: border-box; cursor: pointer; padding: 0; outline: none;" onclick="displayPreferenceModal()">Manage Cookie Preferences</button>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-md-6 col-sm-6 text-white">
+                        <div class="col-lg-5 col-md-6 col-sm-6 text-white" id="wh-signup">
                            <div class="single-footer-widget">
                                 <h4>Newsletter</h4>
                                 <p>Stay updated with our latest content</p>
