@@ -1101,7 +1101,7 @@ td, th {
 }
 
 b, sup, sub, u, del {
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 
 h1 {
