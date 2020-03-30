@@ -227,9 +227,9 @@ a, a:focus, a:hover {
   .blog-home-banner {
     /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/1920x1080.png");*/
     background: linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(00, 0, 0, 0.5)
-    ), url("../img/blog/dog-love-sm-800p.jpg") !important;
+      rgba(0, 0, 0, 0.2), 
+      rgba(00, 0, 0, 0.2)
+    ), url("../img/blog/confetti-sm-800p.jpg") !important;
 
     /* Set a specific width */
     width: 100%;
