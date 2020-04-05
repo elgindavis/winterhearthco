@@ -1,84 +1,97 @@
-class PopularPostColumn extends HTMLElement {
-	constructor() {
-    // Always call super first in constructor
-    	super();
-    	this.imgURL = this.getAttribute('imgURL');
-    	this.articleTitle = this.getAttribute('articleTitle');
-    	this.articleLink = this.getAttribute('articleLink');
-      this.imgAltText = this.getAttribute('imgAltText');
-    	this.articleDescription = this.getAttribute('articleDescription');
+// Temporary copy of JSON File...
+const posts = {
+  "1": {
+    "id": "1",
+    "articleTitle": "Why “Being Happy” Isn't a Real Goal",
+    "articleLink": "why-being-happy-isnt-a-real-goal",
+    "articleDescription": "'Life, Liberty, and the pursuit of Happiness'... But why?",
+    "imgURL": "img/blog/happy-sign-300p.jpg",
+    "imgAltText": "Happy neon sign",
+    "date-published": "30 Mar, 2020"
 
-    	// console.log(this.author, this.date, this.tags, this.imgURL, this.articleTitle, this.excerpt, this.authorURL, this.articleLink, this.imgAltText);
-	}
+  },
+  "2": {
+    "id": "2",
+    "articleTitle": "Why You’ll Never Get What You Deserve",
+    "articleLink": "why-you-will-never-get-what-you-deserve",
+    "articleDescription": "Though life is full of various opportunities and possibilities, you'll never get the ones you really deserve. Here's why:",
+    "imgURL": "img/blog/sunset-path-300p.jpg",
+    "imgAltText": "Man walking alone on a path at sunset",
+    "date-published": "11 Feb, 2020"
+  },
+  "3": {
+    "id": "3",
+    "articleTitle": "4 Lessons Your Dog Can Teach You About EQ",
+    "articleLink": "4-powerful-lessons-dogs-teach-about-eq",
+    "articleDescription": "Dogs melt our hearts every day, but it turns out there's a lot they can teach us, too.",
+    "imgURL": "img/blog/dog-love-300p.jpg",
+    "imgAltText": "Wow, look at that happy pup",
+    "date-published": "7 Feb, 2020"
+  },
+  "4": {
+    "id": "4",
+    "articleTitle": "Pandemics and the Quest for Good News",
+    "articleLink": "pandemics-and-good-news",
+    "articleDescription": "In this world there will be troubles... And good news makes those troubles seem smaller, right?",
+    "imgURL": "img/blog/good-news-300p.jpg",
+    "imgAltText": "Good News Newspaper",
+    "date-published": "5 Apr, 2020"
+  }
+};
 
-	static get observedAttributes() {
-		return ['imgURL', 'articleTitle', 'authorURL', 'imgAltText', 'articleDescription'];
-	}
 
-  	get hasImgURL() {
-  		return this.hasAttribute('imgURL');
-  	}
-
-  	get hasImgAltText() {
-  		return this.hasAttribute('imgAltText');
-  	}
-
-  	get hasArticleLink() {
-  		return this.hasAttribute('articleLink');
-  	}
-
-  	get hasArticleTitle() {
-      return this.hasAttribute('articleTitle');
-    }
-
-    get hasArticleTitle() {
-  		return this.hasAttribute('articleDescription');
-  	}
-
-
-	connectedCallback() {
-	}
-	disconnectedCallback() {
-	}
-	attributeChangedCallback(attrName, oldVal, newVal) {
-		// console.log(attrName, oldVal, newVal);
-	} 
-}
+class PopularPostColumn extends HTMLElement {	}
 
 customElements.define('popular-post-column', class extends PopularPostColumn {
   
 
   connectedCallback() {
-  	// console.log(this.author);
-
-
     this.innerHTML = `
-    <div class="single-post-list d-flex flex-row align-items-center" style="margin-top: 24px;">
-      <div class="thumb">
-        <a href="${this.articleLink}">
-          <img style="border-radius:4px; height: 80%;" class="img-fluid lazyload" data-src="${this.imgURL}" alt="${this.imgAltText}">
-        </a>
+      <div class="popular-post-list">
+        <div class="single-post-list d-flex flex-row align-items-center" style="margin-top: 24px;">
+          <div class="thumb">
+            <a href="${posts["4"]["articleLink"]}">
+              <img style="border-radius:4px; height: 80%;" class="img-fluid lazyload" data-src="../${posts["4"]["imgURL"]}" alt="${posts["4"]["imgAltText"]}">
+            </a>
+          </div>
+        </div> 
+        <div class=""> 
+          <div class="details">
+            <a href="${posts["4"]["articleLink"]}"><h6>${posts["4"]["articleTitle"]}</h6></a>
+            <p style="font-size: 14px; line-height: 1.3rem; margin: 4px 0;">${posts["4"]["articleDescription"]}</p>
+          </div>
+        </div>
+
+        <div class="single-post-list d-flex flex-row align-items-center" style="margin-top: 24px;">
+          <div class="thumb">
+            <a href="${posts["1"]["articleLink"]}">
+              <img style="border-radius:4px; height: 80%;" class="img-fluid lazyload" data-src="../${posts["1"]["imgURL"]}" alt="${posts["1"]["imgAltText"]}">
+            </a>
+          </div>
+        </div> 
+        <div class=""> 
+          <div class="details">
+            <a href="${posts["1"]["articleLink"]}"><h6>${posts["1"]["articleTitle"]}</h6></a>
+            <p style="font-size: 14px; line-height: 1.3rem; margin: 4px 0;">${posts["1"]["articleDescription"]}</p>
+          </div>
+        </div>
+
+        <div class="single-post-list d-flex flex-row align-items-center" style="margin-top: 24px;">
+          <div class="thumb">
+            <a href="${posts["2"]["articleLink"]}">
+              <img style="border-radius:4px; height: 80%;" class="img-fluid lazyload" data-src="../${posts["2"]["imgURL"]}" alt="${posts["2"]["imgAltText"]}">
+            </a>
+          </div>
+        </div> 
+        <div class=""> 
+          <div class="details">
+            <a href="${posts["2"]["articleLink"]}"><h6>${posts["2"]["articleTitle"]}</h6></a>
+            <p style="font-size: 14px; line-height: 1.3rem; margin: 4px 0;">${posts["2"]["articleDescription"]}</p>
+          </div>
+        </div>
       </div>
-    </div> 
-    <div class=""> 
-      <div class="details">
-        <a href="${this.articleLink}"><h6>${this.articleTitle}</h6></a>
-        <p style="font-size: 14px; line-height: 1.3rem; margin: 4px 0;">${this.articleDescription}</p>
-      </div>
-    </div>
     `;
 
-    // this.innerHTML = `
-    // <div class="thumb">
-    //                     <img class="img-fluid" src="img/blog/pp2.jpg" alt="">
-    //                   </div>
-    //                   <div class="details">
-    //                     <a href="blog-single"><h6>The Amazing Hubble</h6></a>
-    //                     <p>02 Hours ago</p>
-    //                   </div>
-    // `;
-
-    
   }
 });
 
