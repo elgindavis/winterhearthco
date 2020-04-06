@@ -93,7 +93,7 @@ customElements.define('single-post-row', class extends SinglePostRow {
     this.innerHTML = `
     <div class="single-post row">
 		<div class="col-lg-3  col-md-3 meta-details">
-	  		<span>Tags: &nbsp;</span>
+	  		<span>Tags: </span>
 			<ul class="tags">
 				${tagsHTML}
 			</ul>
