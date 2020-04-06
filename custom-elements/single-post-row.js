@@ -98,7 +98,7 @@ customElements.define('single-post-row', class extends SinglePostRow {
 			</ul>
 			<div class="user-details row">
 				<p class="user-name col-lg-12 col-md-12 col-6">
-					${this.hasAuthorURL ? `<a target="_blank" href="${this.authorURL}"> ${this.author}</a>` : `<a>${this.author}</a>`} <span class="lnr lnr-user"></span>
+					${this.hasAuthorURL ? `<a target="_blank" rel="noopener" href="${this.authorURL}"> ${this.author}</a>` : `<a>${this.author}</a>`} <span class="lnr lnr-user"></span>
 					</p>
 				<p class="date col-lg-12 col-md-12 col-6">
 					<a>${this.date}</a> <span class="lnr lnr-calendar-full"></span>
