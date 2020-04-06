@@ -229,7 +229,7 @@ a, a:focus, a:hover {
     background: linear-gradient(
       rgba(0, 0, 0, 0.2), 
       rgba(00, 0, 0, 0.2)
-    ), url("../img/blog/confetti-sm-800p.jpg") !important;
+    ), url("../img/blog/good-news-sm-800p.jpg") !important;
 
     /* Set a specific width */
     width: 100%;
@@ -3556,7 +3556,7 @@ dl.accordion.time-line:before {
 }
 
 .blog-home-banner .overlay-bg {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.50);
 }
 
 .blog-page {
