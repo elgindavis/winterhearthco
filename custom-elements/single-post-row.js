@@ -78,7 +78,7 @@ customElements.define('single-post-row', class extends SinglePostRow {
   	// console.log(this.tags);
   	let tags = this.tags.split(",");
   	// console.log(tags);
-  	let tagsHTML = "Tags: &nbsp;";
+  	let tagsHTML = "";
 
   	for (var i = tags.length - 1; i >= 1; i--) {
       tagsHTML += `<li>${tags[i]},&nbsp;</li>`
@@ -93,6 +93,7 @@ customElements.define('single-post-row', class extends SinglePostRow {
     this.innerHTML = `
     <div class="single-post row">
 		<div class="col-lg-3  col-md-3 meta-details">
+	  		<span>Tags: &nbsp;</span>
 			<ul class="tags">
 				${tagsHTML}
 			</ul>
