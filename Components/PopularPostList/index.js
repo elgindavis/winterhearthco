@@ -49,7 +49,7 @@ const PopularPostList = (props) => {
             props.featuredArticleList.map((featuredPostID) => {
                 return (
                     <>
-                        <div class="single-post-list d-flex flex-row align-items-center" style="margin-top: 24px;">
+                        <div class="single-post-list d-flex flex-row align-items-center" style={{"marginTop": "24px"}}>
                             <div class="thumb">
                                 <a href={posts[featuredPostID]["articleLink"]}>
                                     <LazyImage 
