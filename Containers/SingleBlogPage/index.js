@@ -45,13 +45,13 @@ class SingePlogPage extends React.Component {
                                                     Aside from being the "goodest good boys" on the planet, man's best friend actually has a lot to teach us— especially with respect to emotional intelligence. We may easily overlook hidden lessons, such as in the charming and excited wag of Fido's tail or the loving twinkle in Brutus' eyes as you tell him all about your day. As it turns out, you’re probably overlooking some of the most powerful lessons dogs share with us about our world. While I'm sure that there are countless EQ lessons our lovable friends have in store for us, here are 4 game-changing keys to cultivating deeper, more emotionally-intelligent relationships.
 									</p>
 								</div>
-                                            <div class="container text-center" style="margin: 24px;">
-                                                <img class="lazyload" style="width: 80%" data-src="https://media.makeameme.org/created/now-children-we-5b3d08.jpg"/>
+                                <div class="container text-center" style="margin: 24px;">
+                                    <img class="lazyload" style="width: 80%" data-src="https://media.makeameme.org/created/now-children-we-5b3d08.jpg"/>
 								</div>
-                                                <div class="container">
-                                                    <h3 class="article-header">Listening.</h3>
-                                                    <p>
-                                                        Dogs are amazing listeners. Well, most dogs. Listening is one of the most powerful tools we have for building deeper social relationships— but don't we understand that one already? As it turns out, no, we don't. The nuance here is that many people hear, but they don't listen. A phrase I love to remind myself of is that "we hear with our ears, but we listen with our hearts." The fact that the words someone is saying are registering in your brain doesn't mean that you're actually paying attention. Many dogs will sit and patiently listen to you talk, and give you their full attention, as the goodest good boys are known to do. However, just like humans, not all dogs are great listeners. Like when you tell Doug the Pug to stop scooting his butt across the carpet and he just smiles at you and keeps on scootin’— he hears you, he just isn't listening.
+                                    <div class="container">
+                                        <h3 class="article-header">Listening.</h3>
+                                        <p>
+                                            Dogs are amazing listeners. Well, most dogs. Listening is one of the most powerful tools we have for building deeper social relationships— but don't we understand that one already? As it turns out, no, we don't. The nuance here is that many people hear, but they don't listen. A phrase I love to remind myself of is that "we hear with our ears, but we listen with our hearts." The fact that the words someone is saying are registering in your brain doesn't mean that you're actually paying attention. Many dogs will sit and patiently listen to you talk, and give you their full attention, as the goodest good boys are known to do. However, just like humans, not all dogs are great listeners. Like when you tell Doug the Pug to stop scooting his butt across the carpet and he just smiles at you and keeps on scootin’— he hears you, he just isn't listening.
 									</p>
                                                     <div style="width:100%;height:0;padding-bottom:78%;position:relative;"><iframe class="lazyload" data-src="https://giphy.com/embed/srb6bXZHbgDsc" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
                                                     <p>

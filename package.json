@@ -28,7 +28,6 @@
     "@testing-library/user-event": "^10.0.1",
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
-    "gh-pages": "^2.2.0",
     "next": "^9.3.4",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
@@ -54,6 +53,7 @@
   },
   "devDependencies": {
     "eslint-plugin-react-hooks": "^3.0.0",
+    "gh-pages": "^2.2.0",
     "nodemon": "^2.0.2",
     "purgecss": "^2.1.0"
   }

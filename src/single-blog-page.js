@@ -93,13 +93,13 @@ const SingeBlogPage = (props) => {
 									</p>
                                     <div class="text-center" style="width:50%;height:0;padding-bottom:70%;position:relative;">
                                         <LazyIFrame 
-                                                className="lazyload giphy-embed" 
-                                                data-src="https://giphy.com/embed/xT39DdCseASAd2yaPe" 
-                                                width="100%" 
-                                                height="100%" 
-                                                style={{"position":"absolute"}} 
-                                                frameBorder="0" 
-                                                allowFullScreen={true}
+                                            className="lazyload giphy-embed" 
+                                            data-src="https://giphy.com/embed/xT39DdCseASAd2yaPe" 
+                                            width="100%" 
+                                            height="100%" 
+                                            style={{"position":"absolute"}} 
+                                            frameBorder="0" 
+                                            allowFullScreen={true}
                                         />
                                         
                                     </div>
