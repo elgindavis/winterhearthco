@@ -24,13 +24,13 @@ const Footer = (props) => {
                                     "background": "black",
                                      "width": "165px",
                                      "height": "30px",
-                                     "border-radius": "3px",
+                                     "borderRadius": "3px",
                                      "border": "1px solid black",
-                                     "font-family": "Roboto, Arial",
-                                     "font-size": "10px",
+                                     "fontFamily": "Roboto, Arial",
+                                     "fontSize": "10px",
                                      "color": "white",
-                                     "font-weight": "600",
-                                     "box-sizing": "border-box",
+                                     "fontWeight": "600",
+                                     "boxSizing": "border-box",
                                      "cursor": "pointer",
                                      "padding": "0",
                                      "outline": "none",
@@ -52,18 +52,18 @@ const Footer = (props) => {
                                     name="mc-embedded-subscribe-form" 
                                     className="validate" 
                                     target="_blank" 
-                                    novalidate>
+                                    noValidate>
 
                                     <div id="mc_embed_signup_scroll">
                                         <div className="mc-field-group">
-                                            <label className="form-label" for="mce-FNAME">First Name <span className="asterisk" style={{"marginRight": "24px"}}></span>
+                                            <label className="form-label" htmlFor="mce-FNAME">First Name <span className="asterisk" style={{"marginRight": "24px"}}></span>
                                             </label>
-                                            <input className="input-fields required" type="text" value="" name="FNAME" id="mce-FNAME"/>
+                                            <input className="input-fields required" type="text" defaultValue="" name="FNAME" id="mce-FNAME"/>
                                         </div>
                                         <div className="mc-field-group ">
-                                            <label className="form-label" for="mce-EMAIL">Email Address <span className="asterisk"></span>
+                                            <label className="form-label" htmlFor="mce-EMAIL">Email Address <span className="asterisk"></span>
                                             </label>
-                                            <input className="input-fields required email" type="email" value="" name="EMAIL" id="mce-EMAIL"/>
+                                            <input className="input-fields required email" type="email" defaultValue="" name="EMAIL" id="mce-EMAIL"/>
                                         </div>
                                         <div id="mce-responses" className="clear">
                                             <div className="response" id="mce-error-response" style={{"display": "none"}}></div>
@@ -71,7 +71,7 @@ const Footer = (props) => {
                                                 You're all set! Check your inbox for your first email :)
                                             </div>
                                             <div style={{"position": "absolute", "left": "-5000px"}} aria-hidden="true">
-                                                <input type="text" name="b_82935dc1a750f772912d12316_31c5d4e468" tabindex="-1" value=""/>
+                                                <input type="text" name="b_82935dc1a750f772912d12316_31c5d4e468" tabIndex="-1" defaultValue=""/>
                                             </div>
                                             <div className="clear">
                                                 <button style={{"margin": "40px 0"}} type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" className="primary-btn">JOIN THE SQUAD
