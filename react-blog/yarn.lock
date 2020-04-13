@@ -5362,6 +5362,12 @@ gatsby-page-utils@^0.1.1:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-google-tagmanager@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.2.1.tgz#aed6037ff1d7ad714ec23fa5af9cef2b9cf9fc93"
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+
 gatsby-plugin-page-creator@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.2.1.tgz#d0da8cdf1ea0d71eb5bb3fb0241e35fb7a5742df"
@@ -7642,6 +7648,10 @@ log-update@^3.0.0:
 loglevel@^1.6.6:
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.7.tgz#b3e034233188c68b889f5b862415306f565e2c56"
+
+logrocket@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/logrocket/-/logrocket-1.0.7.tgz#fe17dbdfc861481cd274fbda533d552de7800a3a"
 
 lokijs@^1.5.8:
   version "1.5.8"
