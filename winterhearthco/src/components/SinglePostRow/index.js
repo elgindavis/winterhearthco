@@ -35,14 +35,14 @@ export default (props) => (
         </div>
         <div className="col-lg-9 col-md-9 ">
             <div className="feature-img">
-                <Link to={`blog/${props.articleLink}`}>
+                <Link to={props.articleLink}>
                     <img style={{borderRadius: 4}} className="img-fluid lazyload" src={props.imgURL} alt={props.imgAltText}/></Link>
 			</div>
-            <Link className="posts-title" to={`blog/${props.articleLink}`}><h3>{props.articleTitle}</h3></Link>
+            <Link className="posts-title" to={props.articleLink}><h3>{props.articleTitle}</h3></Link>
                 <p className="excerpt">
                     {props.excerpt}
                 </p>
-            <Link to={`blog/${props.articleLink}`} className="primary-btn">Read Article</Link>
+            <Link to={props.articleLink} className="primary-btn">Read Article</Link>
             </div>
         </div>
 );

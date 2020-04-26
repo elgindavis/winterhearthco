@@ -14,7 +14,7 @@ export default (props) => (
                     <p className="text-white">
                         {props.articleDescription}
                     </p>
-                    <Link to={`blog/${props.articleLink}`} className="primary-btn">Read Article</Link>
+                    <Link to={props.articleLink} className="primary-btn">Read Article</Link>
                 </div>
             </div>
         </div>
