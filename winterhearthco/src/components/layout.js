@@ -1,41 +1,30 @@
 import React from "react"
 import { Link } from "gatsby"
-import Helmet from "react-helmet"
+import PropTypes from "prop-types"
+
+import SEO from './seo'
+
 import "../styles/linearicons.css"
 import "../styles/main.css"
 import "../styles/bootstrap.min.css"
 import "../styles/linearicons.css"
 // import { rhythm, scale } from "../utils/typography"
 
-export default (props) => {
-  console.log(props)
+const Layout = ((props) => {
+  // console.log("layout props", props);
   return (
     <>
-      <Helmet>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="shortcut icon" href="img/fav.png" />
-        <meta name="author" content="Winter Hearth Studios" />
-        <meta name="keywords" content={props.keywords} />
-
-        <meta property="og:image" content={props.image} />
-        <meta property="image" content={props.image} />
-        <meta property="og:image:alt" content={props.imageAlt} />
-        <meta property="image:alt" content={props.imageAlt} />
-        <meta property="og:url" content={props.url} />
-        <meta property="url" content={props.url} />
-        <meta property="og:type" content="website" />
-        <meta property="fb:app_id" content="" />
-
-        <meta name="description" content={props.description} />
-        <meta property="og:description" content={props.description} />
-        {/* {title} */}
-        <meta property="title" content={props.title} /> 
-        <meta property="og:title" content="Home | Winter Hearth Studios" />`
-          <meta charset="UTF-8" />
-        <title>{props.title}</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,300,500,600" rel="stylesheet" />
-      </Helmet>
+      <SEO 
+        description={props.description}
+        lang={props.lang}
+        meta={props.meta}
+        title={props.title}
+        imageUrl={props.imageUrl}
+        author={props.author}
+        imageAlt={props.imageAlt}
+        keywords={props.keywords}
+        url={props.url}
+      />
 
       <header id="header">
         <div className="container main-menu">
@@ -52,11 +41,12 @@ export default (props) => {
             </div>
             <nav id="nav-menu-container">
               <ul className="nav-menu">
-                <li><Link to="/">Home</Link></li>
+                {/* <li><Link to="/">Home</Link></li> */}
                 <li><Link to="/about">Our Story</Link></li>
+                <li><Link to="/podcast">Podcast</Link></li>
                 <li><Link to="/blog/">Blog</Link></li>
-                <li><Link to="/newsletters/">Newsletters</Link></li>
                 <li><Link to="/games/">Games</Link></li>
+                <li><Link to="/newsletters/">Newsletters</Link></li>
               </ul >
             </nav>
           </div >
@@ -75,9 +65,7 @@ export default (props) => {
                   Change the heart, change the world.
                             </p>
                 <p className="footer-text">
-                  {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-                                Copyright &copy;2020 All rights reserved | This template is made by <a href="https://colorlib.com" rel="noopener noreferrer" target="_blank">Colorlib</a>
-                  {/* {<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->} */}
+                    Copyright &copy;2020 Winter Hearth Studios; All rights reserved
                 </p>
               </div>
               <div style={{ "padding": "40px 0" }}>
@@ -156,8 +144,25 @@ export default (props) => {
         </div>
       </footer>
     </>
-  )
+  );
+});
 
+SEO.defaultProps = {
+  lang: `en`,
+  meta: [],
+  description: ``,
+  author: `Winter Hearth Studios`,
 }
 
+SEO.propTypes = {
+  description: PropTypes.string.isRequired,
+  meta: PropTypes.arrayOf(PropTypes.object),
+  title: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  imageAlt: PropTypes.string.isRequired,
+  keywords: PropTypes.string,
+  url: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+}
 
+export default Layout;

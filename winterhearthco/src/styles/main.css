@@ -40,9 +40,9 @@ $black			: #.222;
   --primary-color: hsla(346, 56%, 53%,1);
   /*--primary-color: #8f2492;*/
   --title-color: #222222;
-  --text-color: #444;
+  --text-color: hsl(0, 60%, 17%);
   --wh-red: red;
-
+  --link-color: hsla(0, 50%, 42%, 1);
   --white: #f9f9ff;
   --off-white: #f9f9ff;
   --black: #222;
@@ -98,7 +98,7 @@ body {
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
   background-color: var(--off-white) !important;
-  font-size: 18px;
+  font-size: 16px !important;
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
@@ -140,6 +140,21 @@ iframe {
 a, a:focus, a:hover {
   text-decoration: none;
   outline: 0;
+}
+
+a {
+  color: var(--link-color) !important;
+  /* font-weight: bold !important; */
+}
+
+#markdown-content {
+  color: var(--text-color);
+}
+
+blockquote {
+  border-left: 10px solid var(--primary-color); /* or the whole border */
+  margin: 1.5em 10px;
+  padding: 1em 10px .1em 10px;
 }
 
 @media (min-width: 425px) {
@@ -1390,6 +1405,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid transparent;
   cursor: not-allowed;
 }
+
 
 .generic-blockquote {
   padding: 30px 50px 30px 30px;
@@ -3647,7 +3663,7 @@ dl.accordion.time-line:before {
 }
 
 .post-content-area .single-post .meta-details {
-  text-align: right;
+  /* text-align: right; */
   margin-top: 35px;
 }
 
@@ -3817,7 +3833,7 @@ dl.accordion.time-line:before {
 }
 
 .widget-wrap .single-sidebar-widget {
-  margin: 30px 30px;
+  margin: 30px 15px;
   padding-bottom: 30px;
   border-bottom: 1px solid #eee;
 }

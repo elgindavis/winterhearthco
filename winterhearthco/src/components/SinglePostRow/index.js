@@ -36,7 +36,7 @@ export default (props) => (
         <div className="col-lg-9 col-md-9 ">
             <div className="feature-img">
                 <Link to={props.articleLink}>
-                    <img style={{borderRadius: 4}} className="img-fluid lazyload" src={props.imgURL} alt={props.imgAltText}/></Link>
+                    <img style={{borderRadius: 4}} className="img-fluid lazyload" src={props.imageUrl} alt={props.imgAltText}/></Link>
 			</div>
             <Link className="posts-title" to={props.articleLink}><h3>{props.articleTitle}</h3></Link>
                 <p className="excerpt">

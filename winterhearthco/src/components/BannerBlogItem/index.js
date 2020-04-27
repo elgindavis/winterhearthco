@@ -2,14 +2,13 @@ import React from 'react';
 import { Link } from "gatsby";
 
 export default (props) => {
-    console.log(props);
     return (
       <section
         className="banner-area relative blog-home-banner"
         id="home"
         style={{
           background: `url(${
-            window.innerWidth < 425 ? props.mobileImg : props.imgURL
+            window.innerWidth < 425 ? props.mobileImg : props.imageUrl
           }) bottom`,
         }}
       >

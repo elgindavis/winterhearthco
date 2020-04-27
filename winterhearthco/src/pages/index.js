@@ -3,8 +3,7 @@ import Layout from "../components/layout";
 import { Link } from "gatsby";
 import PostGridItem from "../components/PostGridItem";
 
-export default props => {
-  console.log(props)
+export default () => {
   return (
     <Layout
       keywords={
@@ -13,7 +12,7 @@ export default props => {
       image="https://winterhearth.co/img/aubbie-knight.png"
       imageAlt="Winter Hearth Studios"
       url="https://winterhearth.co/about"
-      title="Home| Winter Hearth Studios"
+      title="Home"
       description="Winter Hearth Studios is a quirky and charming creative studio that designs content to make your life better. We cover a range of topics from mental health to emotional empowerment and beyond. We believe that if you can change the heart, you can change the world. Check out what we've got just for you!"
     >
       <section
@@ -33,7 +32,7 @@ export default props => {
               <p>
                 We're Winter Hearth Studios, and we're just getting fired up.
               </p>
-              <Link to="blog/" className="primary-btn text-uppercase">
+              <Link to="/blog/" className="primary-btn text-uppercase">
                 See Latest Posts
               </Link>
             </div>
@@ -56,12 +55,12 @@ export default props => {
             {/* <!-- The images need to be 3:2 ratio --> */}
             <PostGridItem
               className="col-lg-4 col-md-4"
-              authorImgURL="../img/profile-200p.jpg"
+              authorimageUrl="/img/profile-200p.jpg"
               author="Elgin Davis"
               date="5th Apr, 2020"
               articleTitle="Pandemics and the Quest for Good News"
-              imgUrl="img/blog/good-news-home.jpg"
-              articleLink="blog/pandemics-and-good-news"
+              imageUrl="img/blog/good-news-home.jpg"
+              articleLink="/blog/pandemics-and-good-news"
               imgAltText="Good News Newspaper"
               excerpt="In this world there will be troubles... And good news makes those troubles seem smaller, right?"
             >
@@ -72,76 +71,76 @@ export default props => {
             </PostGridItem>
             <PostGridItem
               className="col-lg-4 col-md-4"
-              authorImgURL="../img/profile-200p.jpg"
+              authorimageUrl="/img/profile-200p.jpg"
               author="Elgin Davis"
               date="30th Mar, 2020"
               articleTitle="Why “Being Happy” Isn't a Real Goal"
-              imgUrl="../img/blog/happy-sign-home.jpg"
-              articleLink="blog/why-being-happy-isnt-a-real-goal"
+              imageUrl="/img/blog/happy-sign-home.jpg"
+              articleLink="/blog/why-being-happy-isnt-a-real-goal"
               imgAltText="Happy neon sign"
               excerpt="'Life, Liberty, and the pursuit of Happiness'... But why?"
             >
               <img
-                src="../img/blog/happy-sign-home.jpg"
+                src="/img/blog/happy-sign-home.jpg"
                 alt="Happy neon sign"
               />
             </PostGridItem>
             <PostGridItem
               className="col-lg-4 col-md-4"
-              authorImgURL="../img/profile-200p.jpg"
+              authorimageUrl="/img/profile-200p.jpg"
               author="Elgin Davis"
               date="11th Feb, 2020"
               articleTitle="Why You’ll Never Get What You Deserve"
-              imgUrl="../img/blog/sunset-path.jpg"
-              articleLink="blog/why-you-will-never-get-what-you-deserve"
+              imageUrl="/img/blog/sunset-path.jpg"
+              articleLink="/blog/why-you-will-never-get-what-you-deserve"
               imgAltText="Man walking alone on a path at sunset"
               excerpt="Though life is full of various opportunities and possibilities, you'll never get the ones you really deserve. Here's why:"
             >
               <img
-                src="../img/blog/sunset-path.jpg"
+                src="/img/blog/sunset-path.jpg"
                 alt="Man walking alone on a path at sunset"
               />
             </PostGridItem>
             <PostGridItem
               className="col-lg-4 col-md-4"
-              authorImgURL="../img/profile-200p.jpg"
+              authorimageUrl="/img/profile-200p.jpg"
               author="Elgin Davis"
               date="7th Feb, 2020"
               articleTitle="4 Powerful Lessons Your Dog Can <br> Teach You About EQ"
-              imgUrl="../img/blog/dog-love.jpg"
-              articleLink="blog/4-powerful-lessons-dogs-teach-about-eq"
+              imageUrl="/img/blog/dog-love.jpg"
+              articleLink="/blog/4-powerful-lessons-dogs-teach-about-eq"
               imgAltText="Wow, look at that happy pup"
               excerpt="Dogs melt our hearts every day, but it turns out there's a lot they can teach us, too."
             >
               <img
-                src="../img/blog/dog-love.jpg"
+                src="/img/blog/dog-love.jpg"
                 alt="Wow, look at that happy pup"
               />
             </PostGridItem>
             <PostGridItem
               className="col-lg-4 col-md-4"
-              authorImgURL="../img/profile-200p.jpg"
+              authorimageUrl="/img/profile-200p.jpg"
               author="Elgin Davis"
               date=""
               articleTitle="The Gift of Gratitude"
-              imgUrl="../img/freshh-connection-M4lve6jR26E-unsplash.jpg"
-              articleLink="newsletters/volume-1/gift-of-gratitude"
+              imageUrl="/img/freshh-connection-M4lve6jR26E-unsplash.jpg"
+              articleLink="/newsletters/volume-1/gift-of-gratitude"
               imgAltText="The Gift of Gratitude"
               excerpt=""
             >
               <img
-                src="../img/freshh-connection-M4lve6jR26E-unsplash.jpg"
+                src="/img/freshh-connection-M4lve6jR26E-unsplash.jpg"
                 alt="The Gift of Gratitude"
               />
             </PostGridItem>
             <PostGridItem
               className="col-lg-4 col-md-4"
-              authorImgURL="../img/profile-200p.jpg"
+              authorimageUrl="/img/profile-200p.jpg"
               author="Elgin Davis"
               date=""
               articleTitle="OCD"
-              imgUrl="https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/03700ba8-06bc-47ae-9448-0fb81ee6518d.jpg"
-              articleLink="newsletters/volume-2/dmh-ocd"
+              imageUrl="https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/03700ba8-06bc-47ae-9448-0fb81ee6518d.jpg"
+              articleLink="/newsletters/volume-2/dmh-ocd"
               imgAltText="OCD"
               excerpt="Preferring to keep things neat and tidy doesn't mean you have OCD. Here's the scoop on OCD— what is it, and what do you need to know about it?"
             >
@@ -159,14 +158,14 @@ export default props => {
           <span>
             <Link
               style={{ margin: "12px 16px" }}
-              to="blog/"
+              to="/blog/"
               className="primary-btn text-uppercase"
             >
               See All Blogs
             </Link>
             <Link
               style={{ margin: "12px 16px" }}
-              to="newsletters/"
+              to="/newsletters/"
               className="primary-btn text-uppercase"
             >
               See Newsletters
@@ -189,15 +188,15 @@ export default props => {
                 around mental and emotional health. We fully believe that if you
                 can change the heart, you can change the world.
               </p>
-              <Link to="about" className="primary-btn text-uppercase">
+              <Link to="/about" className="primary-btn text-uppercase">
                 Read Our Story
               </Link>
             </div>
             <div className="col-lg-8 col-md-8 home-about-left">
-              <Link to="../img/aubbie-knight.jpg">
+              <Link to="/img/aubbie-knight.jpg">
                 <img
-                  className="../img-fluid"
-                  src="../img/aubbie-knight.jpg"
+                  className="/img-fluid"
+                  src="/img/aubbie-knight.jpg"
                   alt="Aubbie the Brave Knight"
                 />
               </Link>
@@ -225,15 +224,15 @@ export default props => {
                 tools they need to become more mentally and emotionally
                 powerful.
               </p>
-              <Link to="blog/" className="primary-btn text-uppercase">
+              <Link to="/blog/" className="primary-btn text-uppercase">
                 See latest posts
               </Link>
             </div>
             <div className="col-lg-7 col-md-7 home-about-left">
-              <Link to="../img/aubbie-writing.png">
+              <Link to="/img/aubbie-writing.png">
                 <img
-                  className="../img-fluid"
-                  src="../img/aubbie-writing.png"
+                  className="/img-fluid"
+                  src="/img/aubbie-writing.png"
                   alt="Aubbie writing a story at a desk"
                 />
               </Link>

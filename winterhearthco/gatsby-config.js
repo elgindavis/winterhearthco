@@ -14,6 +14,7 @@ module.exports = {
   plugins: [
     `gatsby-transformer-remark`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,6 +35,6 @@ module.exports = {
         display: `standalone`,
         icon: `src/img/fav.png`, // This path is relative to the root of the site.
       },
-    }
+    },
   ],
 }

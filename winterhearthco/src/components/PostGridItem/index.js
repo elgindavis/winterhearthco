@@ -11,7 +11,7 @@ const PostGridItem = (props) => {
                         {/* <img
                             style={{ "borderRadius": "4px" }}
                             className="f-img img-fluid mx-auto "
-                            src={props.imgURL}
+                            src={props.imageUrl}
                             alt={props.imgAltText} /> */}
                             {props.children}
                     </Link>
@@ -21,7 +21,7 @@ const PostGridItem = (props) => {
                         <img
                             style={{ "height": "30px", "borderRadius": "20px" }}
                             className="img-fluid "
-                            src={props.authorImgURL}
+                            src={props.authorimageUrl}
                             alt={props.author} />
                         <Link target="_blank" rel="noopener noreferrer" to={props.articleLink}>
                             <span>by {props.author}</span>
