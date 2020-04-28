@@ -6,8 +6,14 @@ import PostGridItem from "../components/PostGridItem";
 import SinglePostRow from "../components/SinglePostRow";
 import BannerBlogItem from "../components/BannerBlogItem";
 import PopularPostColumn from "../components/PopularPostColumn";
+import { transformPostQueryData } from "../utils";
 
-export default (props) => {
+export default ({ data: { allMarkdownRemark: { edges } }}) => {
+    const allPosts = transformPostQueryData(edges);
+    const featuredPostList = allPosts.filter(post => post.featured === true);
+    const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === "2");
+    const newsletterVolOneList = allPosts.filter(post => post.newsletterVolume === "1");
+
     return (
         <Layout
             keywords={"blog, emotional intelligence, mental health, emotional health"}
@@ -30,7 +36,24 @@ export default (props) => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 posts-list">
-                            <SinglePostRow
+                            {
+                                featuredPostList.map((edition) => {
+                                    return (
+                                        <SinglePostRow
+                                            key={edition.id}
+                                            author={edition.author.name}
+                                            date={edition.date}
+                                            tags={edition.tags}
+                                            articleTitle={edition.title}
+                                            imageUrl={edition.imageUrl}
+                                            articleLink={edition.articleLink}
+                                            imgAltText={edition.imgAltText}
+                                            excerpt={edition.excerpt}
+                                        ></SinglePostRow>
+                                    );
+                                })
+                            }
+                            {/* <SinglePostRow
                                 author="Elgin Davis"
                                 date="5 Apr, 2020"
                                 tags={["Emotions, Pandemics, Good News, Lifestyle"]}
@@ -80,7 +103,7 @@ export default (props) => {
                                 articleTitle="4 Powerful Lessons Your Dog Can Teach You About EQ"
                                 excerpt="Dogs melt our hearts every day, but it turns out there's a lot they can teach us, too."
                             >
-                            </SinglePostRow>
+                            </SinglePostRow> */}
                             
                         </div>
 
@@ -126,6 +149,21 @@ export default (props) => {
                         </div>
                     </div>
                     <div className="row">
+                        {
+                            newsletterVolTwoList.map((edition) => {
+                                return (
+                                    <PostGridItem
+                                        author={edition.author}
+                                        date={edition.date}
+                                        articleTitle={edition.articleTitle}
+                                        imageUrl={edition.imageUrl}
+                                        articleLink={edition.articleLink}
+                                        imgAltText={edition.imgAltText}
+                                        excerpt={edition.excerpt}
+                                    ></PostGridItem>
+                                );
+                            })
+                        }
                         <PostGridItem
                             authorimageUrl="/img/profile-200p.jpg"
                             author="Elgin Davis"
@@ -287,7 +325,7 @@ export default (props) => {
  *  {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}> </div>
 */
-// This gets the data property onto our props parametter, and here we query for all markdown files
+// This gets the data property onto our props parameter, and here we query for all markdown files
 export const query = graphql`
          query {
            allMarkdownRemark(
@@ -297,9 +335,16 @@ export const query = graphql`
              edges {
                node {
                  id
+                 excerpt
+                 fields {
+                   slug
+                 }
                  frontmatter {
                    date(formatString: "MMM DD, YY")
                    title
+                   featured
+                   newsletterVolume
+                   contentType
                    imageUrl
                    imageAlt
                    tags
@@ -312,7 +357,6 @@ export const query = graphql`
                      imageUrl
                    }
                  }
-                 excerpt
                }
              }
            }

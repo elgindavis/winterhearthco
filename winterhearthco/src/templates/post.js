@@ -9,7 +9,7 @@ import PopularPostColumnWidget from "../components/PopularPostColumn"
 export default (props) => {
   const postHTML = props.data.markdownRemark.html;
   const postInfo = props.data.markdownRemark.frontmatter;
-  console.log(postInfo)
+  console.log(props)
   return (
     <Layout
       keywords={postInfo.keywords}

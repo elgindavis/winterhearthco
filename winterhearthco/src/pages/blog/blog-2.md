@@ -1,10 +1,10 @@
 ---
 title: "2 Sweet Pandas Eating Sweets"
 date: "2019-08-10"
+contentType: 'blog'
+featured: false
 ---
 
 Pandas are really sweet... still
 
 Here's a video of a panda eating sweets.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4n0xNbfJLR8" frameborder="0" allowfullscreen></iframe>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { setPostTags } from '../../utils';
 
 const BlogPostMetadata = (props) => {
     return (
@@ -23,13 +24,10 @@ const BlogPostMetadata = (props) => {
           <p style={{ padding: "0 0 4px 0" }}>
             Tags:&nbsp;
             <span className="tags">
-              {props.tags.split(", ").map((tag, index) => {
-                return index !== props.tags.split(", ").length - 1 ? (
-                  <span key={index}>{tag},&nbsp;</span>
-                ) : (
-                  <span key={index}>{tag}</span>
-                )
-              })}
+              {
+                setPostTags(props.tags)
+                
+              }
             </span>
           </p>
         </div>
