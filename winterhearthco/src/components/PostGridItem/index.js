@@ -21,7 +21,7 @@ const PostGridItem = (props) => {
                         <img
                             style={{ "height": "30px", "borderRadius": "20px" }}
                             className="img-fluid "
-                            src={props.authorimageUrl}
+                            src={props.authorimageUrl ? props.authorimageUrl : '/img/profile-200p.jpg'}
                             alt={props.author} />
                         <Link target="_blank" rel="noopener noreferrer" to={props.articleLink}>
                             <span>by {props.author}</span>

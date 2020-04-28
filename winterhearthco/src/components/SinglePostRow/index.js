@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "gatsby";
+import { setPostTags } from '../../utils';
 
-export default (props) => (
+export default (props) => {
+    console.log(props);
+    return(
     <div className="single-post row">
         <div className="col-lg-3  col-md-3 meta-details">
             <span>Tags: </span>
             <ul className="tags">
                 {
-                    props.tags.map(tag => {
-                        return <li key={tag}>{tag}</li>
-                    })
+                    setPostTags(props.tags)
                 }
             </ul>
             <div className="user-details row">
@@ -45,4 +46,4 @@ export default (props) => (
             <Link to={props.articleLink} className="primary-btn">Read Article</Link>
             </div>
         </div>
-);
+    )};
