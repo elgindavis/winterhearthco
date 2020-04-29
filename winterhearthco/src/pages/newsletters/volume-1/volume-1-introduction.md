@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Introduction to Winter Hearth"
+date:  "2019-05-10"
+imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/5f1b1e09-225e-4503-bd60-c01cf9fbe24c.jpg"
+imageAlt: "Welcome to Winter Hearth Studios!"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Winter Hearth, Introduction"
+keywords: "Winter Hearth"
+description: "Welcome to Winter Hearth Studios!"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

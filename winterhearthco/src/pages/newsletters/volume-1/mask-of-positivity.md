@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "The Mask of Positivity"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+imageUrl: "/img/amanda-jones-e3jKBZoRnTs-unsplash.jpg"
+imageAlt: "The Mask of Positivity"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "positivity"
+keywords: "positivity"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

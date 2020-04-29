@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "The Curiosity-Driven Life"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
+imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/0164d703-676a-4bad-97d4-458942a01a35.jpeg"
 imageAlt: "Placeholder alt text"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "curiosity"
+keywords: "curiosity"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

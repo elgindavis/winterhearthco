@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "The Gift of Gratitude"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
+imageUrl: "/img/freshh-connection-M4lve6jR26E-unsplash.jpg"
 imageAlt: "Placeholder alt text"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Gratitude, Meaning"
+keywords: "Gratitude, Meaning"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

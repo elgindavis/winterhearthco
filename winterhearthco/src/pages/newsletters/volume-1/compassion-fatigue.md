@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "Overcoming Compassion Fatigue"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/29b777ca-e504-4e39-a43c-919e0fbcbd87.jpg"
+imageAlt: "TED Talk Video thumbnail"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Compassion Fatigue"
+keywords: "Compassion Fatigue"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

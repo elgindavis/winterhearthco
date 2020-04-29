@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "De-cluttering Your Space"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+imageUrl: "/img/todd-kent-onnJOfF-okU-unsplash.jpg"
+imageAlt: "A junky garage"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Mental Health, Holistic Health, Total Health"
+keywords: "Mental Health, Holistic Health, Total Health"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

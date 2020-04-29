@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "Rest and Recovery"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/e412343b-af3a-48fc-9b12-ad6e64dc8da2.jpg"
+imageAlt: "Recovering from stress"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Rest, Recovery, Stress, Anxiety"
+keywords: "Rest, Recovery, Stress, Anxiety"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",
