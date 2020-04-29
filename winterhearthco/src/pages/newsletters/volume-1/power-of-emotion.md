@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "The Power of Emotion"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
+imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/77d52e17-6790-4f6c-9689-e6e737b808fa.jpg"
 imageAlt: "Placeholder alt text"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Emotions, EQ"
+keywords: "Emotions, EQ"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

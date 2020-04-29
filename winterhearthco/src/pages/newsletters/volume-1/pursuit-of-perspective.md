@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "The Pursuit of Perspective"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/7bc876d1-45c7-476f-94e5-7dd5aabe6bfe.jpg"
+imageAlt: "Perspective"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Perspective"
+keywords: "Perspective"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

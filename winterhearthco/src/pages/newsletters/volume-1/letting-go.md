@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "Letting Go"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/2b7d3f04-dbb5-4fbf-9f24-2ddb28a782d5.jpg"
+imageAlt: "The Minimalists Poscast"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Emotional Baggage, Minimalism"
+keywords: "Emotional Baggage, Minimalism"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

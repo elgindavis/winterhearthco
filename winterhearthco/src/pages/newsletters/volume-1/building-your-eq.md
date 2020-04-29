@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "Building Your EQ"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/70851790-9a7c-4f5b-834d-7207335fe488.gif"
+imageAlt: "Emotional Intelligence is fun!"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Emotional Intelligence, EQ"
+keywords: "Emotional Intelligence, EQ"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "Attention Capital"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+imageUrl: "/img/gilles-lambert-pb_lF8VWaPU-unsplash.jpg"
+imageAlt: "Attention"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Attention, Distraction"
+keywords: "Attention, Distraction"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

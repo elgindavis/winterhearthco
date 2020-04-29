@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
+title: "What's in a Word?"
 date:  "2019-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+imageUrl: "/img/kate-kalvach-YUyueCkd7Tk-unsplash.jpg"
+imageAlt: "What's in a Word?"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Meaning, Lifestyle"
+keywords: "Meaning, Lifestyle"
+description: ""
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",
