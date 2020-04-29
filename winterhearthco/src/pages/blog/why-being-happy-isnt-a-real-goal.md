@@ -102,4 +102,3 @@ An even better question, in my opinion, would be:
 
 I’ll give you my own answers to these questions and more in an upcoming article.
                         
-

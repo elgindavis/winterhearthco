@@ -2,9 +2,13 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import PostGridItem from '../components/PostGridItem';
-export default () => {
-    const newsletterVolOneList = [];
-    const newsletterVolTwoList = [];
+import { transformPostQueryData } from "../utils";
+
+export default ({ data: { allMarkdownRemark: { edges } } }) => {
+    const allPosts = transformPostQueryData(edges);
+
+    const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === "2");
+    const newsletterVolOneList = allPosts.filter(post => post.newsletterVolume === "1");
     return(
         <Layout
             keywords="emotional intelligence, mental health"
@@ -36,129 +40,21 @@ export default () => {
                 </div>
                 <div className="row">
                     {
-                            newsletterVolTwoList.map((edition) => {
+                        newsletterVolTwoList.map((edition) => {
                             return (
                                 <PostGridItem
-                                    post={edition}
+                                    key={edition.id}
                                     author={edition.author}
                                     date={edition.date}
-                                    articleTitle={edition.articleTitle}
+                                    articleTitle={edition.title}
                                     imageUrl={edition.imageUrl}
                                     articleLink={edition.articleLink}
                                     imgAltText={edition.imgAltText}
-                                    excerpt={edition.excerpt}
+                                    excerpt={edition.description}
                                 ></PostGridItem>
                             );
                         })
                     }
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="Autism"
-                        imageUrl="/img/newsletters/autism-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-autism"
-                        imgAltText="Autism"
-                        excerpt="Take a moment to learn more about our friends with autism and how you can be a better supporter and ally in the community."
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="Depression"
-                        imageUrl="/img/newsletters/depression-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-depression"
-                        imgAltText="Depression"
-                        excerpt="Depression is more complex than most people take it to be. Find out more about Depression, how it works, and how to help those who struggle with it."
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="Post-traumatic Stress Disorder"
-                        imageUrl="/img/newsletters/ptsd-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-ptsd"
-                        imgAltText="Post-traumatic Stress Disorder"
-                        excerpt="So many people all over the world are affected by PTSD, but when was the last time we paused to reflect on what PTSD really encompasses?"
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="Bipolar Disorder"
-                        imageUrl="/img/newsletters/bipolar-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-bipolar"
-                        imgAltText="Bipolar Disorder"
-                        excerpt="Though many choose to believe that Bipolar Disorder is as simple as being 'happy' one day and 'sad' the next, this is not actually the case. What is Bipolar Disorder, and why is it so misunderstood?"
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="Anorexia Nervosa"
-                        imageUrl="/img/newsletters/anorexia-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-anorexia"
-                        imgAltText="Anorexia Nervosa"
-                        excerpt="What is it about Anorexia that makes it so powerful, and how does it work?"
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="Body Dysmorphic Disorder"
-                        imageUrl="/img/newsletters/bdd-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-bdd"
-                        imgAltText="Body Dysmorphic Disorder"
-                        excerpt="Many of us have something that we wish we could change about our appearances and other similar insecurities, but those qualms don't always necessarily disrupt our daily lives. This is the case of BDD:"
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="Schizophrenia"
-                        imageUrl="/img/newsletters/schizophrenia-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-schizophrenia"
-                        imgAltText="Schizophrenia"
-                        excerpt="According to research, Schizophrenia is the most chronic and disabling of the major mental illnesses. What exactly is Schizophrenia and how does it work? Let's find out:"
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="Sleep Disorder"
-                        imageUrl="/img/newsletters/sleep-disorder-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-sleep-disorder"
-                        imgAltText="Sleep Disorder"
-                        excerpt="Falling asleep at 3am for the fourth time this week? Do you struggle to feel rested after a night's sleep? It may very well be a Sleep Disorder:"
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="Social Anxiety"
-                        imageUrl="/img/newsletters/social-anxiety-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-social-anxiety"
-                        imgAltText="Social Anxiety"
-                        excerpt="What's the difference between social anxiety, regular anxiety, and anxiety disorders? Check out this edition to learn more:"
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="ADHD"
-                        imageUrl="/img/newsletters/adhd-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-adhd"
-                        imgAltText="ADHD"
-                        excerpt="People use and misuse the term &quot;ADHD&quot; all the time. What is it, and what do you need to know about it?"
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="OCD"
-                        imageUrl="/img/newsletters/ocd-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-ocd"
-                        imgAltText="OCD"
-                        excerpt="Preferring to keep things neat and tidy doesn't mean you have OCD. Here's the scoop on OCD— what is it, and what do you need to know about it?"
-                    ></PostGridItem>
-                    <PostGridItem 
-                        author="Elgin Davis"
-                        date=""
-                        articleTitle="Anxiety"
-                        imageUrl="/img/newsletters/anxiety-400p.jpg"
-                        articleLink="/newsletters/volume-2/dmh-gad"
-                        imgAltText="Anxiety"
-                        excerpt="Do we really know what anxiety is? What about an anxiety disorder? What's the difference? Find out here:"
-                    ></PostGridItem>
                 </div>
             </div>	
         </section>
@@ -176,14 +72,14 @@ export default () => {
                 newsletterVolOneList.map((edition) => {
                     return (
                         <PostGridItem
-                            post={edition}
+                            key={edition.id}
                             author={edition.author}
                             date={edition.date}
-                            articleTitle={edition.articleTitle}
+                            articleTitle={edition.title}
                             imageUrl={edition.imageUrl}
                             articleLink={edition.articleLink}
                             imgAltText={edition.imgAltText}
-                            excerpt={edition.excerpt}
+                            excerpt={edition.description}
                         ></PostGridItem>
                     );
                 })
@@ -336,20 +232,63 @@ export default () => {
                         </div>
                     </div>
                     <div className="row">
-                        <PostGridItem 
-                            author="Elgin Davis"
-                            date="7th Feb, 2020"
-                            articleTitle="4 Powerful Lessons Your Dog Can Teach You About EQ"
-                            imageUrl="/img/blog/dog-love.jpg"
-                            articleLink="4-powerful-lessons-dogs-teach-about-eq"
-                            imgAltText="Wow, look at that happy pup"
-                            excerpt="Dogs melt our hearts every day, but it turns out there's a lot they can teach us, too."
-                        >
-                        </PostGridItem>
-
+                        {
+                            newsletterVolOneList.map((edition) => {
+                                return (
+                                    <PostGridItem
+                                        key={edition.id}
+                                        author={edition.author}
+                                        date={edition.date}
+                                        articleTitle={edition.title}
+                                        imageUrl={edition.imageUrl}
+                                        articleLink={edition.articleLink}
+                                        imgAltText={edition.imgAltText}
+                                        excerpt={edition.description}
+                                    ></PostGridItem>
+                                );
+                            })
+                        }
                     </div>
                 </div>
             </section> 
         </Layout>
     );
 };
+
+// This gets the { data } property onto our props parameter, and here we query for all markdown files
+export const query = graphql`
+         query {
+           allMarkdownRemark(
+             sort: { fields: [frontmatter___date], order: DESC }
+           ) {
+             totalCount
+             edges {
+               node {
+                 id
+                 excerpt
+                 fields {
+                   slug
+                 }
+                 frontmatter {
+                   date(formatString: "MMM DD, YYYY")
+                   title
+                   featured
+                   newsletterVolume
+                   contentType
+                   imageUrl
+                   imageAlt
+                   tags
+                   keywords
+                   description
+                   author {
+                     name
+                     role
+                     summary
+                     imageUrl
+                   }
+                 }
+               }
+             }
+           }
+         }
+       `
