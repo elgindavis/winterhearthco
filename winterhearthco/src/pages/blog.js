@@ -50,7 +50,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                                             imageUrl={edition.imageUrl}
                                             articleLink={edition.articleLink}
                                             imgAltText={edition.imgAltText}
-                                            excerpt={edition.excerpt}
+                                            excerpt={edition.description}
                                         ></SinglePostRow>
                                     );
                                 })
@@ -343,7 +343,7 @@ export const query = graphql`
                    slug
                  }
                  frontmatter {
-                   date(formatString: "MMM DD, YY")
+                   date(formatString: "MMM DD, YYYY")
                    title
                    featured
                    newsletterVolume
