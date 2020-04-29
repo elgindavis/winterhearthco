@@ -4,7 +4,7 @@ date: "2017-08-10"
 imageUrl: "/img/500x400.png"
 imageAlt: "Placeholder alt text"
 contentType: 'newsletter'
-newsletterVolume: '2'
+newsletterVolume: '1'
 featured: false
 tags: "tag 1, tag 2"
 keywords: "keyword 1, keyword 2"

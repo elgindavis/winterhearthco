@@ -1,8 +1,5 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const allNewsletters = require(`./data/newsletters/allNewsletters.json`)
-const volOneNewsletters = require(`./data/newsletters/volumeOne.json`)
-const volTwoNewsletters = require(`./data/newsletters/volumeTwo.json`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions

@@ -21,10 +21,10 @@ const PostGridItem = (props) => {
                         <img
                             style={{ "height": "30px", "borderRadius": "20px" }}
                             className="img-fluid "
-                            src={props.authorimageUrl ? props.authorimageUrl : '/img/profile-200p.jpg'}
-                            alt={props.author} />
+                            src={props.author.imageUrl ? props.author.imageUrl : '/img/profile-200p.jpg'}
+                            alt={props.author.name} />
                         <Link target="_blank" rel="noopener noreferrer" to={props.articleLink}>
-                            <span>by {props.author}</span>
+                            <span>by {props.author.name}</span>
                         </Link>
                     </div>
                     <div className="meta">

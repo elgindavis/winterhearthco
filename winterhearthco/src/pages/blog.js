@@ -13,7 +13,9 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const featuredPostList = allPosts.filter(post => post.featured === true);
     const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === "2");
     const newsletterVolOneList = allPosts.filter(post => post.newsletterVolume === "1");
-
+    console.log(featuredPostList)
+    console.log(newsletterVolTwoList)
+    console.log(allPosts)
     return (
         <Layout
             keywords={"blog, emotional intelligence, mental health, emotional health"}
@@ -153,9 +155,10 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                             newsletterVolTwoList.map((edition) => {
                                 return (
                                     <PostGridItem
+                                        key={edition.id}
                                         author={edition.author}
                                         date={edition.date}
-                                        articleTitle={edition.articleTitle}
+                                        articleTitle={edition.title}
                                         imageUrl={edition.imageUrl}
                                         articleLink={edition.articleLink}
                                         imgAltText={edition.imgAltText}

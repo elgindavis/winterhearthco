@@ -1,10 +1,9 @@
 ---
-title: "Test blog"
+title: "Why You Will Never Get What You Deserve"
 date: "2017-08-10"
 imageUrl: "/img/500x400.png"
 imageAlt: "Placeholder alt text"
-contentType: 'newsletter'
-newsletterVolume: '2'
+contentType: 'blog'
 featured: false
 tags: "tag 1, tag 2"
 keywords: "keyword 1, keyword 2"

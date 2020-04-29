@@ -1,10 +1,9 @@
 ---
-title: "Test blog"
+title: "4 Powerful Lessons Dogs Teach Us About EQ"
 date: "2017-08-10"
 imageUrl: "/img/500x400.png"
 imageAlt: "Placeholder alt text"
-contentType: 'newsletter'
-newsletterVolume: '2'
+contentType: 'blog'
 featured: false
 tags: "tag 1, tag 2"
 keywords: "keyword 1, keyword 2"
