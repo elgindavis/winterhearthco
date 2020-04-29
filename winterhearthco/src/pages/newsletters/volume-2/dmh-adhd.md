@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "ADHD"
+date:  "2019-06-01"
+imageUrl: "/img/newsletters/adhd-400p.jpg"
+imageAlt: "ADHD"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "ADHD"
+keywords: "ADHD"
+description: "People use and misuse the term ADHD all the time. What is it, and what do you need to know about it?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Bipolar Disorder"
+date:  "2019-08-10"
+imageUrl: "/img/newsletters/bipolar-400p.jpg"
+imageAlt: "Bipolar Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Bipolar Disorder"
+keywords: "Bipolar Disorder"
+description: "Though many choose to believe that Bipolar Disorder is as simple as being 'happy' one day and 'sad' the next, this is not actually the case. What is Bipolar Disorder, and why is it so misunderstood?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

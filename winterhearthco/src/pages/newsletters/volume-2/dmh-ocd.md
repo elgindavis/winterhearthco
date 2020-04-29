@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "OCD"
+date:  "2019-08-10"
+imageUrl: "/img/newsletters/ocd-400p.jpg"
+imageAlt: "OCD"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "OCD"
+keywords: "OCD"
+description: "Preferring to keep things neat and tidy doesn't mean you have OCD. What is it, and what do you need to know about it?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Depression"
+date:  "2019-08-10"
+imageUrl: "/img/newsletters/depression-400p.jpg"
+imageAlt: "Depression"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Depression"
+keywords: "Depression"
+description: "Depression is more complex than most people take it to be. Find out more about Depression, how it works, and how to help those who struggle with it."
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

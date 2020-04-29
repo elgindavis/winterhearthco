@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Sleep Disorder"
+date:  "2019-08-10"
+imageUrl: "/img/newsletters/sleep-disorder-400p.jpg"
+imageAlt: "Sleep Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Sleep Disorder"
+keywords: "Sleep Disorder"
+description: "Falling asleep at 3am for the fourth time this week? Do you struggle to feel rested after a night's sleep? It may very well be a Sleep Disorder:"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

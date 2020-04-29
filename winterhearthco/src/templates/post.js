@@ -9,7 +9,6 @@ import PopularPostColumnWidget from "../components/PopularPostColumn"
 export default (props) => {
   const postHTML = props.data.markdownRemark.html;
   const postInfo = props.data.markdownRemark.frontmatter;
-  console.log(props)
   return (
     <Layout
       keywords={postInfo.keywords}
@@ -31,11 +30,12 @@ export default (props) => {
                     <img
                       className="img-fluid lazyload"
                       style={{ borderRadius: 4, marginTop: "3%" }}
-                      src={postInfo.imageUrl}
+                      src={postInfo.imageUrl.replace(/-400p/i, "")}
                       alt={postInfo.imageAlt}
                     />
                     {
-                        postInfo.unsplashBadgeInfo &&
+                      postInfo.unsplashBadgeInfo &&
+                      postInfo.unsplashBadgeInfo.artistName !== "" &&
                         <UnsplashBadge
                             artistName={postInfo.unsplashBadgeInfo.artistName}
                             artistURL={postInfo.unsplashBadgeInfo.artistURL}

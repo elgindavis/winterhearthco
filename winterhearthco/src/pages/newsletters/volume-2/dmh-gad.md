@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Anxiety"
+date:  "2019-08-10"
+imageUrl: "/img/newsletters/anxiety-400p.jpg"
+imageAlt: "Anxiety"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Anxiety"
+keywords: "Anxiety"
+description: "Do we really know what anxiety is? What about an anxiety disorder? What's the difference? Find out here:"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

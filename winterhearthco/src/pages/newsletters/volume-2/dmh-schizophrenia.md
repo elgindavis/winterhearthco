@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Schizophrenia"
+date:  "2019-08-10"
+imageUrl: "/img/newsletters/schizophrenia-400p.jpg"
+imageAlt: "Schizophrenia"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Schizophrenia"
+keywords: "Schizophrenia"
+description: "According to research, Schizophrenia is the most chronic and disabling of the major mental illnesses. What exactly is Schizophrenia and how does it work? Let's find out:"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

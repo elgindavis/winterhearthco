@@ -8,12 +8,11 @@ const PostGridItem = (props) => {
             <div className="single-recent-blog">
                 <div className="thumb">
                     <Link target="_blank" rel="noopener noreferrer" to={props.articleLink}>
-                        {/* <img
-                            style={{ "borderRadius": "4px" }}
+                        <img
+                            style={{ "borderRadius": "8px" }}
                             className="f-img img-fluid mx-auto "
                             src={props.imageUrl}
-                            alt={props.imgAltText} /> */}
-                            {props.children}
+                            alt={props.imgAltText} />
                     </Link>
                 </div>
                 <div className="bottom d-flex justify-content-between align-items-center flex-wrap">

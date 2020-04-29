@@ -1,6 +1,6 @@
 ---
 title: "Test blog"
-date: "2017-08-10"
+date:  "2019-08-10"
 imageUrl: "/img/500x400.png"
 imageAlt: "Placeholder alt text"
 contentType: 'newsletter'

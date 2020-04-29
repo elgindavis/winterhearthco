@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Anorexia Nervosa"
+date:  "2019-08-10"
+imageUrl: "/img/newsletters/anorexia-400p.jpg"
+imageAlt: "Anorexia Nervosa"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Anorexia Nervosa"
+keywords: "Anorexia Nervosa"
+description: "What is it about Anorexia that makes it so powerful, and how does it work?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

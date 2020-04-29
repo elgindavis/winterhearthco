@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Autism"
+date: "2019-06-01"
+imageUrl: "/img/newsletters/autism-400p.jpg"
+imageAlt: "Autism"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "mental health, autism"
+keywords: "mental health, autism"
+description: "Take a moment to learn more about our friends with autism and how you can be a better supporter and ally in the community."
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Post-traumatic Stress Disorder"
+date:  "2019-08-10"
+imageUrl: "/img/newsletters/ptsd-400p.jpg"
+imageAlt: "Post-traumatic Stress Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Post-traumatic Stress Disorder"
+keywords: "Post-traumatic Stress Disorder, PTSD"
+description: "So many people all over the world are affected by PTSD, but when was the last time we paused to reflect on what PTSD really encompasses?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

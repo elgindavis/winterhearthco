@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Social Anxiety"
+date:  "2019-08-10"
+imageUrl: "/img/newsletters/social-anxiety-400p.jpg"
+imageAlt: "Social Anxiety"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Social Anxiety"
+keywords: "Social Anxiety"
+description: "What's the difference between social anxiety, regular anxiety, and anxiety disorders? Check out this edition to learn more:"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

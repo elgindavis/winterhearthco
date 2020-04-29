@@ -1,14 +1,14 @@
 ---
-title: "Test blog"
-date: "2017-08-10"
-imageUrl: "/img/500x400.png"
-imageAlt: "Placeholder alt text"
+title: "Body Dysmorphic Disorder"
+date:  "2019-08-10"
+imageUrl: "/img/newsletters/bdd-400p.jpg"
+imageAlt: "Body Dysmorphic Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "tag 1, tag 2"
-keywords: "keyword 1, keyword 2"
-description: "Basic description"
+tags: "Body Dysmorphic Disorder"
+keywords: "Body Dysmorphic Disorder"
+description: "Many of us have something that we wish we could change about our appearances and other similar insecurities, but those qualms don't always necessarily disrupt our daily lives. This is the case of BDD:"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",
