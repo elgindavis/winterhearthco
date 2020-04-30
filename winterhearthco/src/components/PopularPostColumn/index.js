@@ -59,7 +59,7 @@ export default () => (
                                         <img 
                                             style={{borderRadius: 4, height: "80%"}} 
                                             className="img-fluid lazyload" 
-                                            src={`../${posts[postNumber]["imageUrl"]}`} 
+                                            src={posts[postNumber]["imageUrl"]} 
                                             alt={posts[postNumber]["imgAltText"]}/>
                                     </Link>
                                 </div>

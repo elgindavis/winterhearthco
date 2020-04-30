@@ -1,23 +1,37 @@
-import { React } from "react";
+import React from 'react'
 
-import Layout from "../components/layout";
+import Layout from '../components/layout'
 
 export default (props) => {
-    const postHTML = props.data.markdownRemark.html;
-    const postInfo = props.data.markdownRemark.frontmatter;
+    const gameHTML = props.data.markdownRemark.html;
+    const gameInfo = props.data.markdownRemark.frontmatter;
+
     return (
         <Layout
-            keywords={postInfo.keywords}
-            imageUrl={postInfo.imageUrl}
-            imageAlt={postInfo.imageAlt}
+            keywords={gameInfo.keywords}
+            imageUrl={gameInfo.imageUrl}
+            imageAlt={gameInfo.imageAlt}
             url={props.location.href}
-            title={postInfo.title}
-            description={postInfo.description}
+            title={gameInfo.title}
+            description={gameInfo.description}
         >
-            <title>{postInfo.title}</title>
-            <h1>Game template</h1>
+            <section className="pt-120">
+                <div className="container">
+                    <div className="row">
+                        <h1>{gameInfo.title}</h1>
+                        <div dangerouslySetInnerHTML={{ __html: gameHTML }} />
+                    </div>
+                </div>
+            </section>
+
         </Layout>
     )
 }
-// console.log(graphString);
-// export const query = graphString;
+
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      ...PostInfo
+    }
+  }
+`;

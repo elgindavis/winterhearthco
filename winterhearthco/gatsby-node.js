@@ -1,5 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const { graphql } = require(`gatsby`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -23,6 +24,9 @@ exports.createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+            frontmatter {
+              contentType
+            }
           }
         }
       }
@@ -32,8 +36,9 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     let template;
 
-    switch (node.frontmatter.type) {
-      case 'newsletter', 'blog':
+    switch (node.frontmatter.contentType) {
+      case 'newsletter':
+      case 'blog':
         template = './src/templates/post.js';
         break;
       case 'game':
@@ -50,9 +55,9 @@ exports.createPages = async ({ graphql, actions }) => {
       path: node.fields.slug,
       component: path.resolve(template),
       context: {
+        slug: node.fields.slug,
         // Data passed to context is available
         // in page queries as GraphQL variable on the props object called `pageContext`.
-        slug: node.fields.slug,
       },
     });
   });

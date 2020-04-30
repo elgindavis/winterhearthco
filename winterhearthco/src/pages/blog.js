@@ -10,9 +10,10 @@ import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const allPosts = transformPostQueryData(edges);
-    const featuredPostList = allPosts.filter(post => post.featured === true);
+    const featuredPostList = allPosts.filter(post => post.featured === true &&
+        post.contentType === 'blog'
+    );
     const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === "2");
-    // const newsletterVolOneList = allPosts.filter(post => post.newsletterVolume === "1");
  
     return (
         <Layout
@@ -119,58 +120,20 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
 // This gets the { data } property onto our props parameter, and here we query for all markdown files
 export const query = graphql`
     query {
-    allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-        totalCount
-        edges {
-        node {
-            id
-            excerpt
-            fields {
-            slug
-            }
-            frontmatter {
-            date(formatString: "MMM DD, YYYY")
-            title
-            featured
-            newsletterVolume
-            contentType
-            imageUrl
-            imageAlt
-            tags
-            keywords
-            description
-            author {
-                name
-                role
-                summary
-                imageUrl
-            }
+        allMarkdownRemark(
+            sort: { fields: [frontmatter___date], order: DESC }
+        ) {
+            totalCount
+            edges {
+                node {
+                    id
+                    excerpt
+                    fields {
+                        slug
+                    }
+                    ...PostInfo
+                }
             }
         }
-        }
-    }
     }
 `;
-
-// export const query = graphql`
-//     query {
-//         allMarkdownRemark(
-//             sort: { fields: [frontmatter___date], order: DESC }
-//         ) {
-//             totalCount
-//             edges {
-//                 node {
-//                     id
-//                     excerpt
-//                     fields {
-//                         slug
-//                     }
-//                     ...PostInfo
-                
-//                 }
-//             }
-//         }
-//     }
-// `;

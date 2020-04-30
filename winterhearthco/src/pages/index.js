@@ -6,7 +6,6 @@ import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
   const allPosts = transformPostQueryData(edges);
-  console.log(allPosts.reverse().slice(-9))
   const latestPostList = allPosts.slice(-9).reverse();
 
   return (
@@ -44,8 +43,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
           </div>
         </div>
       </section>
-      {/* <!-- End banner Area --> */}
-      {/* <!-- Start recent-blog Area --> */}
+
       <section
         style={{ paddingBottom: 0 }}
         className="recent-blog-area section-gap"
@@ -78,7 +76,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
           </div>
         </div>
       </section>
-      {/* <!-- end recent-blog Area --> */}
+
       <section className="pt-20 pb-80">
         <div className="text-center">
           <span>
@@ -99,7 +97,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
           </span>
         </div>
       </section>
-      {/* <!-- Start home-about Area --> */}
+
       <section className="home-about-area">
         <div className="container" style={{ paddingTop: "5%" }}>
           <div className="row align-items-center justify-content-between">
@@ -107,7 +105,6 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
               className="col-lg-4 col-md-4 home-about-right"
               style={{ paddingBottom: "4rem" }}
             >
-              {/* <!-- <h6>About Me</h6> --> */}
               <h1 className="text-uppercase">What fuels us</h1>
               <p>
                 We're a creative studio dedicated to sparking meaningful change
@@ -171,13 +168,13 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
 export const query = graphql`
     query {
     allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { fields: [frontmatter___date], order: ASC }
     ) {
         totalCount
         edges {
           node {
               id
-              excerpt(truncate: true)
+              excerpt
               fields {
               slug
               }
