@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const PostGridItem = (props) => {
-    // console.log(props);
     return (
         <div className="col-lg-4 col-md-4">
             <div className="single-recent-blog">

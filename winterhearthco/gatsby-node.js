@@ -30,9 +30,25 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    let template;
+
+    switch (node.frontmatter.type) {
+      case 'newsletter', 'blog':
+        template = './src/templates/post.js';
+        break;
+      case 'game':
+        template = './src/templates/game.js';
+        break;
+      case 'podcast':
+        template = './src/templates/podcast-episode.js';
+        break;
+      default:
+        break;
+    }
+
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/post.js`),
+      component: path.resolve(template),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variable on the props object called `pageContext`.

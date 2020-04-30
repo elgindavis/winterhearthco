@@ -47,7 +47,7 @@ const SEO = ((props) => {
           },
           {
               property: `og:image`, 
-              content: props.image
+              content: props.imageUrl
           },
           {
               property: `og:url`,

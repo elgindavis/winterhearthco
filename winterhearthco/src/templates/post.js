@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import UnsplashBadge from "../components/UnsplashBadge"
@@ -9,6 +8,7 @@ import PopularPostColumnWidget from "../components/PopularPostColumn"
 export default (props) => {
   const postHTML = props.data.markdownRemark.html;
   const postInfo = props.data.markdownRemark.frontmatter;
+
   return (
     <Layout
       keywords={postInfo.keywords}
@@ -95,28 +95,9 @@ export default (props) => {
 };
 
 export const query = graphql`
-         query($slug: String!) {
-           markdownRemark(fields: { slug: { eq: $slug } }) {
-             html
-             frontmatter {
-               date(formatString: "MMM DD, YYYY")
-               title
-               imageUrl
-               imageAlt
-               tags
-               keywords
-               description
-               unsplashBadgeInfo {
-                 artistName
-                 artistUrl
-               }
-               author {
-                 name
-                 role
-                 summary
-                 imageUrl
-               }
-             }
-           }
-         }
-       `
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      ...PostInfo
+    }
+  }
+`;

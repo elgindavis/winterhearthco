@@ -142,10 +142,10 @@ a, a:focus, a:hover {
   outline: 0;
 }
 
-a {
-  color: var(--link-color) !important;
-  /* font-weight: bold !important; */
-}
+/* a {
+color: var(--link-color) !important;
+font-weight: bold !important;
+} */
 
 #markdown-content {
   color: var(--text-color);

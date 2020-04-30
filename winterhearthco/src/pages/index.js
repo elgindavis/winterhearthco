@@ -2,14 +2,19 @@ import React from "react";
 import Layout from "../components/layout";
 import { Link } from "gatsby";
 import PostGridItem from "../components/PostGridItem";
+import { transformPostQueryData } from "../utils";
 
-export default () => {
+export default ({ data: { allMarkdownRemark: { edges } } }) => {
+  const allPosts = transformPostQueryData(edges);
+  console.log(allPosts.reverse().slice(-9))
+  const latestPostList = allPosts.slice(-9).reverse();
+
   return (
     <Layout
       keywords={
         "how to be happy, how to be a good friend, mental health struggles, mental illness, emotional first aid, emotional intelligence, emotional agility, emotions, how to stop being angry, how to manage my emotions, types of mental health, emotional health, mental health facts, importance of mental health essay, characteristics of mental health, mental health synonym, mental health articles 2019, what is emotional health,"
       }
-      image="https://winterhearth.co/img/aubbie-knight.png"
+      imageUrl="https://winterhearth.co/img/aubbie-knight.png"
       imageAlt="Winter Hearth Studios"
       url="https://winterhearth.co/about"
       title="Home"
@@ -52,108 +57,29 @@ export default () => {
             </div>
           </div>
           <div id="latest-posts-row" className="row">
-            {/* <!-- The images need to be 3:2 ratio --> */}
-            <PostGridItem
-              className="col-lg-4 col-md-4"
-              authorimageUrl="/img/profile-200p.jpg"
-              author="Elgin Davis"
-              date="5th Apr, 2020"
-              articleTitle="Pandemics and the Quest for Good News"
-              imageUrl="img/blog/good-news-home.jpg"
-              articleLink="/blog/pandemics-and-good-news"
-              imgAltText="Good News Newspaper"
-              excerpt="In this world there will be troubles... And good news makes those troubles seem smaller, right?"
-            >
-              <img
-                src="img/blog/good-news-home.jpg"
-                alt="Good News Newspaper"
-              />
-            </PostGridItem>
-            <PostGridItem
-              className="col-lg-4 col-md-4"
-              authorimageUrl="/img/profile-200p.jpg"
-              author="Elgin Davis"
-              date="30th Mar, 2020"
-              articleTitle="Why “Being Happy” Isn't a Real Goal"
-              imageUrl="/img/blog/happy-sign-home.jpg"
-              articleLink="/blog/why-being-happy-isnt-a-real-goal"
-              imgAltText="Happy neon sign"
-              excerpt="'Life, Liberty, and the pursuit of Happiness'... But why?"
-            >
-              <img
-                src="/img/blog/happy-sign-home.jpg"
-                alt="Happy neon sign"
-              />
-            </PostGridItem>
-            <PostGridItem
-              className="col-lg-4 col-md-4"
-              authorimageUrl="/img/profile-200p.jpg"
-              author="Elgin Davis"
-              date="11th Feb, 2020"
-              articleTitle="Why You’ll Never Get What You Deserve"
-              imageUrl="/img/blog/sunset-path.jpg"
-              articleLink="/blog/why-you-will-never-get-what-you-deserve"
-              imgAltText="Man walking alone on a path at sunset"
-              excerpt="Though life is full of various opportunities and possibilities, you'll never get the ones you really deserve. Here's why:"
-            >
-              <img
-                src="/img/blog/sunset-path.jpg"
-                alt="Man walking alone on a path at sunset"
-              />
-            </PostGridItem>
-            <PostGridItem
-              className="col-lg-4 col-md-4"
-              authorimageUrl="/img/profile-200p.jpg"
-              author="Elgin Davis"
-              date="7th Feb, 2020"
-              articleTitle="4 Powerful Lessons Your Dog Can <br> Teach You About EQ"
-              imageUrl="/img/blog/dog-love.jpg"
-              articleLink="/blog/4-powerful-lessons-dogs-teach-about-eq"
-              imgAltText="Wow, look at that happy pup"
-              excerpt="Dogs melt our hearts every day, but it turns out there's a lot they can teach us, too."
-            >
-              <img
-                src="/img/blog/dog-love.jpg"
-                alt="Wow, look at that happy pup"
-              />
-            </PostGridItem>
-            <PostGridItem
-              className="col-lg-4 col-md-4"
-              authorimageUrl="/img/profile-200p.jpg"
-              author="Elgin Davis"
-              date=""
-              articleTitle="The Gift of Gratitude"
-              imageUrl="/img/freshh-connection-M4lve6jR26E-unsplash.jpg"
-              articleLink="/newsletters/volume-1/gift-of-gratitude"
-              imgAltText="The Gift of Gratitude"
-              excerpt=""
-            >
-              <img
-                src="/img/freshh-connection-M4lve6jR26E-unsplash.jpg"
-                alt="The Gift of Gratitude"
-              />
-            </PostGridItem>
-            <PostGridItem
-              className="col-lg-4 col-md-4"
-              authorimageUrl="/img/profile-200p.jpg"
-              author="Elgin Davis"
-              date=""
-              articleTitle="OCD"
-              imageUrl="https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/03700ba8-06bc-47ae-9448-0fb81ee6518d.jpg"
-              articleLink="/newsletters/volume-2/dmh-ocd"
-              imgAltText="OCD"
-              excerpt="Preferring to keep things neat and tidy doesn't mean you have OCD. Here's the scoop on OCD— what is it, and what do you need to know about it?"
-            >
-              <img
-                src="https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/03700ba8-06bc-47ae-9448-0fb81ee6518d.jpg"
-                alt="OCD"
-              />
-            </PostGridItem>
+            {
+
+              latestPostList.map((edition) => {
+                return (
+                  <PostGridItem
+                    key={edition.id}
+                    author={edition.author}
+                    date={edition.date}
+                    tags={edition.tags}
+                    articleTitle={edition.title}
+                    imageUrl={edition.imageUrl}
+                    articleLink={edition.articleLink}
+                    imgAltText={edition.imgAltText}
+                    excerpt={edition.description}
+                  ></PostGridItem>
+                );
+              })
+            }
           </div>
         </div>
       </section>
       {/* <!-- end recent-blog Area --> */}
-      <section className="section-gap">
+      <section className="pt-20 pb-80">
         <div className="text-center">
           <span>
             <Link
@@ -204,17 +130,14 @@ export default () => {
           </div>
         </div>
       </section>
-      {/* <!-- End home-about Area --> */}
 
-      {/* <!-- Start home-about Area --> */}
-      <section className="home-about-area pt-120">
+      <section className="home-about-area pt-120 pb-120">
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div
               className="col-lg-4 col-md-4 home-about-right"
               style={{ paddingBottom: "4rem" }}
             >
-              {/* <!-- <h6>About Me</h6> --> */}
               <h1 className="text-uppercase">What we do</h1>
               <p>
                 We believe in the power of storytelling as a central unifier in
@@ -243,3 +166,24 @@ export default () => {
     </Layout>
   );
 }
+
+// This gets the { data } property onto our props parameter, and here we query for all markdown files
+export const query = graphql`
+    query {
+    allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+        totalCount
+        edges {
+          node {
+              id
+              excerpt(truncate: true)
+              fields {
+              slug
+              }
+            ...PostInfo
+          }
+        }
+      }
+    }
+`;
