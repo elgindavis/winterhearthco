@@ -1,6 +1,6 @@
 ---
 title: "OCD"
-date:  "2019-08-10"
+date:  "2019-06-30"
 imageUrl: "/img/newsletters/ocd-400p.jpg"
 imageAlt: "OCD"
 contentType: 'newsletter'

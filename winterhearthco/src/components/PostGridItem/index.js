@@ -7,9 +7,8 @@ const PostGridItem = (props) => {
             <div className="single-recent-blog">
                 <div className="thumb">
                     <Link target="_blank" rel="noopener noreferrer" to={props.articleLink}>
-                        <img
-                            style={{ "borderRadius": "8px" }}
-                            className="f-img img-fluid mx-auto "
+                        <img // Images should be 3:2 aspect ratio
+                            style={{ height: 240, width: 360, borderRadius: 8 }}
                             src={props.imageUrl}
                             alt={props.imgAltText} />
                     </Link>
@@ -17,8 +16,7 @@ const PostGridItem = (props) => {
                 <div className="bottom d-flex justify-content-between align-items-center flex-wrap">
                     <div>
                         <img
-                            style={{ "height": "30px", "borderRadius": "20px" }}
-                            className="img-fluid "
+                            style={{ height: 30, borderRadius: 20 }}
                             src={props.author.imageUrl ? props.author.imageUrl : '/img/profile-200p.jpg'}
                             alt={props.author.name} />
                         <Link target="_blank" rel="noopener noreferrer" to={props.articleLink}>
@@ -30,7 +28,7 @@ const PostGridItem = (props) => {
                     </div>
                 </div>
                 <Link to={props.articleLink}>
-                    <h4 style={{ "marginTop": "8px" }}>{props.articleTitle}</h4>
+                    <h4 style={{ marginTop: 8 }}>{props.articleTitle}</h4>
                 </Link>
                 <p>
                     {props.excerpt}
@@ -41,3 +39,4 @@ const PostGridItem = (props) => {
 };
 
 export default PostGridItem;
+

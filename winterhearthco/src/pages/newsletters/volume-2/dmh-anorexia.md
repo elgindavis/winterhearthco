@@ -1,6 +1,6 @@
 ---
 title: "Anorexia Nervosa"
-date:  "2019-08-10"
+date:  "2019-08-11"
 imageUrl: "/img/newsletters/anorexia-400p.jpg"
 imageAlt: "Anorexia Nervosa"
 contentType: 'newsletter'

@@ -1,6 +1,6 @@
 ---
 title: "Attention Capital"
-date:  "2019-08-10"
+date:  "2019-02-24"
 imageUrl: "/img/gilles-lambert-pb_lF8VWaPU-unsplash.jpg"
 imageAlt: "Attention"
 contentType: 'newsletter'

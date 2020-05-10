@@ -1,6 +1,6 @@
 ---
 title: "What's in a Word?"
-date:  "2019-08-10"
+date:  "2019-04-20"
 imageUrl: "/img/kate-kalvach-YUyueCkd7Tk-unsplash.jpg"
 imageAlt: "What's in a Word?"
 contentType: 'newsletter'

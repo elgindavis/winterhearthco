@@ -27,32 +27,3 @@ export const query = graphql`
     }
   }
 `;
-
-// const query = graphql`
-//     query($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//         html
-//         frontmatter {
-//         date(formatString: "MMM DD, YYYY")
-//         title
-//         imageUrl
-//         imageAlt
-//         tags
-//         keywords
-//         description
-//         unsplashBadgeInfo {
-//             artistName
-//             artistUrl
-//         }
-//         author {
-//             name
-//             role
-//             summary
-//             imageUrl
-//         }
-//         }
-//     }
-//     }
-// `;
-
-// export default query;

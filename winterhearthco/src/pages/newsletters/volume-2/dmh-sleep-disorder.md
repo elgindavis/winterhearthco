@@ -1,6 +1,6 @@
 ---
 title: "Sleep Disorder"
-date:  "2019-08-10"
+date:  "2019-07-21"
 imageUrl: "/img/newsletters/sleep-disorder-400p.jpg"
 imageAlt: "Sleep Disorder"
 contentType: 'newsletter'

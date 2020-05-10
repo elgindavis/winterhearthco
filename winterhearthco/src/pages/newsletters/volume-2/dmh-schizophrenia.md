@@ -1,6 +1,6 @@
 ---
 title: "Schizophrenia"
-date:  "2019-08-10"
+date:  "2019-07-28"
 imageUrl: "/img/newsletters/schizophrenia-400p.jpg"
 imageAlt: "Schizophrenia"
 contentType: 'newsletter'

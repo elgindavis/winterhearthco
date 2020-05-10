@@ -1,6 +1,6 @@
 ---
 title: "The Gift of Gratitude"
-date:  "2019-08-10"
+date:  "2019-05-05"
 imageUrl: "/img/freshh-connection-M4lve6jR26E-unsplash.jpg"
 imageAlt: "Placeholder alt text"
 contentType: 'newsletter'

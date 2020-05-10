@@ -1,6 +1,6 @@
 ---
 title: "De-cluttering Your Space"
-date:  "2019-08-10"
+date:  "2019-02-15"
 imageUrl: "/img/todd-kent-onnJOfF-okU-unsplash.jpg"
 imageAlt: "A junky garage"
 contentType: 'newsletter'

@@ -1,6 +1,6 @@
 ---
 title: "ADHD"
-date:  "2019-06-01"
+date:  "2019-07-07"
 imageUrl: "/img/newsletters/adhd-400p.jpg"
 imageAlt: "ADHD"
 contentType: 'newsletter'

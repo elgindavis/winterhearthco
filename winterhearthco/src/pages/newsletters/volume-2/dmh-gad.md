@@ -1,6 +1,6 @@
 ---
 title: "Anxiety"
-date:  "2019-08-10"
+date:  "2019-06-23"
 imageUrl: "/img/newsletters/anxiety-400p.jpg"
 imageAlt: "Anxiety"
 contentType: 'newsletter'

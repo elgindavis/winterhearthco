@@ -1,6 +1,6 @@
 ---
 title: "Overcoming Compassion Fatigue"
-date:  "2019-08-10"
+date:  "2019-03-31"
 imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/29b777ca-e504-4e39-a43c-919e0fbcbd87.jpg"
 imageAlt: "TED Talk Video thumbnail"
 contentType: 'newsletter'

@@ -1,6 +1,6 @@
 ---
 title: "The Curiosity-Driven Life"
-date:  "2019-08-10"
+date:  "2019-04-28"
 imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/0164d703-676a-4bad-97d4-458942a01a35.jpeg"
 imageAlt: "Placeholder alt text"
 contentType: 'newsletter'

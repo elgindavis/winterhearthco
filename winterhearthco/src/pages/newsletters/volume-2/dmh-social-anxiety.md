@@ -1,6 +1,6 @@
 ---
 title: "Social Anxiety"
-date:  "2019-08-10"
+date:  "2019-07-14"
 imageUrl: "/img/newsletters/social-anxiety-400p.jpg"
 imageAlt: "Social Anxiety"
 contentType: 'newsletter'

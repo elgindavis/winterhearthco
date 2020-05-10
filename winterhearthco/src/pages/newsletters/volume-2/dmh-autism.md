@@ -1,6 +1,6 @@
 ---
 title: "Autism"
-date: "2019-06-01"
+date: "2019-09-12"
 imageUrl: "/img/newsletters/autism-400p.jpg"
 imageAlt: "Autism"
 contentType: 'newsletter'

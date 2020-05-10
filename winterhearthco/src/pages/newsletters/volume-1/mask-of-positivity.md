@@ -1,6 +1,6 @@
 ---
 title: "The Mask of Positivity"
-date:  "2019-08-10"
+date:  "2019-05-12"
 imageUrl: "/img/amanda-jones-e3jKBZoRnTs-unsplash.jpg"
 imageAlt: "The Mask of Positivity"
 contentType: 'newsletter'

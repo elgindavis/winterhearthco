@@ -1,6 +1,6 @@
 ---
 title: "Maximizing Your Life's Potential"
-date:  "2019-08-10"
+date:  "2019-02-05"
 imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/5bc0dfe5-0e20-4613-99bb-1c4d47202a33.png"
 imageAlt: "Potential success"
 contentType: 'newsletter'

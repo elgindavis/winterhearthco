@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Winter Hearth"
-date:  "2019-05-10"
+date:  "2019-01-29"
 imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/5f1b1e09-225e-4503-bd60-c01cf9fbe24c.jpg"
 imageAlt: "Welcome to Winter Hearth Studios!"
 contentType: 'newsletter'
