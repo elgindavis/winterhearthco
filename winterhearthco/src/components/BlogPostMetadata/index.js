@@ -4,7 +4,7 @@ import { setPostTags } from '../../utils';
 const BlogPostMetadata = (props) => {
     return (
       <div className="col-lg-12 col-md-12 row">
-        <div className="col-lg-4 col-md-4 meta-details" style={{ padding: 0 }}>
+        <div className="col-lg-12 col-md-12 meta-details" style={{ padding: 0, margin: "0 12px 0 0" }}>
           <p className="user-name col-lg-12 col-md-12 col-6">
             <span style={{ margin: "0 12px 0 0" }}>{props.author}</span>
             <span className="lnr lnr-user"></span>
@@ -13,17 +13,9 @@ const BlogPostMetadata = (props) => {
             <span style={{ margin: "0 12px 0 0" }}>{props.date}</span>
             <span className="lnr lnr-calendar-full"></span>
           </p>
-        </div>
-        <div className="col-lg-8 col-md-8 meta-details">
-          <p
-            style={{ padding: "0 0 23px 0" }}
-            className="col-lg-12 col-md-12 col-6"
-          >
-            <span></span>
-          </p>
-          <p style={{ padding: "0 0 4px 0" }}>
+          <p className="col-lg-12 col-md-12">
             Tags:&nbsp;
-            <span className="tags">
+            <span style={{ margin: "0 12px 0 0" }} className="tags">
               {
                 setPostTags(props.tags)
                 
