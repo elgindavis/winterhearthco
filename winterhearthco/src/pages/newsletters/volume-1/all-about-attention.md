@@ -171,42 +171,44 @@ In last week's Fireside Spotlight, we saw a piece called "[The Simple Sound](htt
 
 <br>
 
-# ***671***
- 
-Slumped anxiously against the ivory windowsill, he warily peered out into today’s storm — yesterday’s storm — tomorrow’s storm, careful not to see too much — Not to see too much. Not to think too much. Not to say too much. Not to feel too much.
+<div style="text-align: center; padding: 8% 0;">
+<div style="margin: 0 12%; text-align: left">
+<h1>671</h1>
 
-*Save me.*
+<p>Slumped anxiously against the ivory windowsill, he warily peered out into today’s storm — yesterday’s storm — tomorrow’s storm, careful not to see too much — Not to see too much. Not to think too much. Not to say too much. Not to feel too much.</p>
+<div class="text-right"><em>Save me.</p></em></div>
 
-His shallow breaths danced sheepishly on the thick window pane, tapping to the cadence of a pain long forgotten, tapping to the rhythm of distress. 
-His distressed jeans began to cut off circulation as he receded farther into the depths of himself, falling nowhere fast, falling to the feet of Darkness, who greeted his advance and gave him a quick, comforting kiss on the cheek.
+<p>His shallow breaths danced sheepishly on the thick window pane, tapping to the cadence of a pain long forgotten, tapping to the rhythm of distress. 
+His distressed jeans began to cut off circulation as he receded farther into the depths of himself, falling nowhere fast, falling to the feet of Darkness, who greeted his advance and gave him a quick, comforting kiss on the cheek.</p>
 
-Outside in the gripping clutches of the now raging storm, his friend of 3 years, Otis, walked by cheerfully and upright. Unphased, unaffected, unperturbed.
+<p>Outside in the gripping clutches of the now raging storm, his friend of 3 years, Otis, walked by cheerfully and upright. Unphased, unaffected, unperturbed.</p>
 
-*I know I know who that was.*
+<div class="text-right"><em>I know I know who that was.</p></em></div>
 
-Jolted back to the inner reaches of his mind, shrouded with a mist of delusion, he sat up straight, eyes fixed steadily, intently on the world beyond the window.
+<p>Jolted back to the inner reaches of his mind, shrouded with a mist of delusion, he sat up straight, eyes fixed steadily, intently on the world beyond the window.</p>
 
-*What was his name?*
+<div class="text-right"><em>What was his name?</p></em></div>
 
-The fallen brown leaves graced the fallow, fertile ground outside his sanctuary, sauntering loftily between the exploding thunder of the tempest.
+<p>The fallen brown leaves graced the fallow, fertile ground outside his sanctuary, sauntering loftily between the exploding thunder of the tempest.</p>
 
-*Six-hundred and seventy days.*
+<div class="text-right"><em>Six-hundred and seventy days.</p></em></div>
 
-Peals of anger, rage boomed from above, seamlessly rending the heavens and the earth apart. The rumblings reverberated in his ears like drumfire, blasting the all-too-familiar anthem of chaos, as it had for the last six-hundred and seventy days. He shuddered, blood rushing through his body like glaciers tearing across the open sea.
+<p>Peals of anger, rage boomed from above, seamlessly rending the heavens and the earth apart. The rumblings reverberated in his ears like drumfire, blasting the all-too-familiar anthem of chaos, as it had for the last six-hundred and seventy days. He shuddered, blood rushing through his body like glaciers tearing across the open sea.</p>
 
-*Who was that? I, I know I know him.*
+<div class="text-right"><em>Who was that? I, I know I know him.</p></em></div>
 
-Struggle as it might, the sun will not come out today. No — today will not be that day.
+<p>Struggle as it might, the sun will not come out today. No — today will not be that day.</p>
 
-He reached into the pile of clothes strewn about his bed and pulled out a black shirt that read “More Than a Conqueror”. Resigning to give today another shot, he sniffed the shirt, donned his hope, and marked another tick off on the wall.
+<p>He reached into the pile of clothes strewn about his bed and pulled out a black shirt that read “More Than a Conqueror”. Resigning to give today another shot, he sniffed the shirt, donned his hope, and marked another tick off on the wall.</p>
 
-*Six-hundred and seventy-one.*
+<div class="text-right"><em>Six-hundred and seventy-one.</p></em></div>
 
-Six-hundred and seventy-one days had now passed since the last concussion. With a lungful of trepidation and eyes dark as death, he exhaled, neatly gathered his things, and set out into the storm once more.
- 
+<p>Six-hundred and seventy-one days had now passed since the last concussion. With a lungful of trepidation and eyes dark as death, he exhaled, neatly gathered his things, and set out into the storm once more.</p>
 
+By <strong>Elgin Davis </strong>
+</div>
+</div>
 
-[Click here to follow my poetry work on Medium](https://medium.com/@elgindavis9)
 
 ### Walk It, Talk it
 

@@ -176,25 +176,27 @@ In last week's Fireside Spotlight, we saw a piece called "To Do or To Be?" which
 
 <div style="margin: 0 18%;">
 
-<em>Oh sacred, hallowed and hollow Heart,
-Tell me, where lies your Truth?
-Long gone are the days of blessed Hope,
-And the days of your stainless Youth.
+<em>
+<p>Oh sacred, hallowed and hollow Heart,<br>
+Tell me, where lies your Truth?<br>
+Long gone are the days of blessed Hope,<br>
+And the days of your stainless Youth.</p>
 
-Where, now do you seek your poise,
-Knowing Folly is not far behind?
-What soul is willing to test its resolve
-With a love so unrefined?
+<p>Where, now do you seek your poise,<br>
+Knowing Folly is not far behind?<br>
+What soul is willing to test its resolve<br>
+With a love so unrefined?</p>
 
-Dark dreams and devilish desires
-Drip into the chasms of the Heart.
-How shall we ever find our way out
-From beneath the endless sky that thou art?
+<p>Dark dreams and devilish desires<br>
+Drip into the chasms of the Heart.<br>
+How shall we ever find our way out<br>
+From beneath the endless sky that thou art?</p>
 
-I listen as you sing to the moon and the stars
-Your tender, melodic malady.
-Sing, oh sacred and graceful Heart,
-Your divine, undying rhapsody.</em>
+<p>I listen as you sing to the moon and the stars<br>
+Your tender, melodic malady.<br>
+Sing, oh sacred and graceful Heart,<br>
+Your divine, undying rhapsody.</p>
+</em>
 </div>
 <br>
 by <strong>Elgin Davis</strong>
