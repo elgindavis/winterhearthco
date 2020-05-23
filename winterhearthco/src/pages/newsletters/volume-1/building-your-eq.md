@@ -21,7 +21,7 @@ unsplashBadgeInfo: {
 }
 ---
 
-Volume 1, Issue 10: Building Your EQ
+Volume 1, Issue 10
 <br>
 
 ### What's New This Week

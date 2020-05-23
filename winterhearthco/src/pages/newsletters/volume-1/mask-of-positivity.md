@@ -21,7 +21,7 @@ unsplashBadgeInfo: {
 }
 ---
 
-Volume 1, Issue 15: The Mask of Positivity
+Volume 1, Issue 15
 
 <br>
 

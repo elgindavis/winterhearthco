@@ -7,9 +7,10 @@ export default (props) => {
         className="banner-area relative blog-home-banner"
         id="home"
         style={{
-          background: `url(${
-            window.innerWidth < 425 ? props.mobileImg : props.imageUrl
-          }) bottom`,
+          // background: `url(${
+          //   window.innerWidth < 425 ? props.mobileImg : props.imageUrl
+          // }) bottom`,
+          background: `url(${props.imageUrl}) bottom`,
         }}
       >
         <div className="overlay overlay-bg"></div>

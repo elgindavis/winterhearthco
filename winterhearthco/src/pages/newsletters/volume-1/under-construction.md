@@ -21,7 +21,7 @@ unsplashBadgeInfo: {
 }
 ---
 
-Volume 1, Issue 11: Under Construction
+Volume 1, Issue 11
 
 <br>
 

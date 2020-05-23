@@ -21,7 +21,7 @@ unsplashBadgeInfo: {
 }
 ---
 
-Volume 1, Issue 12: What's In a Word?
+Volume 1, Issue 12
 
 <br>
 

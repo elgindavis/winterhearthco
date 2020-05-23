@@ -21,7 +21,7 @@ unsplashBadgeInfo: {
 }
 ---
 
-Volume 1, Issue 14: The Gift of Gratitude
+Volume 1, Issue 14
 
 <br>
 

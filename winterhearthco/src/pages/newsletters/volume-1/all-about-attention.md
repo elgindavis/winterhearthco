@@ -21,7 +21,7 @@ unsplashBadgeInfo: {
 }
 ---
 
-Volume 1, Issue 5: Attention Capital
+Volume 1, Issue 5
  
 ### What's New This Week
 Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook (formerly the Winter Hearth Creative Journal), where each week we explore the human experience through different mediums, gleaning useful and practical insights to help us live epic life stories. 

@@ -21,7 +21,7 @@ unsplashBadgeInfo: {
 }
 ---
 
-Volume 1, Issue 13: The Curiosity-Driven Life
+Volume 1, Issue 13
 
 <br>
 
