@@ -36,7 +36,7 @@ As always, there's plenty of content here, so feel free to just take what you ne
 
 <br>
 <div class='text-center pt-20 pb-20'>
-    <a rel='noopener noreferrer' href='https://castbox.fm/episode/Are-We-Killing-English-or-is-It-Just-Evolving%3F-%26-How-to-Make-Big-Changes-Easier-id426586-id139626952?country=us'>
+    <a rel='noopener noreferrer' target='_blank' href='https://castbox.fm/episode/Are-We-Killing-English-or-is-It-Just-Evolving%3F-%26-How-to-Make-Big-Changes-Easier-id426586-id139626952?country=us'>
         <img src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/dfe6f9fb-73dd-4d92-a0a1-4f760b5ee245.jpeg' alt='Something You Should Know podcast artwork'/>
     </a>
 </div>
@@ -53,7 +53,7 @@ This week, we're going to check out a really cool podcast called Something You S
 
 <br>
 <div class='text-center pt-20 pb-20'>
-    <a rel='noopener noreferrer' href='https://castbox.fm/episode/Birdbaths-and-a-Lockbox-id576815-id91802691'>
+    <a rel='noopener noreferrer' target='_blank' href='https://castbox.fm/episode/Birdbaths-and-a-Lockbox-id576815-id91802691'>
         <img src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/985c3c7a-6eda-4fe4-942a-84d6acb77c48.jpg' alt='Ear Hustle podcast artwork'>
     </a>
 </div>

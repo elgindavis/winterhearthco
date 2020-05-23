@@ -101,7 +101,7 @@ Two weeks ago in the Fireside Spotlight, we saw our first character — Westro, 
 
 <br>
 <div class='text-center pt-20 pb-20'>
-    <a rel='noopener noreferrer' href='https://www.instagram.com/adronite/'>
+    <a rel='noopener noreferrer' target='_blank' href='https://www.instagram.com/adronite/'>
         <img height=300 src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/ae1ea6dc-6a9f-4f55-a3c9-ec00af0e7571.jpg' alt='My artist instagram'/>
     </a>
     <p>Ask him if he's soft-boiled</p>

@@ -37,7 +37,7 @@ As always, there's plenty of content here, so feel free to just take what you ne
 <br>
 
 <div class='text-center pt-20 pb-20'>
-    <a rel='noopener noreferrer' href='https://youtu.be/NDQ1Mi5I4rg'>
+    <a rel='noopener noreferrer' target='_blank' href='https://youtu.be/NDQ1Mi5I4rg'>
         <img src='https://gallery.mailchimp.com/video_thumbnails_new/841374ef05f19f1cbffd3c9766884a24.png' alt='Susan David at TED'>
     </a>
     <p>
@@ -62,7 +62,7 @@ This was such a great talk, and Susan David's work on "emotional agility" is rea
 <br>
 
 <div class='text-center pt-20 pb-20'>
-    <a rel='noopener noreferrer' href='https://ideas.ted.com/why-we-should-say-no-to-positivity-and-yes-to-our-negative-emotions/'>
+    <a rel='noopener noreferrer' target='_blank' href='https://ideas.ted.com/why-we-should-say-no-to-positivity-and-yes-to-our-negative-emotions/'>
         <img src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/7562a1b3-fe3f-4a93-835a-9d349ccb5f3d.png' alt='TED logo'>
     </a>
 </div>

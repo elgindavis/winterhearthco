@@ -58,7 +58,7 @@ There's plenty of great wisdom in this short episode, so check it out below to l
 </div>
 
 <div class='text-center pt-20 pb-20'>
-    <a rel='noopener noreferrer' href='https://ideas.ted.com/why-we-should-say-no-to-positivity-and-yes-to-our-negative-emotions/'>
+    <a rel='noopener noreferrer' target='_blank' href='https://ideas.ted.com/why-we-should-say-no-to-positivity-and-yes-to-our-negative-emotions/'>
         <img src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/7562a1b3-fe3f-4a93-835a-9d349ccb5f3d.png' alt='TED logo'>
     </a>
 </div>
@@ -103,7 +103,7 @@ Check out his most recent song, [Pavement](https://song.link/i/1460504941), on a
 
 <br>
 <div class='text-center pt-20 pb-20'>
-    <a rel='noopener noreferrer' href='https://song.link/i/1460504941'>
+    <a rel='noopener noreferrer' target='_blank' href='https://song.link/i/1460504941'>
         <img height=300 src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/552da105-0f2c-47db-94a4-83d9862bb1e2.jpg' alt='Pavement by Esteban'/>
     </a>
     <p>Ask him if he's soft-boiled</p>

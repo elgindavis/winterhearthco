@@ -42,7 +42,7 @@ As always, there's plenty of content here, so feel free to just take what you ne
 <br>
 
 <div class='text-center pt-20 pb-20'>
-    <img src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/5bf332dd-ba71-422b-b1fa-dd4d7631b6a9.jpg' alt='Level Up'>
+    <img src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/5bf332dd-ba71-422b-b1fa-dd4d7631b6a9.jpg' alt='Listen'>
 </div>
 
 <br>
@@ -116,7 +116,7 @@ I always love to see what members of the Firestarter community are up to, so if 
  
 <br>
 <div class='text-center pt-20 pb-20'>
-    <a rel='noopener noreferrer' href='https://soundcloud.com/phoxxtail'>
+    <a rel='noopener noreferrer' target='_blank' href='https://soundcloud.com/phoxxtail'>
         <img src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/0170a64f-eedf-41b9-8a39-a3f7a9243640.jpg' alt='phoxx.tail'>
     </a>
     <br>
