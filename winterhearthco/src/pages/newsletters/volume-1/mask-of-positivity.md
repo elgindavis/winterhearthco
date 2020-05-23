@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "positivity"
 keywords: "positivity"
-description: ""
+description: "Volume 1, Issue 15"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

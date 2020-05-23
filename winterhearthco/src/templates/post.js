@@ -8,7 +8,8 @@ import PopularPostColumnWidget from "../components/PopularPostColumn"
 export default (props) => {
   const postHTML = props.data.markdownRemark.html;
   const postInfo = props.data.markdownRemark.frontmatter;
-
+  
+  console.log("postInfo.unsplashBadgeInfo", postInfo.unsplashBadgeInfo)
   return (
     <Layout
       keywords={postInfo.keywords}
@@ -38,7 +39,7 @@ export default (props) => {
                       postInfo.unsplashBadgeInfo.artistName !== "" &&
                         <UnsplashBadge
                             artistName={postInfo.unsplashBadgeInfo.artistName}
-                            artistURL={postInfo.unsplashBadgeInfo.artistURL}
+                            artistURL={postInfo.unsplashBadgeInfo.artistUrl}
                         />
                     }
                   </div>

@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "Attention, Distraction"
 keywords: "Attention, Distraction"
-description: ""
+description: "Volume 1, Issue 5"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

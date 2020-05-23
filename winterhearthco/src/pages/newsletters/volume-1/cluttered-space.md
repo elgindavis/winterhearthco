@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "Mental Health, Holistic Health, Total Health"
 keywords: "Mental Health, Holistic Health, Total Health"
-description: ""
+description: "Volume 1, Issue 3"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

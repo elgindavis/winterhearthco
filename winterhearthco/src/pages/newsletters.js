@@ -79,7 +79,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                                         imageUrl={edition.imageUrl}
                                         articleLink={edition.articleLink}
                                         imgAltText={edition.imgAltText}
-                                        excerpt={edition.excerpt}
+                                        excerpt={edition.description}
                                     ></PostGridItem>
                                 );
                             })

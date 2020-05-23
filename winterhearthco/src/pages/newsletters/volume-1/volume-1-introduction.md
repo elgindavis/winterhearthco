@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "Winter Hearth, Introduction"
 keywords: "Winter Hearth"
-description: "Welcome to Winter Hearth Studios!"
+description: "Volume 1, Issue 1: Welcome to Winter Hearth Studios!"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "Emotional Intelligence, EQ"
 keywords: "Emotional Intelligence, EQ"
-description: ""
+description: "Volume 1, Issue 10"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "Rest, Recovery, Stress, Anxiety"
 keywords: "Rest, Recovery, Stress, Anxiety"
-description: ""
+description: "Volume 1, Issue "
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "Meaning, Lifestyle"
 keywords: "Meaning, Lifestyle"
-description: ""
+description: "Volume 1, Issue 12"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

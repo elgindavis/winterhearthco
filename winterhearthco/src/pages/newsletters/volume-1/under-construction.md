@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "Perspective"
 keywords: "Perspective"
-description: ""
+description: "Volume 1, Issue 11"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "Emotional Baggage, Minimalism"
 keywords: "Emotional Baggage, Minimalism"
-description: ""
+description: "Volume 1, Issue "
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

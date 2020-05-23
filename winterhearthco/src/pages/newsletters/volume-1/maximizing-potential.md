@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "Potential, Success, Motivation, Energy"
 keywords: "Potential, Success, Motivation, Energy"
-description: ""
+description: "Volume 1, Issue 2"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",
@@ -21,6 +21,7 @@ unsplashBadgeInfo: {
 }
 ---
 Volume 1, Issue 2
+<br>
 
 ### What's New This Week
 Welcome back to the Winter Hearth Creative Journal! This is the second official newsletter, and our community is growing fast! We surpassed the 100 member-milestone in our first week, and we're ready to keep growing as we further explore the human experience in the coming weeks. Thanks so much for joining us, and be sure to share this newsletter with a friend!
@@ -92,6 +93,7 @@ This idea of *slow-motion multitasking* is a major step toward maximizing your p
 </div>
 
 <br>
+
 ### Level Up 
  
 In this week's Level Up section, we'll check out the book "[Making Ideas Happen](https://www.amazon.com/Making-Ideas-Happen-Overcoming-Obstacles/dp/1591844118)" by [Scott Belsky](http://www.scottbelsky.com/), Founder and CEO of Behance, for some practical insights as to how we can maximize our potential for achieving our goals and dreams.

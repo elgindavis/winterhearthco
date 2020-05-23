@@ -8,7 +8,7 @@ newsletterVolume: '1'
 featured: false
 tags: "Curiosity"
 keywords: "curiosity"
-description: ""
+description: "Volume 1, Issue 13"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",
