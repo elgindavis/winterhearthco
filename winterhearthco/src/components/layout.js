@@ -4,6 +4,7 @@ import { theme } from '../theme';
 import { GlobalStyles } from '../global';
 import { ThemeProvider } from 'styled-components';
 import { Burger, Menu, SEO } from './';
+import { useOnClickOutside } from '../hooks';
 import React, { useState, useRef } from "react";
 
 import "../styles/linearicons.css"
@@ -16,6 +17,8 @@ const Layout = ((props) => {
   const node = useRef();
   const menuId = "menu-panel";
   
+  useOnClickOutside(node, () => setOpen(false));
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
