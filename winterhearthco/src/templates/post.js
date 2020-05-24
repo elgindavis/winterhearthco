@@ -5,6 +5,8 @@ import UnsplashBadge from "../components/UnsplashBadge"
 import BlogPostMetadata from "../components/BlogPostMetadata"
 import PopularPostColumnWidget from "../components/PopularPostColumn"
 
+import "../styles/linearicons.css"
+
 export default (props) => {
   const postHTML = props.data.markdownRemark.html;
   const postInfo = props.data.markdownRemark.frontmatter;

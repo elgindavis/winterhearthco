@@ -4,7 +4,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: ${({ theme }) => theme.primaryDark};
+  background: var(--color-text);
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   height: 100vh;
   text-align: left;
@@ -13,24 +13,24 @@ export const StyledMenu = styled.nav`
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
-  @media (max-width: ${({ theme }) => theme.mobile}) {
+  @media (max-width: 990px) {
       width: 300px;
     }
   a {
     font-size: 1.5rem;
     text-transform: uppercase;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: ${({ theme }) => theme.primaryLight};
+    color: var(--color-background);
     text-decoration: underline;
     transition: color 0.3s linear;
-    @media (max-width: ${({ theme }) => theme.mobile}) {
+    @media (max-width: 990px) {
       font-size: 1.5rem;
       text-align: center;
     }
     &:hover {
-      color: ${({ theme }) => theme.primaryHover};
+      color: var(--color-secondary);
     }
   }
 `;

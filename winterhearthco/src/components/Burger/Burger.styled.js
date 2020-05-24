@@ -15,13 +15,13 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-  @media (min-width: ${({ theme }) => theme.mobile}) {
+  @media (min-width: 990px) {
       display: none;
   }
   span {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ theme, open }) => open ? theme.primaryLight : theme.primaryDark};
+    background: ${({ open }) => open ? "var(--color-background)" : "var(--color-text)"};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

@@ -27,10 +27,11 @@ export default (props) => {
                                 {props.author}
                             </span>
                     } 
-                    <span className="lnr lnr-user"></span>
+                    {/* <span className="lnr lnr-user"></span> */}
                 </p>
                 <p className="date col-lg-12 col-md-12 col-6">
-                    <span>{props.date}</span> <span className="lnr lnr-calendar-full"></span>
+                    <span>{props.date}</span> 
+                    {/* <span className="lnr lnr-calendar-full"></span> */}
                 </p>
             </div>
         </div>

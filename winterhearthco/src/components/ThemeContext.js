@@ -1,44 +1,52 @@
+import React from 'react';
+
+import {
+    COLORS,
+    COLOR_MODE_KEY,
+    // INITIAL_COLOR_MODE_CSS_PROP,
+} from '../constants';
+
 export const ThemeContext = React.createContext();
+
 export const ThemeProvider = ({ children }) => {
-    const [
-        colorMode,
-        rawSetColorMode
-    ] = React.useState(undefined);
+    const [colorMode, rawSetColorMode] = React.useState(undefined);
+
     React.useEffect(() => {
-        const root = window.document.documentElement;
+        // const root = window.document.documentElement;
+
+        // Because colors matter so much for the initial page view, we're
+        // doing a lot of the work in gatsby-ssr. That way it can happen before
+        // the React component tree mounts.
         const initialColorValue =
-            root.style.getPropertyValue('--initial-color-mode');
+            localStorage.getItem(COLOR_MODE_KEY) === 'dark'
+                ? 'dark'
+                : 'light';
+        
         rawSetColorMode(initialColorValue);
     }, []);
-    function setColorMode(newValue) {
-        const root = window.document.documentElement;
-        // 1. Update React color-mode state
-        rawSetColorMode(newValue);
-        // 2. Update localStorage
-        localStorage.setItem('color-mode', newValue);
-        // 3. Update each color
-        root.style.setProperty(
-            '--color-text',
-            newValue === 'light'
-                ? COLORS.light.text
-                : COLORS.dark.text
-        );
-        root.style.setProperty(
-            '--color-background',
-            newValue === 'light'
-                ? COLORS.light.background
-                : COLORS.dark.background
-        );
-        root.style.setProperty(
-            '--color-primary',
-            newValue === 'light'
-                ? COLORS.light.primary
-                : COLORS.dark.primary
-        );
-    }
+
+    const contextValue = React.useMemo(() => {
+        const setColorMode = (newValue) => {
+            const root = window.document.documentElement;
+            localStorage.setItem(COLOR_MODE_KEY, newValue);
+            
+            Object.entries(COLORS[newValue]).forEach(([name, colorByTheme]) => {
+                const cssVarName = `--color-${name}`;
+                root.style.setProperty(cssVarName, colorByTheme);
+            });
+            
+            rawSetColorMode(newValue);
+        }
+
+        return {
+            colorMode,
+            setColorMode,
+        };
+    }, [colorMode, rawSetColorMode]);
+   
     return (
-        <ThemeContext.Provider value={{ colorMode, setColorMode }}>
+        <ThemeContext.Provider value={contextValue}>
             {children}
         </ThemeContext.Provider>
-    )
-}
+    );
+};

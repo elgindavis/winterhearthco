@@ -1,7 +1,10 @@
 export { default as SEO } from './seo';
 export { default as Menu } from './Menu';
+export { default as Header } from './Header';
+export { default as Footer } from './Footer';
 export { default as Layout } from './layout';
 export { default as Burger } from './Burger';
+export { default as DarkToggle } from './DarkToggle';
 export { default as PostGridItem } from './PostGridItem';
 export { default as UnsplashBadge } from './UnsplashBadge';
 export { default as SinglePostRow } from './SinglePostRow';

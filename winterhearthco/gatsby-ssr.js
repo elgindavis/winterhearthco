@@ -1,14 +1,15 @@
 import React from 'react';
 
 import {
-    COLOR_MODE_KEY,
     COLORS,
+    COLOR_MODE_KEY,
     INITIAL_COLOR_MODE_CSS_PROP,
 } from './src/constants';
 
-import App from './src/components/App';
+import App from './src/components/layout';
 
-function setColorsByTheme() {
+
+const setColorsByTheme = () => {
     const colors = '🌈';
     const colorModeKey = '🔑';
     const colorModeCssProp = '⚡️';
@@ -21,20 +22,18 @@ function setColorsByTheme() {
 
     const hasUsedToggle = typeof persistedPreference === 'string';
 
-    if (hasUsedToggle) {
+    if (hasUsedToggle)
         colorMode = persistedPreference;
-    } else {
+    else
         colorMode = prefersDarkFromMQ ? 'dark' : 'light';
-    }
 
     let root = document.documentElement;
 
     root.style.setProperty(colorModeCssProp, colorMode);
 
-    Object.entries(colors).forEach(([name, colorByTheme]) => {
+    Object.entries(colors[colorMode]).forEach(([name, colorByTheme]) => {
         const cssVarName = `--color-${name}`;
-
-        root.style.setProperty(cssVarName, colorByTheme[colorMode]);
+        root.style.setProperty(cssVarName, colorByTheme);
     });
 }
 
@@ -65,9 +64,9 @@ const FallbackStyles = () => {
       --color-background: white;`
     */
 
-    const cssVariableString = Object.entries(COLORS).reduce(
+    const cssVariableString = Object.entries(COLORS.dark).reduce(
         (acc, [name, colorByTheme]) => {
-            return `${acc}\n--color-${name}: ${colorByTheme.light};`;
+            return `${acc}\n--color-${name}: ${colorByTheme};`;
         },
         ''
     );

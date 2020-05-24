@@ -59,9 +59,9 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                             }
                         </div>
                         <div className="col-lg-4 sidebar-widgets">
-                            <div className="widget-wrap">
-                                <div className="single-sidebar-widget search-widget">
-                                </div>
+                            <div className="widget-wrap" style={{ marginTop: 0}}>
+                                {/* <div className="single-sidebar-widget search-widget">
+                                </div> */}
                                 <div className="single-sidebar-widget user-info-widget">
                                     <img width="120" style={{borderRadius: 100}} src="/img/profile-200p.jpg" className="lazyload" alt="Elgin Davis" />
                                     <Link to="/img/profile.jpg"><h4>Elgin Davis</h4></Link>
