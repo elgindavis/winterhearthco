@@ -1,6 +1,10 @@
-import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { theme } from '../theme';
+import { GlobalStyles } from '../global';
+import { Burger, Menu } from './index';
+import { ThemeProvider } from 'styled-components';
+import React, { useState, useRef } from "react";
 
 import SEO from './seo'
 
@@ -8,12 +12,15 @@ import "../styles/linearicons.css"
 import "../styles/main.css"
 import "../styles/bootstrap.min.css"
 import "../styles/linearicons.css"
-// import { rhythm, scale } from "../utils/typography"
 
 const Layout = ((props) => {
-  // console.log("layout props", props);
+  const [open, setOpen] = useState(false);
+  const node = useRef();
+  const menuId = "menu-panel";
+
   return (
-    <>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <SEO 
         description={props.description}
         lang={props.lang}
@@ -39,15 +46,23 @@ const Layout = ((props) => {
                 />
               </Link>
             </div>
-            <nav id="nav-menu-container">
-              <ul className="nav-menu">
-                {/* <li><Link to="/">Home</Link></li> */}
-                <li><Link to="/about">Our Story</Link></li>
-                <li><Link to="/podcast">Podcast</Link></li>
-                <li><Link to="/blog/">Blog</Link></li>
-                <li><Link to="/games/">Games</Link></li>
-                <li><Link to="/newsletters/">Newsletters</Link></li>
-              </ul >
+            <nav>
+              <div id="menu-panel" ref={node}>
+                {/* <FocusLock disabled={!open}> */}
+                  <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+                  <Menu open={open} setOpen={setOpen} id={menuId} />
+                {/* </FocusLock> */}
+              </div>
+              <div id="nav-menu-container">
+                <ul className="nav-menu">
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/about">Our Story</Link></li>
+                  <li><Link to="/podcast">Podcast</Link></li>
+                  <li><Link to="/blog/">Blog</Link></li>
+                  <li><Link to="/games/">Games</Link></li>
+                  <li><Link to="/newsletters/">Newsletters</Link></li>
+                </ul >
+              </div>
             </nav>
           </div >
         </div >
@@ -143,7 +158,7 @@ const Layout = ((props) => {
           </div>
         </div>
       </footer>
-    </>
+    </ThemeProvider>
   );
 });
 
