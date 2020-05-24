@@ -2536,7 +2536,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-left: 30px;
   padding-right: 30px;
   border: none;
-  color: var(--color-background);
+  color: var(--color-white);
   display: inline-block;
   font-weight: 500;
   position: relative;
@@ -3147,7 +3147,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .single-recent-blog .bottom {
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-secondary);
 }
 
 .single-recent-blog .bottom span {
@@ -3740,7 +3740,7 @@ dl.accordion.time-line:before {
 
 .post-content-area .single-post .primary-btn {
   background: var(--color-primary) !important;
-  color: var(--color-background) !important;
+  color: var(--color-white) !important;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -3750,7 +3750,7 @@ dl.accordion.time-line:before {
 
 .post-content-area .single-post .primary-btn:hover {
   background: var(--color-background) !important;
-  color: #222 !important;
+  color: var(--color-secondary) !important;
   border-radius: 25px !important;
 }
 
@@ -3836,7 +3836,7 @@ dl.accordion.time-line:before {
 .widget-wrap .single-sidebar-widget {
   margin: 30px 15px;
   padding-bottom: 30px;
-  border-bottom: 2px solid var(--color-secondary);
+  /* border-bottom: 2px solid var(--color-secondary); */
 }
 
 .widget-wrap .single-sidebar-widget:last-child {

@@ -1,24 +1,24 @@
 export const COLORS = {
     light: {
-        text: 'hsl(0deg, 0%, 10%)', // black
-        background: 'hsl(0deg, 0%, 100%)', // white
-        primary: 'hsl(340deg, 100%, 40%)', // Pinkish-red
-        secondary: 'hsl(250deg, 100%, 50%)', // Purplish-blue
-        gray300: 'hsl(0deg, 0%, 70%)',
-        gray500: 'hsl(0deg, 0%, 50%)',
-        gray700: 'hsl(0deg, 0%, 30%)',
-        white: 'hsl(0deg, 0%, 100%)', // white
+        text: 'hsl(0, 0%, 10%)', // black
+        background: 'hsl(0, 0%, 80%)', // white
+        primary: 'hsl(330, 50%, 45%)', // 
+        secondary: 'hsla(205, 72%, 59%)', //
+        gray300: 'hsl(0, 0%, 70%)',
+        gray500: 'hsl(0, 0%, 50%)',
+        gray700: 'hsl(0, 0%, 30%)',
+        white: 'hsl(0deg, 0%, 80%)', // white
         link: 'hsla(0, 50 %, 42 %, 1)',
     },
     dark: {
-        text: 'hsl(0deg, 0%, 100%)', // near-white
-        background: 'hsl(250deg, 70%, 7%)', // navy navy blue
-        primary: 'hsl(50deg, 100%, 50%)', // Yellow
-        secondary: 'hsl(190deg, 100%, 40%)', // Cyan
+        text: 'hsl(0, 0%, 80%)', // Platinum
+        background: 'hsl(250, 70%, 7%)', // Xiketic
+        primary: 'hsl(330, 50%, 45%)', // 
+        secondary: 'hsla(205, 72%, 59%)', //
         gray300: 'hsl(0deg, 0%, 30%)',
         gray500: 'hsl(0deg, 0%, 50%)',
         gray700: 'hsl(0deg, 0%, 70%)',
-        white: 'hsl(0deg, 0%, 100%)', // white
+        white: 'hsl(0deg, 0%, 80%)', // white
         link: 'hsla(0, 50 %, 42 %, 1)',
     },
     // elgin: {
