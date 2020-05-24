@@ -1,11 +1,14 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout";
-import PostGridItem from "../components/PostGridItem";
-import SinglePostRow from "../components/SinglePostRow";
-import BannerBlogItem from "../components/BannerBlogItem";
-import PopularPostColumn from "../components/PopularPostColumn";
+import {
+    Layout, 
+    PostGridItem,
+    SinglePostRow,
+    BannerBlogItem,
+    PopularPostColumn,
+} from "../components";
+
 import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } }}) => {

@@ -1,2 +1,10 @@
-export { default as Burger } from './Burger';
+export { default as SEO } from './seo';
 export { default as Menu } from './Menu';
+export { default as Layout } from './layout';
+export { default as Burger } from './Burger';
+export { default as PostGridItem } from './PostGridItem';
+export { default as UnsplashBadge } from './UnsplashBadge';
+export { default as SinglePostRow } from './SinglePostRow';
+export { default as BannerBlogItem } from './BannerBlogItem';
+export { default as BlogPostMetadata } from './BlogPostMetadata';
+export { default as PopularPostColumn } from './PopularPostColumn';

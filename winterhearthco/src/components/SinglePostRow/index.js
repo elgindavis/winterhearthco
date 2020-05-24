@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { setPostTags } from '../../utils';
 
 export default (props) => {
-    // console.log(props);
+    
     return(
     <div className="single-post row">
         <div className="col-lg-3  col-md-3 meta-details">

@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ((props) => {
-  // console.log("seo props ", props)
   const { site } = useStaticQuery(
     graphql`
       query {

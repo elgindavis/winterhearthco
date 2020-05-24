@@ -3,7 +3,7 @@ import { bool, func } from 'prop-types';
 import { StyledBurger } from './Burger.styled';
 
 const Burger = ({ open, setOpen, ...props }) => {
-    console.log(props)
+    
     const isExpanded = open ? true : false;
 
     return (

@@ -2,11 +2,9 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { theme } from '../theme';
 import { GlobalStyles } from '../global';
-import { Burger, Menu } from './index';
 import { ThemeProvider } from 'styled-components';
+import { Burger, Menu, SEO } from './';
 import React, { useState, useRef } from "react";
-
-import SEO from './seo'
 
 import "../styles/linearicons.css"
 import "../styles/main.css"
@@ -17,7 +15,7 @@ const Layout = ((props) => {
   const [open, setOpen] = useState(false);
   const node = useRef();
   const menuId = "menu-panel";
-
+  
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />

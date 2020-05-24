@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Layout from '../components/layout';
-import PostGridItem from '../components/PostGridItem';
+import { Layout, PostGridItem } from '../components';
 import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {

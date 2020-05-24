@@ -1,6 +1,7 @@
 import React from 'react';
 import { bool } from 'prop-types';
 import { Link } from 'gatsby';
+
 import { StyledMenu } from './Menu.styled';
 
 const Menu = ({ open, ...props }) => {
