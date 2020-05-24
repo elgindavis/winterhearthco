@@ -2,15 +2,33 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { theme } from '../theme';
 import { GlobalStyles } from '../global';
+import { ThemeContext } from './ThemeContext';
 import { ThemeProvider } from 'styled-components';
 import { Burger, Menu, SEO } from './';
 import { useOnClickOutside } from '../hooks';
 import React, { useState, useRef } from "react";
-
 import "../styles/linearicons.css"
 import "../styles/main.css"
 import "../styles/bootstrap.min.css"
 import "../styles/linearicons.css"
+
+const DarkToggle = () => {
+  const { colorMode, setColorMode } = React.useContext(
+    ThemeContext
+  );
+  return (
+    <label>
+      <input
+        type="checkbox"
+        checked={colorMode === 'dark'}
+        onChange={ev => {
+          setColorMode(ev.target.checked ? 'dark' : 'light');
+        }}
+      />{' '}
+      Dark
+    </label>
+  );
+};
 
 const Layout = ((props) => {
   const [open, setOpen] = useState(false);
