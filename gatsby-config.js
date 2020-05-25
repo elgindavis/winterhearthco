@@ -1,5 +1,4 @@
 module.exports = {
-  // pathPrefix: "/winterhearthco",
   siteMetadata: {
     title: `Winter Hearth Studios`,
     author: {
