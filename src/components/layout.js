@@ -1,8 +1,7 @@
 import PropTypes from "prop-types"
-import React from 'react'
+import React, { useState, useEffect } from "react";
 
 import { GlobalStyles } from '../GlobalStyles';
-
 import { ThemeProvider } from './ThemeContext';
 import { SEO, Header, DarkToggle, Footer } from './';
 
@@ -11,6 +10,11 @@ import "../styles/linearicons.css"
 import "../styles/bootstrap.min.css"
 
 const Layout = ((props) => {
+  const [isLoaded, setisLoaded] = useState(false);
+    useEffect(() => {
+      setisLoaded(true);
+    }, []);
+
   return (
     <ThemeProvider>
       <SEO
@@ -26,10 +30,14 @@ const Layout = ((props) => {
         url={props.url}
       />
       <GlobalStyles />
-      <Header />
-      <DarkToggle/>
-      {props.children}
-      <Footer/>
+      {isLoaded && 
+        <>
+          <Header />
+          <DarkToggle/>
+          {props.children}
+          <Footer/>
+        </>
+      }
     </ThemeProvider>
   );
 });
