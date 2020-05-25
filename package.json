@@ -52,7 +52,7 @@
   },
   "homepage": "https://github.com/elgindavis/winterhearthco#readme",
   "scripts": {
-    "build": "gatsby build && cp -r src/img/* public/img",
+    "build": "gatsby clean && gatsby build && cp -r src/img/* public/img",
     "reserve": "gatsby clean && gatsby build && cp -r src/img/* public/img && gatsby serve",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
@@ -60,7 +60,7 @@
     "start": "npm run develop",
     "serve": "cp -r src/img/* public/img && gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy": "npm run build && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
