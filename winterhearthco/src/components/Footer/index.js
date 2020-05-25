@@ -71,8 +71,19 @@ const Footer = () => {
                                             <input type="text" name="b_82935dc1a750f772912d12316_31c5d4e468" tabIndex="-1" defaultValue="" />
                                         </div>
                                         <div className="clear">
-                                            <button style={{ "margin": "40px 0" }} type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" className="primary-btn">JOIN THE SQUAD
-                                                </button>
+                                            <button 
+                                            onClick={() => {
+                                                document.getElementById("mc-embedded-subscribe-form").style.display = 'none';
+                                                document.getElementById("signup-success").style.display = 'inline';
+                                            }} 
+                                            style={{ "margin": "40px 0" }} 
+                                            type="submit" 
+                                            value="SUBSCRIBE" 
+                                            name="subscribe" 
+                                            id="mc-embedded-subscribe" 
+                                            className="primary-btn">
+                                                JOIN THE SQUAD
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
