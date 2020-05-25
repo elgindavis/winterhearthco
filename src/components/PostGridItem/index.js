@@ -8,7 +8,7 @@ const PostGridItem = (props) => {
                 <div className="thumb">
                     <Link target="_blank" rel="noopener noreferrer" to={props.articleLink}>
                         <img // Images should be 3:2 aspect ratio
-                            style={{ height: 240, width: 360, borderRadius: 8 }}
+                            style={{ height: 'auto', width: '100%', borderRadius: 8 }}
                             src={props.imageUrl}
                             alt={props.imgAltText} />
                     </Link>
