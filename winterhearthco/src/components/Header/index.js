@@ -24,7 +24,7 @@ const Header = () => {
                        {colorMode &&
                             <img
                                 style={{ "maxHeight": "56px" }}
-                                src={colorMode === "dark" ? "/img/logo-light-100p.png" :"/img/logo-classic-100p.png"}
+                                src={colorMode === "light" ? "/img/logo-classic-100p.png" : "/img/logo-light-100p.png"}
                                 alt="Winter Hearth Logo"
                                 title="Winter Hearth Logo"
                             />
@@ -40,9 +40,9 @@ const Header = () => {
                         <ul className="nav-menu">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">Our Story</Link></li>
-                            <li><Link to="/podcast">Podcast</Link></li>
+                            {/* <li><Link to="/podcast">Podcast</Link></li> */}
                             <li><Link to="/blog/">Blog</Link></li>
-                            <li><Link to="/games/">Games</Link></li>
+                            {/* <li><Link to="/games/">Games</Link></li> */}
                             <li><Link to="/newsletters/">Newsletters</Link></li>
                         </ul >
                     </div>

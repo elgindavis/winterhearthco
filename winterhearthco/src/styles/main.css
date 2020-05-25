@@ -2329,8 +2329,8 @@ h1, h2, h3, h4, h5, h6 {
   content: "\f105";
 }
 
-/* Nav Meu Container */
-@media (max-width: 768px) {
+/* Nav Menu Container */
+@media (max-width: 767px) {
   #nav-menu-container {
     display: none;
   }
@@ -2405,7 +2405,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   #mobile-nav-toggle {
     display: inline;
   }

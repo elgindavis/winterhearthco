@@ -4,16 +4,16 @@ import { ThemeContext } from '../ThemeContext';
 
 const ToggleColorScheme = () => {
     const { colorMode, setColorMode } = React.useContext(ThemeContext);
-    
+
     return (
         <>
         {typeof colorMode !== 'undefined' && 
             <StyledToggle
                 onClick={() => {
-                    setColorMode(colorMode === 'light' ? 'dark' : 'light');
+                    setColorMode(colorMode === 'dark' ? 'light' : 'dark');
                 }}
             >
-                {`${colorMode === 'light' ? 'Dark' : 'Light'} Mode`}
+                {`${colorMode === 'dark' ? 'Light' : 'Dark' } Mode`}
             </StyledToggle>
         }
         </>

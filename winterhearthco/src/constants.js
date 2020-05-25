@@ -1,13 +1,13 @@
 export const COLORS = {
     light: {
         text: 'hsl(0, 0%, 10%)', // black
-        background: 'hsl(0, 0%, 80%)', // white
+        background: 'hsl(0, 0%, 90%)', // white
         primary: 'hsl(330, 50%, 45%)', // 
         secondary: 'hsla(205, 72%, 59%)', //
         gray300: 'hsl(0, 0%, 70%)',
         gray500: 'hsl(0, 0%, 50%)',
         gray700: 'hsl(0, 0%, 30%)',
-        white: 'hsl(0deg, 0%, 80%)', // white
+        white: 'hsl(0deg, 0%, 90%)', // white
         link: 'hsla(0, 50 %, 42 %, 1)',
     },
     dark: {
@@ -18,7 +18,7 @@ export const COLORS = {
         gray300: 'hsl(0deg, 0%, 30%)',
         gray500: 'hsl(0deg, 0%, 50%)',
         gray700: 'hsl(0deg, 0%, 70%)',
-        white: 'hsl(0deg, 0%, 80%)', // white
+        white: 'hsl(0deg, 0%, 90%)', // white
         link: 'hsla(0, 50 %, 42 %, 1)',
     },
     // elgin: {

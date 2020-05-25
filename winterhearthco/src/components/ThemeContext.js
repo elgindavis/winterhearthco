@@ -3,7 +3,6 @@ import React from 'react';
 import {
     COLORS,
     COLOR_MODE_KEY,
-    // INITIAL_COLOR_MODE_CSS_PROP,
 } from '../constants';
 
 export const ThemeContext = React.createContext();
@@ -17,6 +16,11 @@ export const ThemeProvider = ({ children }) => {
         // Because colors matter so much for the initial page view, we're
         // doing a lot of the work in gatsby-ssr. That way it can happen before
         // the React component tree mounts.
+        const currentColorMode = localStorage.getItem(COLOR_MODE_KEY);
+
+        if (!currentColorMode)
+            localStorage.setItem(COLOR_MODE_KEY, 'dark');
+
         const initialColorValue =
             localStorage.getItem(COLOR_MODE_KEY) === 'dark'
                 ? 'dark'

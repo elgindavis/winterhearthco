@@ -12,9 +12,9 @@ const Menu = ({ open, ...props }) => {
     return (
         <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
             <Link aria-hidden="true" to="/about">Our Story</Link>
-            <Link aria-hidden="true" to="/podcast">Podcast</Link>
+            {/* <Link aria-hidden="true" to="/podcast">Podcast</Link> */}
             <Link aria-hidden="true" to="/blog/">Blog</Link>
-            <Link aria-hidden="true" to="/games/">Games</Link>
+            {/* <Link aria-hidden="true" to="/games/">Games</Link> */}
             <Link aria-hidden="true" to="/newsletters/">Newsletters</Link>
         </StyledMenu>
     )

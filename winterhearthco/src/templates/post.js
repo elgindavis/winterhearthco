@@ -11,7 +11,6 @@ export default (props) => {
   const postHTML = props.data.markdownRemark.html;
   const postInfo = props.data.markdownRemark.frontmatter;
   
-  console.log("postInfo.unsplashBadgeInfo", postInfo.unsplashBadgeInfo)
   return (
     <Layout
       keywords={postInfo.keywords}
