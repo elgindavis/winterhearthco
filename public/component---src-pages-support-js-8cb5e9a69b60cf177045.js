@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{GOMi:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),c=a.n(n);t.default=function(){return c.a.createElement("head",null,c.a.createElement("meta",{"http-equiv":"refresh",content:"0; url = https://app.termly.io/document/privacy-policy/708994a9-4efb-4f4c-aa56-fd8b1331a2cc"}))}}}]);
-//# sourceMappingURL=component---src-pages-support-js-8cb5e9a69b60cf177045.js.map

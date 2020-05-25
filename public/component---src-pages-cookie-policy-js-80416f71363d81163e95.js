@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{B8Jy:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),c=n.n(a);t.default=function(){return c.a.createElement("head",null,c.a.createElement("meta",{"http-equiv":"refresh",content:"0; url = https://app.termly.io/document/cookie-policy/9efe4a87-5288-4746-8a60-b9105a59ef3c"}))}}}]);
-//# sourceMappingURL=component---src-pages-cookie-policy-js-80416f71363d81163e95.js.map
