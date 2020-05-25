@@ -1,2 +1,1 @@
-# winterhearth.co
-The new Winter Hearth Studios website
+Winter Hearth Studios Web App
