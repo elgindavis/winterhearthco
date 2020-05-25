@@ -5,7 +5,7 @@ imageUrl: "/img/blog/dog-love-600p.jpg"
 imageAlt: "Wow, look at that happy pup"
 contentType: 'blog'
 featured: true
-tags: "Emotional Intelligence, Relationships, Lifestyle"
+tags: ["Emotional Intelligence", "Relationships", "Lifestyle"]
 keywords: "Emotional Intelligence, Relationships,Lifestyle"
 description: "Dogs melt our hearts every day, but it turns out there's a lot they can teach us, too."
 author: {

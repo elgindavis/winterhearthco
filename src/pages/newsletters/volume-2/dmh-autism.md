@@ -6,7 +6,7 @@ imageAlt: 'Autism'
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: 'Mental health, Autism'
+tags: ['Mental health', 'Autism']
 keywords: 'mental health, autism'
 description: 'Take a moment to learn more about our friends with autism and how you can be a better supporter and ally in the community.'
 author: {

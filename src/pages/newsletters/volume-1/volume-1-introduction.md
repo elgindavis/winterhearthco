@@ -6,7 +6,7 @@ imageAlt: "Welcome to Winter Hearth Studios!"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Winter Hearth, Introduction"
+tags: ["Winter Hearth", "Introduction"]
 keywords: "Winter Hearth"
 description: "Volume 1, Issue 1"
 author: {

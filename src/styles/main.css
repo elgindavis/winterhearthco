@@ -1136,15 +1136,16 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.5em;
+  color: var(--color-text);
 }
 
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
   color: var(--color-text);
 }
 
-.button-area {
+/* .button-area { */
   /*background: var(--color-background);*/
-}
+/* } */
 
 .button-area .border-top-generic {
   padding: 70px 15px;

@@ -6,7 +6,7 @@ imageAlt: "Placeholder alt text"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Emotions, EQ"
+tags: ["Emotions", "EQ"]
 keywords: "Emotions, EQ"
 description: "Volume 1, Issue 7"
 author: {

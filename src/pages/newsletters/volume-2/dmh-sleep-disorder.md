@@ -6,7 +6,7 @@ imageAlt: "Sleep Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "Sleep Disorder"
+tags: ["Sleep Disorder"]
 keywords: "Sleep Disorder"
 description: "Falling asleep at 3am for the fourth time this week? Do you struggle to feel rested after a night's sleep? It may very well be a Sleep Disorder:"
 author: {

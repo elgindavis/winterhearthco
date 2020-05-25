@@ -6,7 +6,7 @@ imageAlt: "The Minimalists Poscast"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Emotional Baggage, Minimalism"
+tags: ["Emotional Baggage", "Minimalism"]
 keywords: "Emotional Baggage, Minimalism"
 description: "Volume 1, Issue 4"
 author: {

@@ -6,7 +6,7 @@ imageAlt: "Attention"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Attention, Distraction"
+tags: ["Attention", "Distraction"]
 keywords: "Attention, Distraction"
 description: "Volume 1, Issue 5"
 author: {

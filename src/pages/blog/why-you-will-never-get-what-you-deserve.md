@@ -5,7 +5,7 @@ imageUrl: "/img/blog/sunset-path-600p.jpg"
 imageAlt: "Man walking alone on a path at sunset"
 contentType: 'blog'
 featured: true
-tags: "Mindset, Perspective, Lifestyle"
+tags: ["Mindset", "Perspective", "Lifestyle"]
 keywords: "Mindset, Perspective, Lifestyle"
 description: "Though life is full of various opportunities and possibilities, you'll never get the ones you really deserve. Here's why:"
 author: {

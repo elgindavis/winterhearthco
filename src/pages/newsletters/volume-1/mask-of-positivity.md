@@ -6,7 +6,7 @@ imageAlt: "The Mask of Positivity"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "positivity"
+tags: ["Positivity"]
 keywords: "positivity"
 description: "Volume 1, Issue 15"
 author: {

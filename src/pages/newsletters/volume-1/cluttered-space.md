@@ -6,7 +6,7 @@ imageAlt: "A junky garage"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Mental Health, Holistic Health, Total Health"
+tags: ["Mental Health", "Holistic Health", "Total Health"]
 keywords: "Mental Health, Holistic Health, Total Health"
 description: "Volume 1, Issue 3"
 author: {

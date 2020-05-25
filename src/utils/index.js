@@ -23,9 +23,9 @@ export const transformPostQueryData = (postList) => {
     });
 };
 
-export const setPostTags = (tagString) => {
-    return tagString.split(", ").map((tag, index) => {
-        return index !== tagString.split(", ").length - 1 ? (
+export const setPostTags = (tags) => {
+    return tags.map((tag, index) => {
+        return index !== tags.length - 1 ? (
             <li key={index}>{tag},&nbsp;</li>
         ) : (
                 <li key={index}>{tag}</li>

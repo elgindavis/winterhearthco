@@ -5,7 +5,7 @@ imageUrl: "/img/blog/happy-sign-600p.jpg"
 imageAlt: "Happy neon sign"
 contentType: 'blog'
 featured: true
-tags: "Emotional Intelligence, Happiness, Lifestyle"
+tags: ["Emotional Intelligence", "Happiness", "Lifestyle"]
 keywords: "happiness, emotions, emotional intelligence, goals, lifestyle"
 author: {
     name: "Elgin Davis",

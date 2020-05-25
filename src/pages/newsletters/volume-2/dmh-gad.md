@@ -6,7 +6,7 @@ imageAlt: "Anxiety"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "Anxiety"
+tags: ["Anxiety"]
 keywords: "Anxiety"
 description: "Do we really know what anxiety is? What about an anxiety disorder? What's the difference? Find out here:"
 author: {
