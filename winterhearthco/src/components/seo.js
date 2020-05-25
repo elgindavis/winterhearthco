@@ -42,7 +42,7 @@ const SEO = ((props) => {
           },
           {
             property: `og:title`,
-            content: props.title + " | Winter Hearth Studios",
+            content: `${props.title} | Winter Hearth Studios`,
           },
           {
               property: `og:image`, 
