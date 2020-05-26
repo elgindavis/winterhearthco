@@ -2660,6 +2660,27 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 30px;
   }
 }
+.search input[type="text"] {
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.search input::placeholder {
+    padding: 10px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-gray500);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--color-gray500);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--color-gray500);
+}
 
 .banner-left .primary-btn:hover {
   box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.3);

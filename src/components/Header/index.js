@@ -1,4 +1,4 @@
-import { Link } from 'gatsby';
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React, { useState, useRef } from 'react'
 
 import { Burger, Menu } from '../';
@@ -16,40 +16,75 @@ const Header = () => {
     
     useOnClickOutside(node, () => setOpen(false));
 
-   return ( 
-        <header id="header">
-            <div className="row align-items-center justify-content-between d-flex">
-                <div id="logo">
-                    <Link to="/" aria-label="Winter Hearth Home Page Icon">
-                       {colorMode &&
-                            <img
-                                style={{ "maxHeight": "56px" }}
-                                src={colorMode === "light" ? "/img/logo-classic-100p.png" : "/img/logo-light-100p.png"}
-                                alt="Winter Hearth Logo"
-                                title="Winter Hearth Logo"
-                            />
-                        }
-                    </Link>
-                </div>
-                <nav>
-                    <div id="menu-panel" ref={node}>
-                        <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-                        <Menu open={open} setOpen={setOpen} id={menuId} />
-                    </div>
-                    <div id="nav-menu-container">
-                        <ul className="nav-menu">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/about">Our Story</Link></li>
-                            {/* <li><Link to="/podcast">Podcast</Link></li> */}
-                            <li><Link to="/blog/">Blog</Link></li>
-                            {/* <li><Link to="/games/">Games</Link></li> */}
-                            <li><Link to="/newsletters/">Newsletters</Link></li>
-                        </ul >
-                    </div>
-                </nav>
-            </div>
-        </header>
-    )
+    const bgImage = `url(/img/circles-${colorMode}.png) 
+        center / cover   /* position / size */ 
+        no-repeat        /* repeat */ 
+        fixed            /* attachment */ 
+        padding-box      /* origin */ 
+        content-box      /* clip */ 
+        white            /* color */`;
+    
+    const logo =
+      colorMode === "light"
+        ? "/img/logo-classic-100p.png"
+        : "/img/logo-light-100p.png";
+
+   return (
+     <header id="header">
+       <div className="row align-items-center justify-content-between d-flex">
+         <div id="logo">
+           {/* paintDrip, fade, swipe, cover  */}
+           <AniLink
+             cover
+             bg={bgImage}
+             to="/"
+             aria-label="Winter Hearth Home Page Icon"
+           >
+             {colorMode && (
+               <img
+                 style={{ maxHeight: "56px" }}
+                 src={logo}
+                 alt="Winter Hearth Logo"
+                 title="Winter Hearth Logo"
+               />
+             )}
+           </AniLink>
+         </div>
+         <nav>
+           <div id="menu-panel" ref={node}>
+             <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+             <Menu open={open} setOpen={setOpen} id={menuId} />
+           </div>
+           <div id="nav-menu-container">
+             <ul className="nav-menu">
+               <li>
+                 <AniLink cover bg={bgImage} to="/">
+                   Home
+                 </AniLink>
+               </li>
+               <li>
+                 <AniLink cover bg={bgImage} to="/about">
+                   Our Story
+                 </AniLink>
+               </li>
+               {/* <li><Link to="/podcast">Podcast</Link></li> */}
+               <li>
+                 <AniLink cover bg={bgImage} to="/blog/">
+                   Blog
+                 </AniLink>
+               </li>
+               {/* <li><Link to="/games/">Games</Link></li> */}
+               <li>
+                 <AniLink cover bg={bgImage} to="/newsletters/">
+                   Newsletters
+                 </AniLink>
+               </li>
+             </ul>
+           </div>
+         </nav>
+       </div>
+     </header>
+   );
 }
 
 export default Header;
