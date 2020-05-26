@@ -6,7 +6,7 @@ imageAlt: "What's in a Word?"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Meaning, Lifestyle"
+tags: ["Meaning", "Lifestyle"]
 keywords: "Meaning, Lifestyle"
 description: "Volume 1, Issue 12"
 author: {

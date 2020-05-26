@@ -10,7 +10,7 @@ export const StyledToggle = styled.button`
     z-index: 1000;
     background: var(--color-text);
     color: var(--color-background);
-    @media (max-width: 425px) {
+    @media (max-width: 500px) {
       display: none;
   }
 `;

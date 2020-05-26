@@ -6,7 +6,7 @@ imageAlt: "Bipolar Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "Bipolar Disorder"
+tags: ["Bipolar Disorder"]
 keywords: "Bipolar Disorder"
 description: "Though many choose to believe that Bipolar Disorder is as simple as being 'happy' one day and 'sad' the next, this is not actually the case. What is Bipolar Disorder, and why is it so misunderstood?"
 author: {

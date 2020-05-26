@@ -6,7 +6,7 @@ imageAlt: "Depression"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "Depression"
+tags: ["Depression"]
 keywords: "Depression"
 description: "Depression is more complex than most people take it to be. Find out more about Depression, how it works, and how to help those who struggle with it."
 author: {

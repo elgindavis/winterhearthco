@@ -6,7 +6,7 @@ imageAlt: "Social Anxiety"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "Social Anxiety"
+tags: ["Social Anxiety"]
 keywords: "Social Anxiety"
 description: "What's the difference between social anxiety, regular anxiety, and anxiety disorders? Check out this edition to learn more:"
 author: {

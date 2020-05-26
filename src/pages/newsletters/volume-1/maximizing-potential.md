@@ -6,7 +6,7 @@ imageAlt: "Potential success"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Potential, Success, Motivation, Energy"
+tags: ["Potential", "Success", "Motivation", "Energy"]
 keywords: "Potential, Success, Motivation, Energy"
 description: "Volume 1, Issue 2"
 author: {

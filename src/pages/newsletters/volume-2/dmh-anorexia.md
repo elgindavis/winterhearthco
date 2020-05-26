@@ -6,7 +6,7 @@ imageAlt: "Anorexia Nervosa"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "Anorexia Nervosa"
+tags: ["Anorexia Nervosa"]
 keywords: "Anorexia Nervosa"
 description: "What is it about Anorexia that makes it so powerful, and how does it work?"
 author: {

@@ -6,7 +6,7 @@ imageAlt: "Perspective"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Perspective"
+tags: ["Perspective"]
 keywords: "Perspective"
 description: "Volume 1, Issue 6"
 author: {

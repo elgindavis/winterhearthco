@@ -15,7 +15,7 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-  @media (min-width: 768px) {
+  @media (min-width: 500px) {
       display: none;
   }
   span {

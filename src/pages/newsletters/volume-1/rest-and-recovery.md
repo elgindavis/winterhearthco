@@ -6,7 +6,7 @@ imageAlt: "Recovering from stress"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Rest, Recovery, Stress, Anxiety"
+tags: ["Rest", "Recovery", "Stress", "Anxiety"]
 keywords: "Rest, Recovery, Stress, Anxiety"
 description: "Volume 1, Issue 8"
 author: {

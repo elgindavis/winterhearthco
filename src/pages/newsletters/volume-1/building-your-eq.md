@@ -6,7 +6,7 @@ imageAlt: "Emotional Intelligence is fun!"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Emotional Intelligence, EQ"
+tags: ["Emotional Intelligence", "EQ"]
 keywords: "Emotional Intelligence, EQ"
 description: "Volume 1, Issue 10"
 author: {

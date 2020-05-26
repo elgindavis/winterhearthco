@@ -6,7 +6,7 @@ imageAlt: "Placeholder alt text"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Gratitude, Meaning"
+tags: ["Gratitude", "Meaning"]
 keywords: "Gratitude, Meaning"
 description: "Volume 1, Issue 14"
 author: {

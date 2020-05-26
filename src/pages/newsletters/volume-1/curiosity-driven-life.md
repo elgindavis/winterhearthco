@@ -6,7 +6,7 @@ imageAlt: "Placeholder alt text"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Curiosity"
+tags: ["Curiosity"]
 keywords: "curiosity"
 description: "Volume 1, Issue 13"
 author: {

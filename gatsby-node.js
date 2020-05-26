@@ -1,4 +1,6 @@
 const path = require(`path`)
+const _ = require("lodash");
+
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { graphql } = require(`gatsby`);
 
@@ -14,11 +16,17 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions;
+
+  const tagTemplate = path.resolve("src/templates/tags.js");
+
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      postsRemark: allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 2000
+      ) {
         edges {
           node {
             fields {
@@ -26,26 +34,39 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             frontmatter {
               contentType
+              tags
             }
           }
+        }
+      }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
         }
       }
     }
   `);
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  // handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  const posts = result.data.postsRemark.edges;
+  posts.forEach(({ node }) => {
     let template;
 
     switch (node.frontmatter.contentType) {
-      case 'newsletter':
-      case 'blog':
-        template = './src/templates/post.js';
+      case "newsletter":
+      case "blog":
+        template = "./src/templates/post.js";
         break;
-      case 'game':
-        template = './src/templates/game.js';
+      case "game":
+        template = "./src/templates/game.js";
         break;
-      case 'podcast':
-        template = './src/templates/podcast-episode.js';
+      case "podcast":
+        template = "./src/templates/podcast-episode.js";
         break;
       default:
         break;
@@ -61,4 +82,17 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-}
+
+  // Extract tag data from query
+  const tags = result.data.tagsGroup.group;
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
+};

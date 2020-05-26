@@ -6,7 +6,7 @@ imageAlt: "TED Talk Video thumbnail"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
-tags: "Compassion Fatigue"
+tags: ["Compassion Fatigue"]
 keywords: "Compassion Fatigue"
 description: "Volume 1, Issue 9"
 author: {

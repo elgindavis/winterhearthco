@@ -6,7 +6,7 @@ imageAlt: "Body Dysmorphic Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "Body Dysmorphic Disorder"
+tags: ["Body Dysmorphic Disorder"]
 keywords: "Body Dysmorphic Disorder"
 description: "Many of us have something that we wish we could change about our appearances and other similar insecurities, but those qualms don't always necessarily disrupt our daily lives. This is the case of BDD:"
 author: {

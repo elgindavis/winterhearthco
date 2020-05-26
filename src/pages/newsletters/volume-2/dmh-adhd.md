@@ -6,7 +6,7 @@ imageAlt: "ADHD"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
-tags: "ADHD"
+tags: ["ADHD"]
 keywords: "ADHD"
 description: "People use and misuse the term ADHD all the time. What is it, and what do you need to know about it?"
 author: {

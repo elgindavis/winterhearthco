@@ -5,7 +5,7 @@ imageUrl: "/img/blog/good-news-600p.jpg"
 imageAlt: "Good News Newspaper"
 contentType: 'blog'
 featured: true
-tags: "Emotions, Pandemics, Good News, Lifestyle"
+tags: ["Emotions", "Pandemics", "Good News", "Lifestyle"]
 keywords: "Emotions, Pandemics, Good News, Lifestyle"
 description: "In this world there will be troubles... And good news makes those troubles seem smaller, right?"
 author: {

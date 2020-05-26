@@ -1,6 +1,6 @@
 import React from 'react';
 import { bool } from 'prop-types';
-import { Link } from 'gatsby';
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import { StyledMenu } from './Menu.styled';
 
@@ -11,11 +11,12 @@ const Menu = ({ open, ...props }) => {
 
     return (
         <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-            <Link aria-hidden="true" to="/about">Our Story</Link>
-            {/* <Link aria-hidden="true" to="/podcast">Podcast</Link> */}
-            <Link aria-hidden="true" to="/blog/">Blog</Link>
-            {/* <Link aria-hidden="true" to="/games/">Games</Link> */}
-            <Link aria-hidden="true" to="/newsletters/">Newsletters</Link>
+            <AniLink aria-hidden="true" paintDrip hex="#f0f8ff" to="/">Home</AniLink>
+            <AniLink aria-hidden="true" paintDrip hex="#f0f8ff" to="/about">Our Story</AniLink>
+            {/* <AniLink aria-hidden="true" to="/podcast">Podcast</AniLink> */}
+            <AniLink aria-hidden="true" paintDrip hex="#f0f8ff" to="/blog/">Blog</AniLink>
+            {/* <AniLink aria-hidden="true" to="/games/">Games</AniLink> */}
+            <AniLink aria-hidden="true" paintDrip hex="#f0f8ff" to="/newsletters/">Newsletters</AniLink>
         </StyledMenu>
     )
 }
