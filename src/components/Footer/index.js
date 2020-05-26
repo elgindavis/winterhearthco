@@ -48,7 +48,6 @@ const Footer = () => {
                                 id="mc-embedded-subscribe-form"
                                 name="mc-embedded-subscribe-form"
                                 className="validate"
-                                target="_blank"
                                 noValidate>
 
                                 <div id="mc_embed_signup_scroll">

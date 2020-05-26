@@ -18,7 +18,6 @@ export default (props) => {
                     {
                         props.hasAuthorURL ? 
                             <a 
-                                target="_blank" 
                                 rel="noopener noreferrer" 
                                 href={props.authorURL}
                                 style={{marginRight: 8}}

@@ -2330,12 +2330,12 @@ h1, h2, h3, h4, h5, h6 {
   content: "\f105";
 }
 
-/* Nav Menu Container */
-@media (max-width: 767px) {
+/* Nav Menu Container
+@media (max-width: 500px) {
   #nav-menu-container {
     display: none;
   }
-}
+} */
 
 /* Nav Meu Styling */
 .nav-menu a {
@@ -2406,7 +2406,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   #mobile-nav-toggle {
     display: inline;
   }

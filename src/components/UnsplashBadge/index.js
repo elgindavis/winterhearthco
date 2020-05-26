@@ -5,7 +5,6 @@ const UnsplashBadge = props => {
   return (
     <a
       href={props.artistURL}
-      target="_blank"
       rel="noopener noreferrer"
       title={props.badgeTitle}
       style={{
