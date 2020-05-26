@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyledSearchBar = styled.input`
-  background: transparent; // var(--color-text);
+  background: transparent;
   color: var(--color-gray700);
-  width: 70%;
+  width: 80%;
   height: 44px;
   margin: 0 20px;
   padding-left: 12px;

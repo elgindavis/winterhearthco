@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 // Temporary copy of JSON File...
 const posts = {
@@ -55,20 +55,20 @@ export default () => (
                         <span key={postNumber}>
                             <div className="single-post-list d-flex flex-row align-items-center" style={{marginTop: 24}}>
                                 <div className="thumb">
-                                    <Link to={posts[postNumber]["articleLink"]}>
+                                    <AniLink paintDrip hex="#f0f8ff" direction="up"  to={posts[postNumber]["articleLink"]}>
                                         <img 
                                             style={{borderRadius: 4, height: "80%"}} 
                                             className="" 
                                             src={posts[postNumber]["imageUrl"]} 
                                             alt={posts[postNumber]["imgAltText"]}/>
-                                    </Link>
+                                    </AniLink>
                                 </div>
                             </div>
                             <div className="">
                                 <div className="details">
-                                    <Link to={posts[postNumber]["articleLink"]}>
+                                    <AniLink  paintDrip hex="#f0f8ff" direction="up"  to={posts[postNumber]["articleLink"]}>
                                         <h6>{posts[postNumber]["articleTitle"]}</h6>
-                                    </Link>
+                                    </AniLink>
                                     <p style={{fontSize: 14, lineHeight: "1.3rem", margin: "4px 0"}}>
                                         {posts[postNumber]["articleDescription"]}
                                     </p>

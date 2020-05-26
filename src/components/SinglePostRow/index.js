@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { setPostTags } from '../../utils';
 
 export default (props) => {
@@ -36,14 +36,14 @@ export default (props) => {
         </div>
         <div className="col-lg-9 col-md-9 ">
             <div className="feature-img">
-                <Link to={props.articleLink}>
-                    <img style={{borderRadius: 4}} className="img-fluid lazyload" src={props.imageUrl} alt={props.imgAltText}/></Link>
+                <AniLink paintDrip hex="#f0f8ff" direction="up" to={props.articleLink}>
+                    <img style={{borderRadius: 4}} className="img-fluid lazyload" src={props.imageUrl} alt={props.imgAltText}/></AniLink>
 			</div>
-            <Link className="posts-title" to={props.articleLink}><h3>{props.articleTitle}</h3></Link>
+            <AniLink paintDrip hex="#f0f8ff" direction="up" className="posts-title" to={props.articleLink}><h3>{props.articleTitle}</h3></AniLink>
                 <p className="excerpt">
                     {props.excerpt}
                 </p>
-            <Link to={props.articleLink} className="primary-btn">Read Article</Link>
+            <AniLink paintDrip hex="#f0f8ff" direction="up" to={props.articleLink} className="primary-btn">Read Article</AniLink>
             </div>
         </div>
     )};
