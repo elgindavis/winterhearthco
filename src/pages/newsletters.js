@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Layout, PostGridItem, SearchArea, SinglePostRow } from "../components";
+import { Layout, Separator, PostGridItem, SearchArea, SinglePostRow } from "../components";
 import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
@@ -45,7 +45,8 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
         </section>
         <section>
           <div className="text-center">
-            <h1 className="pt-40 pb-40">Winter Hearth Newsletters</h1>
+            <h1 className="pt-40 pb-10">Winter Hearth Newsletters</h1>
+            <Separator />
             <SearchArea
               setPostList={setPostList}
               setSearchState={setSearchState}

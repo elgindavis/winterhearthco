@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-import { PostGridItem, Layout, SearchArea } from "../components";
+import { PostGridItem, Layout, Separator, SearchArea } from "../components";
 import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
@@ -61,6 +61,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
           <div className="row justify-content-center">
             <div className="col-md-12 pb-60 text-center header-text">
               <h1>Latest content</h1>
+              <Separator />
               <SearchArea
                 setPostList={setPostList}
                 setSearchState={setSearchState}
@@ -95,9 +96,11 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                 })}
             </div>
           </div>
-          <div>
-            <h2>Most Recent</h2> <br/>
-          </div>
+          {searchState !== "" && (
+            <div>
+              <h2>Most Recent</h2> <br/>
+            </div>
+          )}
           <div id="latest-posts-row" className="row">
             {latestPostList.map((edition) => {
               return (

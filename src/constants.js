@@ -9,6 +9,7 @@ export const COLORS = {
            gray700: "hsl(0, 0%, 30%)",
            white: "hsl(0deg, 0%, 90%)", // white
            link: "hsl(330, 50%, 45%)", //
+           yellow: "hsl(49, 70%, 55%)",
          },
          dark: {
            text: "hsl(0, 0%, 80%)", // Platinum
@@ -20,6 +21,7 @@ export const COLORS = {
            gray700: "hsl(0deg, 0%, 70%)",
            white: "hsl(0deg, 0%, 90%)", // white
            link: "hsla(205, 72%, 59%)", //
+           yellow: "hsl(49, 70%, 55%)",
          },
          elgin: {
            text: "hsl(0, 0%, 80%)", // Platinum

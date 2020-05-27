@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import {
     Layout, 
+    Separator,
     SearchArea,
     PostGridItem,
     SinglePostRow,
@@ -44,7 +45,8 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         ></BannerBlogItem>
         <section>
           <div className="text-center">
-            <h1 className="pt-40 pb-40">Winter Hearth Blog</h1>
+            <h1 className="pt-60 pb-10">Winter Hearth Blog</h1>
+            <Separator/>
             <SearchArea
               setPostList={setPostList}
               setSearchState={setSearchState}
