@@ -41,11 +41,7 @@ export default (props) => {
                   style={{ marginRight: 8 }}
                 >
                   {" "} */}
-                  {props.author}
-                {/* </AniLink> */}
-              ) : (
-                <span style={{ marginRight: 8 }}>By {props.author}</span>
-              )}
+              <span style={{ marginRight: 8 }}>By {props.author}</span>
               <span style={{ float: "right" }}>{props.date}</span>
             </p>
           </div>

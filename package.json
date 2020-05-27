@@ -38,6 +38,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "cypress": "^4.7.0",
     "gh-pages": "^2.2.0",
     "nodemon": "^2.0.3",
     "prettier": "2.0.4"

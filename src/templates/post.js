@@ -59,7 +59,7 @@ export default (props) => {
 
                     <div id="markdown-content" dangerouslySetInnerHTML={{ __html: postHTML }} />
 
-                    <p style={{ padding: "8% 0 12px 0" }}>
+                    <p style={{ padding: "5% 0 12px 0" }}>
                         Thanks so much for reading— I hope you enjoyed this piece
                         and took something away to make your life more
                         meaningful and fulfilling. You can subscribe below to be notified about future posts from
@@ -82,9 +82,7 @@ export default (props) => {
                     className="lazyload"
                     alt={postInfo.author.name}
                   />
-                  <a href={postInfo.author.imageUrl}>
-                    <h4>{postInfo.author.name}</h4>
-                  </a>
+                  <h4 style={{paddingTop: 20}}>{postInfo.author.name}</h4>
                   <p>{postInfo.author.role}</p>
                   <p style={{ textAlign: "left" }}>{postInfo.author.summary}</p>
                 </div>
