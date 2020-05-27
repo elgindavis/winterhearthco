@@ -32,7 +32,7 @@ export default (props) => {
           </AniLink>
           <div className="user-details row">
             <p className="user-name col-lg-12 col-md-12">
-              {props.hasAuthorURL ? (
+              {/* {props.hasAuthorURL ? (
                 <AniLink
                   paintDrip
                   hex="#f0f8ff"
@@ -40,9 +40,9 @@ export default (props) => {
                   to={props.authorURL}
                   style={{ marginRight: 8 }}
                 >
-                  {" "}
+                  {" "} */}
                   {props.author}
-                </AniLink>
+                {/* </AniLink> */}
               ) : (
                 <span style={{ marginRight: 8 }}>By {props.author}</span>
               )}

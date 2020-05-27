@@ -16,7 +16,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
       keywords={
         "how to be happy, how to be a good friend, mental health struggles, mental illness, emotional first aid, emotional intelligence, emotional agility, emotions, how to stop being angry, how to manage my emotions, types of mental health, emotional health, mental health facts, importance of mental health essay, characteristics of mental health, mental health synonym, mental health articles 2019, what is emotional health,"
       }
-      imageUrl="https://winterhearth.co/img/aubbie-knight.png"
+      imageUrl="/img/aubbie-knight.png"
       imageAlt="Winter Hearth Studios"
       url="https://winterhearth.co/about"
       title="Home"

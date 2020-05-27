@@ -7,7 +7,7 @@ export default () => (
     keywords={
       "how to be happy, how to be a good friend, mental health struggles, mental illness, emotional first aid, emotional intelligence, emotional agility, emotions, how to stop being angry, how to manage my emotions, types of mental health, emotional health, mental health facts, importance of mental health essay, characteristics of mental health, mental health synonym, mental health articles 2019, what is emotional health,"
     }
-    imageUrl="https://winterhearth.co/img/aubbie-knight.png"
+    imageUrl="/img/aubbie-knight.png"
     imageAlt="Winter Hearth Studios"
     url="https://winterhearth.co/about"
     title="Our Story | Winter Hearth Studios"
@@ -16,12 +16,17 @@ export default () => (
     <title>Our Story | Winter Hearth Studios</title>
     <section
       className="home-about-area section-gap"
-      style={{ paddingTop: 100 }}
+      style={{ paddingTop: 120 }}
     >
       <div className="container" style={{ lineHeight: "2.3rem" }}>
         <div
           className="row align-items-center justify-content-between"
-          style={{ paddingTop: 80 }}
+          style={{
+            padding: '40px 12px',
+            border: "4px solid var(--color-primary)",
+            borderRadius: 4,
+            margin: '40px 12px',
+          }}
         >
           <div className="col-lg-5 col-md-6">
             <h1 className="">Our Story</h1>
@@ -33,14 +38,22 @@ export default () => (
               hyper-meaningful, and greatly fulfilling lives for ourselves.
             </p>
           </div>
-          <div className="col-lg-6 col-md-6" style={{}}>
+          <div className="col-lg-6 col-md-6">
             <img className="img-fluid lazyload" src="/img/photo-4.jpg" alt="" />
           </div>
         </div>
         <div
           className="row align-items-center justify-content-between"
-          style={{ marginBottom: 12, paddingTop: 60 }}
+          style={{
+            padding: '40px 12px',
+            border: "4px solid var(--color-secondary)",
+            borderRadius: 4,
+            margin: '40px 12px',
+          }}
         >
+          <div className="col-lg-6 col-md-6 home-about-right" style={{}}>
+            <img className="img-fluid lazyload" src="/img/hi-5.jpg" alt="" />
+          </div>
           <div className="col-lg-5 col-md-6">
             <h1 className="">Our Mission</h1>
             <p style={{ paddingTop: "3%" }}>
@@ -55,13 +68,72 @@ export default () => (
               see.
             </p>
           </div>
+        </div>
+        <div
+          className="row align-items-center justify-content-between"
+          style={{
+            padding: '40px 12px',
+            border: "4px solid var(--color-primary)",
+            borderRadius: 4,
+            margin: '40px 12px',
+          }}
+        >
+          <div className="col-lg-5 col-md-6">
+            <h1 className="">What fuels us</h1>
+            <p style={{ paddingTop: "3%" }}>
+              We're a creative studio dedicated to sparking meaningful change
+              around mental and emotional health. We fully believe that if you
+              can change the heart, you can change the world.
+            </p>
+          </div>
           <div className="col-lg-6 col-md-6 home-about-right" style={{}}>
-            <img className="img-fluid lazyload" src="/img/hi-5.jpg" alt="" />
+            <img
+              className=""
+              src="/img/aubbie-knight.jpg"
+              alt="Aubbie the Brave Knight"
+            />
           </div>
         </div>
         <div
           className="row align-items-center justify-content-between"
-          style={{ paddingTop: "5%" }}
+          style={{
+            padding: '40px 12px',
+            border: "4px solid var(--color-secondary)",
+            borderRadius: 4,
+            margin: '40px 12px',
+          }}
+        >
+          <div className="col-lg-6 col-md-6 home-about-right" style={{}}>
+            <img
+              className="img-fluid"
+              src="/img/aubbie-writing.png"
+              alt="Aubbie writing a story at a desk"
+            />
+          </div>
+          <div className="col-lg-5 col-md-6">
+            <h1 className="">What we do</h1>
+            <p style={{ paddingTop: "3%" }}>
+              We believe in the power of storytelling as a central unifier in
+              our shared human experience. <br /> From web comics to video
+              games, podcasts to videos, blog posts and beyond— we aim to
+              inspire, educate, and enrich people all over the world with the
+              tools they need to become more mentally and emotionally powerful.
+            </p>
+            <AniLink
+              paintDrip
+              hex="#f0f8ff"
+              direction="up"
+              to="/blog/"
+              className="primary-btn text-uppercase"
+              style={{ padding: '0 20px' }}
+            >
+              See latest posts
+            </AniLink>
+          </div>
+        </div>
+        <div
+          className="row align-items-center justify-content-between"
+          style={{ paddingTop: "10%" }}
         >
           <div className="col-lg-10">
             <p>
@@ -80,67 +152,6 @@ export default () => (
               motivation to overcome, and the inspiration to create something
               awesome.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className="home-about-area">
-      <div className="container" style={{ paddingTop: "5%" }}>
-        <div className="row align-items-center justify-content-between">
-          <div
-            className="col-lg-4 col-md-4 home-about-right"
-            style={{ paddingBottom: "4rem" }}
-          >
-            <h1 className="text-uppercase">What fuels us</h1>
-            <p>
-              We're a creative studio dedicated to sparking meaningful change
-              around mental and emotional health. We fully believe that if you
-              can change the heart, you can change the world.
-            </p>
-            <AniLink paintDrip hex="#f0f8ff" direction="up" to="/about" className="primary-btn text-uppercase">
-              Read Our Story
-            </AniLink>
-          </div>
-          <div className="col-lg-8 col-md-8 home-about-left">
-            <AniLink paintDrip hex="#f0f8ff" direction="up" to="/img/aubbie-knight.jpg">
-              <img
-                className="/img-fluid"
-                src="/img/aubbie-knight.jpg"
-                alt="Aubbie the Brave Knight"
-              />
-            </AniLink>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section className="home-about-area pt-120 pb-120">
-      <div className="container">
-        <div className="row align-items-center justify-content-between">
-          <div
-            className="col-lg-4 col-md-4 home-about-right"
-            style={{ paddingBottom: "4rem" }}
-          >
-            <h1 className="text-uppercase">What we do</h1>
-            <p>
-              We believe in the power of storytelling as a central unifier in
-              our shared human experience. <br /> From web comics to video
-              games, podcasts to videos, blog posts and beyond— we aim to
-              inspire, educate, and enrich people all over the world with the
-              tools they need to become more mentally and emotionally powerful.
-            </p>
-            <AniLink paintDrip hex="#f0f8ff" direction="up" to="/blog/" className="primary-btn text-uppercase">
-              See latest posts
-            </AniLink>
-          </div>
-          <div className="col-lg-7 col-md-7 home-about-left">
-            <AniLink paintDrip hex="#f0f8ff" direction="up" to="/img/aubbie-writing.png">
-              <img
-                className="/img-fluid"
-                src="/img/aubbie-writing.png"
-                alt="Aubbie writing a story at a desk"
-              />
-            </AniLink>
           </div>
         </div>
       </div>
