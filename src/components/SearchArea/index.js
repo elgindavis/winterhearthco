@@ -30,7 +30,7 @@ const SearchArea = ({ posts, setSearchState, setPostList }) => {
             .includes(query))
       );
     });
-    setPostList(filteredData);
+    setPostList(filteredData.reverse());
   };
 
   return (
@@ -39,7 +39,7 @@ const SearchArea = ({ posts, setSearchState, setPostList }) => {
         type="text"
         aria-label="Search"
         className="search"
-        placeholder="Type to filter posts..."
+        placeholder="Type to search posts..."
         onChange={handleInputChange}
       />
     </>

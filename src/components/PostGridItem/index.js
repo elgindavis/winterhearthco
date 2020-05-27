@@ -9,6 +9,7 @@ const PostGridItem = ({
     date,
     articleTitle,
     excerpt,
+    tags,
 }) => {
     return (
       <div className="col-lg-4 col-md-4">
@@ -37,7 +38,7 @@ const PostGridItem = ({
                 direction="up"
                 to={author.imageUrl}
               > */}
-                <span>by {author.name}</span>
+              <span>by {author.name}</span>
               {/* </AniLink> */}
             </div>
             <div className="meta">{date}</div>
@@ -47,7 +48,10 @@ const PostGridItem = ({
           </AniLink>
         </div>
         <div>
-          <p className="text-left">{excerpt}</p>
+          <p className="text-left" style={{ marginBottom: 20 }}>{excerpt}</p>
+        </div>
+        <div className="pb-40">
+          <small className="excerpt">Tags: {tags.join(", ")}</small>
         </div>
       </div>
     );

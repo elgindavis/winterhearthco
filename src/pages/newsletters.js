@@ -8,8 +8,13 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
     const [searchState, setSearchState] = useState("");
     const [filteredPostList, setPostList] = useState([]);
 
-    const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === "2");
-    const newsletterVolOneList = allPosts.filter(post => post.newsletterVolume === "1");
+    const allNewsletters = allPosts.filter(post => post.contentType === "newsletter");
+    const newsletterVolTwoList = allNewsletters.filter(
+      (post) => post.newsletterVolume === "2"
+    );
+    const newsletterVolOneList = allNewsletters.filter(
+      (post) => post.newsletterVolume === "1"
+    );
 
     return (
       <Layout
@@ -44,7 +49,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
             <SearchArea
               setPostList={setPostList}
               setSearchState={setSearchState}
-              posts={allPosts}
+              posts={allNewsletters}
             />
           </div>
         </section>
@@ -52,27 +57,29 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
           <div className="container">
             <div className="row">
               <div className="col-lg-8 posts-list">
-                {searchState !== "" && 
-                    (<h2 className="pb-40">Results for: {searchState}</h2>)
-                }
-                {searchState !== "" && 
-                    filteredPostList.map((edition) => {
-                        return (
-                            <SinglePostRow
-                                className="pb-20"
-                                key={edition.id}
-                                author={edition.author.name}
-                                date={edition.date}
-                                tags={edition.tags}
-                                articleTitle={edition.title}
-                                imageUrl={edition.imageUrl}
-                                articleLink={edition.articleLink}
-                                imgAltText={edition.imgAltText}
-                                excerpt={edition.description}
-                            ></SinglePostRow>
-                        );
-                    })
-                }
+                {searchState !== "" && (
+                  <h3 className="pb-40">Results for: {searchState}</h3>
+                )}
+                {searchState !== "" && filteredPostList.length === 0 && (
+                  <p>No posts matched this search</p>
+                )}
+                {searchState !== "" &&
+                  filteredPostList.map((edition) => {
+                    return (
+                      <SinglePostRow
+                        className="pb-20"
+                        key={edition.id}
+                        author={edition.author.name}
+                        date={edition.date}
+                        tags={edition.tags}
+                        articleTitle={edition.title}
+                        imageUrl={edition.imageUrl}
+                        articleLink={edition.articleLink}
+                        imgAltText={edition.imgAltText}
+                        excerpt={edition.description}
+                      ></SinglePostRow>
+                    );
+                  })}
               </div>
             </div>
           </div>
@@ -81,7 +88,9 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-12 pb-30 header-text text-center">
-                <h3>Epic Life Playbook Volume 2: <br/> Demystifying Mental Health</h3>
+                <h3>
+                  Epic Life Playbook Volume 2: <br /> Demystifying Mental Health
+                </h3>
                 <br />
                 <p>"Mental Health Monsters" Series Artwork by Toby Allen</p>
               </div>
@@ -94,6 +103,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                     author={edition.author}
                     date={edition.date}
                     articleTitle={edition.title}
+                    tags={edition.tags}
                     imageUrl={edition.imageUrl}
                     articleLink={edition.articleLink}
                     imgAltText={edition.imgAltText}
@@ -124,6 +134,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                     date={edition.date}
                     articleTitle={edition.title}
                     imageUrl={edition.imageUrl}
+                    tags={edition.tags}
                     articleLink={edition.articleLink}
                     imgAltText={edition.imgAltText}
                     excerpt={edition.description}

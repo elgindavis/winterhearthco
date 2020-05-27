@@ -1,12 +1,15 @@
-import React from "react";
-import { Link } from "gatsby";
+import React, { useState } from "react";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-import { PostGridItem, Layout } from "../components";
+import { PostGridItem, Layout, SearchArea } from "../components";
 import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
   const allPosts = transformPostQueryData(edges);
   const latestPostList = allPosts.slice(-9).reverse();
+
+  const [searchState, setSearchState] = useState("");
+  const [filteredPostList, setPostList] = useState([]);
 
   return (
     <Layout
@@ -36,9 +39,15 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
               <p>
                 We're Winter Hearth Studios, and we're just getting fired up.
               </p>
-              <Link to="/blog/" className="primary-btn text-uppercase">
+              <AniLink
+                paintDrip
+                hex="#f0f8ff"
+                direction="up"
+                to="/blog/"
+                className="primary-btn text-uppercase"
+              >
                 See Latest Posts
-              </Link>
+              </AniLink>
             </div>
           </div>
         </div>
@@ -50,29 +59,61 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
       >
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-8 pb-30 header-text">
+            <div className="col-md-12 pb-60 text-center header-text">
               <h1>Latest content</h1>
+              <SearchArea
+                setPostList={setPostList}
+                setSearchState={setSearchState}
+                posts={allPosts}
+              />
             </div>
           </div>
+          <div className="pb-40">
+            {searchState !== "" && (
+              <h3 className="pb-40">Results for: {searchState}</h3>
+            )}
+            {searchState !== "" && filteredPostList.length === 0 && (
+              <p>No posts matched this search</p>
+            )}
+            <div className="row">
+              {searchState !== "" &&
+                filteredPostList.map((edition) => {
+                  return (
+                    <PostGridItem
+                      className="pb-20"
+                      key={edition.id}
+                      author={edition.author.name}
+                      date={edition.date}
+                      tags={edition.tags}
+                      articleTitle={edition.title}
+                      imageUrl={edition.imageUrl}
+                      articleLink={edition.articleLink}
+                      imgAltText={edition.imgAltText}
+                      excerpt={edition.description}
+                    />
+                  );
+                })}
+            </div>
+          </div>
+          <div>
+            <h2>Most Recent</h2> <br/>
+          </div>
           <div id="latest-posts-row" className="row">
-            {
-
-              latestPostList.map((edition) => {
-                return (
-                  <PostGridItem
-                    key={edition.id}
-                    author={edition.author}
-                    date={edition.date}
-                    tags={edition.tags}
-                    articleTitle={edition.title}
-                    imageUrl={edition.imageUrl}
-                    articleLink={edition.articleLink}
-                    imgAltText={edition.imgAltText}
-                    excerpt={edition.description}
-                  ></PostGridItem>
-                );
-              })
-            }
+            {latestPostList.map((edition) => {
+              return (
+                <PostGridItem
+                  key={edition.id}
+                  author={edition.author}
+                  date={edition.date}
+                  tags={edition.tags}
+                  articleTitle={edition.title}
+                  imageUrl={edition.imageUrl}
+                  articleLink={edition.articleLink}
+                  imgAltText={edition.imgAltText}
+                  excerpt={edition.description}
+                ></PostGridItem>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -80,84 +121,27 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
       <section className="pt-20 pb-80">
         <div className="text-center">
           <span>
-            <Link
+            <AniLink
+              paintDrip
+              hex="#f0f8ff"
+              direction="up"
               style={{ margin: "12px 16px" }}
               to="/blog/"
               className="primary-btn text-uppercase"
             >
               See All Blogs
-            </Link>
-            <Link
+            </AniLink>
+            <AniLink
+              paintDrip
+              hex="#f0f8ff"
+              direction="up"
               style={{ margin: "12px 16px" }}
               to="/newsletters/"
               className="primary-btn text-uppercase"
             >
               See Newsletters
-            </Link>
+            </AniLink>
           </span>
-        </div>
-      </section>
-
-      <section className="home-about-area">
-        <div className="container" style={{ paddingTop: "5%" }}>
-          <div className="row align-items-center justify-content-between">
-            <div
-              className="col-lg-4 col-md-4 home-about-right"
-              style={{ paddingBottom: "4rem" }}
-            >
-              <h1 className="text-uppercase">What fuels us</h1>
-              <p>
-                We're a creative studio dedicated to sparking meaningful change
-                around mental and emotional health. We fully believe that if you
-                can change the heart, you can change the world.
-              </p>
-              <Link to="/about" className="primary-btn text-uppercase">
-                Read Our Story
-              </Link>
-            </div>
-            <div className="col-lg-8 col-md-8 home-about-left">
-              <Link to="/img/aubbie-knight.jpg">
-                <img
-                  className="/img-fluid"
-                  src="/img/aubbie-knight.jpg"
-                  alt="Aubbie the Brave Knight"
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="home-about-area pt-120 pb-120">
-        <div className="container">
-          <div className="row align-items-center justify-content-between">
-            <div
-              className="col-lg-4 col-md-4 home-about-right"
-              style={{ paddingBottom: "4rem" }}
-            >
-              <h1 className="text-uppercase">What we do</h1>
-              <p>
-                We believe in the power of storytelling as a central unifier in
-                our shared human experience. <br /> From web comics to video
-                games, podcasts to videos, blog posts and beyond— we aim to
-                inspire, educate, and enrich people all over the world with the
-                tools they need to become more mentally and emotionally
-                powerful.
-              </p>
-              <Link to="/blog/" className="primary-btn text-uppercase">
-                See latest posts
-              </Link>
-            </div>
-            <div className="col-lg-7 col-md-7 home-about-left">
-              <Link to="/img/aubbie-writing.png">
-                <img
-                  className="/img-fluid"
-                  src="/img/aubbie-writing.png"
-                  alt="Aubbie writing a story at a desk"
-                />
-              </Link>
-            </div>
-          </div>
         </div>
       </section>
     </Layout>
