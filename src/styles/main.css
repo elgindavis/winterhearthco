@@ -306,6 +306,12 @@ blockquote {
   font-size: 15px;
 }
 
+.separator {
+  margin-bottom: 1.2rem;
+  border-radius: 20px;
+  width: 80%;
+}
+
 .title-line {
   margin-top: .5rem;
   margin-bottom: 2rem;

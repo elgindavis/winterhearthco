@@ -57,10 +57,10 @@
   "homepage": "https://github.com/elgindavis/winterhearthco#readme",
   "scripts": {
     "build": "gatsby clean && gatsby build && cp -r src/img/* public/img",
-    "rs": "gatsby clean && gatsby build && cp -r src/img/* public/img && gatsby serve",
+    "rs": "npm run build && gatsby serve",
     "dev": "npm run build && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "stage": "gatsby build && gh-pages -d public",
+    "stage": "npm run build && gh-pages -d public",
     "start": "npm run develop",
     "serve": "cp -r src/img/* public/img && gatsby serve",
     "clean": "gatsby clean",

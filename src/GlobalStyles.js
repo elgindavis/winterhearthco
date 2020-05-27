@@ -8,10 +8,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: var(--color-text);
+    color: var(--color-link);
   }
 
   a:hover {
-    color: var(--color-primary);
+    color: var(--color-secondary);
   }
 `

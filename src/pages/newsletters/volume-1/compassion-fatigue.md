@@ -5,7 +5,7 @@ imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/29b777
 imageAlt: "TED Talk Video thumbnail"
 contentType: 'newsletter'
 newsletterVolume: '1'
-featured: false
+featured: true
 tags: ["Compassion Fatigue"]
 keywords: "Compassion Fatigue"
 description: "Volume 1, Issue 9"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export default (props) => {
     return (
@@ -19,9 +19,15 @@ export default (props) => {
             <div className="about-content blog-header-content col-lg-12">
               <h1 className="text-white">{props.articleTitle}</h1>
               <p className="text-white">{props.articleDescription}</p>
-              <Link to={props.articleLink} className="primary-btn">
+              <AniLink 
+                paintDrip 
+                hex="#f0f8ff" 
+                direction="up" 
+                to={props.articleLink} 
+                style={{ borderRadius: 4 }} 
+                className="primary-btn">
                 Read Article
-              </Link>
+              </AniLink>
             </div>
           </div>
         </div>

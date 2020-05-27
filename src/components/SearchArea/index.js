@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyledSearchBar = styled.input`
-  background: transparent; // var(--color-text);
+  background: transparent;
   color: var(--color-gray700);
-  width: 70%;
+  width: 80%;
   height: 44px;
   margin: 0 20px;
   padding-left: 12px;
@@ -12,17 +12,18 @@ const StyledSearchBar = styled.input`
   border: 2px solid var(--color-primary);
 `;
 
-const SearchArea = ({ posts, setSearchState, setPostList }) => {
+const SearchArea = ({ posts, setSearchState, setPostList, type }) => {
 
   const handleInputChange = (event) => {
     const query = event.target.value.toLowerCase();
     setSearchState(query);
 
     const filteredData = posts.filter((post) => {
-      const { description, title, tags } = post;
+      const { description, title, tags, author } = post;
       return (
         description.toLowerCase().includes(query) ||
         title.toLowerCase().includes(query) ||
+        author.name.toLowerCase().includes(query) ||
         (tags &&
           tags
             .join("") // convert tags from an array to string
@@ -30,7 +31,7 @@ const SearchArea = ({ posts, setSearchState, setPostList }) => {
             .includes(query))
       );
     });
-    setPostList(filteredData);
+    setPostList(filteredData.reverse());
   };
 
   return (
@@ -39,7 +40,7 @@ const SearchArea = ({ posts, setSearchState, setPostList }) => {
         type="text"
         aria-label="Search"
         className="search"
-        placeholder="Type to filter posts..."
+        placeholder={`Type to search ${type}...`}
         onChange={handleInputChange}
       />
     </>

@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 export default () => (
     <Layout
         keywords=""
-        imageUrl="https://winterhearth.co/img/aubbie-knight.png"
+        imageUrl="/img/aubbie-knight.png"
         imageAlt="Winter Hearth Studios"
         url="https://winterhearth.co/404"
         title="Page Not Found | Winter Hearth Studios"

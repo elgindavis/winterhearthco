@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import {
     Layout, 
+    Separator,
     SearchArea,
     PostGridItem,
     SinglePostRow,
@@ -14,8 +15,14 @@ import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const allPosts = transformPostQueryData(edges);
-    const featuredPostList = allPosts.filter(post => post.featured === true &&
-        post.contentType === 'blog'
+    const allBlogs = allPosts.filter(
+      (post) => post.contentType === "blog"
+    ); 
+    const featuredPostList = allBlogs.filter(
+      (post) => post.featured === true
+    );
+    const featuredColumnList = allPosts.filter(
+      (post) => post.featured === true
     );
     const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === "2");
     const [searchState, setSearchState] = useState('');
@@ -41,11 +48,13 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         ></BannerBlogItem>
         <section>
           <div className="text-center">
-            <h1 className="pt-40 pb-40">Winter Hearth Blog</h1>
+            <h1 className="pt-60 pb-10">Winter Hearth Blog</h1>
+            <Separator />
             <SearchArea
               setPostList={setPostList}
               setSearchState={setSearchState}
-              posts={allPosts}
+              posts={allBlogs}
+              type="blogs"
             />
           </div>
         </section>
@@ -53,27 +62,29 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
           <div className="container">
             <div className="row">
               <div className="col-lg-8 posts-list">
-                {searchState !== "" && 
-                    (<h2 className="pb-40">Results for: {searchState}</h2>)
-                }
-                {searchState !== "" && 
-                    filteredPostList.map((edition) => {
-                        return (
-                            <SinglePostRow
-                                className="pb-20"
-                                key={edition.id}
-                                author={edition.author.name}
-                                date={edition.date}
-                                tags={edition.tags}
-                                articleTitle={edition.title}
-                                imageUrl={edition.imageUrl}
-                                articleLink={edition.articleLink}
-                                imgAltText={edition.imgAltText}
-                                excerpt={edition.description}
-                            ></SinglePostRow>
-                        );
-                    })
-                }
+                {searchState !== "" && (
+                  <h3 className="pb-40">Results for: {searchState}</h3>
+                )}
+                {searchState !== "" && filteredPostList.length === 0 && (
+                  <p>No posts matched this search</p>
+                )}
+                {searchState !== "" &&
+                  filteredPostList.map((edition) => {
+                    return (
+                      <SinglePostRow
+                        className="pb-20"
+                        key={edition.id}
+                        author={edition.author.name}
+                        date={edition.date}
+                        tags={edition.tags}
+                        articleTitle={edition.title}
+                        imageUrl={edition.imageUrl}
+                        articleLink={edition.articleLink}
+                        imgAltText={edition.imgAltText}
+                        excerpt={edition.description}
+                      ></SinglePostRow>
+                    );
+                  })}
                 {searchState === "" &&
                   featuredPostList.map((edition) => {
                     return (
@@ -115,7 +126,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                       existence here on earth.
                     </p>
                   </div>
-                  <PopularPostColumn />
+                  <PopularPostColumn posts={featuredColumnList} />
                 </div>
               </div>
             </div>
@@ -139,6 +150,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                     author={edition.author}
                     date={edition.date}
                     articleTitle={edition.title}
+                    tags={edition.tags}
                     imageUrl={edition.imageUrl}
                     articleLink={edition.articleLink}
                     imgAltText={edition.imgAltText}
