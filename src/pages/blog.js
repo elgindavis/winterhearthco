@@ -114,9 +114,9 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                       className="lazyload"
                       alt="Elgin Davis"
                     />
-                    <Link to="/img/profile.jpg">
-                      <h4>Elgin Davis</h4>
-                    </Link>
+                    {/* <Link to="/img/profile.jpg"> */}
+                      <h4 className="pt-20">Elgin Davis</h4>
+                    {/* </Link> */}
                     <p>Main Content Writer</p>
                     <p style={{ textAlign: "left" }}>
                       Elgin Davis is the creator of Winter Hearth Studios.
