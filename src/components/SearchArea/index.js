@@ -12,17 +12,18 @@ const StyledSearchBar = styled.input`
   border: 2px solid var(--color-primary);
 `;
 
-const SearchArea = ({ posts, setSearchState, setPostList }) => {
+const SearchArea = ({ posts, setSearchState, setPostList, type }) => {
 
   const handleInputChange = (event) => {
     const query = event.target.value.toLowerCase();
     setSearchState(query);
 
     const filteredData = posts.filter((post) => {
-      const { description, title, tags } = post;
+      const { description, title, tags, author } = post;
       return (
         description.toLowerCase().includes(query) ||
         title.toLowerCase().includes(query) ||
+        author.name.toLowerCase().includes(query) ||
         (tags &&
           tags
             .join("") // convert tags from an array to string
@@ -39,7 +40,7 @@ const SearchArea = ({ posts, setSearchState, setPostList }) => {
         type="text"
         aria-label="Search"
         className="search"
-        placeholder="Type to search posts..."
+        placeholder={`Type to search ${type}...`}
         onChange={handleInputChange}
       />
     </>

@@ -51,6 +51,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
               setPostList={setPostList}
               setSearchState={setSearchState}
               posts={allNewsletters}
+              type="newsletters"
             />
           </div>
         </section>

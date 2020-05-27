@@ -21,6 +21,9 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const featuredPostList = allBlogs.filter(
       (post) => post.featured === true
     );
+    const featuredColumnList = allPosts.filter(
+      (post) => post.featured === true
+    );
     const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === "2");
     const [searchState, setSearchState] = useState('');
     const [filteredPostList, setPostList] = useState([]);
@@ -46,11 +49,12 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         <section>
           <div className="text-center">
             <h1 className="pt-60 pb-10">Winter Hearth Blog</h1>
-            <Separator/>
+            <Separator />
             <SearchArea
               setPostList={setPostList}
               setSearchState={setSearchState}
               posts={allBlogs}
+              type="blogs"
             />
           </div>
         </section>
@@ -122,7 +126,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                       existence here on earth.
                     </p>
                   </div>
-                  <PopularPostColumn />
+                  <PopularPostColumn posts={featuredColumnList} />
                 </div>
               </div>
             </div>

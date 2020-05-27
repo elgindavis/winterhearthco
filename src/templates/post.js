@@ -5,12 +5,14 @@ import UnsplashBadge from "../components/UnsplashBadge"
 import BlogPostMetadata from "../components/BlogPostMetadata"
 import PopularPostColumnWidget from "../components/PopularPostColumn"
 
-import "../styles/linearicons.css"
+import { transformPostQueryData } from "../utils";
 
 export default (props) => {
   const postHTML = props.data.markdownRemark.html;
   const postInfo = props.data.markdownRemark.frontmatter;
-  
+  const allPosts = transformPostQueryData(props.data.allMarkdownRemark.edges);
+  const featuredPostList = allPosts.filter((post) => post.featured === true);
+
   return (
     <Layout
       keywords={postInfo.keywords}
@@ -86,7 +88,7 @@ export default (props) => {
                   <p>{postInfo.author.role}</p>
                   <p style={{ textAlign: "left" }}>{postInfo.author.summary}</p>
                 </div>
-                <PopularPostColumnWidget />
+                <PopularPostColumnWidget posts={featuredPostList} />
               </div>
             </div>
           </div>
@@ -97,9 +99,24 @@ export default (props) => {
 };
 
 export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      ...PostInfo
-    }
-  }
-`;
+         query($slug: String!) {
+           markdownRemark(fields: { slug: { eq: $slug } }) {
+             ...PostInfo
+           }
+           allMarkdownRemark(
+             sort: { fields: [frontmatter___date], order: DESC }
+           ) {
+             totalCount
+             edges {
+               node {
+                 id
+                 excerpt
+                 fields {
+                   slug
+                 }
+                 ...PostInfo
+               }
+             }
+           }
+         }
+       `;
