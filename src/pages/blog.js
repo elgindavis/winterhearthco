@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link, graphql } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { graphql } from "gatsby";
 
 import {
     Layout, 
@@ -104,8 +105,6 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
               </div>
               <div className="col-lg-4 sidebar-widgets">
                 <div className="widget-wrap" style={{ marginTop: 0 }}>
-                  {/* <div className="single-sidebar-widget search-widget">
-                                </div> */}
                   <div className="single-sidebar-widget user-info-widget">
                     <img
                       width="120"
@@ -114,9 +113,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                       className="lazyload"
                       alt="Elgin Davis"
                     />
-                    {/* <Link to="/img/profile.jpg"> */}
-                      <h4 className="pt-20">Elgin Davis</h4>
-                    {/* </Link> */}
+                    <h4 className="pt-20">Elgin Davis</h4>
                     <p>Main Content Writer</p>
                     <p style={{ textAlign: "left" }}>
                       Elgin Davis is the creator of Winter Hearth Studios.
@@ -163,9 +160,9 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         </section>
         <section className="section-gap">
           <div className="text-center">
-            <Link to="/newsletters/" className="primary-btn text-uppercase">
+            <AniLink paintDrip direction="up" to="/newsletters/" className="primary-btn text-uppercase">
               See All Newsletters
-            </Link>
+            </AniLink>
           </div>
         </section>
       </Layout>
