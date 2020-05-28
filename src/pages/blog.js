@@ -137,7 +137,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
             <div className="row justify-content-center">
               <div className="col-md-8 pb-30 header-text text-center">
                 <h1>From the Newsletter Archives</h1>
-                <h3 className="pb-20">Epic Life Playbook Volume 2: Demystifying Mental Health</h3>
+                <h3 className="pb-20">Epic Life Playbook Volume 2:<br/> Demystifying Mental Health</h3>
                 <p>"Mental Health Monsters" Series Artwork by Toby Allen</p>
               </div>
             </div>
