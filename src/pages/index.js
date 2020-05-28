@@ -128,7 +128,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
         </div>
       </section>
 
-      <section className="pt-20 pb-80">
+      <section className="pt-80 pb-80">
         <div className="text-center">
           <span>
             <AniLink
