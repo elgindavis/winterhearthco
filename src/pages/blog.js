@@ -14,6 +14,19 @@ import {
 
 import { transformPostQueryData } from "../utils";
 
+const getBorderStyle = (index) => {
+  switch ((index + 1) % 3) {
+    case 0:
+      return "primary";
+    case 1:
+      return "secondary";
+    case 2:
+      return "yellow";
+    default:
+      return;
+  }
+}
+
 export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const allPosts = transformPostQueryData(edges);
     const allBlogs = allPosts.filter(
@@ -70,10 +83,11 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                   <p>No posts matched this search</p>
                 )}
                 {searchState !== "" &&
-                  filteredPostList.map((edition) => {
+                  filteredPostList.map((edition, index) => {
                     return (
                       <SinglePostRow
                         className="pb-20"
+                        color={getBorderStyle(index)}
                         key={edition.id}
                         author={edition.author.name}
                         date={edition.date}
@@ -87,9 +101,10 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                     );
                   })}
                 {searchState === "" &&
-                  featuredPostList.map((edition) => {
+                  featuredPostList.map((edition, index) => {
                     return (
                       <SinglePostRow
+                        color={getBorderStyle(index)}
                         key={edition.id}
                         author={edition.author.name}
                         date={edition.date}

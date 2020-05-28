@@ -1,10 +1,17 @@
 import React from "react";
+import styled from 'styled-components'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
+const Area = styled.div`
+    padding: 40px 12px;
+    border:  4px solid var(--color-${({ type }) => type});
+    border-radius: 4px;
+    margin: 0 12px 40px;
+`;
+
 export default (props) => {
-    
     return (
-      <div className="single-post row">
+      <Area type={props.color} className="single-post row">
         <div className="col-lg-12 col-md-12">
           <div className="feature-img">
             <AniLink
@@ -60,5 +67,5 @@ export default (props) => {
           </AniLink>
         </div>
         {/* <div className="col-lg-3  col-md-3 meta-details"></div> */}
-      </div>
+      </Area>
     );};
