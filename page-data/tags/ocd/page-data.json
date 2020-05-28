@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/ocd/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/newsletters/volume-2/dmh-ocd/"},"frontmatter":{"title":"DMH: Obsessive Compulsive Disorder (OCD)"}}}]}},"pageContext":{"tag":"OCD"}}}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/ocd/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/newsletters/volume-2/dmh-ocd/"},"frontmatter":{"title":"DMH: OCD"}}}]}},"pageContext":{"tag":"OCD"}}}
