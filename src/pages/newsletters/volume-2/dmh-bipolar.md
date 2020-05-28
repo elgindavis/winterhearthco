@@ -1,5 +1,5 @@
 ---
-title: "Demystifying Mental Health: Bipolar Disorder"
+title: "DMH: Bipolar Disorder"
 date:  "2019-08-18"
 imageUrl: "/img/newsletters/bipolar-400p.jpg"
 imageAlt: "Bipolar Disorder"

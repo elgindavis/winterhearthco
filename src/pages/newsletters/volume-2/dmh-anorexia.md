@@ -1,5 +1,5 @@
 ---
-title: "Demystifying Mental Health: Anorexia Nervosa"
+title: "DMH: Anorexia Nervosa"
 date:  "2019-08-11"
 imageUrl: "/img/newsletters/anorexia-400p.jpg"
 imageAlt: "Anorexia Nervosa"

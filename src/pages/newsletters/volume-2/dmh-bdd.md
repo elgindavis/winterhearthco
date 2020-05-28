@@ -1,5 +1,5 @@
 ---
-title: "Demystifying Mental Health: Body Dysmorphic Disorder"
+title: "DMH: Body Dysmorphic Disorder"
 date:  "2019-08-04"
 imageUrl: "/img/newsletters/bdd-400p.jpg"
 imageAlt: "Body Dysmorphic Disorder"

@@ -1,5 +1,5 @@
 ---
-title: "Demystifying Mental Health: Post-traumatic Stress Disorder"
+title: "DMH: Post-traumatic Stress Disorder"
 date:  "2019-08-25"
 imageUrl: "/img/newsletters/ptsd-400p.jpg"
 imageAlt: "Post-traumatic Stress Disorder"

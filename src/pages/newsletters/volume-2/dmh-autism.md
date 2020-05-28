@@ -1,5 +1,5 @@
 ---
-title: 'Demystifying Mental Health: Autism'
+title: 'DMH: Autism'
 date: '2019-09-12'
 imageUrl: '/img/newsletters/autism-400p.jpg'
 imageAlt: 'Autism'

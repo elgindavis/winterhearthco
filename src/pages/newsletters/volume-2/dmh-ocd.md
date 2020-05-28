@@ -1,5 +1,5 @@
 ---
-title: "Demystifying Mental Health: Obsessive Compulsive Disorder (OCD)"
+title: "DMH: Obsessive Compulsive Disorder (OCD)"
 date:  "2019-06-30"
 imageUrl: "/img/newsletters/ocd-400p.jpg"
 imageAlt: "OCD"

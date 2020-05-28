@@ -21,7 +21,7 @@ unsplashBadgeInfo: {
 }
 ---
 
-Demystifying Mental Health: Schizophrenia
+DMH: Schizophrenia
  
 What's New This Week
 Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, seeking to spark positive, empathetic, and meaningful conversation around mental and emotional health.

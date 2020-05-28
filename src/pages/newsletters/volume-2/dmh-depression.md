@@ -1,5 +1,5 @@
 ---
-title: "Demystifying Mental Health: Depression"
+title: "DMH: Depression"
 date:  "2019-09-08"
 imageUrl: "/img/newsletters/depression-400p.jpg"
 imageAlt: "Depression"
@@ -29,6 +29,7 @@ Welcome back and thanks for joining us again in the Winter Hearth Epic Life Play
 It feels like it has been forever since the last edition! Last weekend I was in Scotland visiting a friend before moving from Düsseldorf to Berlin, and now I'm in Berlin for the next 3 months. 
 
 Next week will be the last edition of Volume 2, Demystifying Mental Health (sad, I know), but your knowledge of mental health is just getting started, as is mine. You've been growing into a beautiful and strong mental-health butterfly over the past few months (yes, a mental-health butterfly) and it's almost time to spread your wings! There are tons of topics to explore as they pertain to mental health, and this was just the start. I hope you've enjoyed this newsletter and learned some things along the way, and I'm so grateful that you have taken part in this journey alongside me and all of the other great people here learning more about mental health. I'll be moving on to some other fun projects I have been working on simultaneously (including a new podcast starting soon!), so I hope to see you there as well.
+Next week will be the last edition of Volume 2, DMH (sad, I know), but your knowledge of mental health is just getting started, as is mine. You've been growing into a beautiful and strong mental-health butterfly over the past few months (yes, a mental-health butterfly) and it's almost time to spread your wings! There are tons of topics to explore as they pertain to mental health, and this was just the start. I hope you've enjoyed this newsletter and learned some things along the way, and I'm so grateful that you have taken part in this journey alongside me and all of the other great people here learning more about mental health. I'll be moving on to some other fun projects I have been working on simultaneously (including a new podcast starting soon!), so I hope to see you there as well.
 
 <br />
 

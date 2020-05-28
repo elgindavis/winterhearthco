@@ -1,5 +1,5 @@
 ---
-title: "Demystifying Mental Health: Anxiety"
+title: "DMH: Anxiety"
 date:  "2019-06-23"
 imageUrl: "/img/newsletters/anxiety-400p.jpg"
 imageAlt: "Anxiety"
