@@ -122,7 +122,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
         <section className="recent-blog-area pt-60">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-md-8 pb-30 header-text">
+              <div className="col-md-8 pb-30 header-text text-center">
                 <h3>
                   Epic Life Playbook Volume 1: Winter Hearth Creative Journal
                 </h3>
