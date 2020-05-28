@@ -61,7 +61,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         </section>
         <section style={{ marginTop: 90 }} className="post-content-area">
           <div className="container">
-            <div className="row" style={{ justifyContent: 'center' }}>
+            <div className="row justify-content-center">
               <div className="col-lg-8 posts-list">
                 {searchState !== "" && (
                   <h3 className="pb-40">Results for: {searchState}</h3>
@@ -135,13 +135,13 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         <section className="recent-blog-area pt-60">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-md-8 pb-30 header-text">
+              <div className="col-md-8 pb-30 header-text text-center">
                 <h1>From the Newsletter Archives</h1>
-                <h3>Epic Life Playbook Volume 2: Demystifying Mental Health</h3>
+                <h3 className="pb-20">Epic Life Playbook Volume 2: Demystifying Mental Health</h3>
                 <p>"Mental Health Monsters" Series Artwork by Toby Allen</p>
               </div>
             </div>
-            <div className="row">
+            <div className="row justify-content-center">
               {newsletterVolTwoList.map((edition, index) => {
                 return (
                   <PostGridItem
@@ -163,7 +163,12 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         </section>
         <section className="section-gap">
           <div className="text-center">
-            <AniLink paintDrip direction="up" to="/newsletters/" className="primary-btn text-uppercase">
+            <AniLink
+              paintDrip
+              direction="up"
+              to="/newsletters/"
+              className="primary-btn text-uppercase"
+            >
               See All Newsletters
             </AniLink>
           </div>

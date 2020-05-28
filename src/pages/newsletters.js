@@ -57,7 +57,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
         </section>
         <section style={{ marginTop: 90 }} className="post-content-area">
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-center">
               <div className="col-lg-8 posts-list">
                 {searchState !== "" && (
                   <h3 className="pb-40">Results for: {searchState}</h3>
@@ -98,7 +98,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                 <p>"Mental Health Monsters" Series Artwork by Toby Allen</p>
               </div>
             </div>
-            <div className="row">
+            <div className="row justify-content-center">
               {newsletterVolTwoList.map((edition, index) => {
                 return (
                   <PostGridItem
@@ -129,7 +129,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                 <br />
               </div>
             </div>
-            <div className="row">
+            <div className="row justify-content-center">
               {newsletterVolOneList.map((edition, index) => {
                 return (
                   <PostGridItem
