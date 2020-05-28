@@ -45,7 +45,10 @@ const PostGridItem = ({
               />
             </AniLink>
           </div>
-          <div className="bottom d-flex justify-content-between align-items-center flex-wrap">
+          <div
+            style={{ marginTop: 8 }}
+            className="bottom d-flex justify-content-between align-items-center flex-wrap"
+          >
             <div>
               <img
                 style={{ height: 30, borderRadius: 20 }}
@@ -63,10 +66,22 @@ const PostGridItem = ({
               <span>by {author.name}</span>
               {/* </AniLink> */}
             </div>
-            <div className="meta">{date}</div>
+            <small style={{ margin: 8 }} className="meta">
+              {date}
+            </small>
           </div>
-          <AniLink paintDrip hex="#f0f8ff" direction="up" to={articleLink}>
-            <h4 style={{ marginTop: 8 }}>{articleTitle}</h4>
+          <AniLink
+            paintDrip
+            hex="#f0f8ff"
+            direction="up"
+            to={articleLink}
+            style={{
+              // marginBottom: 0,
+              color: "var(--color-text)",
+              textDecoration: "none",
+            }}
+          >
+            <h4 style={{ marginTop: 12 }}>{articleTitle}</h4>
           </AniLink>
         </div>
         <div>
@@ -76,6 +91,17 @@ const PostGridItem = ({
         </div>
         <div className="pb-40">
           <small className="excerpt">Tags: {tags.join(", ")}</small>
+        </div>
+        <div style={{ padding: "20px 0 40px" }}>
+          <AniLink
+            paintDrip
+            hex="#f0f8ff"
+            direction="up"
+            to={articleLink}
+            className="secondary-btn"
+          >
+            Read Article
+          </AniLink>
         </div>
       </Area>
     );

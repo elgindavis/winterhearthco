@@ -34,8 +34,13 @@ export default (props) => {
             direction="up"
             className="posts-title"
             to={props.articleLink}
+            style={{
+              // marginBottom: 0,
+              color: "var(--color-text)",
+              textDecoration: "none",
+            }}
           >
-            <h3>{props.articleTitle}</h3>
+            <h3 style={{ maxWidth: 350 }}>{props.articleTitle}</h3>
           </AniLink>
           <div className="user-details row">
             <p className="user-name col-lg-12 col-md-12">
@@ -51,6 +56,9 @@ export default (props) => {
               <span style={{ marginRight: 8 }}>By {props.author}</span>
               <span style={{ float: "right" }}>{props.date}</span>
             </p>
+          </div>
+          <div>
+            <hr className="title-line" />
           </div>
           <p className="excerpt">{props.excerpt}</p>
           <div className="pb-20">

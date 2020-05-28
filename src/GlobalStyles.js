@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: var(--color-primary);
+    color: var(--color-secondary);
     text-decoration: underline;
   }
 

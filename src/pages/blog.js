@@ -106,7 +106,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                   })}
               </div>
               <div className="col-lg-4 sidebar-widgets">
-                <div className="widget-wrap" style={{ marginTop: 0 }}>
+                <div className="widget-wrap" style={{ margin: '0 12px' }}>
                   <div className="single-sidebar-widget user-info-widget">
                     <img
                       width="120"
@@ -117,7 +117,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                     />
                     <h4 className="pt-20">Elgin Davis</h4>
                     <p>Main Content Writer</p>
-                    <p style={{ textAlign: "left" }}>
+                    <p style={{ textAlign: "left", margin: '10px 5%' }}>
                       Elgin Davis is the creator of Winter Hearth Studios.
                       Driven by a passionate spirit and boundless curiosity,
                       Davis' work seeks to explore the depths of humanity and

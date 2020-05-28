@@ -90,12 +90,13 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
         <section className="recent-blog-area pt-60" id="volume-2">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-md-12 pb-30 header-text text-center">
+              <div className="col-md-8 pb-30 header-text text-center">
                 <h3>
                   Epic Life Playbook Volume 2: <br /> Demystifying Mental Health
                 </h3>
+                <hr className="title-line mt-20" />
                 <br />
-                <p>"Mental Health Monsters" Series Artwork by Toby Allen</p>
+                <p style={{ marginBottom: 0 }}>"Mental Health Monsters" Series Artwork by Toby Allen</p>
               </div>
             </div>
             <div className="row justify-content-center">
@@ -126,6 +127,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                 <h3>
                   Epic Life Playbook Volume 1: Winter Hearth Creative Journal
                 </h3>
+                <hr className="title-line mt-20" />
                 <br />
               </div>
             </div>
