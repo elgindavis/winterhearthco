@@ -2,7 +2,7 @@
 title: "Letting Go"
 date:  "2019-02-17"
 imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/2b7d3f04-dbb5-4fbf-9f24-2ddb28a782d5.jpg"
-imageAlt: "The Minimalists Poscast"
+imageAltText: "The Minimalists Poscast"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false

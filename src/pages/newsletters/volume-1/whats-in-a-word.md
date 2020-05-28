@@ -2,7 +2,7 @@
 title: "What's in a Word?"
 date:  "2019-04-20"
 imageUrl: "/img/kate-kalvach-YUyueCkd7Tk-unsplash.jpg"
-imageAlt: "What's in a Word?"
+imageAltText: "What's in a Word?"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false

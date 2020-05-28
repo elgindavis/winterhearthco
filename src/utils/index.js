@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const transformPostQueryData = (postList) => {
     return postList.map(post => {
         const data = post.node;
@@ -14,7 +12,7 @@ export const transformPostQueryData = (postList) => {
             newsletterVolume: data.frontmatter.newsletterVolume,
             contentType: data.frontmatter.contentType,
             imageUrl: data.frontmatter.imageUrl,
-            imageAlt: data.frontmatter.imageAlt,
+            imageAltText: data.frontmatter.imageAltText,
             tags: data.frontmatter.tags,
             keywords: data.frontmatter.keywords,
             description: data.frontmatter.description,
@@ -23,12 +21,15 @@ export const transformPostQueryData = (postList) => {
     });
 };
 
-export const setPostTags = (tags) => {
-    return tags.map((tag, index) => {
-        return index !== tags.length - 1 ? (
-            <li key={index}>{tag},&nbsp;</li>
-        ) : (
-                <li key={index}>{tag}</li>
-            );
-    });
+export const getBorderStyle = (index) => {
+  switch (index % 3) {
+    case 0:
+      return "primary";
+    case 1:
+      return "yellow";
+    case 2:
+      return "secondary";
+    default:
+      return;
+  }
 };

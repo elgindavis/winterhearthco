@@ -2,13 +2,13 @@
 title: "Schizophrenia"
 date:  "2019-07-28"
 imageUrl: "/img/newsletters/schizophrenia-400p.jpg"
-imageAlt: "Schizophrenia"
+imageAltText: "Schizophrenia"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
 tags: ["Schizophrenia"]
 keywords: "Schizophrenia"
-description: "According to research, Schizophrenia is the most chronic and disabling of the major mental illnesses. What exactly is Schizophrenia and how does it work? Let's find out:"
+description: "According to research, Schizophrenia is the most chronic and disabling of the major mental illnesses. What exactly is Schizophrenia?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",
@@ -21,9 +21,9 @@ unsplashBadgeInfo: {
 }
 ---
 
-Demystifying Mental Health: Schizophrenia
+<br>
  
-What's New This Week
+### What's New This Week
 Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, seeking to spark positive, empathetic, and meaningful conversation around mental and emotional health.
 
 
@@ -72,7 +72,7 @@ Allen's depiction of Schizophrenia is really helpful in that he highlights that 
 
 ### Relevance in Our Community
 
-Back in Volume 1 of this publication (Issue 12, specifically), I highlighted a deeply moving TED Talk from Elyn Saks, a university professor who struggles with two mental illnesses. She lives with schizophrenia and psychosis, and during the talk she gives us an overview of what it is like to struggle with such conditions, and to still continue to succeed and push forward to change the world around her.
+Back in Volume 1 of this publication ([Issue 12, specifically](/newsletters/volume-1/whats-in-a-word/)), I highlighted a deeply moving TED Talk from Elyn Saks, a university professor who struggles with two mental illnesses. She lives with schizophrenia and psychosis, and during the talk she gives us an overview of what it is like to struggle with such conditions, and to still continue to succeed and push forward to change the world around her.
 
 One of the key moments for me from this talk was when Saks notes that she would rather be called “someone who has schizophrenia,” rather than “a schizophrenic,” or, even worse, “a schizo”. People throw around terms like these often, but we as a community should be aware of how that usage affects individuals living with those illnesses (from the voices I’ve heard so far, it doesn’t make them feel  very good at all).
 

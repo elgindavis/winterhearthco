@@ -1,8 +1,8 @@
 ---
-title: "Demystifying Mental Health: Sleep Disorder"
+title: "DMH: Sleep Disorder"
 date:  "2019-07-21"
 imageUrl: "/img/newsletters/sleep-disorder-400p.jpg"
-imageAlt: "Sleep Disorder"
+imageAltText: "Sleep Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false

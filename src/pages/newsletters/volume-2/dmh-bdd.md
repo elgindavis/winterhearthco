@@ -1,14 +1,14 @@
 ---
-title: "Demystifying Mental Health: Body Dysmorphic Disorder"
+title: "DMH: BDD"
 date:  "2019-08-04"
 imageUrl: "/img/newsletters/bdd-400p.jpg"
-imageAlt: "Body Dysmorphic Disorder"
+imageAltText: "Body Dysmorphic Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
 tags: ["Body Dysmorphic Disorder"]
 keywords: "Body Dysmorphic Disorder"
-description: "Many of us have something that we wish we could change about our appearances and other similar insecurities, but those qualms don't always necessarily disrupt our daily lives. This is the case of BDD:"
+description: "Many of us have physical insecurities, but those qualms don't always necessarily disrupt our daily lives. This is the case of BDD:"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

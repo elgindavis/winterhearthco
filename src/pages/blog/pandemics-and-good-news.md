@@ -2,7 +2,7 @@
 title: "Pandemics and the Quest for Good News"
 date: "2020-04-05"
 imageUrl: "/img/blog/good-news-600p.jpg"
-imageAlt: "Good News Newspaper"
+imageAltText: "Good News Newspaper"
 contentType: 'blog'
 featured: true
 tags: ["Emotions", "Pandemics", "Good News", "Lifestyle"]

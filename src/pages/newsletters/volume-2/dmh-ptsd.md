@@ -1,14 +1,14 @@
 ---
-title: "Demystifying Mental Health: Post-traumatic Stress Disorder"
+title: "DMH: PTSD"
 date:  "2019-08-25"
 imageUrl: "/img/newsletters/ptsd-400p.jpg"
-imageAlt: "Post-traumatic Stress Disorder"
+imageAltText: "Post-traumatic Stress Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
 tags: ["Post-traumatic Stress Disorder"]
 keywords: "Post-traumatic Stress Disorder, PTSD"
-description: "So many people all over the world are affected by PTSD, but when was the last time we paused to reflect on what PTSD really encompasses?"
+description: "People all over the world are affected by PTSD, but what does PTSD really encompass?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

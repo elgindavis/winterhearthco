@@ -1,8 +1,8 @@
 ---
-title: "Demystifying Mental Health: Social Anxiety Disorder"
+title: "DMH: Social Anxiety Disorder"
 date:  "2019-07-14"
 imageUrl: "/img/newsletters/social-anxiety-400p.jpg"
-imageAlt: "Social Anxiety"
+imageAltText: "Social Anxiety"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false

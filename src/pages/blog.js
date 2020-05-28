@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link, graphql } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { graphql } from "gatsby";
 
 import {
     Layout, 
@@ -11,7 +12,7 @@ import {
     PopularPostColumn,
 } from "../components";
 
-import { transformPostQueryData } from "../utils";
+import { transformPostQueryData, getBorderStyle } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const allPosts = transformPostQueryData(edges);
@@ -34,7 +35,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
           "blog, emotional intelligence, mental health, emotional health"
         }
         imageUrl="/img/aubbie-crystal-ball.png"
-        imageAlt="Winter Hearth Studios Blog"
+        imageAltText="Winter Hearth Studios Blog"
         url="https://winterhearth.co/blog"
         title="Blog"
         description="Your emotions are now your superpower— Welcome to the future. In the Winter Hearth Blog we go where others refuse to go. We seek out all truths – not just those that make us comfortable. Unlocking the greatest secrets and strengths of humanity wont be easy, but it will be worth it."
@@ -60,7 +61,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         </section>
         <section style={{ marginTop: 90 }} className="post-content-area">
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-center">
               <div className="col-lg-8 posts-list">
                 {searchState !== "" && (
                   <h3 className="pb-40">Results for: {searchState}</h3>
@@ -69,10 +70,11 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                   <p>No posts matched this search</p>
                 )}
                 {searchState !== "" &&
-                  filteredPostList.map((edition) => {
+                  filteredPostList.map((edition, index) => {
                     return (
                       <SinglePostRow
                         className="pb-20"
+                        color={getBorderStyle(index)}
                         key={edition.id}
                         author={edition.author.name}
                         date={edition.date}
@@ -80,15 +82,16 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                         articleTitle={edition.title}
                         imageUrl={edition.imageUrl}
                         articleLink={edition.articleLink}
-                        imgAltText={edition.imgAltText}
+                        imageAltText={edition.imageAltText}
                         excerpt={edition.description}
                       ></SinglePostRow>
                     );
                   })}
                 {searchState === "" &&
-                  featuredPostList.map((edition) => {
+                  featuredPostList.map((edition, index) => {
                     return (
                       <SinglePostRow
+                        color={getBorderStyle(index)}
                         key={edition.id}
                         author={edition.author.name}
                         date={edition.date}
@@ -96,16 +99,14 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                         articleTitle={edition.title}
                         imageUrl={edition.imageUrl}
                         articleLink={edition.articleLink}
-                        imgAltText={edition.imgAltText}
+                        imageAltText={edition.imageAltText}
                         excerpt={edition.description}
                       ></SinglePostRow>
                     );
                   })}
               </div>
               <div className="col-lg-4 sidebar-widgets">
-                <div className="widget-wrap" style={{ marginTop: 0 }}>
-                  {/* <div className="single-sidebar-widget search-widget">
-                                </div> */}
+                <div className="widget-wrap" style={{ margin: '0 12px' }}>
                   <div className="single-sidebar-widget user-info-widget">
                     <img
                       width="120"
@@ -114,11 +115,9 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                       className="lazyload"
                       alt="Elgin Davis"
                     />
-                    <Link to="/img/profile.jpg">
-                      <h4>Elgin Davis</h4>
-                    </Link>
+                    <h4 className="pt-20">Elgin Davis</h4>
                     <p>Main Content Writer</p>
-                    <p style={{ textAlign: "left" }}>
+                    <p style={{ textAlign: "left", margin: '10px 5%' }}>
                       Elgin Davis is the creator of Winter Hearth Studios.
                       Driven by a passionate spirit and boundless curiosity,
                       Davis' work seeks to explore the depths of humanity and
@@ -136,16 +135,17 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         <section className="recent-blog-area pt-60">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-md-8 pb-30 header-text">
+              <div className="col-md-8 pb-30 header-text text-center">
                 <h1>From the Newsletter Archives</h1>
-                <h3>Epic Life Playbook Volume 2: Demystifying Mental Health</h3>
+                <h3 className="pb-20">Epic Life Playbook Volume 2:<br/> Demystifying Mental Health</h3>
                 <p>"Mental Health Monsters" Series Artwork by Toby Allen</p>
               </div>
             </div>
-            <div className="row">
-              {newsletterVolTwoList.map((edition) => {
+            <div className="row justify-content-center">
+              {newsletterVolTwoList.map((edition, index) => {
                 return (
                   <PostGridItem
+                    color={getBorderStyle(index)}
                     key={edition.id}
                     author={edition.author}
                     date={edition.date}
@@ -153,7 +153,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                     tags={edition.tags}
                     imageUrl={edition.imageUrl}
                     articleLink={edition.articleLink}
-                    imgAltText={edition.imgAltText}
+                    imageAltText={edition.imageAltText}
                     excerpt={edition.description}
                   ></PostGridItem>
                 );
@@ -163,9 +163,14 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         </section>
         <section className="section-gap">
           <div className="text-center">
-            <Link to="/newsletters/" className="primary-btn text-uppercase">
+            <AniLink
+              paintDrip
+              direction="up"
+              to="/newsletters/"
+              className="primary-btn text-uppercase"
+            >
               See All Newsletters
-            </Link>
+            </AniLink>
           </div>
         </section>
       </Layout>

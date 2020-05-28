@@ -62,7 +62,7 @@ const SEO = ((props) => {
           },
           {
               property: `og:image:alt`, 
-              content: props.imageAlt
+              content: props.imageAltText
           },
           {
             property: `og:type`,
@@ -106,7 +106,7 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
-  imageAlt: PropTypes.string.isRequired,
+  imageAltText: PropTypes.string.isRequired,
   keywords: PropTypes.string,
   url: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,

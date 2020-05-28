@@ -2,7 +2,7 @@
 title: "Rest and Recovery"
 date:  "2019-03-15"
 imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/e412343b-af3a-48fc-9b12-ad6e64dc8da2.jpg"
-imageAlt: "Recovering from stress"
+imageAltText: "Recovering from stress"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false

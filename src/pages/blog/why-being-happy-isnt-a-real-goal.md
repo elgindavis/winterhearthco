@@ -2,7 +2,7 @@
 title: "Why “Being Happy” Isn't a Real Goal"
 date: "2020-03-30"
 imageUrl: "/img/blog/happy-sign-600p.jpg"
-imageAlt: "Happy neon sign"
+imageAltText: "Happy neon sign"
 contentType: 'blog'
 featured: true
 tags: ["Emotional Intelligence", "Happiness", "Lifestyle"]
@@ -13,7 +13,7 @@ author: {
     summary: "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.",
     imageUrl: "/img/profile-200p.jpg" 
 }
-description: "Life, Liberty, and the pursuit of Happiness'... But why?"
+description: "'Life, Liberty, and the pursuit of Happiness'... Have you ever questioned what it really means to pursue happiness?"
 unsplashBadgeInfo: {
     artistUrl: "https://unsplash.com/@stanislas1?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge",
     artistName: Stan B

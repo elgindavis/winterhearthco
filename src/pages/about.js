@@ -8,7 +8,7 @@ export default () => (
       "how to be happy, how to be a good friend, mental health struggles, mental illness, emotional first aid, emotional intelligence, emotional agility, emotions, how to stop being angry, how to manage my emotions, types of mental health, emotional health, mental health facts, importance of mental health essay, characteristics of mental health, mental health synonym, mental health articles 2019, what is emotional health,"
     }
     imageUrl="/img/aubbie-knight.png"
-    imageAlt="Winter Hearth Studios"
+    imageAltText="Winter Hearth Studios"
     url="https://winterhearth.co/about"
     title="Our Story | Winter Hearth Studios"
     description="Winter Hearth Studios is a quirky and charming creative studio that designs content to make your life better. We cover a range of topics from mental health to emotional empowerment and beyond. We believe that if you can change the heart, you can change the world. Check out what we've got just for you!"
@@ -22,10 +22,10 @@ export default () => (
         <div
           className="row align-items-center justify-content-between"
           style={{
-            padding: '40px 12px',
+            padding: "40px 12px",
             border: "4px solid var(--color-primary)",
             borderRadius: 4,
-            margin: '40px 12px',
+            margin: "40px 12px",
           }}
         >
           <div className="col-lg-5 col-md-6">
@@ -45,17 +45,19 @@ export default () => (
         <div
           className="row align-items-center justify-content-between"
           style={{
-            padding: '40px 12px',
+            padding: "40px 12px",
             border: "4px solid var(--color-secondary)",
             borderRadius: 4,
-            margin: '40px 12px',
+            margin: "40px 12px",
           }}
         >
           <div className="col-lg-6 col-md-6 home-about-right" style={{}}>
             <img className="img-fluid lazyload" src="/img/hi-5.jpg" alt="" />
           </div>
           <div className="col-lg-5 col-md-6">
-            <h1 className="">Our Mission</h1>
+            <h1 style={{ paddingTop: "6%" }} className="">
+              Our Mission
+            </h1>
             <p style={{ paddingTop: "3%" }}>
               Winter Hearth Studios is about being socially, mentally and
               emotionally aware, being energized for change, and showing love in
@@ -72,10 +74,10 @@ export default () => (
         <div
           className="row align-items-center justify-content-between"
           style={{
-            padding: '40px 12px',
+            padding: "40px 12px",
             border: "4px solid var(--color-primary)",
             borderRadius: 4,
-            margin: '40px 12px',
+            margin: "40px 12px",
           }}
         >
           <div className="col-lg-5 col-md-6">
@@ -97,10 +99,10 @@ export default () => (
         <div
           className="row align-items-center justify-content-between"
           style={{
-            padding: '40px 12px',
+            padding: "40px 12px",
             border: "4px solid var(--color-secondary)",
             borderRadius: 4,
-            margin: '40px 12px',
+            margin: "40px 12px",
           }}
         >
           <div className="col-lg-6 col-md-6 home-about-right" style={{}}>
@@ -111,7 +113,9 @@ export default () => (
             />
           </div>
           <div className="col-lg-5 col-md-6">
-            <h1 className="">What we do</h1>
+            <h1 style={{ paddingTop: "10%" }} className="">
+              What we do
+            </h1>
             <p style={{ paddingTop: "3%" }}>
               We believe in the power of storytelling as a central unifier in
               our shared human experience. <br /> From web comics to video
@@ -119,16 +123,18 @@ export default () => (
               inspire, educate, and enrich people all over the world with the
               tools they need to become more mentally and emotionally powerful.
             </p>
-            <AniLink
-              paintDrip
-              hex="#f0f8ff"
-              direction="up"
-              to="/blog/"
-              className="primary-btn text-uppercase"
-              style={{ padding: '0 20px' }}
-            >
-              See latest posts
-            </AniLink>
+            <div style={{ padding: "20px 0" }}>
+              <AniLink
+                paintDrip
+                hex="#f0f8ff"
+                direction="up"
+                to="/blog/"
+                className="primary-btn text-uppercase"
+                style={{ padding: "0 20px" }}
+              >
+                See latest posts
+              </AniLink>
+            </div>
           </div>
         </div>
         <div

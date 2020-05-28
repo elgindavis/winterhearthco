@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import { PostGridItem, Layout, Separator, SearchArea } from "../components";
-import { transformPostQueryData } from "../utils";
+import { transformPostQueryData, getBorderStyle } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
   const allPosts = transformPostQueryData(edges);
@@ -17,7 +17,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
         "how to be happy, how to be a good friend, mental health struggles, mental illness, emotional first aid, emotional intelligence, emotional agility, emotions, how to stop being angry, how to manage my emotions, types of mental health, emotional health, mental health facts, importance of mental health essay, characteristics of mental health, mental health synonym, mental health articles 2019, what is emotional health,"
       }
       imageUrl="/img/aubbie-knight.png"
-      imageAlt="Winter Hearth Studios"
+      imageAltText="Winter Hearth Studios"
       url="https://winterhearth.co/about"
       title="Home"
       description="Winter Hearth Studios is a quirky and charming creative studio that designs content to make your life better. We cover a range of topics from mental health to emotional empowerment and beyond. We believe that if you can change the heart, you can change the world. Check out what we've got just for you!"
@@ -77,11 +77,12 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
             {searchState !== "" && filteredPostList.length === 0 && (
               <p>No posts matched this search</p>
             )}
-            <div className="row">
+            <div className="row" style={{ justifyContent: "center" }}>
               {searchState !== "" &&
-                filteredPostList.map((edition) => {
+                filteredPostList.map((edition, index) => {
                   return (
                     <PostGridItem
+                      color={getBorderStyle(index)}
                       className="pb-20"
                       key={edition.id}
                       author={edition.author.name}
@@ -90,7 +91,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                       articleTitle={edition.title}
                       imageUrl={edition.imageUrl}
                       articleLink={edition.articleLink}
-                      imgAltText={edition.imgAltText}
+                      imageAltText={edition.imageAltText}
                       excerpt={edition.description}
                     />
                   );
@@ -99,13 +100,18 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
           </div>
           {searchState !== "" && (
             <div>
-              <h2>Most Recent</h2> <br/>
+              <h2>Most Recent</h2> <br />
             </div>
           )}
-          <div id="latest-posts-row" className="row">
-            {latestPostList.map((edition) => {
+          <div
+            id="latest-posts-row"
+            className="row"
+            style={{ justifyContent: "center" }}
+          >
+            {latestPostList.map((edition, index) => {
               return (
                 <PostGridItem
+                  color={getBorderStyle(index)}
                   key={edition.id}
                   author={edition.author}
                   date={edition.date}
@@ -113,7 +119,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                   articleTitle={edition.title}
                   imageUrl={edition.imageUrl}
                   articleLink={edition.articleLink}
-                  imgAltText={edition.imgAltText}
+                  imageAltText={edition.imageAltText}
                   excerpt={edition.description}
                 ></PostGridItem>
               );
@@ -122,7 +128,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
         </div>
       </section>
 
-      <section className="pt-20 pb-80">
+      <section className="pt-80 pb-80">
         <div className="text-center">
           <span>
             <AniLink

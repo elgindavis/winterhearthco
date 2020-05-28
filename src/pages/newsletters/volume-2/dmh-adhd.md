@@ -1,14 +1,14 @@
 ---
-title: "Demystifying Mental Health: ADHD"
+title: "DMH: ADHD"
 date:  "2019-07-07"
 imageUrl: "/img/newsletters/adhd-400p.jpg"
-imageAlt: "ADHD"
+imageAltText: "ADHD"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false
 tags: ["ADHD"]
 keywords: "ADHD"
-description: "People use and misuse the term ADHD all the time. What is it, and what do you need to know about it?"
+description: "People abuse and misuse the term ADHD all the time. What is it, and what do you need to know about it?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

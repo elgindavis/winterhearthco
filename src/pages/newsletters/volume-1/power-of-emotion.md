@@ -2,7 +2,7 @@
 title: "The Power of Emotion"
 date:  "2019-03-10"
 imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/77d52e17-6790-4f6c-9689-e6e737b808fa.jpg"
-imageAlt: "Placeholder alt text"
+imageAltText: "Placeholder alt text"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false
@@ -28,7 +28,7 @@ Volume 1, Issue 7
 
 Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, gleaning useful and practical insights to become socially and emotionally powerful. 
 
-Following last week's digest on [Perspective](/newsletters/volume-1/pursuit/of-perspective), the theme of this week's content is The Power of Emotion, with a brief introduction to Social and Emotional Learning (SEL). Many of you have indicated that you would like to learn more about emotional intelligence, so the content of this weekly publication going forward is going to focus more on engaging you with content in this area. Social and emotional learning is something that is often overlooked, especially in the development stages of youth. In light of the increasing publicity and awareness of issues pertaining to mental health around the world, educators are beginning to recognize how important it is to deliberately teach children and adults explicitly how to control, develop, and take ownership of their emotions and social interactions. This is the basis of Social and Emotional Learning.
+Following last week's digest on [Perspective](/newsletters/volume-1/pursuit-of-perspective), the theme of this week's content is The Power of Emotion, with a brief introduction to Social and Emotional Learning (SEL). Many of you have indicated that you would like to learn more about emotional intelligence, so the content of this weekly publication going forward is going to focus more on engaging you with content in this area. Social and emotional learning is something that is often overlooked, especially in the development stages of youth. In light of the increasing publicity and awareness of issues pertaining to mental health around the world, educators are beginning to recognize how important it is to deliberately teach children and adults explicitly how to control, develop, and take ownership of their emotions and social interactions. This is the basis of Social and Emotional Learning.
 
 Social and Emotional Learning is defined as:
 

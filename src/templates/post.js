@@ -17,7 +17,7 @@ export default (props) => {
     <Layout
       keywords={postInfo.keywords}
       imageUrl={postInfo.imageUrl}
-      imageAlt={postInfo.imageAlt}
+      imageAltText={postInfo.imageAltText}
       url={props.location.href}
       title={postInfo.title}
       description={postInfo.description}
@@ -35,7 +35,7 @@ export default (props) => {
                       className="img-fluid lazyload"
                       style={{ borderRadius: 4, marginTop: "3%" }}
                       src={postInfo.imageUrl.replace(/-400p/i, "")}
-                      alt={postInfo.imageAlt}
+                      alt={postInfo.imageAltText}
                     />
                     {
                       postInfo.unsplashBadgeInfo &&
@@ -57,7 +57,7 @@ export default (props) => {
                 <div className="col-lg-11 col-md-11">
                     <h1 className="mt-30 mb-10">{postInfo.title}</h1>
 
-                    <div id="markdown-content" dangerouslySetInnerHTML={{ __html: postHTML }} />
+                    <div id="markdown-content" style={{ lineHeight: '1.5rem' }} dangerouslySetInnerHTML={{ __html: postHTML }} />
 
                     <p style={{ padding: "5% 0 12px 0" }}>
                         Thanks so much for reading— I hope you enjoyed this piece

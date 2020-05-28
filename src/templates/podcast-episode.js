@@ -10,7 +10,7 @@ export default (props) => {
         <Layout
             keywords={episodeInfo.keywords}
             imageUrl={episodeInfo.imageUrl}
-            imageAlt={episodeInfo.imageAlt}
+            imageAltText={episodeInfo.imageAltText}
             url={props.location.href}
             title={episodeInfo.title}
             description={episodeInfo.description}

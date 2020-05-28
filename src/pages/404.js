@@ -6,7 +6,7 @@ export default () => (
     <Layout
         keywords=""
         imageUrl="/img/aubbie-knight.png"
-        imageAlt="Winter Hearth Studios"
+        imageAltText="Winter Hearth Studios"
         url="https://winterhearth.co/404"
         title="Page Not Found | Winter Hearth Studios"
         description="Winter Hearth Studios is a quirky and charming creative studio that designs content to make your life better. We cover a range of topics from mental health to emotional empowerment and beyond. We believe that if you can change the heart, you can change the world. Check out what we've got just for you!"

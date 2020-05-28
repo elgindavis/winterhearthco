@@ -1,10 +1,17 @@
 import React from "react";
+import styled from 'styled-components'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
+const Area = styled.div`
+    padding: 40px 12px;
+    border:  4px solid var(--color-${({ type }) => type});
+    border-radius: 4px;
+    margin: 0 12px 40px;
+`;
+
 export default (props) => {
-    
     return (
-      <div className="single-post row">
+      <Area type={props.color} className="single-post row">
         <div className="col-lg-12 col-md-12">
           <div className="feature-img">
             <AniLink
@@ -17,7 +24,7 @@ export default (props) => {
                 style={{ borderRadius: 4 }}
                 className="img-fluid lazyload"
                 src={props.imageUrl}
-                alt={props.imgAltText}
+                alt={props.imageAltText}
               />
             </AniLink>
           </div>
@@ -27,8 +34,13 @@ export default (props) => {
             direction="up"
             className="posts-title"
             to={props.articleLink}
+            style={{
+              // marginBottom: 0,
+              color: "var(--color-text)",
+              textDecoration: "none",
+            }}
           >
-            <h3>{props.articleTitle}</h3>
+            <h3 style={{ maxWidth: 350 }}>{props.articleTitle}</h3>
           </AniLink>
           <div className="user-details row">
             <p className="user-name col-lg-12 col-md-12">
@@ -45,20 +57,25 @@ export default (props) => {
               <span style={{ float: "right" }}>{props.date}</span>
             </p>
           </div>
+          <div>
+            <hr className="title-line" />
+          </div>
           <p className="excerpt">{props.excerpt}</p>
           <div className="pb-20">
             <small className="excerpt">Tags: {props.tags.join(", ")}</small>
           </div>
-          <AniLink
-            paintDrip
-            hex="#f0f8ff"
-            direction="up"
-            to={props.articleLink}
-            className="primary-btn"
-          >
-            Read Article
-          </AniLink>
+          <div style={{ paddingTop: "20px" }}>
+            <AniLink
+              paintDrip
+              hex="#f0f8ff"
+              direction="up"
+              to={props.articleLink}
+              className="primary-btn"
+            >
+              Read Article
+            </AniLink>
+          </div>
         </div>
         {/* <div className="col-lg-3  col-md-3 meta-details"></div> */}
-      </div>
+      </Area>
     );};

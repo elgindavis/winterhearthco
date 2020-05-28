@@ -7,7 +7,7 @@ export const query = graphql`
         date(formatString: "MMM DD, YYYY")
         title
         imageUrl
-        imageAlt
+        imageAltText
         featured
         newsletterVolume
         contentType
