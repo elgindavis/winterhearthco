@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { Layout, Separator, PostGridItem, SearchArea, SinglePostRow } from "../components";
-import { transformPostQueryData } from "../utils";
+import { transformPostQueryData, getBorderStyle } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
     const allPosts = transformPostQueryData(edges);
@@ -66,9 +66,10 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                   <p>No posts matched this search</p>
                 )}
                 {searchState !== "" &&
-                  filteredPostList.map((edition) => {
+                  filteredPostList.map((edition, index) => {
                     return (
                       <SinglePostRow
+                        color={getBorderStyle(index)}
                         className="pb-20"
                         key={edition.id}
                         author={edition.author.name}
@@ -98,9 +99,10 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
               </div>
             </div>
             <div className="row">
-              {newsletterVolTwoList.map((edition) => {
+              {newsletterVolTwoList.map((edition, index) => {
                 return (
                   <PostGridItem
+                    color={getBorderStyle(index)}
                     key={edition.id}
                     author={edition.author}
                     date={edition.date}
@@ -128,9 +130,10 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
               </div>
             </div>
             <div className="row">
-              {newsletterVolOneList.map((edition) => {
+              {newsletterVolOneList.map((edition, index) => {
                 return (
                   <PostGridItem
+                    color={getBorderStyle(index)}
                     key={edition.id}
                     author={edition.author}
                     date={edition.date}

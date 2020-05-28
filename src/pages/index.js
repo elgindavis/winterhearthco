@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import { PostGridItem, Layout, Separator, SearchArea } from "../components";
-import { transformPostQueryData } from "../utils";
+import { transformPostQueryData, getBorderStyle } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
   const allPosts = transformPostQueryData(edges);
@@ -77,11 +77,12 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
             {searchState !== "" && filteredPostList.length === 0 && (
               <p>No posts matched this search</p>
             )}
-            <div className="row">
+            <div className="row" style={{ justifyContent: "center" }}>
               {searchState !== "" &&
-                filteredPostList.map((edition) => {
+                filteredPostList.map((edition, index) => {
                   return (
                     <PostGridItem
+                      color={getBorderStyle(index)}
                       className="pb-20"
                       key={edition.id}
                       author={edition.author.name}
@@ -99,13 +100,18 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
           </div>
           {searchState !== "" && (
             <div>
-              <h2>Most Recent</h2> <br/>
+              <h2>Most Recent</h2> <br />
             </div>
           )}
-          <div id="latest-posts-row" className="row">
-            {latestPostList.map((edition) => {
+          <div
+            id="latest-posts-row"
+            className="row"
+            style={{ justifyContent: "center" }}
+          >
+            {latestPostList.map((edition, index) => {
               return (
                 <PostGridItem
+                  color={getBorderStyle(index)}
                   key={edition.id}
                   author={edition.author}
                   date={edition.date}

@@ -56,15 +56,17 @@ export default (props) => {
           <div className="pb-20">
             <small className="excerpt">Tags: {props.tags.join(", ")}</small>
           </div>
-          <AniLink
-            paintDrip
-            hex="#f0f8ff"
-            direction="up"
-            to={props.articleLink}
-            className="primary-btn"
-          >
-            Read Article
-          </AniLink>
+          <div style={{ paddingTop: "20px" }}>
+            <AniLink
+              paintDrip
+              hex="#f0f8ff"
+              direction="up"
+              to={props.articleLink}
+              className="primary-btn"
+            >
+              Read Article
+            </AniLink>
+          </div>
         </div>
         {/* <div className="col-lg-3  col-md-3 meta-details"></div> */}
       </Area>

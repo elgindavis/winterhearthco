@@ -12,20 +12,7 @@ import {
     PopularPostColumn,
 } from "../components";
 
-import { transformPostQueryData } from "../utils";
-
-const getBorderStyle = (index) => {
-  switch ((index + 1) % 3) {
-    case 0:
-      return "primary";
-    case 1:
-      return "secondary";
-    case 2:
-      return "yellow";
-    default:
-      return;
-  }
-}
+import { transformPostQueryData, getBorderStyle } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const allPosts = transformPostQueryData(edges);
@@ -74,7 +61,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         </section>
         <section style={{ marginTop: 90 }} className="post-content-area">
           <div className="container">
-            <div className="row">
+            <div className="row" style={{ justifyContent: 'center' }}>
               <div className="col-lg-8 posts-list">
                 {searchState !== "" && (
                   <h3 className="pb-40">Results for: {searchState}</h3>
@@ -155,9 +142,10 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
               </div>
             </div>
             <div className="row">
-              {newsletterVolTwoList.map((edition) => {
+              {newsletterVolTwoList.map((edition, index) => {
                 return (
                   <PostGridItem
+                    color={getBorderStyle(index)}
                     key={edition.id}
                     author={edition.author}
                     date={edition.date}
