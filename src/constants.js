@@ -1,7 +1,7 @@
 export const COLORS = {
   light: {
-    text: "hsl(0, 0%, 10%)", // black
-    background: "hsl(0, 0%, 90%)", // white
+    text: "hsl(250, 70%, 7%)", // Xiketic
+    background: "hsl(0, 0%, 90%)", // Platinum
     primary: "hsl(330, 50%, 45%)", //
     secondary: "hsla(205, 72%, 59%)", //
     gray300: "hsl(0, 0%, 70%)",
@@ -12,10 +12,10 @@ export const COLORS = {
     yellow: "hsl(49, 80%, 45%)",
   },
   dark: {
-    text: "hsl(0, 0%, 80%)", // Platinum
+    text: "hsl(0, 0%, 90%)", // Platinum
     background: "hsl(250, 70%, 7%)", // Xiketic
     primary: "hsl(330, 50%, 45%)", //
-    secondary: "hsla(205, 72%, 59%)", //
+    secondary: "hsla(205, 72%, 50%)", //
     gray300: "hsl(0deg, 0%, 30%)",
     gray500: "hsl(0deg, 0%, 50%)",
     gray700: "hsl(0deg, 0%, 70%)",
@@ -24,10 +24,10 @@ export const COLORS = {
     yellow: "hsl(49, 70%, 55%)",
   },
   elgin: {
-    text: "hsl(0, 0%, 80%)", // Platinum
+    text: "hsl(0, 0%, 90%)", // Platinum
     background: "hsl(250, 70%, 7%)", // Xiketic
     primary: "hsl(330, 50%, 45%)", //
-    secondary: "hsla(205, 72%, 59%)", //
+    secondary: "hsla(205, 72%, 50%)", //
     gray300: "hsl(0deg, 0%, 30%)",
     gray500: "hsl(0deg, 0%, 50%)",
     gray700: "hsl(0deg, 0%, 70%)",

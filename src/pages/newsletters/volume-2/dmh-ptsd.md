@@ -1,5 +1,5 @@
 ---
-title: "DMH: Post-traumatic Stress Disorder"
+title: "DMH: PTSD"
 date:  "2019-08-25"
 imageUrl: "/img/newsletters/ptsd-400p.jpg"
 imageAltText: "Post-traumatic Stress Disorder"

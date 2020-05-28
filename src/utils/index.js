@@ -22,13 +22,13 @@ export const transformPostQueryData = (postList) => {
 };
 
 export const getBorderStyle = (index) => {
-  switch ((index + 1) % 3) {
+  switch (index % 3) {
     case 0:
       return "primary";
     case 1:
-      return "secondary";
-    case 2:
       return "yellow";
+    case 2:
+      return "secondary";
     default:
       return;
   }

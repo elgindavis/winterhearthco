@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Area = styled.div`
-  padding: 40px 20px;
+  padding: 40px 20px 0;
   border: 4px solid var(--color-${({ type }) => type});
   border-radius: 4px;
   margin: 20px 20px;

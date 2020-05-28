@@ -1,5 +1,5 @@
 ---
-title: "DMH: Obsessive Compulsive Disorder (OCD)"
+title: "DMH: OCD"
 date:  "2019-06-30"
 imageUrl: "/img/newsletters/ocd-400p.jpg"
 imageAltText: "OCD"
@@ -8,7 +8,7 @@ newsletterVolume: '2'
 featured: false
 tags: ["OCD"]
 keywords: "OCD"
-description: "Preferring to keep things neat and tidy does not mean you have OCD. What is it, and what do you need to know about it?"
+description: "Preferring to keep things neat and tidy does not mean you suffer from OCD. What is OCD, and what do you need to know about it?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",
