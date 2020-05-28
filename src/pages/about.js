@@ -8,7 +8,7 @@ export default () => (
       "how to be happy, how to be a good friend, mental health struggles, mental illness, emotional first aid, emotional intelligence, emotional agility, emotions, how to stop being angry, how to manage my emotions, types of mental health, emotional health, mental health facts, importance of mental health essay, characteristics of mental health, mental health synonym, mental health articles 2019, what is emotional health,"
     }
     imageUrl="/img/aubbie-knight.png"
-    imageAlt="Winter Hearth Studios"
+    imageAltText="Winter Hearth Studios"
     url="https://winterhearth.co/about"
     title="Our Story | Winter Hearth Studios"
     description="Winter Hearth Studios is a quirky and charming creative studio that designs content to make your life better. We cover a range of topics from mental health to emotional empowerment and beyond. We believe that if you can change the heart, you can change the world. Check out what we've got just for you!"

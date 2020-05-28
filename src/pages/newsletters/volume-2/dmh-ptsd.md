@@ -2,7 +2,7 @@
 title: "DMH: Post-traumatic Stress Disorder"
 date:  "2019-08-25"
 imageUrl: "/img/newsletters/ptsd-400p.jpg"
-imageAlt: "Post-traumatic Stress Disorder"
+imageAltText: "Post-traumatic Stress Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false

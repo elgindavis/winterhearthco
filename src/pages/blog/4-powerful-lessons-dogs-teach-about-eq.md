@@ -2,7 +2,7 @@
 title: "4 Powerful Lessons Dogs Teach Us About EQ"
 date: "2020-02-07"
 imageUrl: "/img/blog/dog-love-600p.jpg"
-imageAlt: "Wow, look at that happy pup"
+imageAltText: "Wow, look at that happy pup"
 contentType: 'blog'
 featured: true
 tags: ["Emotional Intelligence", "Relationships", "Lifestyle"]

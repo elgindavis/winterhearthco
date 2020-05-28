@@ -2,7 +2,7 @@
 title: 'DMH: Autism'
 date: '2019-09-12'
 imageUrl: '/img/newsletters/autism-400p.jpg'
-imageAlt: 'Autism'
+imageAltText: 'Autism'
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false

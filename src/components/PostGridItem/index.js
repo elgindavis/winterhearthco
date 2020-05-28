@@ -25,14 +25,14 @@ const Area = styled.div`
 const PostGridItem = ({
     articleLink,
     imageUrl,
-    imgAltText,
+    imageAltText,
     author,
     date,
     articleTitle,
     excerpt,
     tags,
     color,
-}) => {
+  }) => {
     return (
       <Area type={color} className="col-lg-4 col-md-4">
         <div style={{ width: "100%" }} className="single-recent-blog">
@@ -41,7 +41,7 @@ const PostGridItem = ({
               <img // Images should be 3:2 aspect ratio
                 style={{ height: "auto", width: "100%", borderRadius: 4 }}
                 src={imageUrl}
-                alt={imgAltText}
+                alt={imageAltText}
               />
             </AniLink>
           </div>
@@ -82,4 +82,3 @@ const PostGridItem = ({
 };
 
 export default PostGridItem;
-

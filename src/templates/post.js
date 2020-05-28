@@ -17,7 +17,7 @@ export default (props) => {
     <Layout
       keywords={postInfo.keywords}
       imageUrl={postInfo.imageUrl}
-      imageAlt={postInfo.imageAlt}
+      imageAltText={postInfo.imageAltText}
       url={props.location.href}
       title={postInfo.title}
       description={postInfo.description}
@@ -35,7 +35,7 @@ export default (props) => {
                       className="img-fluid lazyload"
                       style={{ borderRadius: 4, marginTop: "3%" }}
                       src={postInfo.imageUrl.replace(/-400p/i, "")}
-                      alt={postInfo.imageAlt}
+                      alt={postInfo.imageAltText}
                     />
                     {
                       postInfo.unsplashBadgeInfo &&

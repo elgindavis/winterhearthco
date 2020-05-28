@@ -13,7 +13,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
         <Layout
             keywords={"games, mobile games, mental health, emotional health"}
             imageUrl="/img/aubbie-crystal-ball.png"
-            imageAlt="Winter Hearth Studios Games"
+            imageAltText="Winter Hearth Studios Games"
             url="https://winterhearth.co/games"
             title="Games"
             description="Welcome to the Winter Hearth Arcade!"
@@ -37,7 +37,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                                         articleTitle={edition.title}
                                         imageUrl={edition.imageUrl}
                                         articleLink={edition.articleLink}
-                                        imgAltText={edition.imgAltText}
+                                        imageAltText={edition.imageAltText}
                                         excerpt={edition.description}
                                     ></PostGridItem>
                                 );

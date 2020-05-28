@@ -12,7 +12,7 @@ export const transformPostQueryData = (postList) => {
             newsletterVolume: data.frontmatter.newsletterVolume,
             contentType: data.frontmatter.contentType,
             imageUrl: data.frontmatter.imageUrl,
-            imageAlt: data.frontmatter.imageAlt,
+            imageAltText: data.frontmatter.imageAltText,
             tags: data.frontmatter.tags,
             keywords: data.frontmatter.keywords,
             description: data.frontmatter.description,

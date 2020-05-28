@@ -2,7 +2,7 @@
 title: "DMH: Depression"
 date:  "2019-09-08"
 imageUrl: "/img/newsletters/depression-400p.jpg"
-imageAlt: "Depression"
+imageAltText: "Depression"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false

@@ -2,7 +2,7 @@
 title: "Why “Being Happy” Isn't a Real Goal"
 date: "2020-03-30"
 imageUrl: "/img/blog/happy-sign-600p.jpg"
-imageAlt: "Happy neon sign"
+imageAltText: "Happy neon sign"
 contentType: 'blog'
 featured: true
 tags: ["Emotional Intelligence", "Happiness", "Lifestyle"]

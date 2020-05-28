@@ -17,7 +17,7 @@ const TagsPage = ({
   <Layout
     keywords=""
     imageUrl="/img/aubbie-crystal-ball.png"
-    imageAlt="Winter Hearth Studios Content Tags"
+    imageAltText="Winter Hearth Studios Content Tags"
     url="https://winterhearth.co/tags"
     title="Tags"
     description="Find your favorite Winter Hearth content by tag!"

@@ -24,7 +24,7 @@ export default (props) => {
                 style={{ borderRadius: 4 }}
                 className="img-fluid lazyload"
                 src={props.imageUrl}
-                alt={props.imgAltText}
+                alt={props.imageAltText}
               />
             </AniLink>
           </div>

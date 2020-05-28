@@ -2,7 +2,7 @@
 title: "Schizophrenia"
 date:  "2019-07-28"
 imageUrl: "/img/newsletters/schizophrenia-400p.jpg"
-imageAlt: "Schizophrenia"
+imageAltText: "Schizophrenia"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false

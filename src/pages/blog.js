@@ -35,7 +35,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
           "blog, emotional intelligence, mental health, emotional health"
         }
         imageUrl="/img/aubbie-crystal-ball.png"
-        imageAlt="Winter Hearth Studios Blog"
+        imageAltText="Winter Hearth Studios Blog"
         url="https://winterhearth.co/blog"
         title="Blog"
         description="Your emotions are now your superpower— Welcome to the future. In the Winter Hearth Blog we go where others refuse to go. We seek out all truths – not just those that make us comfortable. Unlocking the greatest secrets and strengths of humanity wont be easy, but it will be worth it."
@@ -82,7 +82,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                         articleTitle={edition.title}
                         imageUrl={edition.imageUrl}
                         articleLink={edition.articleLink}
-                        imgAltText={edition.imgAltText}
+                        imageAltText={edition.imageAltText}
                         excerpt={edition.description}
                       ></SinglePostRow>
                     );
@@ -99,7 +99,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                         articleTitle={edition.title}
                         imageUrl={edition.imageUrl}
                         articleLink={edition.articleLink}
-                        imgAltText={edition.imgAltText}
+                        imageAltText={edition.imageAltText}
                         excerpt={edition.description}
                       ></SinglePostRow>
                     );
@@ -153,7 +153,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                     tags={edition.tags}
                     imageUrl={edition.imageUrl}
                     articleLink={edition.articleLink}
-                    imgAltText={edition.imgAltText}
+                    imageAltText={edition.imageAltText}
                     excerpt={edition.description}
                   ></PostGridItem>
                 );

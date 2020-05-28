@@ -20,7 +20,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
       <Layout
         keywords="emotional intelligence, mental health"
         imageUrl="/img/aubbie-knight.png"
-        imageAlt="Winter Hearth Studios"
+        imageAltText="Winter Hearth Studios"
         url="https://winterhearth.co/newsletters"
         title="Newsletters"
         description="The Winter Hearth Newsletters cover a range of topics from mental health to emotional empowerment and beyond. We believe that if you can change the heart, you can change the world. Check out what we've got just for you!"
@@ -78,7 +78,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                         articleTitle={edition.title}
                         imageUrl={edition.imageUrl}
                         articleLink={edition.articleLink}
-                        imgAltText={edition.imgAltText}
+                        imageAltText={edition.imageAltText}
                         excerpt={edition.description}
                       ></SinglePostRow>
                     );
@@ -110,7 +110,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                     tags={edition.tags}
                     imageUrl={edition.imageUrl}
                     articleLink={edition.articleLink}
-                    imgAltText={edition.imgAltText}
+                    imageAltText={edition.imageAltText}
                     excerpt={edition.description}
                   ></PostGridItem>
                 );
@@ -141,7 +141,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                     imageUrl={edition.imageUrl}
                     tags={edition.tags}
                     articleLink={edition.articleLink}
-                    imgAltText={edition.imgAltText}
+                    imageAltText={edition.imageAltText}
                     excerpt={edition.description}
                   ></PostGridItem>
                 );
@@ -155,38 +155,38 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
 
 // This gets the { data } property onto our props parameter, and here we query for all markdown files
 export const query = graphql`
-    query {
+  query {
     allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
         totalCount
         edges {
         node {
-            id
-            excerpt
-            fields {
+          id
+          excerpt
+          fields {
             slug
-            }
-            frontmatter {
+          }
+          frontmatter {
             date(formatString: "MMM DD, YYYY")
             title
             featured
             newsletterVolume
             contentType
             imageUrl
-            imageAlt
+            imageAltText
             tags
             keywords
             description
             author {
-                name
-                role
-                summary
-                imageUrl
+              name
+              role
+              summary
+              imageUrl
             }
-            }
+          }
         }
-        }
+      }
     }
-    }
+  }
 `;

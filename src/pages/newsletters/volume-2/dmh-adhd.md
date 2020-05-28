@@ -2,7 +2,7 @@
 title: "DMH: ADHD"
 date:  "2019-07-07"
 imageUrl: "/img/newsletters/adhd-400p.jpg"
-imageAlt: "ADHD"
+imageAltText: "ADHD"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false

@@ -2,7 +2,7 @@
 title: "DMH: Bipolar Disorder"
 date:  "2019-08-18"
 imageUrl: "/img/newsletters/bipolar-400p.jpg"
-imageAlt: "Bipolar Disorder"
+imageAltText: "Bipolar Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
 featured: false

@@ -25,7 +25,7 @@ export default ({ posts }) => {
                                     style={{ borderRadius: 4, height: "80%" }}
                                     className=""
                                     src={post.imageUrl}
-                                    alt={post.imgAltText}
+                                    alt={post.imageAltText}
                                 />
                                 </AniLink>
                             </div>

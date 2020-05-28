@@ -25,7 +25,7 @@ const Layout = ((props) => {
         title={props.title}
         imageUrl={props.imageUrl}
         author={props.author}
-        imageAlt={props.imageAlt}
+        imageAltText={props.imageAltText}
         keywords={props.keywords}
         url={props.url}
       />
@@ -58,7 +58,7 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
-  imageAlt: PropTypes.string.isRequired,
+  imageAltText: PropTypes.string.isRequired,
   keywords: PropTypes.string,
   url: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,

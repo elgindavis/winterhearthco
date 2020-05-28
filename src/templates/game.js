@@ -10,7 +10,7 @@ export default (props) => {
         <Layout
             keywords={gameInfo.keywords}
             imageUrl={gameInfo.imageUrl}
-            imageAlt={gameInfo.imageAlt}
+            imageAltText={gameInfo.imageAltText}
             url={props.location.href}
             title={gameInfo.title}
             description={gameInfo.description}
