@@ -40,7 +40,7 @@ const PostGridItem = ({
             <AniLink paintDrip hex="#f0f8ff" direction="up" to={articleLink}>
               <img // Images should be 3:2 aspect ratio
                 style={{ height: "auto", width: "100%", borderRadius: 4 }}
-                src={imageUrl}
+                src={imageUrl.replace(/-600p/i, "-300p")}
                 alt={imageAltText}
               />
             </AniLink>
