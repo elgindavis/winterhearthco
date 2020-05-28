@@ -8,7 +8,7 @@ newsletterVolume: '2'
 featured: false
 tags: ["OCD"]
 keywords: "OCD"
-description: "Preferring to keep things neat and tidy doesn't mean you have OCD. What is it, and what do you need to know about it?"
+description: "Preferring to keep things neat and tidy does not mean you have OCD. What is it, and what do you need to know about it?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

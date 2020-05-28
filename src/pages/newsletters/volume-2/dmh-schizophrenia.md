@@ -8,7 +8,7 @@ newsletterVolume: '2'
 featured: false
 tags: ["Schizophrenia"]
 keywords: "Schizophrenia"
-description: "According to research, Schizophrenia is the most chronic and disabling of the major mental illnesses. What exactly is Schizophrenia and how does it work? Let's find out:"
+description: "According to research, Schizophrenia is the most chronic and disabling of the major mental illnesses. What exactly is Schizophrenia?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

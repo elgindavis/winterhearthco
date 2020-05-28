@@ -1,5 +1,5 @@
 ---
-title: "4 Powerful Lessons Dogs Teach Us About EQ"
+title: "4 Lessons Dogs Teach Us About EQ"
 date: "2020-02-07"
 imageUrl: "/img/blog/dog-love-600p.jpg"
 imageAltText: "Wow, look at that happy pup"

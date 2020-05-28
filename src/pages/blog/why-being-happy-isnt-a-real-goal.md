@@ -13,7 +13,7 @@ author: {
     summary: "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.",
     imageUrl: "/img/profile-200p.jpg" 
 }
-description: "Life, Liberty, and the pursuit of Happiness'... But why?"
+description: "'Life, Liberty, and the pursuit of Happiness'... Have you ever questioned what it really means to pursue happiness?"
 unsplashBadgeInfo: {
     artistUrl: "https://unsplash.com/@stanislas1?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge",
     artistName: Stan B

@@ -8,7 +8,7 @@ newsletterVolume: '2'
 featured: false
 tags: ["Bipolar Disorder"]
 keywords: "Bipolar Disorder"
-description: "Though many choose to believe that Bipolar Disorder is as simple as being 'happy' one day and 'sad' the next, this is not actually the case. What is Bipolar Disorder, and why is it so misunderstood?"
+description: "Bipolar Disorder is not as simple as being 'happy' one day and 'sad' the next. What is Bipolar Disorder, and why is it so misunderstood?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

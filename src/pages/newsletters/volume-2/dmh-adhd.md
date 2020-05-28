@@ -8,7 +8,7 @@ newsletterVolume: '2'
 featured: false
 tags: ["ADHD"]
 keywords: "ADHD"
-description: "People use and misuse the term ADHD all the time. What is it, and what do you need to know about it?"
+description: "People abuse and misuse the term ADHD all the time. What is it, and what do you need to know about it?"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",
