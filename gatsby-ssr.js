@@ -18,14 +18,14 @@ const setColorsByTheme = () => {
     const prefersDarkFromMQ = mql.matches;
     const persistedPreference = localStorage.getItem(colorModeKey);
 
-    let colorMode = 'light';
+    let colorMode = 'dark';
 
-    const hasUsedToggle = typeof persistedPreference === 'string';
+    // const hasUsedToggle = typeof persistedPreference === 'string';
 
-    if (hasUsedToggle)
-        colorMode = persistedPreference;
-    else
-        colorMode = prefersDarkFromMQ ? 'dark' : 'light';
+    // if (hasUsedToggle)
+    //     colorMode = persistedPreference;
+    // else
+    //     colorMode = prefersDarkFromMQ ? 'dark' : 'light';
 
     let root = document.documentElement;
 
