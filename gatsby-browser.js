@@ -10,9 +10,11 @@ export const onServiceWorkerUpdateReady = () => {
     // if (!isRedundant && answer === true) {
     if (!isRedundant) {
       window.location.reload();
+      return;
     }
 };
 
 export const onServiceWorkerRedundant = () => {
     isRedundant = true;
+    return;
 }
