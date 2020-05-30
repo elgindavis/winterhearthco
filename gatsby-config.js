@@ -12,17 +12,6 @@ module.exports = {
     },
   },
   plugins: [
-    {
-      resolve: `gatsby-transformer-remark`,
-      // options: {
-      //   plugins: [
-      //     {
-      //       resolve: `gatsby-remark-images`,
-      //     },
-      //     `gatsby-remark-lazy-load`,
-      //   ],
-      // },
-    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
@@ -76,9 +65,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-remark-images-native-lazy-load`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        loading: "lazy", // "lazy" | "eager" | "auto"
+        plugins: [
+          {
+            resolve: `gatsby-remark-images-native-lazy-load`,
+            options: {
+              loading: "lazy", // "lazy" | "eager" | "auto"
+            },
+          },
+        ],
       },
     },
   ],

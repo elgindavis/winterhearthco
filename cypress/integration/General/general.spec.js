@@ -110,6 +110,23 @@ describe('Newsletter page checks', () => {
     });   
 });
 
+describe("Single post page checls", () => {
+    it('Renders proper details on post page', () => {
+        cy.visit("/newsletters/volume-1/whats-in-a-word/");
+        cy.contains("By Elgin Davis")
+        cy.contains("Apr 20, 2019")
+        cy.contains("Tags: Meaning, Lifestyle")
+        cy.contains("What's in a Word?")
+        cy.contains("Volume 1, Issue 12");
+    });
+
+    it('Renders embedded images on post page', () => {
+        cy.get("img").first();
+        cy.pause();
+        cy.get("img").last();
+    });
+});
+
 const checkSearch = () => {
     cy.get("input[name=search-input]").as("search-input").type("hypothalamus");
 

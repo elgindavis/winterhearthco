@@ -1,9 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import UnsplashBadge from "../components/UnsplashBadge"
-import BlogPostMetadata from "../components/BlogPostMetadata"
-import PopularPostColumnWidget from "../components/PopularPostColumn"
+import { Layout, UnsplashBadge, BlogPostMetadata, PopularPostColumn } from "../components/";
 
 import { transformPostQueryData } from "../utils";
 
@@ -37,14 +34,13 @@ export default (props) => {
                       src={postInfo.imageUrl.replace(/-400p/i, "")}
                       alt={postInfo.imageAltText}
                     />
-                    {
-                      postInfo.unsplashBadgeInfo &&
-                      postInfo.unsplashBadgeInfo.artistName !== "" &&
+                    {postInfo.unsplashBadgeInfo &&
+                      postInfo.unsplashBadgeInfo.artistName !== "" && (
                         <UnsplashBadge
-                            artistName={postInfo.unsplashBadgeInfo.artistName}
-                            artistURL={postInfo.unsplashBadgeInfo.artistUrl}
+                          artistName={postInfo.unsplashBadgeInfo.artistName}
+                          artistURL={postInfo.unsplashBadgeInfo.artistUrl}
                         />
-                    }
+                      )}
                   </div>
                 </div>
 
@@ -53,42 +49,34 @@ export default (props) => {
                   author={postInfo.author.name}
                   date={postInfo.date}
                 />
-                
+
                 <div className="col-lg-11 col-md-11">
-                    <h1 className="mt-30 mb-10">{postInfo.title}</h1>
+                  <h1 className="mt-30 mb-10">{postInfo.title}</h1>
 
-                    <div id="markdown-content" style={{ lineHeight: '1.5rem' }} dangerouslySetInnerHTML={{ __html: postHTML }} />
-
-                    <p style={{ padding: "5% 0 12px 0" }}>
-                        Thanks so much for reading— I hope you enjoyed this piece
-                        and took something away to make your life more
-                        meaningful and fulfilling. You can subscribe below to be notified about future posts from
-                        <a href="https://winterhearth.co"> winterhearth.co</a> like
-                        this one!
-                    </p>
-                    <a href="#wh-signup" className="primary-btn text-uppercase">
-                        Join the Squad
-                    </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 sidebar-widgets">
-              <div className="widget-wrap">
-                <div className="single-sidebar-widget user-info-widget">
-                  <img
-                    width="120"
-                    style={{ borderRadius: 100 }}
-                    src={postInfo.author.imageUrl}
-                    className="lazyload"
-                    alt={postInfo.author.name}
+                  <div
+                    id="markdown-content"
+                    style={{ lineHeight: "1.5rem" }}
+                    dangerouslySetInnerHTML={{ __html: postHTML }}
                   />
-                  <h4 style={{paddingTop: 20}}>{postInfo.author.name}</h4>
-                  <p>{postInfo.author.role}</p>
-                  <p style={{ textAlign: "left" }}>{postInfo.author.summary}</p>
+
+                  <p style={{ padding: "5% 0 12px 0" }}>
+                    Thanks so much for reading— I hope you enjoyed this piece
+                    and took something away to make your life more meaningful
+                    and fulfilling. You can subscribe below to be notified about
+                    future posts from
+                    <a href="https://winterhearth.co"> winterhearth.co</a> like
+                    this one!
+                  </p>
+                  <a href="#wh-signup" className="primary-btn text-uppercase">
+                    Join the Squad
+                  </a>
                 </div>
-                <PopularPostColumnWidget posts={featuredPostList} />
               </div>
             </div>
+            <PopularPostColumn
+              postInfo={postInfo}
+              posts={featuredPostList}
+            />
           </div>
         </div>
       </section>

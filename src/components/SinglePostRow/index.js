@@ -35,7 +35,6 @@ export default (props) => {
             className="posts-title"
             to={props.articleLink}
             style={{
-              // marginBottom: 0,
               color: "var(--color-text)",
               textDecoration: "none",
             }}
@@ -44,17 +43,10 @@ export default (props) => {
           </AniLink>
           <div className="user-details row">
             <p className="user-name col-lg-12 col-md-12">
-              {/* {props.hasAuthorURL ? (
-                <AniLink
-                  paintDrip
-                  hex="#f0f8ff"
-                  direction="up"
-                  to={props.authorURL}
-                  style={{ marginRight: 8 }}
-                >
-                  {" "} */}
               <span style={{ marginRight: 8 }}>By {props.author}</span>
-              <span style={{ float: "right" }}>{props.date}</span>
+              <span style={{ float: "right" }}>
+                <small>{props.date}</small>
+              </span>
             </p>
           </div>
           <div>
@@ -76,6 +68,5 @@ export default (props) => {
             </AniLink>
           </div>
         </div>
-        {/* <div className="col-lg-3  col-md-3 meta-details"></div> */}
       </Area>
     );};
