@@ -77,7 +77,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
             {searchState !== "" && filteredPostList.length === 0 && (
               <p>No posts matched this search</p>
             )}
-            <div className="row" style={{ justifyContent: "center" }}>
+            <div name="searched-post-section" className="row" style={{ justifyContent: "center" }}>
               {searchState !== "" &&
                 filteredPostList.map((edition, index) => {
                   return (
@@ -85,7 +85,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                       color={getBorderStyle(index)}
                       className="pb-20"
                       key={edition.id}
-                      author={edition.author.name}
+                      author={edition.author}
                       date={edition.date}
                       tags={edition.tags}
                       articleTitle={edition.title}
@@ -113,6 +113,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                 <PostGridItem
                   color={getBorderStyle(index)}
                   key={edition.id}
+                  name={edition.title}
                   author={edition.author}
                   date={edition.date}
                   tags={edition.tags}
@@ -137,6 +138,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
               direction="up"
               style={{ margin: "12px 16px" }}
               to="/blog/"
+              name="see-all-blogs-button"
               className="primary-btn text-uppercase"
             >
               See All Blogs
@@ -147,6 +149,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
               direction="up"
               style={{ margin: "12px 16px" }}
               to="/newsletters/"
+              name="see-all-newsletters-button"
               className="primary-btn text-uppercase"
             >
               See Newsletters
@@ -170,7 +173,7 @@ export const query = graphql`
               id
               excerpt
               fields {
-              slug
+                slug
               }
             ...PostInfo
           }

@@ -62,7 +62,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
         <section style={{ marginTop: 90 }} className="post-content-area">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-lg-8 posts-list">
+              <div name="searched-post-section" className="col-lg-8 posts-list">
                 {searchState !== "" && (
                   <h3 className="pb-40">Results for: {searchState}</h3>
                 )}
@@ -168,6 +168,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
               direction="up"
               to="/newsletters/"
               className="primary-btn text-uppercase"
+              name="see-all-newsletters-button"
             >
               See All Newsletters
             </AniLink>

@@ -12,7 +12,17 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+          },
+          `gatsby-remark-lazy-load`,
+        ],
+      },
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,

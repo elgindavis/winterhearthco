@@ -39,6 +39,7 @@ const SearchArea = ({ posts, setSearchState, setPostList, type }) => {
       <StyledSearchBar
         type="text"
         aria-label="Search"
+        name="search-input"
         className="search"
         placeholder={`Type to search ${type}...`}
         onChange={handleInputChange}
