@@ -14,14 +14,14 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-          },
-          `gatsby-remark-lazy-load`,
-        ],
-      },
+      // options: {
+      //   plugins: [
+      //     {
+      //       resolve: `gatsby-remark-images`,
+      //     },
+      //     `gatsby-remark-lazy-load`,
+      //   ],
+      // },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-transition-link`,
@@ -73,6 +73,12 @@ module.exports = {
         //
         // Defaults to gatsby-route-change
         routeChangeEventName: "page-view",
+      },
+    },
+    {
+      resolve: `gatsby-remark-images-native-lazy-load`,
+      options: {
+        loading: "lazy", // "lazy" | "eager" | "auto"
       },
     },
   ],
