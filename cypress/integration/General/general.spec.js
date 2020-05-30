@@ -84,7 +84,7 @@ describe('Blog page checks', () => {
         cy.get("div[name=popular-post-column]");
         cy.contains("Popular Posts");
     });
-})
+});
 
 describe('Newsletter page checks', () => {
     it("Renders newsletters page", () => {
@@ -109,9 +109,6 @@ describe('Newsletter page checks', () => {
         cy.visit("/newsletters/");
     });   
 });
-
-    // it('', () => {});
-
 
 const checkSearch = () => {
     cy.get("input[name=search-input]").as("search-input").type("hypothalamus");
