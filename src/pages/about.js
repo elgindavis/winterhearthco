@@ -143,7 +143,7 @@ export default () => (
                 to="/blog/"
                 name="see-latest-posts-button"
                 className="primary-btn text-uppercase"
-                style={{ padding: "0 20px" }}
+                style={{ padding: "0 20px", fontSize: '14px' }}
               >
                 See latest posts
               </AniLink>

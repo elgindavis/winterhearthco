@@ -50,23 +50,9 @@ const PostGridItem = ({
             className="bottom d-flex justify-content-between align-items-center flex-wrap"
           >
             <div>
-              <img
-                style={{ height: 30, borderRadius: 20 }}
-                src={
-                  author.imageUrl ? author.imageUrl : "/img/profile-200p.jpg"
-                }
-                alt={author.name}
-              />
-              {/* <AniLink
-                paintDrip
-                hex="#f0f8ff"
-                direction="up"
-                to={author.imageUrl}
-              > */}
-              <span>{`By ${author.name}`}</span>
-              {/* </AniLink> */}
+              <span style={{ margin: 0 }}>{`By ${author.name}`}</span>
             </div>
-            <small style={{ margin: 8 }} className="meta">
+            <small style={{ margin: "8px 0 8px 8px" }} className="meta">
               {date}
             </small>
           </div>
@@ -77,7 +63,6 @@ const PostGridItem = ({
             to={articleLink}
             name={articleTitle}
             style={{
-              // marginBottom: 0,
               color: "var(--color-text)",
               textDecoration: "none",
             }}

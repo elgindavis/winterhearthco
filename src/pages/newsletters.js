@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 
-import { Layout, Separator, PostGridItem, SearchArea, SinglePostRow } from "../components";
-import { transformPostQueryData, getBorderStyle } from "../utils";
+import {
+  Layout,
+  Separator,
+  SearchArea,
+  PostGridItemList,
+  SinglePostRowList,
+} from "../components";
+
+import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
     const allPosts = transformPostQueryData(edges);
@@ -31,15 +38,10 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
         >
           <div className="">
             <div
-              style={{ margin: "10% 0 0 3%" }}
+              style={{ margin: "40% 0 0 3%" }}
               className="row align-items-center justify-content-between"
             >
-              <div className="col-lg-8 col-md-8 banner-left">
-                <h1 className="text-white">
-                  Winter Hearth <br />
-                  Epic Life Playbook
-                </h1>
-              </div>
+              <div className="col-lg-8 col-md-8 banner-left"></div>
             </div>
           </div>
         </section>
@@ -65,24 +67,9 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                 {searchState !== "" && filteredPostList.length === 0 && (
                   <p>No posts matched this search</p>
                 )}
-                {searchState !== "" &&
-                  filteredPostList.map((edition, index) => {
-                    return (
-                      <SinglePostRow
-                        color={getBorderStyle(index)}
-                        className="pb-20"
-                        key={edition.id}
-                        author={edition.author.name}
-                        date={edition.date}
-                        tags={edition.tags}
-                        articleTitle={edition.title}
-                        imageUrl={edition.imageUrl}
-                        articleLink={edition.articleLink}
-                        imageAltText={edition.imageAltText}
-                        excerpt={edition.description}
-                      ></SinglePostRow>
-                    );
-                  })}
+                {searchState !== "" && (
+                  <SinglePostRowList list={filteredPostList} />
+                )}
               </div>
             </div>
           </div>
@@ -102,22 +89,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
               </div>
             </div>
             <div className="row justify-content-center">
-              {newsletterVolTwoList.map((edition, index) => {
-                return (
-                  <PostGridItem
-                    color={getBorderStyle(index)}
-                    key={edition.id}
-                    author={edition.author}
-                    date={edition.date}
-                    articleTitle={edition.title}
-                    tags={edition.tags}
-                    imageUrl={edition.imageUrl}
-                    articleLink={edition.articleLink}
-                    imageAltText={edition.imageAltText}
-                    excerpt={edition.description}
-                  ></PostGridItem>
-                );
-              })}
+              <PostGridItemList list={newsletterVolTwoList} />
             </div>
           </div>
         </section>
@@ -134,22 +106,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
               </div>
             </div>
             <div className="row justify-content-center">
-              {newsletterVolOneList.map((edition, index) => {
-                return (
-                  <PostGridItem
-                    color={getBorderStyle(index)}
-                    key={edition.id}
-                    author={edition.author}
-                    date={edition.date}
-                    articleTitle={edition.title}
-                    imageUrl={edition.imageUrl}
-                    tags={edition.tags}
-                    articleLink={edition.articleLink}
-                    imageAltText={edition.imageAltText}
-                    excerpt={edition.description}
-                  ></PostGridItem>
-                );
-              })}
+              <PostGridItemList list={newsletterVolOneList} />
             </div>
           </div>
         </section>

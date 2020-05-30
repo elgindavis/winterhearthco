@@ -9,7 +9,9 @@ const BlogPostMetadata = (props) => {
         >
           <p className="user-name col-lg-12 col-md-12 col-12">
             <span>By {props.author}</span>
-            <span style={{ float: "right" }}>{props.date}</span>
+            <span style={{ float: "right" }}>
+              <small>{props.date}</small>
+            </span>
           </p>
           <p className="col-lg-12 col-md-12">
             <small className="excerpt">Tags: {props.tags.join(", ")}</small>

@@ -1,18 +1,18 @@
-import React, { useState } from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { graphql } from "gatsby";
+import React, { useState } from "react";
 
 import {
-    Layout, 
-    Separator,
-    SearchArea,
-    PostGridItem,
-    SinglePostRow,
-    BannerBlogItem,
-    PopularPostColumn,
+  Layout, 
+  Separator,
+  SearchArea,
+  BannerBlogItem,
+  PostGridItemList,
+  SinglePostRowList,
+  PopularPostColumn,
 } from "../components";
 
-import { transformPostQueryData, getBorderStyle } from "../utils";
+import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const allPosts = transformPostQueryData(edges);
@@ -69,65 +69,16 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                 {searchState !== "" && filteredPostList.length === 0 && (
                   <p>No posts matched this search</p>
                 )}
-                {searchState !== "" &&
-                  filteredPostList.map((edition, index) => {
-                    return (
-                      <SinglePostRow
-                        className="pb-20"
-                        color={getBorderStyle(index)}
-                        key={edition.id}
-                        author={edition.author.name}
-                        date={edition.date}
-                        tags={edition.tags}
-                        articleTitle={edition.title}
-                        imageUrl={edition.imageUrl}
-                        articleLink={edition.articleLink}
-                        imageAltText={edition.imageAltText}
-                        excerpt={edition.description}
-                      ></SinglePostRow>
-                    );
-                  })}
-                {searchState === "" &&
-                  featuredPostList.map((edition, index) => {
-                    return (
-                      <SinglePostRow
-                        color={getBorderStyle(index)}
-                        key={edition.id}
-                        author={edition.author.name}
-                        date={edition.date}
-                        tags={edition.tags}
-                        articleTitle={edition.title}
-                        imageUrl={edition.imageUrl}
-                        articleLink={edition.articleLink}
-                        imageAltText={edition.imageAltText}
-                        excerpt={edition.description}
-                      ></SinglePostRow>
-                    );
-                  })}
-              </div>
-              <div className="col-lg-4 sidebar-widgets">
-                <div className="widget-wrap" style={{ margin: '0 12px' }}>
-                  <div className="single-sidebar-widget user-info-widget">
-                    <img
-                      width="120"
-                      style={{ borderRadius: 100 }}
-                      src="/img/profile-200p.jpg"
-                      className="lazyload"
-                      alt="Elgin Davis"
-                    />
-                    <h4 className="pt-20">Elgin Davis</h4>
-                    <p>Main Content Writer</p>
-                    <p style={{ textAlign: "left", margin: '10px 5%' }}>
-                      Elgin Davis is the creator of Winter Hearth Studios.
-                      Driven by a passionate spirit and boundless curiosity,
-                      Davis' work seeks to explore the depths of humanity and
-                      what it might look like to live a hyper-meaningful
-                      existence here on earth.
-                    </p>
+                {searchState !== "" && (
+                  <SinglePostRowList list={filteredPostList} />
+                )}
+                {searchState === "" && (
+                  <div style={{ marginTop: '3%' }}>
+                    <SinglePostRowList list={featuredPostList} />
                   </div>
-                  <PopularPostColumn posts={featuredColumnList} />
-                </div>
+                )}
               </div>
+              <PopularPostColumn posts={featuredColumnList} />
             </div>
           </div>
         </section>
@@ -137,27 +88,15 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
             <div className="row justify-content-center">
               <div className="col-md-8 pb-30 header-text text-center">
                 <h1>From the Newsletter Archives</h1>
-                <h3 className="pb-20">Epic Life Playbook Volume 2:<br/> Demystifying Mental Health</h3>
+                <h3 className="pb-20">
+                  Epic Life Playbook Volume 2:
+                  <br /> Demystifying Mental Health
+                </h3>
                 <p>"Mental Health Monsters" Series Artwork by Toby Allen</p>
               </div>
             </div>
             <div className="row justify-content-center">
-              {newsletterVolTwoList.map((edition, index) => {
-                return (
-                  <PostGridItem
-                    color={getBorderStyle(index)}
-                    key={edition.id}
-                    author={edition.author}
-                    date={edition.date}
-                    articleTitle={edition.title}
-                    tags={edition.tags}
-                    imageUrl={edition.imageUrl}
-                    articleLink={edition.articleLink}
-                    imageAltText={edition.imageAltText}
-                    excerpt={edition.description}
-                  ></PostGridItem>
-                );
-              })}
+              <PostGridItemList list={newsletterVolTwoList} />
             </div>
           </div>
         </section>

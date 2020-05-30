@@ -12,4 +12,6 @@ export { default as UnsplashBadge } from './UnsplashBadge';
 export { default as SinglePostRow } from './SinglePostRow';
 export { default as BannerBlogItem } from './BannerBlogItem';
 export { default as BlogPostMetadata } from './BlogPostMetadata';
+export { default as PostGridItemList } from "./PostGridItemList";
+export { default as SinglePostRowList } from './SinglePostRowList';
 export { default as PopularPostColumn } from './PopularPostColumn';
