@@ -39,6 +39,7 @@ const Header = () => {
              bg={bgImage}
              to="/"
              aria-label="Winter Hearth Home Page Icon"
+             name="navbar-logo-link"
            >
              {colorMode && (
                <img
@@ -46,6 +47,7 @@ const Header = () => {
                  src={logo}
                  alt="Winter Hearth Logo"
                  title="Winter Hearth Logo"
+                 name="navbar-logo-image"
                />
              )}
            </AniLink>
@@ -58,24 +60,39 @@ const Header = () => {
            <div id="nav-menu-container">
              <ul className="nav-menu">
                <li>
-                 <AniLink cover bg={bgImage} to="/">
+                 <AniLink name="navbar-link-home" cover bg={bgImage} to="/">
                    Home
                  </AniLink>
                </li>
                <li>
-                 <AniLink cover bg={bgImage} to="/about">
+                 <AniLink
+                   name="navbar-link-story"
+                   cover
+                   bg={bgImage}
+                   to="/about"
+                 >
                    Our Story
                  </AniLink>
                </li>
                {/* <li><Link to="/podcast">Podcast</Link></li> */}
                <li>
-                 <AniLink cover bg={bgImage} to="/blog/">
+                 <AniLink
+                   name="navbar-link-blog"
+                   cover
+                   bg={bgImage}
+                   to="/blog/"
+                 >
                    Blog
                  </AniLink>
                </li>
                {/* <li><Link to="/games/">Games</Link></li> */}
                <li>
-                 <AniLink cover bg={bgImage} to="/newsletters/">
+                 <AniLink
+                   name="navbar-link-newsletters"
+                   cover
+                   bg={bgImage}
+                   to="/newsletters/"
+                 >
                    Newsletters
                  </AniLink>
                </li>

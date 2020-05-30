@@ -63,7 +63,7 @@ const PostGridItem = ({
                 direction="up"
                 to={author.imageUrl}
               > */}
-              <span>by {author.name}</span>
+              <span>{`By ${author.name}`}</span>
               {/* </AniLink> */}
             </div>
             <small style={{ margin: 8 }} className="meta">
@@ -75,6 +75,7 @@ const PostGridItem = ({
             hex="#f0f8ff"
             direction="up"
             to={articleLink}
+            name={articleTitle}
             style={{
               // marginBottom: 0,
               color: "var(--color-text)",
@@ -98,6 +99,7 @@ const PostGridItem = ({
             hex="#f0f8ff"
             direction="up"
             to={articleLink}
+            name={articleLink}
             className="secondary-btn"
           >
             Read Article

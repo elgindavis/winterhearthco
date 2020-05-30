@@ -58,7 +58,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
         <section style={{ marginTop: 90 }} className="post-content-area">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-lg-8 posts-list">
+              <div name="searched-post-section" className="col-lg-8 posts-list">
                 {searchState !== "" && (
                   <h3 className="pb-40">Results for: {searchState}</h3>
                 )}
@@ -96,7 +96,9 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                 </h3>
                 <hr className="title-line mt-20" />
                 <br />
-                <p style={{ marginBottom: 0 }}>"Mental Health Monsters" Series Artwork by Toby Allen</p>
+                <p style={{ marginBottom: 0 }}>
+                  "Mental Health Monsters" Series Artwork by Toby Allen
+                </p>
               </div>
             </div>
             <div className="row justify-content-center">

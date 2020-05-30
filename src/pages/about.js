@@ -39,7 +39,12 @@ export default () => (
             </p>
           </div>
           <div className="col-lg-6 col-md-6">
-            <img className="img-fluid lazyload" src="/img/photo-4.jpg" alt="" />
+            <img
+              className="img-fluid lazyload"
+              name="elgin-story-image"
+              src="/img/photo-4.jpg"
+              alt="Elgin in Athens, Greece"
+            />
           </div>
         </div>
         <div
@@ -52,7 +57,12 @@ export default () => (
           }}
         >
           <div className="col-lg-6 col-md-6 home-about-right" style={{}}>
-            <img className="img-fluid lazyload" src="/img/hi-5.jpg" alt="" />
+            <img
+              className="img-fluid lazyload"
+              src="/img/hi-5.jpg"
+              name="hi-5-image"
+              alt="Aubbie and Rocca doing a high-5"
+            />
           </div>
           <div className="col-lg-5 col-md-6">
             <h1 style={{ paddingTop: "6%" }} className="">
@@ -93,6 +103,7 @@ export default () => (
               className=""
               src="/img/aubbie-knight.jpg"
               alt="Aubbie the Brave Knight"
+              name="aubbie-knight-image"
             />
           </div>
         </div>
@@ -110,6 +121,7 @@ export default () => (
               className="img-fluid"
               src="/img/aubbie-writing.png"
               alt="Aubbie writing a story at a desk"
+              name="aubbie-writing-image"
             />
           </div>
           <div className="col-lg-5 col-md-6">
@@ -129,6 +141,7 @@ export default () => (
                 hex="#f0f8ff"
                 direction="up"
                 to="/blog/"
+                name="see-latest-posts-button"
                 className="primary-btn text-uppercase"
                 style={{ padding: "0 20px" }}
               >
