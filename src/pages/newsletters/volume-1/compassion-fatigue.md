@@ -107,7 +107,7 @@ In this week's Level Up section, we have an [article published in Psychology Tod
 - **Try** to comes to terms with the fact that pain and suffering are realities of life over which we have little or no control
 - **Be** grateful for what is good in your life and in the world
 - **Be** kind to yourself
-Try to find some meaning in the suffering you see
+- **Try** to find some meaning in the suffering you see
 - **Show** compassion to yourself by being kind, soothing, and comforting to yourself
 - If you must blame something, blame the situation, not the person
 
