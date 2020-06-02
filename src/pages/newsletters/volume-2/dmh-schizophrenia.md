@@ -1,5 +1,5 @@
 ---
-title: "Schizophrenia"
+title: "DMH: Schizophrenia"
 date:  "2019-07-28"
 imageUrl: "/img/newsletters/schizophrenia-400p.jpg"
 imageAltText: "Schizophrenia"
