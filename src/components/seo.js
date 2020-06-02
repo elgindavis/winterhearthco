@@ -1,103 +1,53 @@
-import React from "react"
-import Helmet from "react-helmet"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { useLocation } from "@reach/router";
+import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ((props) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author {
-                name
-                summary
-            }
-          }
-        }
-      }
-    `
-  )
+const SEO = ({ title, description, imageUrl, article }) => {
+  const { pathname } = useLocation();
+  const { site } = useStaticQuery(query);
 
-  const metaDescription = props.description || site.siteMetadata.description
-  
+  const {
+    defaultTitle,
+    titleTemplate,
+    defaultDescription,
+    siteUrl,
+    defaultImage,
+    twitterUsername,
+  } = site.siteMetadata;
+
+  const seo = {
+    title: title || defaultTitle,
+    description: description || defaultDescription,
+    image: `${siteUrl}${imageUrl || defaultImage}`,
+    url: `${siteUrl}${pathname}`,
+  };
+
   return (
-    <>
-      <Helmet
-        htmlAttributes={{
-          lang: props.lang,
-        }}
-        title={props.title}
-        titleTemplate={`%s | ${site.siteMetadata.title}`}
-        meta={[
-          {
-            name: `description`,
-            content: metaDescription,
-          },
-          {
-              name: `keywords`,
-              content: props.keywords,
-          },
-          {
-            property: `og:title`,
-            content: `${props.title} | Winter Hearth Studios`,
-          },
-          {
-              property: `og:image`, 
-              content: props.imageUrl
-          },
-          {
-              property: `og:url`,
-              content: props.url,
-          },
-          {
-              property: `author`,
-              content: props.author,
-          },
-          {
-            property: `og:description`,
-            content: metaDescription,
-          },
-          {
-              property: `og:image:alt`, 
-              content: props.imageAltText
-          },
-          {
-            property: `og:type`,
-            content: `website`,
-          },
-          {
-            name: `twitter:card`,
-            content: metaDescription,
-          },
-          {
-            name: `twitter:creator`,
-            content: props.author || site.siteMetadata.author,
-          },
-          {
-            name: `twitter:title`,
-            content: props.title,
-          },
-          {
-            name: `twitter:description`,
-            content: metaDescription,
-          },
-        ].concat(props.meta)}
-      > 
-      </Helmet>
-      <link rel="shortcut icon" href="/img/fav.png" /> 
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    </>
+    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+      <meta name="description" content={seo.description} />
+      <meta name="image" content={seo.image} />
+      <meta property="og:url" content={seo.url} />
+      <meta property="og:title" content={seo.title} />
+      <meta name="twitter:title" content={seo.title} />
+      <meta property="og:description" content={seo.description} />
+      <meta property="og:image" content={seo.image} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content={twitterUsername} />
+      <meta name="twitter:description" content={seo.description} />
+      <meta name="twitter:image" content={seo.image} />
+
+      {article && <meta property="og:type" content="article" />}
+    </Helmet>
   );
-});
+};
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
-  author: `Winter Hearth Studios`
+  description: `Winter Hearth Studios`,
+  author: `Elgin Davis`
 };
 
 SEO.propTypes = {
@@ -106,10 +56,22 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
-  imageAltText: PropTypes.string.isRequired,
-  keywords: PropTypes.string,
-  url: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
 };
 
 export default SEO;
+
+const query = graphql`
+  query SEO {
+    site {
+      siteMetadata {
+        defaultTitle: title
+        titleTemplate
+        defaultDescription: description
+        siteUrl: url
+        defaultImage: image
+        twitterUsername
+      }
+    }
+  }
+`;

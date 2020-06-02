@@ -14,7 +14,19 @@ const BlogPostMetadata = (props) => {
             </span>
           </p>
           <p className="col-lg-12 col-md-12">
-            <small className="excerpt">Tags: {props.tags.join(", ")}</small>
+            <small className="excerpt">
+              Tags:{" "}
+              {props.tags.map((tag, index) => {
+                return (
+                  <a
+                    key={tag}
+                    href={`/tags/${tag.toLowerCase().replace(" ", "-")}`}
+                  >
+                    {tag + (index < props.tags.length - 1 ? ", " : "")}
+                  </a>
+                );
+              })}
+            </small>
           </p>
         </div>
       </div>

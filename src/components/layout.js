@@ -28,6 +28,7 @@ const Layout = ((props) => {
         imageAltText={props.imageAltText}
         keywords={props.keywords}
         url={props.url}
+        article={props.type ? true : false}
       />
       <GlobalStyles />
       {isLoaded && 

@@ -76,7 +76,19 @@ const PostGridItem = ({
           </p>
         </div>
         <div className="pb-40">
-          <small className="excerpt">Tags: {tags.join(", ")}</small>
+          <small className="excerpt">
+            Tags:{" "}
+            {tags.map((tag, index) => {
+              return (
+                <a
+                  key={tag}
+                  href={`/tags/${tag.toLowerCase().replace(" ", "-")}`}
+                >
+                  {tag + (index < tags.length - 1 ? ", " : "")}
+                </a>
+              );
+            })}
+          </small>
         </div>
         <div style={{ padding: "20px 0 40px" }}>
           <AniLink

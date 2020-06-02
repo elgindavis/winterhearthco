@@ -18,6 +18,7 @@ export default (props) => {
       url={props.location.href}
       title={postInfo.title}
       description={postInfo.description}
+      type="article"
     >
       <title>{postInfo.title}</title>
 

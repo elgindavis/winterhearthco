@@ -1,5 +1,5 @@
 ---
-title: "As the Deer"
+title: "Hunted"
 date: "2020-06-01"
 imageUrl: "/img/blog/dark-deer-600p.jpg"
 imageAltText: "A deer standing in darkness, looking at the camera"
@@ -37,7 +37,7 @@ unsplashBadgeInfo: {
 *How long ‘til the cup runneth over and at last* <br />
 *You finally take your drink.* <br />
 
-*Armed with blind rage, fury and righteousness,* <br />
+*Armed with blind rage and self-righteousness,* <br />
 *The hunter stands ready to attack,* <br />
 *He aims his sights and prays to God* <br />
 *That the deer never learns to shoot back.* <br />
