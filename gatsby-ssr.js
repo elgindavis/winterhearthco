@@ -6,9 +6,7 @@ import {
     INITIAL_COLOR_MODE_CSS_PROP,
 } from './src/constants';
 
-import App from './src/components/layout';
-
-
+import { SEO, Layout } from "./src/components";
 const setColorsByTheme = () => {
     const colors = '🌈';
     const colorModeKey = '🔑';
@@ -82,5 +80,18 @@ export const onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
 };
 
 export const wrapPageElement = ({ element }) => {
-    return <App>{element}</App>;
+    const data = element.props.data?.markdownRemark?.frontmatter;
+    if (data) console.log("element -> ", data);
+    return (
+        <>
+            {data && <SEO
+                description={data.description}
+                title={data.title}
+                imageUrl={data.imageUrl}
+                url={data.url}
+                article={data.type ? true : false}
+            />}
+            <Layout> {element} </Layout>
+        </>
+    );
 };

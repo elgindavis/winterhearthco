@@ -17,19 +17,6 @@ const Layout = ((props) => {
 
   return (
     <>
-    <SEO
-      info={props} 
-      description={props.description}
-      lang={props.lang}
-      meta={props.meta}
-      title={props.title}
-      imageUrl={props.imageUrl}
-      author={props.author}
-      imageAltText={props.imageAltText}
-      keywords={props.keywords}
-      url={props.url}
-      article={props.type ? true : false}
-    />
     <ThemeProvider>
       <GlobalStyles />
       {isLoaded && 
