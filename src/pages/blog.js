@@ -1,6 +1,6 @@
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { graphql } from "gatsby";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   Layout, 
@@ -29,17 +29,12 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const [searchState, setSearchState] = useState('');
     const [filteredPostList, setPostList] = useState([]);
 
+    useEffect(() => {
+      document.title = "Blog | Winter Hearth Studios";
+    }, []);
+
     return (
-      <Layout
-        keywords={
-          "blog, emotional intelligence, mental health, emotional health"
-        }
-        imageUrl="/img/aubbie-crystal-ball.png"
-        imageAltText="Winter Hearth Studios Blog"
-        url="https://winterhearth.co/blog"
-        title="Blog"
-        description="Your emotions are now your superpower— Welcome to the future. In the Winter Hearth Blog we go where others refuse to go. We seek out all truths – not just those that make us comfortable. Unlocking the greatest secrets and strengths of humanity wont be easy, but it will be worth it."
-      >
+      <Layout>
         <BannerBlogItem
           articleTitle="Pandemics and the Quest for Good News"
           articleDescription="In this world there will be troubles... And good news makes those troubles seem smaller, right?"

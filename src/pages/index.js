@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import { PostGridItem, Layout, Separator, SearchArea } from "../components";
@@ -11,6 +11,10 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
   const [searchState, setSearchState] = useState("");
   const [filteredPostList, setPostList] = useState([]);
 
+  useEffect(() => {
+    document.title = "Winter Hearth Studios";
+  }, []);
+  
   return (
     <Layout
       keywords={

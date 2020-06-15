@@ -1,13 +1,16 @@
 module.exports = {
   siteMetadata: {
+    defaultTitle: `Winter Hearth Studios`,
     title: `Winter Hearth Studios`,
-    titleTemplate: "%s | Winter Hearth Studios",
+    defaultImage: `/img/aubbie-knight.jpg`,
     image: `/img/aubbie-knight.jpg`,
     author: {
       name: `Elgin Davis`,
       summary: `The creator and digital visionary of Winter Hearth Studios.`,
     },
+    defaultDescription: `Change the heart, change the world.`,
     description: `Change the heart, change the world.`,
+    siteUrl: `https://winterhearth.co`,
     url: `https://winterhearth.co`,
     twitterUsername: `@winterhearthco`,
     social: {

@@ -24,25 +24,25 @@ const SEO = ({ title, description, imageUrl, article }) => {
   };
 
   return (
-    <Helmet>
+    <Helmet title={seo.title}>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta property="og:type" content="article" />
       <meta property="fb:app_id" content="#" />
+      <meta property="og:title" content={seo.title} />
+      <meta name="title" content={seo.title} />
+      <meta name="twitter:title" content={seo.title} />
       <title>{seo.title}</title>
       {seo.url && <meta property="og:url" content={seo.url} />}
-      {seo.title && <meta property="og:title" content={seo.title} />}
-      {seo.title && <meta name="title" content={seo.title} />}
-      {seo.title && <meta name="twitter:title" content={seo.title} />}
       {seo.description &&
-        <meta property="og:description" content={seo.description} />
+        <>
+          <meta property="og:description" content={seo.description} />
+          <meta name="twitter:description" content={seo.description} />
+        </>
       }
-      {seo.description &&
-        <meta name="twitter:description" content={seo.description} />
-      }
-      {seo.image && <meta property="og:image" content={seo.image} />}
+      <meta property="og:image" content={seo.image} />
+      <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:card" content="summary_large_image" />
-      {seo.image && <meta name="twitter:image" content={seo.image} />}
       {twitterUsername &&
         <meta name="twitter:creator" content={twitterUsername} />
       }
@@ -54,6 +54,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: `Winter Hearth Studios`,
+  title: `Winter Hearth Studios`,
   author: `Elgin Davis`
 };
 
@@ -73,7 +74,6 @@ const query = graphql`
     site {
       siteMetadata {
         defaultTitle: title
-        titleTemplate
         defaultDescription: description
         siteUrl: url
         defaultImage: image
