@@ -81,7 +81,6 @@ export const onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
 
 export const wrapPageElement = ({ element }) => {
     const data = element.props.data?.markdownRemark?.frontmatter;
-    if (data) console.log("element -> ", data);
     return (
         <>
             {data && <SEO

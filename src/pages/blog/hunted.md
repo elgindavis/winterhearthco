@@ -3,7 +3,7 @@ title: "Hunted"
 date: "2020-06-01"
 imageUrl: "/img/blog/dark-deer-600p.jpg"
 imageAltText: "A deer standing in darkness, looking at the camera"
-contentType: 'blog' # poetry
+contentType: 'poetry'
 featured: true
 tags: ["Black America", "Injustice"]
 keywords: "Injustice, Black America"
