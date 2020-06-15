@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 import { Layout, UnsplashBadge, BlogPostMetadata, PopularPostColumn } from "../components/";
 
@@ -10,15 +10,12 @@ export default (props) => {
   const allPosts = transformPostQueryData(props.data.allMarkdownRemark.edges);
   const featuredPostList = allPosts.filter((post) => post.featured === true);
 
+  useEffect(() => {
+      document.title = postInfo.title + " | Winter Hearth Studios";
+  }, [postInfo.title])
+
   return (
-    <Layout
-      keywords={postInfo.keywords}
-      imageUrl={postInfo.imageUrl}
-      imageAltText={postInfo.imageAltText}
-      url={props.location.href}
-      title={postInfo.title}
-      description={postInfo.description}
-    >
+    <Layout>
       <title>{postInfo.title}</title>
 
       <section className="post-content-area single-post-area">

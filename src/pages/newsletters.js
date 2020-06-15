@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import {
   Layout,
@@ -22,6 +22,10 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
     const newsletterVolOneList = allNewsletters.filter(
       (post) => post.newsletterVolume === "1"
     );
+    
+    useEffect(() => {
+      document.title = "Newsletters | Winter Hearth Studios";
+    }, [])
 
     return (
       <Layout

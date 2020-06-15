@@ -54,7 +54,16 @@ export default (props) => {
           </div>
           <p className="excerpt">{props.excerpt}</p>
           <div className="pb-20">
-            <small className="excerpt">Tags: {props.tags.join(", ")}</small>
+            <small className="excerpt">
+              Tags:{" "}
+              {props.tags.map((tag, index) => {
+                  return (
+                    <a key={tag} href={`/tags/${tag.toLowerCase().replace(" ", "-")}`}>
+                      {tag + (index < props.tags.length - 1 ? ", " : "")}
+                    </a>
+                  );
+              })}
+            </small>
           </div>
           <div style={{ paddingTop: "20px" }}>
             <AniLink

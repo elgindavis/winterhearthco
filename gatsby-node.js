@@ -60,6 +60,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     switch (node.frontmatter.contentType) {
       case "newsletter":
       case "blog":
+      case "poetry":
         template = "./src/templates/post.js";
         break;
       case "game":

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from "gatsby";
 
 import { Layout, PostGridItem } from '../components';
@@ -9,6 +9,10 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
     const allGames = transformPostQueryData(edges).filter(
         content => content.contentType === 'game'
     );
+    useEffect(() => {
+        document.title = "Games | Winter Hearth Studios";
+    }, []);
+
     return (
         <Layout
             keywords={"games, mobile games, mental health, emotional health"}

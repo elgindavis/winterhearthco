@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from "gatsby";
 
 import { PostGridItem, Layout } from "../components";
@@ -8,6 +8,9 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
     const allEpisodes = transformPostQueryData(edges).filter(
         content => content.contentType === 'podcast'
     );
+    useEffect(() => {
+        document.title = "Podcast | Winter Hearth Studios";
+    }, [])
     return (
         <Layout
             keywords={"podcast, feeling human, emotions, mental health, emotional health"}

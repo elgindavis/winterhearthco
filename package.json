@@ -64,13 +64,14 @@
     "rs": "npm run build && gatsby serve",
     "dev": "npm run build && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "stage": "npm run build && gh-pages -d public",
-    "start": "npm run develop",
+    "stage": "cp -r src/img/* public/img && npm run build && gh-pages -d public",
+    "start": "npm run dev",
     "serve": "cp -r src/img/* public/img && gatsby serve",
     "clean": "gatsby clean",
     "deploy": "npm run build && gh-pages -d public",
     "qd": "gh-pages -d public",
     "test": "./node_modules/.bin/cypress open",
-    "cypress": "npm run test"
+    "cypress": "npm run test",
+    "images": "bash ./src/img/staging/resize.sh && mv ./src/img/staging/*.jpg ../blog/"
   }
 }

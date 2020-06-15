@@ -6,8 +6,7 @@ import {
     INITIAL_COLOR_MODE_CSS_PROP,
 } from './src/constants';
 
-import App from './src/components/layout';
-
+import { SEO, Layout } from "./src/components";
 
 const setColorsByTheme = () => {
     const colors = '🌈';
@@ -57,6 +56,7 @@ const MagicScriptTag = () => {
  * document, which sets default values for all of our colors.
  * Only light mode will be available for users with JS disabled.
  */
+
 const FallbackStyles = () => {
     // Create a string holding each CSS variable:
     /*
@@ -82,5 +82,43 @@ export const onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
 };
 
 export const wrapPageElement = ({ element }) => {
-    return <App>{element}</App>;
+    const data = element.props.data?.markdownRemark?.frontmatter;
+
+    return (
+        <>
+            {data ? 
+                <>
+                    <SEO
+                        description={data.description}
+                        title={data.title}
+                        imageUrl={data.imageUrl}
+                        url={data.url}
+                        article={data.type ? true : false}
+                    />
+                    <Layout
+                        imageUrl={data.imageUrl}
+                        url={data.url}
+                        title={data.title}
+                        description={data.description}
+                    > 
+                        {element} 
+                    </Layout>
+                </>
+                :
+                <>
+                    <SEO
+                        description="Change the heart, change the world."
+                        title="Winter Hearth Studios"
+                        imageUrl="/img/aubbie-knight.jpg"
+                        url="https://winterhearth.co"
+                        article={true}
+                    />
+                    <Layout
+                    >
+                        {element}
+                    </Layout>
+                </>
+            }
+        </>
+    );
 };

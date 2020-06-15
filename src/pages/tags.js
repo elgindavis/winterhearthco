@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 // Utilities
@@ -13,29 +13,29 @@ const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
   },
-}) => (
-  <Layout
-    keywords=""
-    imageUrl="/img/aubbie-crystal-ball.png"
-    imageAltText="Winter Hearth Studios Content Tags"
-    url="https://winterhearth.co/tags"
-    title="Tags"
-    description="Find your favorite Winter Hearth content by tag!"
-  >
-    <div className="pt-120" style={{margin: '0 40px' }}>
-      <h1>Tags</h1>
-      <ul>
-        {group.map((tag) => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </Layout>
-);
+}) => 
+{
+  useEffect(() => {
+    document.title = "Tags | Winter Hearth Studios";
+  }, []);
+  
+  return (
+    <Layout>
+      <div className="pt-120" style={{margin: '0 40px' }}>
+        <h1>Tags</h1>
+        <ul>
+          {group.map((tag) => (
+            <li key={tag.fieldValue}>
+              <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                {tag.fieldValue} ({tag.totalCount})
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Layout>
+  )
+};
 
 TagsPage.propTypes = {
   data: PropTypes.shape({
