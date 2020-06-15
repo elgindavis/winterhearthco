@@ -20,7 +20,7 @@ export const COLORS = {
     gray500: "hsl(0deg, 0%, 50%)",
     gray700: "hsl(0deg, 0%, 70%)",
     white: "hsl(0deg, 0%, 90%)", // white
-    link: "hsla(205, 72%, 59%)", //
+    link: "hsla(205, 72%, 70%)", //
     yellow: "hsl(49, 70%, 55%)",
   },
   elgin: {
