@@ -7,7 +7,7 @@ contentType: 'poetry'
 featured: true
 tags: ["Black America", "Injustice"]
 keywords: "Injustice, Black America"
-description: "Sans cesse, sans cesse, sans cesse."
+description: "Sans cesse"
 author: {
     name: "Elgin Davis",
     role: "Main Content Writer",

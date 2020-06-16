@@ -26,23 +26,23 @@ const SEO = ({ title, description, imageUrl, article }) => {
   return (
     <Helmet title={seo.title}>
       <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
-      <meta property="og:type" content="article" />
-      <meta property="fb:app_id" content="#" />
-      <meta property="og:title" content={seo.title} />
+      <meta name="twitter:description" content={seo.description} />
+      <meta property="og:description" content={seo.description} />
+
       <meta name="title" content={seo.title} />
       <meta name="twitter:title" content={seo.title} />
-      <title>{seo.title}</title>
-      {seo.url && <meta property="og:url" content={seo.url} />}
-      {seo.description &&
-        <>
-          <meta property="og:description" content={seo.description} />
-          <meta name="twitter:description" content={seo.description} />
-        </>
-      }
-      <meta property="og:image" content={seo.image} />
+      <meta property="og:title" content={seo.title} />
+      
+      <meta name="image" content={seo.image} />
       <meta name="twitter:image" content={seo.image} />
+      <meta property="og:image" content={seo.image} />
+      
+      <meta property="og:type" content="article" />
+      <meta property="fb:app_id" content="#" />
+      <meta property="og:url" content={seo.url} />
+      
       <meta name="twitter:card" content="summary_large_image" />
+
       {twitterUsername &&
         <meta name="twitter:creator" content={twitterUsername} />
       }
