@@ -3,9 +3,9 @@
 # Takes all images in current directory and creates standardized names and sizes
 # Heights: 300px, 400px, 800px, original image height
 
-if [[ $(find . -name '*.jpg' -print) ]]
+if [[ $(find ./src/img/staging/ -name '*.jpg' -print) ]]
 then
-    for f in *.jpg; 
+    for f in ./src/img/staging/*.jpg; 
         do 
             original="${f%.jpg}.jpg"
             image300="${f%.jpg}-300p.jpg"
@@ -38,9 +38,9 @@ then
         done
 fi
 
-if [[ $(find . -name '*.png' -print) ]]
+if [[ $(find ./src/img/staging/ -name '*.png' -print) ]]
 then
-    for f in *.png; 
+    for f in ./src/img/staging/*.png; 
         do 
             original="${f%.png}.png"
             image300="${f%.png}-300p.png"
