@@ -3162,7 +3162,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-recent-blog h4 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
   margin-top: 35px;
   -webkit-transition: all 0.3s ease 0s;
