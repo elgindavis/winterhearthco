@@ -1,8 +1,8 @@
 ---
 title: "Compassion Fatigue"
 date:  "2019-03-31"
-imageUrl: "/img/newsletters/compassion-fatigue-600.jpg"
-imageAltText: "TED Talk Video thumbnail"
+imageUrl: "/img/compassion-fatigue-600p.jpg"
+imageAltText: "Woman with head on desk"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: true
