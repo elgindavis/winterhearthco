@@ -33,9 +33,9 @@ const PostGridItem = ({
     excerpt,
     tags,
     color,
-    host
+    host,
+    cover
   }) => {
-    console.log("contentType", contentType)
     return (
       <Area type={color} className="col-lg-4 col-md-4">
         <div style={{ width: "100%" }} className="single-recent-blog">
@@ -43,7 +43,11 @@ const PostGridItem = ({
             <AniLink paintDrip hex="#f0f8ff" direction="up" to={articleLink}>
               <img // Images should be 3:2 aspect ratio
                 style={{ height: "auto", width: "100%", borderRadius: 4 }}
-                src={imageUrl.replace(/-600p/i, "-300p")}
+                src={
+                  cover
+                    ? imageUrl.replace(/-600p/i, "-cover")
+                    : imageUrl.replace(/-600p/i, "-300p")
+                }
                 alt={imageAltText}
               />
             </AniLink>
@@ -53,7 +57,9 @@ const PostGridItem = ({
             className="bottom d-flex justify-content-between align-items-center flex-wrap"
           >
             <div>
-              <span style={{ margin: 0 }}>{`By ${author?.name || host?.name || 'Winter Hearth Studios'}`}</span>
+              <span style={{ margin: 0 }}>{`By ${
+                author?.name || host?.name || "Winter Hearth Studios"
+              }`}</span>
             </div>
             <small style={{ margin: "8px 0 8px 12px" }} className="meta">
               {date}

@@ -2,7 +2,7 @@ import React from 'react'
 import { PostGridItem } from '../';
 import { getBorderStyle } from "../../utils";
 
-export default ({ list }) => {
+export default ({ list, cover }) => {
   return list.map((edition, index) => {
         return (
           <PostGridItem
@@ -18,6 +18,7 @@ export default ({ list }) => {
             articleLink={edition.articleLink}
             imageAltText={edition.imageAltText}
             excerpt={edition.description}
+            cover={cover}
           />
         );
     });
