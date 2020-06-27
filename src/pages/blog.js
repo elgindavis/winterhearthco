@@ -17,7 +17,8 @@ import { transformPostQueryData } from "../utils";
 export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const allPosts = transformPostQueryData(edges);
     const allBlogs = allPosts.filter(
-      (post) => post.contentType === "blog" || post.contentType === "poetry"
+      (post) => (post.contentType === "blog" || post.contentType === "poetry") 
+        && post.hidden !== true
     ); 
     const featuredPostList = allBlogs.filter(
       (post) => post.featured === true

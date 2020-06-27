@@ -4,6 +4,45 @@ const _ = require("lodash");
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { graphql } = require(`gatsby`);
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+
+    type Creator {
+      name: String!
+      role: String!
+      summary: String!
+      imageUrl: String!
+    }
+
+    type UnsplashBadgeInfo {
+      artistName: String
+      artistUrl: String
+    }
+
+    type Frontmatter {
+      host: Creator
+      author: Creator
+      contentType: String!
+      description: String!
+      featured: Boolean!
+      hidden: Boolean
+      imageAltText: String!
+      imageUrl: String!
+      keywords: String
+      newsletterVolume: Int
+      tags: [String!]!
+      title: String!
+      unsplashBadgeInfo: UnsplashBadgeInfo
+      guests: [Creator!]
+    }
+  `
+  createTypes(typeDefs)
+};
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {

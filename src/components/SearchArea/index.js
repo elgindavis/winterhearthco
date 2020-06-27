@@ -19,11 +19,12 @@ const SearchArea = ({ posts, setSearchState, setPostList, type }) => {
     setSearchState(query);
 
     const filteredData = posts.filter((post) => {
-      const { description, title, tags, author } = post;
+      const { description, title, tags, author, host } = post;
       return (
         description.toLowerCase().includes(query) ||
         title.toLowerCase().includes(query) ||
-        author.name.toLowerCase().includes(query) ||
+        author?.name.toLowerCase().includes(query) ||
+        host?.name.toLowerCase().includes(query) ||
         (tags &&
           tags
             .join("") // convert tags from an array to string

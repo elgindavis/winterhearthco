@@ -29,10 +29,13 @@ const PostGridItem = ({
     author,
     date,
     articleTitle,
+    contentType,
     excerpt,
     tags,
     color,
+    host
   }) => {
+    console.log("contentType", contentType)
     return (
       <Area type={color} className="col-lg-4 col-md-4">
         <div style={{ width: "100%" }} className="single-recent-blog">
@@ -50,7 +53,7 @@ const PostGridItem = ({
             className="bottom d-flex justify-content-between align-items-center flex-wrap"
           >
             <div>
-              <span style={{ margin: 0 }}>{`By ${author.name}`}</span>
+              <span style={{ margin: 0 }}>{`By ${author?.name || host?.name || 'Winter Hearth Studios'}`}</span>
             </div>
             <small style={{ margin: "8px 0 8px 12px" }} className="meta">
               {date}
@@ -99,7 +102,10 @@ const PostGridItem = ({
             name={articleLink}
             className="secondary-btn"
           >
-            Read Article
+            {contentType === "podcast" && "Listen Now"}
+            {contentType === "poetry" && "Read Poem"}
+            {contentType === "blog" && "Read Article"}
+            {contentType === "newsletter" && "Read Newsletter"}
           </AniLink>
         </div>
       </Area>

@@ -6,11 +6,13 @@ import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
     const allEpisodes = transformPostQueryData(edges).filter(
-        content => content.contentType === 'podcast'
+      (content) => content.contentType === "podcast" && content.hidden !== true
     );
+
     useEffect(() => {
-        document.title = "Podcast | Winter Hearth Studios";
-    }, [])
+        document.title = "More Human Podcast | Winter Hearth Studios";
+    }, []);
+    
     return (
         <Layout
             keywords={"podcast, feeling human, emotions, mental health, emotional health"}

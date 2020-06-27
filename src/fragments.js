@@ -14,6 +14,7 @@ export const query = graphql`
         tags
         keywords
         description
+        hidden
         unsplashBadgeInfo {
             artistName
             artistUrl
@@ -23,6 +24,18 @@ export const query = graphql`
             role
             summary
             imageUrl
+        }
+        host {
+            name
+            role
+            summary
+            imageUrl
+        }
+        guests {
+          name
+          role
+          summary
+          imageUrl
         }
     }
   }

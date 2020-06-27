@@ -7,14 +7,7 @@ export default (props) => {
     const episodeInfo = props.data.markdownRemark.frontmatter;
 
     return (
-        <Layout
-            keywords={episodeInfo.keywords}
-            imageUrl={episodeInfo.imageUrl}
-            imageAltText={episodeInfo.imageAltText}
-            url={props.location.href}
-            title={episodeInfo.title}
-            description={episodeInfo.description}
-        >
+        <Layout>
             <section className="pt-120">
                 <div className="container">
                     <div className="row">

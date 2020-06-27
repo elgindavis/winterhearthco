@@ -14,9 +14,12 @@ export const transformPostQueryData = (postList) => {
             imageUrl: data.frontmatter.imageUrl,
             imageAltText: data.frontmatter.imageAltText,
             tags: data.frontmatter.tags,
+            hidden: data.frontmatter.hidden,
             keywords: data.frontmatter.keywords,
             description: data.frontmatter.description,
             author: data.frontmatter.author,
+            host: data.frontmatter.host,
+            guests: data.frontmatter.guests,
         }
     });
 };
