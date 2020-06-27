@@ -1,5 +1,5 @@
 ---
-title: "More Human Podcast Trailer"
+title: "Podcast Trailer"
 date: "2020-06-27"
 imageUrl: "/img/podcast/more-human-600p.png"
 imageAltText: "Abstract mid-century modern triangle character standing next to the words More Human"
@@ -15,3 +15,7 @@ host: {
     imageUrl: "/img/profile-200p.jpg" 
 }
 guests: []
+anchorEpisodeUrl: "#"
+spotifyEpisodeUrl: "#"
+applePodcastEpisodeUrl: "#"
+googlePodcastEpisodeUrl: "#"

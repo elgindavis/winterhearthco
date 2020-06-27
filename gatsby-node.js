@@ -38,8 +38,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String!
       unsplashBadgeInfo: UnsplashBadgeInfo
       guests: [Creator!]
+      anchorEpisodeUrl: String
+      spotifyEpisodeUrl: String
+      applePodcastEpisodeUrl: String
+      googlePodcastEpisodeUrl: String
     }
-  `
+  `;
   createTypes(typeDefs)
 };
 

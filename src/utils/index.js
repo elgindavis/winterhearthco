@@ -20,6 +20,10 @@ export const transformPostQueryData = (postList) => {
             author: data.frontmatter.author,
             host: data.frontmatter.host,
             guests: data.frontmatter.guests,
+            anchorEpisodeUrl: data.frontmatter.anchorEpisodeUrl,
+            spotifyEpisodeUrl: data.frontmatter.spotifyEpisodeUrl,
+            applePodcastEpisodeUrl: data.frontmatter.applePodcastEpisodeUrl,
+            googlePodcastEpisodeUrl: data.frontmatter.googlePodcastEpisodeUrl,
         }
     });
 };

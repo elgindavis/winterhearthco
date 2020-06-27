@@ -16,5 +16,9 @@ host: {
     imageUrl: "/img/profile-200p.jpg" 
 }
 guests: []
+anchorEpisodeUrl: "#"
+spotifyEpisodeUrl: "#"
+applePodcastEpisodeUrl: "#"
+googlePodcastEpisodeUrl: "#"
 ---
 

@@ -1,16 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { graphql } from "gatsby";
 
-import { PostGridItemList, Layout } from "../components";
+import {
+  Layout,
+  Separator,
+  SearchArea,
+  ContentStripList,
+} from "../components";
+
 import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
     const allEpisodes = transformPostQueryData(edges).filter(
         (content) => content.contentType === "podcast" && content.hidden !== true
     );
+    const [searchState, setSearchState] = useState("");
+    const [filteredEpisodeList, setEpisodeList] = useState([]);
     
-    console.log("allEpisodes", allEpisodes)
-
     useEffect(() => {
         document.title = "More Human Podcast | Winter Hearth Studios";
     }, []);
@@ -21,14 +27,55 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-12 pb-30 header-text center">
-                <h1>Welcome to the More Human Podcast</h1>
-                <h3 style={{ textAlign: "center" }}>
+                <h1>Welcome to the More Human Podcast!</h1>
+                <Separator style={{ paddingBottom: 20 }} />
+                {/* <h3 style={{ textAlign: "center" }}>
                   When was the last time you felt human?
-                </h3>
+                </h3> */}
               </div>
             </div>
-            <div className="row pt-40">
-              <PostGridItemList list={allEpisodes} cover={true} />
+          </div>
+        </section>
+        <section>
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-md-12 pb-60 text-center header-text">
+                <SearchArea
+                  setPostList={setEpisodeList}
+                  setSearchState={setSearchState}
+                  type="all posts"
+                  posts={allEpisodes}
+                />
+              </div>
+            </div>
+            <div className="pb-40">
+              {searchState !== "" && (
+                <h3 className="pb-40">Results for: {searchState}</h3>
+              )}
+              {searchState !== "" && filteredEpisodeList.length === 0 && (
+                <p>No posts matched this search</p>
+              )}
+              <div
+                name="searched-post-section"
+                className="row"
+                style={{ justifyContent: "center" }}
+              >
+                {searchState !== "" && (
+                  <ContentStripList list={filteredEpisodeList} cover={true} />
+                )}
+              </div>
+            </div>
+            {searchState !== "" && (
+              <div>
+                <h2>Most Recent</h2> <br />
+              </div>
+            )}
+            <div
+              id="latest-posts-row"
+              className="row"
+              style={{ justifyContent: "center" }}
+            >
+              <ContentStripList list={allEpisodes} cover={true} />
             </div>
           </div>
         </section>
