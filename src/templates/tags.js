@@ -6,13 +6,17 @@ import { Link, graphql } from "gatsby";
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
+  console.log("Tags -> pageContext", pageContext)
   const { edges, totalCount } = data.allMarkdownRemark;
+  console.log("Tags -> data.allMarkdownRemark", data.allMarkdownRemark)
+  console.log("Tags -> totalCount", totalCount)
+  console.log("Tags -> edges", edges)
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`;
 
   return (
-    <div>
+    <div style={{ margin: 48 }}>
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
@@ -25,10 +29,6 @@ const Tags = ({ pageContext, data }) => {
           );
         })}
       </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
       <Link to="/tags">All tags</Link>
     </div>
   );

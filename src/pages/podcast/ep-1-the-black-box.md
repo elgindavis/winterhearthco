@@ -6,7 +6,7 @@ imageAltText: "A character standing next to a black box"
 contentType: 'podcast'
 featured: false
 hidden: true
-tags: ["mental health", "emotional intelligence", "self-awareness"]
+tags: ["Mental Health", "Emotional Intelligence", "Self-awareness"]
 keywords: "mental health, emotional intelligence, self-awareness"
 description: ""
 host: {

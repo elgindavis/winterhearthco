@@ -15,6 +15,7 @@ const TagsPage = ({
   },
 }) => 
 {
+  
   useEffect(() => {
     document.title = "Tags | Winter Hearth Studios";
   }, []);
