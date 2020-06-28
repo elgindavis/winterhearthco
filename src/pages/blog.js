@@ -17,7 +17,8 @@ import { transformPostQueryData } from "../utils";
 export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const allPosts = transformPostQueryData(edges);
     const allBlogs = allPosts.filter(
-      (post) => post.contentType === "blog" || post.contentType === "poetry"
+      (post) => (post.contentType === "blog" || post.contentType === "poetry") 
+        && post.hidden !== true
     ); 
     const featuredPostList = allBlogs.filter(
       (post) => post.featured === true
@@ -25,7 +26,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const featuredColumnList = allPosts.filter(
       (post) => post.featured === true
     );
-    const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === "2");
+    const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === 2);
     const [searchState, setSearchState] = useState('');
     const [filteredPostList, setPostList] = useState([]);
 
@@ -36,10 +37,10 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
     return (
       <Layout>
         <BannerBlogItem
-          articleTitle="Pandemics and the Quest for Good News"
-          articleDescription="In this world there will be troubles... And good news makes those troubles seem smaller, right?"
-          articleLink="/blog/pandemics-and-good-news"
-          imageUrl="/img/blog/good-news-banner.jpg"
+          articleTitle="Compassion Fatigue in Times of Crisis"
+          articleDescription="What do you do when the world's pain becomes your pain?"
+          articleLink="/blog/compassion-fatigue-in-crisis"
+          imageUrl="/img/blog/mwangi-gatheca-xViKfocA-Uc-unsplash-800p.jpg"
           mobileimageUrl=""
         ></BannerBlogItem>
         <section>
@@ -68,7 +69,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
                   <SinglePostRowList list={filteredPostList} />
                 )}
                 {searchState === "" && (
-                  <div style={{ marginTop: '3%' }}>
+                  <div style={{ marginTop: "3%" }}>
                     <SinglePostRowList list={featuredPostList} />
                   </div>
                 )}

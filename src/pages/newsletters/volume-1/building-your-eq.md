@@ -1,7 +1,7 @@
 ---
 title: "Building Your EQ"
 date:  "2019-04-05"
-imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/70851790-9a7c-4f5b-834d-7207335fe488.gif"
+imageUrl: "/img/blog/level-up.gif"
 imageAltText: "Emotional Intelligence is fun!"
 contentType: 'newsletter'
 newsletterVolume: '1'

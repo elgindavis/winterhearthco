@@ -9,12 +9,12 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: var(--color-secondary);
+    color: var(--color-link);
     text-decoration: underline;
   }
 
   a:hover {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     text-decoration: none;
   }
 `;

@@ -74,7 +74,16 @@ const Header = () => {
                    Our Story
                  </AniLink>
                </li>
-               {/* <li><Link to="/podcast">Podcast</Link></li> */}
+               <li>
+                 <AniLink
+                   name="navbar-link-podcast"
+                   cover
+                   bg={bgImage}
+                   to="/podcast"
+                 >
+                   Podcast
+                 </AniLink>
+               </li>
                <li>
                  <AniLink
                    name="navbar-link-blog"

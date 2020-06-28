@@ -1,10 +1,28 @@
 import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { getImageWithSize } from "../../utils";
 
 const elginSummary =
   "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.";
 
 export default ({ posts, postInfo }) => {
+  let name, summary, role, imageUrl;
+
+  if (postInfo) {
+    if (postInfo.author) {
+      name = postInfo.author.name;
+      summary = postInfo.author.summary;
+      role = postInfo.author.role;
+      imageUrl = postInfo.author.imageUrl;
+    }
+    else if (postInfo.host) {
+      name = postInfo.host.name;
+      summary = postInfo.host.summary;
+      role = postInfo.host.role;
+      imageUrl = postInfo.host.imageUrl;
+    }
+  } 
+  
   return (
     <div className="col-lg-4 sidebar-widgets">
       <div className="widget-wrap">
@@ -13,24 +31,31 @@ export default ({ posts, postInfo }) => {
             width="120"
             style={{ borderRadius: 100 }}
             src={
-              postInfo?.author?.imageUrl
-                ? postInfo.author.imageUrl
+              imageUrl
+                ? imageUrl
                 : "/img/profile-200p.jpg"
             }
             className="lazyload"
-            alt={postInfo?.author?.name ? postInfo.author.name : "Elgin Davis"}
+            alt={name ? name : "Elgin Davis"}
           />
           <h4 style={{ paddingTop: 20 }}>
-            {postInfo?.author?.name ? postInfo.author.name : "Elgin Davis"}
+            {name ? name : "Elgin Davis"}
           </h4>
-          <p>{postInfo?.author?.role}</p>
-          <p style={{ textAlign: "left" }}>{postInfo?.author?.summary ? postInfo?.author?.summary : elginSummary }</p>
+          <p>{role}</p>
+          {summary && (
+            <p style={{ textAlign: "left" }}>
+              {summary
+                ? summary
+                : elginSummary}
+            </p>
+          )}
+          
         </div>
         <div
           name="popular-post-column"
           className="single-sidebar-widget popular-post-widget"
         >
-          <h4 className="text-center">Popular Posts</h4>
+          <h4 className="text-center">Popular Content</h4>
           <hr className="title-line mt-10" />
           <div className="popular-post-list">
             {posts.map((post) => {
@@ -50,7 +75,7 @@ export default ({ posts, postInfo }) => {
                         <img
                           style={{ borderRadius: 4, height: "80%" }}
                           className=""
-                          src={post.imageUrl}
+                          src={getImageWithSize(post.imageUrl, "300p")}
                           alt={post.imageAltText}
                         />
                       </AniLink>
@@ -89,7 +114,10 @@ export default ({ posts, postInfo }) => {
                       to={post.articleLink}
                       className="secondary-btn"
                     >
-                      Read Article
+                      {post.contentType === "podcast" && "Listen Now"}
+                      {post.contentType === "poetry" && "Read Poem"}
+                      {post.contentType === "blog" && "Read Article"}
+                      {post.contentType === "newsletter" && "Read Newsletter"}
                     </AniLink>
                   </div>
                 </span>

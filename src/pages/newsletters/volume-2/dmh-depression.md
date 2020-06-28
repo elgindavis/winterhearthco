@@ -1,7 +1,7 @@
 ---
 title: "DMH: Depression"
 date:  "2019-09-08"
-imageUrl: "/img/newsletters/depression-400p.jpg"
+imageUrl: "/img/blog/depression.jpg"
 imageAltText: "Depression"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -63,7 +63,7 @@ Depression can also be further classified. Here is a list of the most common for
 - Atypical Depression - symptoms temporarily go away in response to some positive events
 
  
-![Depression, created and owned by Toby Allen](/img/newsletters/depression.jpg)
+![Depression, created and owned by Toby Allen](/img/blog/depression.jpg)
 
 <div class="photo-credit"> 
     Depression, created and owned by Toby Allen

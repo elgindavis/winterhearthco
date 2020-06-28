@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 
 import { Layout, UnsplashBadge, BlogPostMetadata, PopularPostColumn } from "../components/";
 
-import { transformPostQueryData } from "../utils";
+import { transformPostQueryData, getImageWithSize } from "../utils";
 
 export default (props) => {
   const postHTML = props.data.markdownRemark.html;
@@ -28,7 +28,7 @@ export default (props) => {
                     <img
                       className="img-fluid lazyload"
                       style={{ borderRadius: 4, marginTop: "3%" }}
-                      src={postInfo.imageUrl.replace(/-400p/i, "")}
+                      src={getImageWithSize(postInfo.imageUrl, "600p")}
                       alt={postInfo.imageAltText}
                     />
                     {postInfo.unsplashBadgeInfo &&
@@ -47,7 +47,10 @@ export default (props) => {
                   date={postInfo.date}
                 />
 
-                <div className="col-lg-11 col-md-11">
+                <div
+                  className="col-lg-11 col-md-11"
+                  style={{ fontFamily: "Georgia, Cambria, Cochin, serif" }}
+                >
                   <h1 className="mt-30 mb-10">{postInfo.title}</h1>
 
                   <div
@@ -64,16 +67,17 @@ export default (props) => {
                     <a href="https://winterhearth.co"> winterhearth.co</a> like
                     this one!
                   </p>
-                  <a href="#wh-signup" className="primary-btn text-uppercase">
+                  <a
+                    style={{ fontFamily: "Poppins, sans-serif" }}
+                    href="#wh-signup"
+                    className="primary-btn text-uppercase"
+                  >
                     Join the Squad
                   </a>
                 </div>
               </div>
             </div>
-            <PopularPostColumn
-              postInfo={postInfo}
-              posts={featuredPostList}
-            />
+            <PopularPostColumn postInfo={postInfo} posts={featuredPostList} />
           </div>
         </div>
       </section>

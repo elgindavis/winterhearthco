@@ -1,7 +1,7 @@
 ---
 title: "Why You Will Never Get What You Deserve"
 date: "2020-02-11"
-imageUrl: "/img/blog/sunset-path-600p.jpg"
+imageUrl: "/img/blog/sunset-path.jpg"
 imageAltText: "Man walking alone on a path at sunset"
 contentType: 'blog'
 featured: true

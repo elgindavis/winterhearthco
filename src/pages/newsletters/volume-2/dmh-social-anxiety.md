@@ -1,7 +1,7 @@
 ---
 title: "DMH: Social Anxiety Disorder"
 date:  "2019-07-14"
-imageUrl: "/img/newsletters/social-anxiety-400p.jpg"
+imageUrl: "/img/blog/social-anxiety.jpg"
 imageAltText: "Social Anxiety"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -100,7 +100,7 @@ Ever since then, I have this looming fear of failing (and thusly being ridiculed
  
 <br />
 
-![Social Anxiety, created and owned by Toby Allen](/img/newsletters/social-anxiety.jpg)
+![Social Anxiety, created and owned by Toby Allen](/img/blog/social-anxiety.jpg)
 
 <div class="photo-credit"> 
     Social Anxiety, created and owned by Toby Allen

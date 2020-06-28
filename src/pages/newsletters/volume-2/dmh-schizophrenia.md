@@ -1,7 +1,7 @@
 ---
 title: "DMH: Schizophrenia"
 date:  "2019-07-28"
-imageUrl: "/img/newsletters/schizophrenia-400p.jpg"
+imageUrl: "/img/blog/schizophrenia.jpg"
 imageAltText: "Schizophrenia"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -46,7 +46,7 @@ They go on to note that for one individual it may be noises, but for another it 
  
  <br />
 
-![Schizophrenia, created and owned by Toby Allen](/img/newsletters/schizophrenia.jpg)
+![Schizophrenia, created and owned by Toby Allen](/img/blog/schizophrenia.jpg)
 
 <div class="photo-credit"> 
     Schizophrenia, created and owned by Toby Allen

@@ -1,7 +1,7 @@
 ---
 title: "DMH: Anxiety"
 date:  "2019-06-23"
-imageUrl: "/img/newsletters/anxiety-400p.jpg"
+imageUrl: "/img/blog/anxiety.jpg"
 imageAltText: "Anxiety"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -73,7 +73,7 @@ Hopefully this was a helpful (and sufficiently brief) overview of anxiety, anxie
 
 <br />
 
-![Anxiety, created and owned by Toby Allen](/img/newsletters/anxiety.jpg)
+![Anxiety, created and owned by Toby Allen](/img/blog/anxiety.jpg)
 
 <div class="photo-credit"> 
     Anxiety, created and owned by Toby Allen

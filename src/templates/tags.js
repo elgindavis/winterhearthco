@@ -12,7 +12,7 @@ const Tags = ({ pageContext, data }) => {
   } tagged with "${tag}"`;
 
   return (
-    <div>
+    <div style={{ margin: 48 }}>
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
@@ -25,10 +25,6 @@ const Tags = ({ pageContext, data }) => {
           );
         })}
       </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
       <Link to="/tags">All tags</Link>
     </div>
   );

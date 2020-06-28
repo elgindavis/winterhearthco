@@ -1,8 +1,8 @@
 ---
 title: "The Gift of Gratitude"
 date:  "2019-05-05"
-imageUrl: "/img/freshh-connection-M4lve6jR26E-unsplash.jpg"
-imageAltText: "Placeholder alt text"
+imageUrl: "/img/blog/freshh-connection-M4lve6jR26E-unsplash.jpg"
+imageAltText: "A pink journal that says today I am grateful"
 contentType: 'newsletter'
 newsletterVolume: '1'
 featured: false

@@ -1,7 +1,7 @@
 ---
 title: "Maximizing Potential"
 date:  "2019-02-05"
-imageUrl: "/img/newsletters/begin-400p.jpg"
+imageUrl: "/img/blog/begin.jpg"
 imageAltText: "Potential success"
 contentType: 'newsletter'
 newsletterVolume: '1'

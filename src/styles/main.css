@@ -84,7 +84,7 @@ body {
   color: var(--color-text);
   font-family: "Poppins", sans-serif;
   background-color: var(--color-background) !important;
-  font-size: 1.03rem !important;
+  font-size: 1.13rem !important;
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
@@ -2349,6 +2349,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8px 0px 8px;
   text-decoration: none;
   display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--color-text);
   font-weight: 500;
   font-size: 14px;
@@ -2544,6 +2545,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: transparent;
   padding: 10px 30px;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--color-text);
 }
 
@@ -3160,7 +3162,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-recent-blog h4 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
   margin-top: 35px;
   -webkit-transition: all 0.3s ease 0s;
@@ -3609,7 +3611,7 @@ dl.accordion.time-line:before {
 }
 
 .blog-home-banner .overlay-bg {
-  background: rgba(109, 143, 202, 0.70);
+  background: rgba(142, 44, 27, 0.5);
 }
 
 .blog-page {

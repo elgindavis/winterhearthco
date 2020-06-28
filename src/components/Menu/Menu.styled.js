@@ -17,7 +17,7 @@ export const StyledMenu = styled.nav`
       width: 300px;
     }
   a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     padding: 1.5rem 0;
     font-weight: bold;
@@ -26,7 +26,7 @@ export const StyledMenu = styled.nav`
     text-decoration: underline;
     transition: color 0.3s linear;
     @media (max-width: 990px) {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       text-align: center;
     }
     &:hover {

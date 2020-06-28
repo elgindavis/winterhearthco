@@ -72,6 +72,7 @@
     "qd": "gh-pages -d public",
     "test": "./node_modules/.bin/cypress open",
     "cypress": "npm run test",
-    "images": "bash ./src/img/staging/resize.sh && mv ./src/img/staging/*.jpg ../blog/"
+    "blog:images": "bash ./src/img/staging/resize.sh && mv ./src/img/staging/*g ./src/img/blog/ && cp -r src/img/* public/img",
+    "podcast:images": "bash ./src/img/staging/resize.sh && mv ./src/img/staging/*g ./src/img/podcast/ && cp -r src/img/* public/img"
   }
 }

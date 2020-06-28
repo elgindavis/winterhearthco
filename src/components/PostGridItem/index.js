@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
+import { getImageWithSize } from '../../utils';
+
 const Area = styled.div`
   padding: 40px 20px 0;
   border: 4px solid var(--color-${({ type }) => type});
@@ -29,9 +31,12 @@ const PostGridItem = ({
     author,
     date,
     articleTitle,
+    contentType,
     excerpt,
     tags,
     color,
+    host,
+    cover
   }) => {
     return (
       <Area type={color} className="col-lg-4 col-md-4">
@@ -40,7 +45,11 @@ const PostGridItem = ({
             <AniLink paintDrip hex="#f0f8ff" direction="up" to={articleLink}>
               <img // Images should be 3:2 aspect ratio
                 style={{ height: "auto", width: "100%", borderRadius: 4 }}
-                src={imageUrl.replace(/-600p/i, "-300p")}
+                src={
+                  cover
+                    ? getImageWithSize(imageUrl, "cover")
+                    : getImageWithSize(imageUrl, "300p")
+                }
                 alt={imageAltText}
               />
             </AniLink>
@@ -50,7 +59,9 @@ const PostGridItem = ({
             className="bottom d-flex justify-content-between align-items-center flex-wrap"
           >
             <div>
-              <span style={{ margin: 0 }}>{`By ${author.name}`}</span>
+              <span style={{ margin: 0 }}>{`By ${
+                author?.name || host?.name || "Winter Hearth Studios"
+              }`}</span>
             </div>
             <small style={{ margin: "8px 0 8px 12px" }} className="meta">
               {date}
@@ -99,7 +110,10 @@ const PostGridItem = ({
             name={articleLink}
             className="secondary-btn"
           >
-            Read Article
+            {contentType === "podcast" && "Listen Now"}
+            {contentType === "poetry" && "Read Poem"}
+            {contentType === "blog" && "Read Article"}
+            {contentType === "newsletter" && "Read Newsletter"}
           </AniLink>
         </div>
       </Area>

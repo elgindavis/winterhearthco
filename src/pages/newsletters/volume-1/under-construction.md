@@ -1,7 +1,7 @@
 ---
 title: "Under Construction"
 date:  "2019-04-13"
-imageUrl: "/img/john-fornander-RAuLLauSmrY-unsplash.jpg"
+imageUrl: "/img/blog/john-fornander-RAuLLauSmrY-unsplash.jpg"
 imageAltText: "Construction" 
 contentType: 'newsletter'
 newsletterVolume: '1'

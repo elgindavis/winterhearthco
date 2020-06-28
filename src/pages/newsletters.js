@@ -15,12 +15,15 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
     const [searchState, setSearchState] = useState("");
     const [filteredPostList, setPostList] = useState([]);
 
-    const allNewsletters = allPosts.filter(post => post.contentType === "newsletter");
+    const allNewsletters =
+      allPosts.filter((post) => post.contentType === "newsletter" &&
+      post.hidden !== true);
+
     const newsletterVolTwoList = allNewsletters.filter(
-      (post) => post.newsletterVolume === "2"
+      (post) => post.newsletterVolume === 2
     );
     const newsletterVolOneList = allNewsletters.filter(
-      (post) => post.newsletterVolume === "1"
+      (post) => post.newsletterVolume === 1
     );
     
     useEffect(() => {
@@ -28,14 +31,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
     }, [])
 
     return (
-      <Layout
-        keywords="emotional intelligence, mental health"
-        imageUrl="/img/aubbie-knight.png"
-        imageAltText="Winter Hearth Studios"
-        url="https://winterhearth.co/newsletters"
-        title="Newsletters"
-        description="The Winter Hearth Newsletters cover a range of topics from mental health to emotional empowerment and beyond. We believe that if you can change the heart, you can change the world. Check out what we've got just for you!"
-      >
+      <Layout>
         <section
           style={{ padding: "12% 0" }}
           className="newsletter-hero-image section-gap"

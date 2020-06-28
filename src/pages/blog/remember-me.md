@@ -1,7 +1,7 @@
 ---
 title: "Remember Me"
 date: "2020-06-04"
-imageUrl: "/img/blog/young-elgin-600p.jpg"
+imageUrl: "/img/blog/young-elgin.jpg"
 imageAltText: "Elgin Davis at 6 years old holding his dog, Cleo"
 contentType: 'poetry'
 featured: true

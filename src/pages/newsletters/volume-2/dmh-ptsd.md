@@ -1,7 +1,7 @@
 ---
 title: "DMH: PTSD"
 date:  "2019-08-25"
-imageUrl: "/img/newsletters/ptsd-400p.jpg"
+imageUrl: "/img/blog/ptsd.jpg"
 imageAltText: "Post-traumatic Stress Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -57,7 +57,7 @@ As if the trauma itself wasn't already enough, people who experience PTSD live s
 
  <br />
 
-![Post-traumatic Stress Disorder, created and owned by Toby Allen](/img/newsletters/ptsd.jpg)
+![Post-traumatic Stress Disorder, created and owned by Toby Allen](/img/blog/ptsd.jpg)
 
 <div class="photo-credit"> 
     Post-traumatic Stress Disorder, created and owned by Toby Allen

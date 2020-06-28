@@ -1,12 +1,19 @@
-import React, { useState, useEffect } from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { graphql } from 'gatsby';
+import React, { useState, useEffect } from "react";
 
-import { PostGridItem, Layout, Separator, SearchArea } from "../components";
-import { transformPostQueryData, getBorderStyle } from "../utils";
+import { 
+  Layout,
+  Separator,
+  SearchArea,
+  PostGridItemList,
+} from "../components";
+
+import { transformPostQueryData } from "../utils";
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
   const allPosts = transformPostQueryData(edges);
-  const latestPostList = allPosts.slice(-9).reverse();
+  const latestPostList = allPosts.slice(-9).reverse().filter(post => post.hidden !== true);
 
   const [searchState, setSearchState] = useState("");
   const [filteredPostList, setPostList] = useState([]);
@@ -16,16 +23,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
   }, []);
   
   return (
-    <Layout
-      keywords={
-        "how to be happy, how to be a good friend, mental health struggles, mental illness, emotional first aid, emotional intelligence, emotional agility, emotions, how to stop being angry, how to manage my emotions, types of mental health, emotional health, mental health facts, importance of mental health essay, characteristics of mental health, mental health synonym, mental health articles 2019, what is emotional health,"
-      }
-      imageUrl="/img/aubbie-knight.png"
-      imageAltText="Winter Hearth Studios"
-      url="https://winterhearth.co/about"
-      title="Home"
-      description="Winter Hearth Studios is a quirky and charming creative studio that designs content to make your life better. We cover a range of topics from mental health to emotional empowerment and beyond. We believe that if you can change the heart, you can change the world. Check out what we've got just for you!"
-    >
+    <Layout>
       <section
         style={{ padding: "12% 0" }}
         className="home-hero-image section-gap"
@@ -83,23 +81,8 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
             )}
             <div name="searched-post-section" className="row" style={{ justifyContent: "center" }}>
               {searchState !== "" &&
-                filteredPostList.map((edition, index) => {
-                  return (
-                    <PostGridItem
-                      color={getBorderStyle(index)}
-                      className="pb-20"
-                      key={edition.id}
-                      author={edition.author}
-                      date={edition.date}
-                      tags={edition.tags}
-                      articleTitle={edition.title}
-                      imageUrl={edition.imageUrl}
-                      articleLink={edition.articleLink}
-                      imageAltText={edition.imageAltText}
-                      excerpt={edition.description}
-                    />
-                  );
-                })}
+                <PostGridItemList list={filteredPostList}/>
+              }
             </div>
           </div>
           {searchState !== "" && (
@@ -112,23 +95,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
             className="row"
             style={{ justifyContent: "center" }}
           >
-            {latestPostList.map((edition, index) => {
-              return (
-                <PostGridItem
-                  color={getBorderStyle(index)}
-                  key={edition.id}
-                  name={edition.title}
-                  author={edition.author}
-                  date={edition.date}
-                  tags={edition.tags}
-                  articleTitle={edition.title}
-                  imageUrl={edition.imageUrl}
-                  articleLink={edition.articleLink}
-                  imageAltText={edition.imageAltText}
-                  excerpt={edition.description}
-                ></PostGridItem>
-              );
-            })}
+            <PostGridItemList list={latestPostList} />
           </div>
         </div>
       </section>
