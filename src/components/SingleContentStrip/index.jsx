@@ -84,11 +84,12 @@ export default ({ content: {
     contentType,
     imageAltText,
     articleTitle,
+    title,
     anchorEpisodeUrl,
     spotifyEpisodeUrl,
     applePodcastEpisodeUrl,
     googlePodcastEpisodeUrl
-   }, cover, color }) => {
+  }, cover, color }) => {
   return (
     <Area type={color}>
       <Container>
@@ -124,7 +125,7 @@ export default ({ content: {
               textDecoration: "none",
             }}
           >
-            <h3>{articleTitle}</h3>
+            <h3>{title || articleTitle}</h3>
           </AniLink>
 
           <p style={{ maxWidth: 600 }} className="excerpt">
