@@ -1,5 +1,5 @@
 ---
-title: "Series Trailer"
+title: "Podcast Trailer"
 date: "2020-06-27"
 imageUrl: "/img/podcast/more-human.png"
 imageAltText: "Abstract mid-century modern triangle character standing next to the words More Human"

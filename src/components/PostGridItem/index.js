@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
+import { getImageWithSize } from '../../utils';
+
 const Area = styled.div`
   padding: 40px 20px 0;
   border: 4px solid var(--color-${({ type }) => type});
@@ -45,10 +47,8 @@ const PostGridItem = ({
                 style={{ height: "auto", width: "100%", borderRadius: 4 }}
                 src={
                   cover
-                    ? imageUrl
-                        .replace(/.jpg/i, "-cover.jpg")
-                        .replace(/.png/i, "-cover.png")
-                    : imageUrl
+                    ? getImageWithSize(imageUrl, "cover")
+                    : getImageWithSize(imageUrl, "300p")
                 }
                 alt={imageAltText}
               />

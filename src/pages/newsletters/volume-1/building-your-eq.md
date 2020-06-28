@@ -1,7 +1,7 @@
 ---
 title: "Building Your EQ"
 date:  "2019-04-05"
-imageUrl: "img/blog/level-up.gif"
+imageUrl: "/img/blog/level-up.gif"
 imageAltText: "Emotional Intelligence is fun!"
 contentType: 'newsletter'
 newsletterVolume: '1'

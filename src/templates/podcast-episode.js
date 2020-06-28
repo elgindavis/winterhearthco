@@ -19,7 +19,7 @@ const PodcastEmbed = styled.iframe`
 export default ({ data }) => {
     const episodeHTML = data.markdownRemark.html;
     const episodeInfo = data.markdownRemark.frontmatter;
-    console.log("episodeInfo", episodeInfo)
+    
     const allEpisodes = transformPostQueryData(
       data.allMarkdownRemark.edges
     ).filter(

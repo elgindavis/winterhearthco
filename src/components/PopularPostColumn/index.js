@@ -1,5 +1,6 @@
 import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { getImageWithSize } from "../../utils";
 
 const elginSummary =
   "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.";
@@ -74,7 +75,7 @@ export default ({ posts, postInfo }) => {
                         <img
                           style={{ borderRadius: 4, height: "80%" }}
                           className=""
-                          src={post.imageUrl}
+                          src={getImageWithSize(post.imageUrl, "300p")}
                           alt={post.imageAltText}
                         />
                       </AniLink>

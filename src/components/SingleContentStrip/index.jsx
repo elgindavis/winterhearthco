@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
+import { getImageWithSize } from '../../utils';
+
 const Area = styled.div`
   padding: 20px 12px;
   border: 4px solid var(--color-${({ type }) => type});
@@ -97,10 +99,8 @@ export default ({ content: {
               className="img-fluid lazyload"
               src={
                 cover
-                  ? imageUrl
-                      .replace(/.png/i, "-cover.png")
-                      .replace(/.jpg/i, "-cover.jpg")
-                  : imageUrl
+                  ? getImageWithSize(imageUrl, "cover")
+                  : getImageWithSize(imageUrl, "400p")
               }
               alt={imageAltText}
             />

@@ -72,5 +72,3 @@ then
             identify -format "%wx%h\n" $image800
         done
 fi
-
-ls

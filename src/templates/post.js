@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 
 import { Layout, UnsplashBadge, BlogPostMetadata, PopularPostColumn } from "../components/";
 
-import { transformPostQueryData } from "../utils";
+import { transformPostQueryData, getImageWithSize } from "../utils";
 
 export default (props) => {
   const postHTML = props.data.markdownRemark.html;
@@ -28,7 +28,7 @@ export default (props) => {
                     <img
                       className="img-fluid lazyload"
                       style={{ borderRadius: 4, marginTop: "3%" }}
-                      src={postInfo.imageUrl.replace(/-400p/i, "")}
+                      src={getImageWithSize(postInfo.imageUrl, "600p")}
                       alt={postInfo.imageAltText}
                     />
                     {postInfo.unsplashBadgeInfo &&
@@ -67,7 +67,11 @@ export default (props) => {
                     <a href="https://winterhearth.co"> winterhearth.co</a> like
                     this one!
                   </p>
-                  <a style={{ fontFamily: "Poppins, sans-serif" }} href="#wh-signup" className="primary-btn text-uppercase">
+                  <a
+                    style={{ fontFamily: "Poppins, sans-serif" }}
+                    href="#wh-signup"
+                    className="primary-btn text-uppercase"
+                  >
                     Join the Squad
                   </a>
                 </div>

@@ -1,7 +1,7 @@
 ---
 title: "The Curiosity-Driven Life"
 date:  "2019-04-28"
-imageUrl: "img/blog/friends-jumping.jpeg"
+imageUrl: "/img/blog/friends-jumping.jpg"
 imageAltText: "Friends jumping together"
 contentType: 'newsletter'
 newsletterVolume: '1'
