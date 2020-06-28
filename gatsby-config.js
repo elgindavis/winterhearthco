@@ -16,6 +16,18 @@ module.exports = {
     social: {
       twitter: `@winterhearthco`,
     },
+    anchorUrl: `https://anchor.fm/winter-hearth`,
+    anchorSupportUrl: `https://anchor.fm/winter-hearth/support`,
+    spotifyUrl: `https://open.spotify.com/show/6JUTQ9JX8t3AaqrktspjXr`,
+    applePodcastsUrl: ``,
+    googlePodcastsUrl: ``,
+    breakerUrl: ``,
+    castboxUrl: ``,
+    overcastUrl: ``,
+    pocketCastsUrl: ``,
+    radioPublicUrl: ``,
+    podcastTwitterShareUrl: `https://twitter.com/intent/tweet?text=Listen%20to%20More%20Human%20on%20%E2%9A%93%20https://anchor.fm/winter-hearth`,
+    podcastFacebookShareUrl: `https://www.facebook.com/dialog/share?app_id=446611785530020&href=https://anchor.fm/winter-hearth&redirect_uri=https://anchor.fm/winter-hearth`,
   },
   plugins: [
     `gatsby-plugin-offline`,

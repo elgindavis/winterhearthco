@@ -6,7 +6,7 @@ imageAltText: "A character standing next to a black box"
 contentType: 'podcast'
 featured: false
 hidden: true
-tags: ["Mental Health", "Emotional Intelligence", "Self-awareness"]
+tags: []
 keywords: "mental health, emotional intelligence, self-awareness"
 description: ""
 host: {
@@ -16,9 +16,9 @@ host: {
     imageUrl: "/img/profile-200p.jpg" 
 }
 guests: []
-anchorEpisodeUrl: "#"
-spotifyEpisodeUrl: "#"
-applePodcastEpisodeUrl: "#"
-googlePodcastEpisodeUrl: "#"
+anchorEpisodeUrl: null
+spotifyEpisodeUrl: null  
+applePodcastEpisodeUrl: null  
+googlePodcastEpisodeUrl: null 
 ---
 

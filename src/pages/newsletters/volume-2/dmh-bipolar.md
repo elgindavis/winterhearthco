@@ -1,7 +1,7 @@
 ---
 title: "DMH: Bipolar Disorder"
 date:  "2019-08-18"
-imageUrl: "/img/newsletters/bipolar-400p.jpg"
+imageUrl: "/img/blog/bipolar.jpg"
 imageAltText: "Bipolar Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -38,7 +38,7 @@ There are a number of different subcategories of Bipolar Disorder (Bipolar 1 Dis
 
  
 
-![Bipolar, created and owned by Toby Allen](/img/newsletters/bipolar.jpg)
+![Bipolar, created and owned by Toby Allen](/img/blog/bipolar.jpg)
 
 <div class="photo-credit"> 
     Bipolar, created and owned by Toby Allen

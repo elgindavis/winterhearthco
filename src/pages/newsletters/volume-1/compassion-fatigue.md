@@ -1,7 +1,7 @@
 ---
 title: "Compassion Fatigue"
 date:  "2019-03-31"
-imageUrl: "/img/compassion-fatigue-600p.jpg"
+imageUrl: "/img/blog/compassion-fatigue.jpg"
 imageAltText: "Woman with head on desk"
 contentType: 'newsletter'
 newsletterVolume: '1'

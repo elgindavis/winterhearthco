@@ -1,7 +1,7 @@
 ---
 title: "4 Lessons Dogs Teach Us About EQ"
 date: "2020-02-07"
-imageUrl: "/img/blog/dog-love-600p.jpg"
+imageUrl: "/img/blog/dog-love.jpg"
 imageAltText: "Wow, look at that happy pup"
 contentType: 'blog'
 featured: false

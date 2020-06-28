@@ -1,7 +1,7 @@
 ---
 title: "Hunted"
 date: "2020-06-01"
-imageUrl: "/img/blog/dark-deer-600p.jpg"
+imageUrl: "/img/blog/dark-deer.jpg"
 imageAltText: "A deer standing in darkness, looking at the camera"
 contentType: 'poetry'
 featured: true

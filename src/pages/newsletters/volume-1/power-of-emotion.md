@@ -1,7 +1,7 @@
 ---
 title: "The Power of Emotion"
 date:  "2019-03-10"
-imageUrl: "https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/77d52e17-6790-4f6c-9689-e6e737b808fa.jpg"
+imageUrl: "/img/blog/lisa-barrett-ted.jpg"
 imageAltText: "Placeholder alt text"
 contentType: 'newsletter'
 newsletterVolume: '1'

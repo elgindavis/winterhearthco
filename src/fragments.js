@@ -15,10 +15,13 @@ export const query = graphql`
              keywords
              description
              hidden
+             embedUrl
              anchorEpisodeUrl
              spotifyEpisodeUrl
              applePodcastEpisodeUrl
              googlePodcastEpisodeUrl
+             facebookShareLink
+             twitterShareLink
              unsplashBadgeInfo {
                artistName
                artistUrl

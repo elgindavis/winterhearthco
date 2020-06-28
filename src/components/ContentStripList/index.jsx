@@ -9,16 +9,7 @@ export default ({ list, cover }) => {
         color={getBorderStyle(index)}
         className="pb-20"
         key={edition.id}
-        author={edition.author?.name}
-        host={edition.host?.name}
-        date={edition.date}
-        tags={edition.tags}
-        contentType={edition.contentType}
-        articleTitle={edition.title}
-        imageUrl={edition.imageUrl}
-        articleLink={edition.articleLink}
-        imageAltText={edition.imageAltText}
-        excerpt={edition.description}
+        content={edition}
         cover={cover}
       />
     );

@@ -1,7 +1,7 @@
 ---
 title: "DMH: BDD"
 date:  "2019-08-04"
-imageUrl: "/img/newsletters/bdd-400p.jpg"
+imageUrl: "/img/blog/bdd.jpg"
 imageAltText: "Body Dysmorphic Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -36,7 +36,7 @@ As I mentioned briefly above, the individual will obsess over this perceived fla
  
  <br />
 
-![Body Dysmorphic Disorder, created and owned by Toby Allen](/img/newsletters/bdd.jpg)
+![Body Dysmorphic Disorder, created and owned by Toby Allen](/img/blog/bdd.jpg)
 
 <div class="photo-credit"> 
     Body Dysmorphic Disorder, created and owned by Toby Allen

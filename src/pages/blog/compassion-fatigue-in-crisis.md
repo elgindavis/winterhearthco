@@ -1,7 +1,7 @@
 ---
 title: "Compassion Fatigue in Times of Crisis"
 date: "2020-06-15"
-imageUrl: "/img/blog/mwangi-gatheca-xViKfocA-Uc-unsplash-600p.jpg"
+imageUrl: "/img/blog/mwangi-gatheca-xViKfocA-Uc-unsplash.jpg"
 imageAltText: "A black man curled in the fetal position"
 contentType: 'blog'
 featured: true

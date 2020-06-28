@@ -29,9 +29,6 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
               <div className="col-md-12 pb-30 header-text center">
                 <h1>Welcome to the More Human Podcast!</h1>
                 <Separator style={{ paddingBottom: 20 }} />
-                {/* <h3 style={{ textAlign: "center" }}>
-                  When was the last time you felt human?
-                </h3> */}
               </div>
             </div>
           </div>

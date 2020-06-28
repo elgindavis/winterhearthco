@@ -26,7 +26,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const featuredColumnList = allPosts.filter(
       (post) => post.featured === true
     );
-    const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === "2");
+    const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === 2);
     const [searchState, setSearchState] = useState('');
     const [filteredPostList, setPostList] = useState([]);
 

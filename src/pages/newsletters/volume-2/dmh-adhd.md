@@ -1,7 +1,7 @@
 ---
 title: "DMH: ADHD"
 date:  "2019-07-07"
-imageUrl: "/img/newsletters/adhd-400p.jpg"
+imageUrl: "/img/blog/adhd.jpg"
 imageAltText: "ADHD"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -41,7 +41,7 @@ There's a lot to Attention Deficit Hyperactivity Disorder, and I'd encourage you
 
 <br />
 
-![ADHD, created and owned by Toby Allen](/img/newsletters/adhd.jpg)
+![ADHD, created and owned by Toby Allen](/img/blog/adhd.jpg)
 
 <div class="photo-credit"> 
     ADHD, created and owned by Toby Allen

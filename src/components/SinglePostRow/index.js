@@ -27,19 +27,18 @@ export default ({
     <Area type={color} className="single-post row">
       <div className="col-lg-12 col-md-12">
         <div className="feature-img">
-          <AniLink
-            paintDrip
-            hex="#f0f8ff"
-            direction="up"
-            to={articleLink}
-          >
+          <AniLink paintDrip hex="#f0f8ff" direction="up" to={articleLink}>
             <img
               style={{ borderRadius: 4, maxHeight: 600 }}
               className="img-fluid lazyload"
               src={
                 cover
-                  ? imageUrl.replace(/-600p/i, "-cover")
+                  ? imageUrl
+                      .replace(/.jpg/i, "-cover.jpg")
+                      .replace(/.png/i, "-cover.png")
                   : imageUrl
+                      .replace(/.png/i, "-600p.png")
+                      .replace(/.jpg/i, "-600p.jpg")
               }
               alt={imageAltText}
             />

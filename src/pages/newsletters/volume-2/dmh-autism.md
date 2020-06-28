@@ -1,7 +1,7 @@
 ---
 title: 'DMH: Autism'
 date: '2019-09-12'
-imageUrl: '/img/newsletters/autism-400p.jpg'
+imageUrl: '/img/blog/autism.jpg'
 imageAltText: 'Autism'
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -58,7 +58,7 @@ At the end of the day, while ASD is indeed a diagnosable condition, it is just t
 <br/>  
 
  
-![Autism creature, created and owned by Toby Allen](/img/newsletters/autism.jpg)
+![Autism creature, created and owned by Toby Allen](/img/blog/autism.jpg)
 <div style="text-align: right; font-size: 10px;"> 
     Autism creature, created and owned by Toby Allen
 </div>

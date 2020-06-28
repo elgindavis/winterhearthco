@@ -1,13 +1,13 @@
 ---
-title: "Podcast Trailer"
+title: "Series Trailer"
 date: "2020-06-27"
-imageUrl: "/img/podcast/more-human-600p.png"
+imageUrl: "/img/podcast/more-human.png"
 imageAltText: "Abstract mid-century modern triangle character standing next to the words More Human"
 contentType: 'podcast'
 featured: true
 tags: ["Podcast", "Humanity", "Mental Health", "Emotional Intelligence", "Self-awareness"]
 keywords: "mental health, emotional intelligence, self-awareness"
-description: "Welcome to the More Human Podcast! Join host Elgin Davis in exploring the deep intersection between mental and emotional health and modern culture"
+description: "Welcome to the More Human Podcast!"
 host: {
     name: "Elgin Davis",
     role: "Main Content Writer",
@@ -15,7 +15,15 @@ host: {
     imageUrl: "/img/profile-200p.jpg" 
 }
 guests: []
-anchorEpisodeUrl: "#"
-spotifyEpisodeUrl: "#"
-applePodcastEpisodeUrl: "#"
-googlePodcastEpisodeUrl: "#"
+anchorEpisodeUrl: "https://anchor.fm/winter-hearth/episodes/Podcast-Trailer-eg12nf/a-a2irub8"
+embedUrl: "https://open.spotify.com/embed-podcast/episode/5TTHNVTY07A3VP3LgQM6ir"
+spotifyEpisodeUrl: "https://open.spotify.com/episode/5TTHNVTY07A3VP3LgQM6ir"
+applePodcastEpisodeUrl: null
+googlePodcastEpisodeUrl: null
+facebookShareLink: "https://www.facebook.com/dialog/share?app_id=446611785530020&href=https://anchor.fm/winter-hearth/episodes/Series-Trailer-eg0u2j&redirect_uri=https://anchor.fm/winter-hearth/episodes/Series-Trailer-eg0u2j"
+twitterShareLink: "https://twitter.com/intent/tweet?text=Listen%20to%20%22Series%20Trailer%22%20by%20More%20Human.%20%E2%9A%93%20https://anchor.fm/winter-hearth/episodes/Series-Trailer-eg0u2j"
+---
+
+Welcome to the More Human Podcast! I've been thinking about starting this podcast for years now, and the time has finally come. 
+
+My name is Elgin, and I'm so excited that you're here! In this podcast, we'll explore the intersection of mental and emotional health and modern culture. The journey won't be easy, but the life we've always dreamed of is lying just on the other side. Get ready to learn, grow, and evolve along with me as we discover how to tap into our humanity and live the most meaningful lives possible.

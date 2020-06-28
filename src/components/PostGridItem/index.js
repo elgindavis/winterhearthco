@@ -45,8 +45,10 @@ const PostGridItem = ({
                 style={{ height: "auto", width: "100%", borderRadius: 4 }}
                 src={
                   cover
-                    ? imageUrl.replace(/-600p/i, "-cover")
-                    : imageUrl.replace(/-600p/i, "-300p")
+                    ? imageUrl
+                        .replace(/.jpg/i, "-cover.jpg")
+                        .replace(/.png/i, "-cover.png")
+                    : imageUrl
                 }
                 alt={imageAltText}
               />

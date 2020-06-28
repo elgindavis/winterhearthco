@@ -24,6 +24,9 @@ export const transformPostQueryData = (postList) => {
             spotifyEpisodeUrl: data.frontmatter.spotifyEpisodeUrl,
             applePodcastEpisodeUrl: data.frontmatter.applePodcastEpisodeUrl,
             googlePodcastEpisodeUrl: data.frontmatter.googlePodcastEpisodeUrl,
+            embedUrl: data.frontmatter.embedUrl,
+            facebookShareLink: data.frontmatter.facebookShareLink,
+            twitterShareLink: data.frontmatter.twitterShareLink,
         }
     });
 };
@@ -40,3 +43,10 @@ export const getBorderStyle = (index) => {
       return;
   }
 };
+
+export const getImageWithSize = (imageUrl, size) => {
+  return imageUrl
+    .replace(/.jpg/i, `-${size}.jpg`)
+    .replace(/.png/i, `-${size}.png`)
+    .replace(/.jpeg/i, `-${size}.jpeg`)
+}

@@ -1,7 +1,7 @@
 ---
 title: "DMH: Sleep Disorder"
 date:  "2019-07-21"
-imageUrl: "/img/newsletters/sleep-disorder-400p.jpg"
+imageUrl: "/img/blog/sleep-disorder.jpg"
 imageAltText: "Sleep Disorder"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -60,7 +60,7 @@ Non-24-Hour Sleep-Wake Disorder— an individual's Circadian Rhythms are not syn
  
  <br />
 
-![Sleep Disorder, created and owned by Toby Allen](/img/newsletters/sleep-disorder.jpg)
+![Sleep Disorder, created and owned by Toby Allen](/img/blog/sleep-disorder.jpg)
 
 <div class="photo-credit"> 
     Sleep Disorder, created and owned by Toby Allen

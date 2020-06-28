@@ -7,6 +7,7 @@ const Area = styled.div`
   border: 4px solid var(--color-${({ type }) => type});
   border-radius: 4px;
   margin: 0 12px 40px;
+  max-width: 1056px;
 `;
 
 const Container = styled.div`
@@ -35,16 +36,14 @@ const ImageDiv = styled.div`
 
 const LinksDiv = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   @media (max-width: 450px) {
     flex-direction: column;
   }
-  @media (min-width: 1200px) {
-    justify-content: flex-start;
-  }
 `;
 
-const SingleLink = styled(AniLink)`
+const SingleLink = styled.a`
   font-size: 14px;
   margin-right: 12px;
   margin-bottom: 12px;
@@ -72,24 +71,22 @@ const SideButton = styled.div`
     }
 `;
 
-export default ({
-  tags,
-  date,
-  host,
-  cover,
-  color,
-  author,
-  excerpt,
-  imageUrl,
-  articleLink,
-  contentType,
-  imageAltText,
-  articleTitle,
-  anchorEpisodeUrl,
-  spotifyEpisodeUrl,
-  applePodcastEpisodeUrl,
-  googlePodcastEpisodeUrl,
-}) => {
+export default ({ content: { 
+    tags,
+    date,
+    host,
+    author,
+    excerpt,
+    imageUrl,
+    articleLink,
+    contentType,
+    imageAltText,
+    articleTitle,
+    anchorEpisodeUrl,
+    spotifyEpisodeUrl,
+    applePodcastEpisodeUrl,
+    googlePodcastEpisodeUrl
+   }, cover, color }) => {
   return (
     <Area type={color}>
       <Container>
@@ -98,14 +95,23 @@ export default ({
             <img
               style={{ borderRadius: 4 }}
               className="img-fluid lazyload"
-              src={cover ? imageUrl.replace(/-600p/i, "-cover") : imageUrl}
+              src={
+                cover
+                  ? imageUrl
+                      .replace(/.png/i, "-cover.png")
+                      .replace(/.jpg/i, "-cover.jpg")
+                  : imageUrl
+              }
               alt={imageAltText}
             />
           </AniLink>
         </ImageDiv>
         <ContentDiv>
           <p>
-            <small>More Human Podcast with {author || host} </small>
+            <small>
+              More Human Podcast with{" "}
+              {author?.name || host?.name || "Winter Hearth Studios"}{" "}
+            </small>
           </p>
           <AniLink
             paintDrip
@@ -126,38 +132,42 @@ export default ({
           </p>
 
           <LinksDiv>
-            <SingleLink
-              paintDrip
-              hex="#f0f8ff"
-              direction="up"
-              to={applePodcastEpisodeUrl || articleLink}
-            >
-              Apple Podcasts
-            </SingleLink>
-            <SingleLink
-              paintDrip
-              hex="#f0f8ff"
-              direction="up"
-              to={googlePodcastEpisodeUrl  || articleLink}
-            >
-              Google Podcasts
-            </SingleLink>
-            <SingleLink
-              paintDrip
-              hex="#f0f8ff"
-              direction="up"
-              to={spotifyEpisodeUrl  || articleLink}
-            >
-              Spotify
-            </SingleLink>
-            <SingleLink 
-                paintDrip 
-                hex="#f0f8ff" 
-                direction="up" 
-                to={anchorEpisodeUrl  || articleLink}
-            >
-              Anchor
-            </SingleLink>
+            {applePodcastEpisodeUrl && (
+              <SingleLink
+                href={applePodcastEpisodeUrl || articleLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Listen on Apple Podcasts
+              </SingleLink>
+            )}
+            {googlePodcastEpisodeUrl && (
+              <SingleLink
+                href={googlePodcastEpisodeUrl || articleLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Listen on Google Podcasts
+              </SingleLink>
+            )}
+            {spotifyEpisodeUrl && (
+              <SingleLink
+                href={spotifyEpisodeUrl || articleLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Listen on Spotify
+              </SingleLink>
+            )}
+            {anchorEpisodeUrl && (
+              <SingleLink
+                href={anchorEpisodeUrl || articleLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Listen on Anchor
+              </SingleLink>
+            )}
           </LinksDiv>
           <InlineButton style={{ padding: "24px 0" }}>
             <AniLink

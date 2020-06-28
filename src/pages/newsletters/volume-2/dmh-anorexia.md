@@ -1,7 +1,7 @@
 ---
 title: "DMH: Anorexia Nervosa"
 date:  "2019-08-11"
-imageUrl: "/img/newsletters/anorexia-400p.jpg"
+imageUrl: "/img/blog/anorexia.jpg"
 imageAltText: "Anorexia Nervosa"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -37,7 +37,7 @@ Anorexia Nervosa (usually shortened to 'Anorexia') is a crossover between mental
  
  <br />
 
-![Anorexia Nervosa, created and owned by Toby Allen](/img/newsletters/anorexia.jpg)
+![Anorexia Nervosa, created and owned by Toby Allen](/img/blog/anorexia.jpg)
 
 <div class="photo-credit"> 
     Anorexia Nervosa, created and owned by Toby Allen

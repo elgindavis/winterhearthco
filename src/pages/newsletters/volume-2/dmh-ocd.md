@@ -1,7 +1,7 @@
 ---
 title: "DMH: OCD"
 date:  "2019-06-30"
-imageUrl: "/img/newsletters/ocd-400p.jpg"
+imageUrl: "/img/blog/ocd.jpg"
 imageAltText: "OCD"
 contentType: 'newsletter'
 newsletterVolume: '2'
@@ -76,7 +76,7 @@ A brief aside as we conclude this section— when we call someone "OCD" because 
  
 <br />
 
-![Obsessive Compulsive Disorder, created and owned by Toby Allen](/img/newsletters/ocd.jpg)
+![Obsessive Compulsive Disorder, created and owned by Toby Allen](/img/blog/ocd.jpg)
 
 <div class="photo-credit"> 
     Obsessive Compulsive Disorder, created and owned by Toby Allen
