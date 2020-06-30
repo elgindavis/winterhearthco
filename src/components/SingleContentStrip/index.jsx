@@ -2,14 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-import { getImageWithSize } from '../../utils';
-
 const Area = styled.div`
-  padding: 20px 12px;
+  padding: 10px 12px;
   border: 4px solid var(--color-${({ type }) => type});
   border-radius: 4px;
   margin: 0 12px 40px;
   max-width: 1056px;
+  width: 100%;
 `;
 
 const Container = styled.div`
@@ -20,22 +19,6 @@ const Container = styled.div`
   }
 `;
 
-const ImageDiv = styled.div`
-  flex: 2;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  img {
-  }
-  @media (min-width: 1200px) {
-    flex: 1;
-  }
-  @media (max-width: 768px) {
-    img {
-    }
-  }
-`;
-
 const LinksDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -43,6 +26,7 @@ const LinksDiv = styled.div`
   @media (max-width: 450px) {
     flex-direction: column;
   }
+  padding-top: 8px;
 `;
 
 const SingleLink = styled.a`
@@ -57,56 +41,32 @@ const SingleLink = styled.a`
 const ContentDiv = styled.div`
     display: flex;
     flex: 3;
-    padding: 0 10px;
+    padding: 0;
     flex-direction: column;
 `;
 
-const InlineButton = styled.div`
-  @media (max-width: 991px) {
-      display: none;
-  }
-`;
-  
-const SideButton = styled.div`
-    @media (min-width: 992px) {
-        display: none;
-    }
+const PodcastEmbed = styled.iframe`
+    width: 100%;
+    height: auto;
+    margin: 12px 0;
 `;
 
 export default ({ content: { 
-    tags,
-    date,
     host,
     author,
-    excerpt,
-    imageUrl,
+    date,
     articleLink,
-    contentType,
-    imageAltText,
     articleTitle,
     title,
+    embedUrl,
     anchorEpisodeUrl,
     spotifyEpisodeUrl,
     applePodcastEpisodeUrl,
     googlePodcastEpisodeUrl
-  }, cover, color }) => {
+  }, color }) => {
   return (
     <Area type={color}>
       <Container>
-        <ImageDiv>
-          <AniLink paintDrip hex="#f0f8ff" direction="up" to={articleLink}>
-            <img
-              style={{ borderRadius: 4 }}
-              className="img-fluid lazyload"
-              src={
-                cover
-                  ? getImageWithSize(imageUrl, "cover")
-                  : getImageWithSize(imageUrl, "400p")
-              }
-              alt={imageAltText}
-            />
-          </AniLink>
-        </ImageDiv>
         <ContentDiv>
           <p>
             <small>
@@ -127,15 +87,18 @@ export default ({ content: {
           >
             <h3>{title || articleTitle}</h3>
           </AniLink>
-
-          <p style={{ maxWidth: 600 }} className="excerpt">
-            {excerpt}
-          </p>
-
+          <PodcastEmbed
+            src={embedUrl}
+            title={title || articleTitle}
+            width="100%"
+            frameborder="0"
+            scrolling="no"
+          />
+          {date && <small> {date}</small>}
           <LinksDiv>
             {applePodcastEpisodeUrl && (
               <SingleLink
-                href={applePodcastEpisodeUrl || articleLink}
+                href={applePodcastEpisodeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -144,7 +107,7 @@ export default ({ content: {
             )}
             {googlePodcastEpisodeUrl && (
               <SingleLink
-                href={googlePodcastEpisodeUrl || articleLink}
+                href={googlePodcastEpisodeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -153,7 +116,7 @@ export default ({ content: {
             )}
             {spotifyEpisodeUrl && (
               <SingleLink
-                href={spotifyEpisodeUrl || articleLink}
+                href={spotifyEpisodeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -162,7 +125,7 @@ export default ({ content: {
             )}
             {anchorEpisodeUrl && (
               <SingleLink
-                href={anchorEpisodeUrl || articleLink}
+                href={anchorEpisodeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -170,36 +133,8 @@ export default ({ content: {
               </SingleLink>
             )}
           </LinksDiv>
-          <InlineButton style={{ padding: "24px 0" }}>
-            <AniLink
-              paintDrip
-              hex="#f0f8ff"
-              direction="up"
-              to={articleLink}
-              className="secondary-btn"
-            >
-              {contentType === "podcast" && "Listen Now"}
-              {contentType === "poetry" && "Read Poem"}
-              {contentType === "blog" && "Read Article"}
-              {contentType === "newsletter" && "Read Newsletter"}
-            </AniLink>
-          </InlineButton>
         </ContentDiv>
       </Container>
-      <SideButton style={{ padding: "24px 0" }}>
-        <AniLink
-          paintDrip
-          hex="#f0f8ff"
-          direction="up"
-          to={articleLink}
-          className="secondary-btn"
-        >
-          {contentType === "podcast" && "Listen Now"}
-          {contentType === "poetry" && "Read Poem"}
-          {contentType === "blog" && "Read Article"}
-          {contentType === "newsletter" && "Read Newsletter"}
-        </AniLink>
-      </SideButton>
     </Area>
   );
 };

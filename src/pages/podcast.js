@@ -40,7 +40,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
                 <SearchArea
                   setPostList={setEpisodeList}
                   setSearchState={setSearchState}
-                  type="all podcast episodes"
+                  type="all episodes"
                   posts={allEpisodes}
                 />
               </div>

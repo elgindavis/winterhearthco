@@ -133,6 +133,10 @@ color: var(--link-color) !important;
 font-weight: bold !important;
 } */
 
+.containEmbed > img {
+    height: 150px;
+}
+
 .photo-credit {
   text-align: right; 
   font-size: 10px;
