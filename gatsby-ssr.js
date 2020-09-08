@@ -83,6 +83,10 @@ export const onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
 
 export const wrapPageElement = ({ element }) => {
     const data = element.props.data?.markdownRemark?.frontmatter;
+    let baseImageUrl;
+    
+    if (element.props.location.pathname.includes("podcast"))
+        baseImageUrl = "src/img/podcast/more-human-cover.png";
 
     return (
         <>
@@ -91,7 +95,7 @@ export const wrapPageElement = ({ element }) => {
                     <SEO
                         description={data.description}
                         title={data.title}
-                        imageUrl={data.imageUrl}
+                        imageUrl={data.imageUrl || baseImageUrl}
                         url={data.url}
                         article={data.type ? true : false}
                     />

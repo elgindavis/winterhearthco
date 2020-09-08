@@ -8,6 +8,7 @@ featured: true
 tags: ["Podcast", "Humanity", "Mental Health", "Emotional Intelligence", "Self-awareness"]
 keywords: "mental health, emotional intelligence, self-awareness"
 description: "Welcome to the More Human Podcast!"
+hidden: true
 host: {
     name: "Elgin Davis",
     role: "Main Content Writer",
@@ -16,7 +17,7 @@ host: {
 }
 guests: []
 anchorEpisodeUrl: "https://anchor.fm/winter-hearth/episodes/Podcast-Trailer-eg12nf/a-a2irub8"
-embedUrl: "https://open.spotify.com/embed-podcast/episode/5TTHNVTY07A3VP3LgQM6ir"
+embedUrl: "https://anchor.fm/winter-hearth/embed/episodes/Podcast-Trailer-eg12nf"
 spotifyEpisodeUrl: "https://open.spotify.com/episode/5TTHNVTY07A3VP3LgQM6ir"
 applePodcastEpisodeUrl: null
 googlePodcastEpisodeUrl: null
@@ -26,4 +27,4 @@ twitterShareLink: "https://twitter.com/intent/tweet?text=Listen%20to%20%22Series
 
 Welcome to the More Human Podcast! I've been thinking about starting this podcast for years now, and the time has finally come. 
 
-My name is Elgin, and I'm so excited that you're here! In this podcast, we'll explore the intersection of mental and emotional health and modern culture. The journey won't be easy, but the life we've always dreamed of is lying just on the other side. Get ready to learn, grow, and evolve along with me as we discover how to tap into our humanity and live the most meaningful lives possible.
+In this podcast, we'll explore the intersection of mental and emotional health and modern culture. The journey won't be easy, but the life we've always dreamed of is lying just on the other side. Get ready to learn, grow, and evolve along with me as we discover how to tap into our humanity and live the most meaningful lives possible.

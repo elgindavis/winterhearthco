@@ -133,6 +133,10 @@ color: var(--link-color) !important;
 font-weight: bold !important;
 } */
 
+.containEmbed > img {
+    height: 150px;
+}
+
 .photo-credit {
   text-align: right; 
   font-size: 10px;
@@ -2414,7 +2418,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 624px) {
   #mobile-nav-toggle {
     display: inline;
   }

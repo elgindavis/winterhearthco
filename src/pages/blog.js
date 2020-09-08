@@ -23,7 +23,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const featuredPostList = allBlogs.filter(
       (post) => post.featured === true
     );
-    const featuredColumnList = allPosts.filter(
+    const featuredColumnList = allBlogs.filter(
       (post) => post.featured === true
     );
     const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === 2);
@@ -55,7 +55,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
             />
           </div>
         </section>
-        <section style={{ marginTop: 90 }} className="post-content-area">
+        <section style={{ marginTop: 20 }} className="post-content-area">
           <div className="container">
             <div className="row justify-content-center">
               <div name="searched-post-section" className="col-lg-8 posts-list">

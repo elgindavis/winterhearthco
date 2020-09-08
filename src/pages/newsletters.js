@@ -57,7 +57,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
             />
           </div>
         </section>
-        <section style={{ marginTop: 90 }} className="post-content-area">
+        <section style={{ marginTop: 20 }} className="post-content-area">
           <div className="container">
             <div className="row justify-content-center">
               <div name="searched-post-section" className="col-lg-8 posts-list">

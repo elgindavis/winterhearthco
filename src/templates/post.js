@@ -7,7 +7,9 @@ import { transformPostQueryData, getImageWithSize } from "../utils";
 export default (props) => {
   const postHTML = props.data.markdownRemark.html;
   const postInfo = props.data.markdownRemark.frontmatter;
-  const allPosts = transformPostQueryData(props.data.allMarkdownRemark.edges);
+  const allPosts = 
+    transformPostQueryData(props.data.allMarkdownRemark.edges)
+    .filter(post => !post.hidden);
   const featuredPostList = allPosts.filter((post) => post.featured === true);
 
   useEffect(() => {

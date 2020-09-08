@@ -13,11 +13,10 @@ import { transformPostQueryData, getImageWithSize } from "../utils";
 const PodcastEmbed = styled.iframe`
     width: 100%;
     height: auto;
-    padding: 12px 0 48px;
+    padding: 12px 0;
 `;
 
 export default ({ data }) => {
-    const episodeHTML = data.markdownRemark.html;
     const episodeInfo = data.markdownRemark.frontmatter;
     
     const allEpisodes = transformPostQueryData(
@@ -41,7 +40,7 @@ export default ({ data }) => {
                     <div className="feature-img">
                       <img
                         className="img-fluid lazyload"
-                        style={{ borderRadius: 4, marginTop: 24 }}
+                        style={{ borderRadius: 4, marginTop: 24, maxWidth: 500 }}
                         src={getImageWithSize(episodeInfo.imageUrl, "cover")}
                         alt={episodeInfo.imageAltText}
                       />
@@ -69,11 +68,11 @@ export default ({ data }) => {
                       scrolling="no"
                     />
 
-                    <div
+                    {/* <div
                       id="markdown-content"
                       style={{ lineHeight: "1.5rem" }}
                       dangerouslySetInnerHTML={{ __html: episodeHTML }}
-                    />
+                    /> */}
                     <div style={{ paddingTop: 24 }}>
                       Visit the More Human Podcast{" "}
                       <a
@@ -83,19 +82,18 @@ export default ({ data }) => {
                       >
                         over on Anchor
                       </a>{" "}
-                      to leave questions, share your thoughts, or support the
+                      to leave questions, share your thoughts, and support the
                       podcast!
                     </div>
                     <p style={{ padding: "5% 0 12px 0" }}>
                       Thanks so much for listening— I hope you enjoyed this
                       episode of the More Human Podcast and took something away
                       to make your life more meaningful and fulfilling. You can
-                      subscribe below to be notified about future episodes from
+                      subscribe below to be notified about future episodes and other great content from
                       <a href="/">
                         {" "}
                         winterhearth.co
-                      </a>{" "}
-                      like this one!
+                      </a>.
                     </p>
                     <div style={{ height: 50, padding: "24px 0" }}>
                       <a
@@ -103,7 +101,7 @@ export default ({ data }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://anchor.fm/winter-hearth/support"
-                        className="secondary-btn text-uppercase"
+                        className="secondary-btn text-capitalize"
                       >
                         Support the Podcast
                       </a>
