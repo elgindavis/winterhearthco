@@ -83,7 +83,7 @@ const PostGridItem = ({
       </div>
       <div>
         <p className="text-left" style={{ marginBottom: 20 }}>
-          {excerpt.length > 65 ? `${excerpt.split(" ", 10).join(" ").trim()}...` : excerpt}
+          {excerpt.length > 65 ? `${excerpt.split(" ", 7).join(" ").trim()}...` : excerpt}
         </p>
       </div>
       <div className="pb-40">
