@@ -14,15 +14,14 @@ export default ({ posts, postInfo }) => {
       summary = postInfo.author.summary;
       role = postInfo.author.role;
       imageUrl = postInfo.author.imageUrl;
-    }
-    else if (postInfo.host) {
+    } else if (postInfo.host) {
       name = postInfo.host.name;
       summary = postInfo.host.summary;
       role = postInfo.host.role;
       imageUrl = postInfo.host.imageUrl;
     }
-  } 
-  
+  }
+
   return (
     <div className="col-lg-4 sidebar-widgets">
       <div className="widget-wrap">
@@ -30,26 +29,17 @@ export default ({ posts, postInfo }) => {
           <img
             width="120"
             style={{ borderRadius: 100 }}
-            src={
-              imageUrl
-                ? imageUrl
-                : "/img/profile-200p.jpg"
-            }
+            src={imageUrl ? imageUrl : "/img/profile-200p.jpg"}
             className="lazyload"
             alt={name ? name : "Elgin Davis"}
           />
-          <h4 style={{ paddingTop: 20 }}>
-            {name ? name : "Elgin Davis"}
-          </h4>
+          <h4 style={{ paddingTop: 20 }}>{name ? name : "Elgin Davis"}</h4>
           <p>{role}</p>
           {summary && (
             <p style={{ textAlign: "left" }}>
-              {summary
-                ? summary
-                : elginSummary}
+              {summary ? summary : elginSummary}
             </p>
           )}
-          
         </div>
         <div
           name="popular-post-column"

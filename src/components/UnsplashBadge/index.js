@@ -1,7 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
-const UnsplashBadge = props => {
+const UnsplashBadge = (props) => {
   return (
     <a
       href={props.artistURL}
@@ -44,23 +44,25 @@ const UnsplashBadge = props => {
           <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
         </svg>
       </span>
-      <span style={{ display: "inline-block", padding: "2px 3px", color: "white" }}>
+      <span
+        style={{ display: "inline-block", padding: "2px 3px", color: "white" }}
+      >
         {props.artistName}
       </span>
     </a>
-  )
+  );
 };
 
 UnsplashBadge.defaultProps = {
-    artistURL: "https://unsplash.com",
-    badgeTitle: "Photo from Unsplash",
-    artistName: "Unsplash",
+  artistURL: "https://unsplash.com",
+  badgeTitle: "Photo from Unsplash",
+  artistName: "Unsplash",
 };
 
 UnsplashBadge.propTypes = {
-    artistURL: PropTypes.string,
-    badgeTitle: PropTypes.string,
-    artistName: PropTypes.string,
+  artistURL: PropTypes.string,
+  badgeTitle: PropTypes.string,
+  artistName: PropTypes.string,
 };
 
 export default UnsplashBadge;

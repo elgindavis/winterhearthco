@@ -1,38 +1,37 @@
 ---
 title: "Compassion Fatigue"
-date:  "2019-03-31"
+date: "2019-03-31"
 imageUrl: "/img/blog/compassion-fatigue.jpg"
 imageAltText: "Woman with head on desk"
-contentType: 'newsletter'
-newsletterVolume: '1'
+contentType: "newsletter"
+newsletterVolume: "1"
 featured: true
 tags: ["Compassion Fatigue"]
 keywords: "Compassion Fatigue"
 description: "Volume 1, Issue 9"
-author: {
+author:
+  {
     name: "Elgin Davis",
     role: "Main Content Writer",
     summary: "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.",
-    imageUrl: "/img/profile-200p.jpg" 
-}
-unsplashBadgeInfo: {
-    artistUrl: "",
-    artistName: "",
-}
+    imageUrl: "/img/profile-200p.jpg",
+  }
+unsplashBadgeInfo: { artistUrl: "", artistName: "" }
 ---
+
 Volume 1, Issue 9
 
 <br>
 
 ### What's New This Week
-Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, gleaning useful and practical insights to become socially and emotionally powerful. 
 
+Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, gleaning useful and practical insights to become socially and emotionally powerful.
 
 Following the previous digest on [Rest and Recovery](/newsletters/volume-1/rest-and-recovery), the theme of this week's content is Overcoming Compassion Fatigue. If you've seen any form of news at any point in time, you're probably familiar with the fact that there's no shortage of terrible events happening around the world. Tragedy strikes day after day, and whether you realize it or not, each of these events you learn about and care about has an effect on you in some way, shape, or form.
 
 Though many of you have awesome, huge hearts, our compassion is sadly not unlimited and does indeed come with a cost. Compassion fatigue is generally defined as a unique form of burnout, characterized by a gradual lessening of compassion as a result of constant engagement with heavy emotional situations and challenges ([Jennifer R. Day & Ruth A. Anderson, 2011](http://www.hindawi.com/journals/nrp/2011/408024/)). In other words, compassion fatigue may be described as the process of becoming desensitized to people who are suffering or are in need of help. The phenomenon is exaggerated and most commonly observed within the caregiving professions, because workers in these professions face constant "heart-wrenching, emotional challenges" ([Compassion Fatigue Awareness Project, 2019](http://www.compassionfatigue.org/pages/compassionfatigue.html)), such as those who deal with death and mortality on a daily basis (doctors, firefighters, police officers, etc.). There has also been some argument among journalism analysts suggesting that news media have played a large part in dramatically increasing compassion fatigue throughout our society by utilizing stories of extreme tragedy and suffering outside of their proper contexts.
 
-In short, ***caring comes with a cost***. If you feel like you have some degree of compassion fatigue, you're certainly not alone. The great thing is that there are plenty of ways by which you can start to overcome compassion fatigue once the initial awareness is present.  Check out this week's content to learn more about compassion fatigue and to learn exactly what you need to do to overcome yours.
+In short, **_caring comes with a cost_**. If you feel like you have some degree of compassion fatigue, you're certainly not alone. The great thing is that there are plenty of ways by which you can start to overcome compassion fatigue once the initial awareness is present. Check out this week's content to learn more about compassion fatigue and to learn exactly what you need to do to overcome yours.
 
 As always, there's plenty of content here, so feel free to just take what you need.
 
@@ -49,10 +48,10 @@ As always, there's plenty of content here, so feel free to just take what you ne
 <br>
 
 ### Listen
- 
+
 This week, we're back with Oprah and another SuperSoul conversation. In this episode, Oprah speaks with Cynthia Bond, author of the best-selling book "Ruby", which deals with the heavy topic of sexual abuse. Bond talks about how she uses writing to process emotions and experiences, and also to tell a powerful story that has hit home for many readers. I've yet to read the book, but I'm definitely adding it to my list.
 
-The conversation also brings us back to the idea of compassion fatigue in the sense that reading emotionally heavy, dense material can wear down on a person's mental health if they aren't aware of the effects of the content being consumed. The same idea applies to music, film, art, and anything else we consume. That is, of course, not to say that we shouldn't engage with emotionally powerful material, but rather to shed light on the fact that these things affect us in ways that we might not readily perceive, and that we must become more aware of these subtle effects in order to care for ourselves properly and maintain a solid mental health state.   
+The conversation also brings us back to the idea of compassion fatigue in the sense that reading emotionally heavy, dense material can wear down on a person's mental health if they aren't aware of the effects of the content being consumed. The same idea applies to music, film, art, and anything else we consume. That is, of course, not to say that we shouldn't engage with emotionally powerful material, but rather to shed light on the fact that these things affect us in ways that we might not readily perceive, and that we must become more aware of these subtle effects in order to care for ourselves properly and maintain a solid mental health state.
 
 Without further ado, here's the conversation with Oprah and Cynthia Bond!
 
@@ -73,7 +72,7 @@ Without further ado, here's the conversation with Oprah and Cynthia Bond!
 <br>
 
 ### Learn
- 
+
 In this week's Learn section, I want to provide you with a number of links to TED Talks concerning Compassion Fatigue:
 
 - [Drowning in Empathy: The Cost of Vicarious Trauma](https://www.youtube.com/watch?v=ZsaorjIo1Yc)
@@ -94,7 +93,7 @@ These talks do a good job of defining compassion fatigue and where it occurs mos
 <br>
 
 ### Level Up
- 
+
 In this week's Level Up section, we have an [article published in Psychology Today](https://www.psychologytoday.com/us/blog/high-octane-women/201407/are-you-suffering-compassion-fatigue), further outlining compassion fatigue and giving **concrete steps for dealing with this sneaky form of burnout**. I will outline below the steps recommended by [Dr. Beth Hundall Stamm](https://proqol.org/About_us.html), one of the world's leading experts on compassion fatigue, and Dr. Amit Sood, a current Professor of Medicine at Mayo Clinic College of Medicine:
 
 - **Enhance** your awareness with education
@@ -176,6 +175,4 @@ by <strong>Elgin Davis</strong>
 
 Thanks again for joining us this week in the Winter Hearth Creative Journal! In the words of Dale Carnegie, "Knowledge isn't power until it is applied." How can you apply the ideas in this digest to your life? How can you use it to gain power in living a more epic story? Talk to your friends and family this week about something you found interesting in the digest.
 
-
 This weekly personal development playbook is a labor of love, so if you enjoy reading it each week, please share it with your friends to assist us in reaching our goal of helping the world achieve a better human experience :)
-

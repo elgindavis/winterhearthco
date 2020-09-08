@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const StyledSearchBar = styled.input`
   background: transparent;
@@ -13,7 +13,6 @@ const StyledSearchBar = styled.input`
 `;
 
 const SearchArea = ({ posts, setSearchState, setPostList, type }) => {
-
   const handleInputChange = (event) => {
     const query = event.target.value.toLowerCase();
     setSearchState(query);

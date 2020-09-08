@@ -3,21 +3,23 @@ title: "Why You Will Never Get What You Deserve"
 date: "2020-02-11"
 imageUrl: "/img/blog/sunset-path.jpg"
 imageAltText: "Man walking alone on a path at sunset"
-contentType: 'blog'
+contentType: "blog"
 featured: true
 tags: ["Mindset", "Perspective", "Lifestyle"]
 keywords: "Mindset, Perspective, Lifestyle"
 description: "Though life is full of various opportunities and possibilities, you'll never get the ones you really deserve. Here's why:"
-author: {
+author:
+  {
     name: "Elgin Davis",
     role: "Main Content Writer",
     summary: "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.",
-    imageUrl: "/img/profile-200p.jpg" 
-}
-unsplashBadgeInfo: {
+    imageUrl: "/img/profile-200p.jpg",
+  }
+unsplashBadgeInfo:
+  {
     artistUrl: "https://unsplash.com/@whereisfarid?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge",
     artistName: "Farid Askerov",
-}
+  }
 ---
 
 Tommy is a hard worker, and he’s been that way his whole life. He grew up watching his dad go in to work early every day at the automobile factory. Often he would listen to his dad’s stories about the beauty of hard work and how hard work always pays off in the long-run. Tommy applied this work ethic throughout high school to his studies. He achieved an excellent GPA and got accepted into his dream school to study economics and business.

@@ -1,11 +1,11 @@
-const path = require(`path`)
+const path = require(`path`);
 const _ = require("lodash");
 
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const { createFilePath } = require(`gatsby-source-filesystem`);
 const { graphql } = require(`gatsby`);
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
+  const { createTypes } = actions;
   const typeDefs = `
     type MarkdownRemark implements Node {
       frontmatter: Frontmatter
@@ -44,11 +44,11 @@ exports.createSchemaCustomization = ({ actions }) => {
       googlePodcastEpisodeUrl: String
     }
   `;
-  createTypes(typeDefs)
+  createTypes(typeDefs);
 };
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` });
     createNodeField({
@@ -57,7 +57,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug,
     });
   }
-}
+};
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
@@ -92,8 +92,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // handle errors
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
   }
 
   const posts = result.data.postsRemark.edges;
@@ -130,13 +130,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Extract tag data from query
   const tags = result.data.tagsGroup.group;
   // Make tag pages
-  tags.forEach(tag => {
+  tags.forEach((tag) => {
     createPage({
       path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
       },
-    })
-  })
+    });
+  });
 };

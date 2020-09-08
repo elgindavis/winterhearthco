@@ -1,19 +1,21 @@
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import { graphql } from 'gatsby';
+import { graphql } from "gatsby";
 import React, { useState, useEffect } from "react";
 
-import { 
-  Layout,
-  Separator,
-  SearchArea,
-  PostGridItemList,
-} from "../components";
+import { Layout, Separator, SearchArea, PostGridItemList } from "../components";
 
 import { transformPostQueryData } from "../utils";
 
-export default ({ data: { allMarkdownRemark: { edges } } }) => {
+export default ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
   const allPosts = transformPostQueryData(edges);
-  const latestPostList = allPosts.slice(-9).reverse().filter(post => post.hidden !== true);
+  const latestPostList = allPosts
+    .slice(-9)
+    .reverse()
+    .filter((post) => post.hidden !== true);
 
   const [searchState, setSearchState] = useState("");
   const [filteredPostList, setPostList] = useState([]);
@@ -21,7 +23,7 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
   useEffect(() => {
     document.title = "Winter Hearth Studios";
   }, []);
-  
+
   return (
     <Layout>
       <section
@@ -79,10 +81,14 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
             {searchState !== "" && filteredPostList.length === 0 && (
               <p>No posts matched this search</p>
             )}
-            <div name="searched-post-section" className="row" style={{ justifyContent: "center" }}>
-              {searchState !== "" &&
-                <PostGridItemList list={filteredPostList}/>
-              }
+            <div
+              name="searched-post-section"
+              className="row"
+              style={{ justifyContent: "center" }}
+            >
+              {searchState !== "" && (
+                <PostGridItemList list={filteredPostList} />
+              )}
             </div>
           </div>
           {searchState !== "" && (
@@ -130,25 +136,23 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
       </section>
     </Layout>
   );
-}
+};
 
 // This gets the { data } property onto our props parameter, and here we query for all markdown files
 export const query = graphql`
-    query {
-    allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: ASC }
-    ) {
-        totalCount
-        edges {
-          node {
-              id
-              excerpt
-              fields {
-                slug
-              }
-            ...PostInfo
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
+      totalCount
+      edges {
+        node {
+          id
+          excerpt
+          fields {
+            slug
           }
+          ...PostInfo
         }
       }
     }
+  }
 `;

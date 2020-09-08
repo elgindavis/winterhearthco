@@ -1,32 +1,31 @@
 ---
 title: "The Pursuit of Perspective"
-date:  "2019-03-03"
+date: "2019-03-03"
 imageUrl: "/img/blog/phony-ppl.jpg"
 imageAltText: "Perspective"
-contentType: 'newsletter'
-newsletterVolume: '1'
+contentType: "newsletter"
+newsletterVolume: "1"
 featured: false
 tags: ["Perspective"]
 keywords: "Perspective"
 description: "Volume 1, Issue 6"
-author: {
+author:
+  {
     name: "Elgin Davis",
     role: "Main Content Writer",
     summary: "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.",
-    imageUrl: "/img/profile-200p.jpg" 
-}
-unsplashBadgeInfo: {
-    artistUrl: "",
-    artistName: "",
-}
+    imageUrl: "/img/profile-200p.jpg",
+  }
+unsplashBadgeInfo: { artistUrl: "", artistName: "" }
 ---
+
 Volume 1, Issue 6
 
 <br>
 
 ### What's New This Week
 
-Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, gleaning useful and practical insights to aid us in living epic life stories. 
+Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, gleaning useful and practical insights to aid us in living epic life stories.
 
 This week we have our first community artist feature, so be sure to check it out in the Fireside Spotlight!
 
@@ -47,11 +46,11 @@ As always, there's plenty of content here, so feel free to just take what you ne
 <br>
 
 ### Listen
- 
+
 In this week's Listen section, I want to introduce you to [Phony Ppl](https://www.phony-ppl.com/). This group is a powerhouse of musical talent that explores various dimensions of the human experience unlike any other music I've heard before.
 
 The song in particular that I want to share with you is called "[Why iii Love The Moon.](https://open.spotify.com/track/2x5Frs6ts14U4MSLrQQlXg)" It's a warm, soulful, and honest song from a damaged heart that has finally found its solace. The song opens:
- 
+
 <div style="text-align: center; padding: 8%;">
 <div style="margin: 0 18%; text-align: left">
 <em>
@@ -67,15 +66,13 @@ Unlike these human beings</p>
 </div>
 </div>
 
-It's so pensive, earnest, and brilliant in its simplicity. In learning to pursue an enhanced life perspective, place yourself into the song as you listen to it. Feel the emotions that the words are revealing, see the picture that the music is painting, and live the story that the song recounts. 
+It's so pensive, earnest, and brilliant in its simplicity. In learning to pursue an enhanced life perspective, place yourself into the song as you listen to it. Feel the emotions that the words are revealing, see the picture that the music is painting, and live the story that the song recounts.
 
- 
 <br>
 <div class='text-center pt-20 pb-20'>
     <a rel='noopener noreferrer' class='primary-btn' href='https://www.youtube.com/watch?v=hC8CH0Z3L54'>Check out the music video!</a>
 </div>
 <br>
-
 
 <br>
 <div class='text-center pt-20 pb-20'>
@@ -88,12 +85,11 @@ It's so pensive, earnest, and brilliant in its simplicity. In learning to pursue
 
 In this week's Learn section, I want to share with you a really great podcast I've been listening to called "[Ear Hustle](http://earhustlesq.com/)". "Ear hustle", deriving from the prison term for "eavesdropping", is a podcast all about life behind bars, and is actually recorded from within the [San Quentin State Prison](http://www.cdcr.ca.gov/Facilities_Locator/SQ.html).
 
-Content warning: this podcast is filmed within a prison, and as such, you'll hear some swearing and profanity in the podcast. This episode, "[Misguided Loyalty](https://www.earhustlesq.com/episodes/2017/6/28/misguided-loyalty?rq=misguide)", follows the first-person account of an inmate whose life story has been characterized by hardship, tragedy, and detrimental life decisions from his youth. 
+Content warning: this podcast is filmed within a prison, and as such, you'll hear some swearing and profanity in the podcast. This episode, "[Misguided Loyalty](https://www.earhustlesq.com/episodes/2017/6/28/misguided-loyalty?rq=misguide)", follows the first-person account of an inmate whose life story has been characterized by hardship, tragedy, and detrimental life decisions from his youth.
 
 It's easy (and very common) to write off inmates as "terrible people", and many people decide to do just that, but this episode gives us reason to believe otherwise. Tommy Shakur Ross eloquently recounts his life's story from a very profound point of view, giving us a chance to shift our perspective on how we see inmates, "gangsters", and kids who make poor decisions as a result of experienced events that may have been outside of their control.
 
 His story illuminates the fact that although people may do some pretty terrible things, we are all still human. It shows us how powerfully the experiences we've had, as well as our reactions to those experiences, shape us into the people that we are at any given moment. When you listen to the episode, imagine you are Tommy as he tells you the details of his life. Understanding is the basis of empathy, so where many may jump to judgement, seek instead to understand life through his eyes.
-
 
 <br>
 <div class='text-center pt-20 pb-20'>
@@ -112,12 +108,13 @@ His story illuminates the fact that although people may do some pretty terrible 
 <br>
 
 ### Level Up
- 
+
 This week's Level Up section is all about building empathy and how to use it to refine your perspective. Bestselling author [Daniel H. Pink](https://www.danpink.com/) sums up the concept beautifully:
 
-> *"Empathy is about standing in someone else's shoes, feeling with his or her heart, seeing with his or her eyes. Not only is empathy hard to outsource and automate, but it makes the world a better place."*
+> _"Empathy is about standing in someone else's shoes, feeling with his or her heart, seeing with his or her eyes. Not only is empathy hard to outsource and automate, but it makes the world a better place."_
 
 In the same vein, professor [Theresa Wiseman](https://www.southampton.ac.uk/healthsciences/about/staff/theresa-wiseman.page) breaks down empathy into 4 attributes (slightly different from the [methodology of Daniel Goleman](/newsletters/volume-1/cluttered-space/), which we saw a few weeks ago):
+
 - **The ability to see the world as others see it**
 - **The ability to be non-judgmental**
 - **The ability to understand another person's feelings**
@@ -155,7 +152,7 @@ Check out this article I wrote for a closer look at these 8 tips!
 ### Fireside Spotlight
 
 In last week's Fireside Spotlight, we saw a piece called "671"- a pensive poem that explores a very significant period of hardship in my life. <u>This week's piece is our first community artist feature</u> 🥳 The poem is written by E. Stanley, and is a piece filled with passion and confusion, as well as questions that may never fully be answered. Use some of the empathetic skills we talked about throughout this week's digest to work your way through the sentiments described in the poem.
- 
+
 <div style="text-align: center; padding: 8%;">
 <h1>The Pain of a Name</h1>
 
@@ -176,6 +173,7 @@ Now I have family I didn't have before..... because I let them swab my mouth whe
 
 Now I wonder who knew and kept it all in.... as I travel through town wondering if you are my kin.<br>
 </em>
+
 </div>
 </div>
 
@@ -183,6 +181,4 @@ Now I wonder who knew and kept it all in.... as I travel through town wondering 
 
 Thanks again for joining us this week in the Winter Hearth Creative Journal! In the words of Dale Carnegie, "Knowledge isn't power until it is applied." How can you apply the ideas in this digest to your life? How can you use it to gain power in living a more epic story? Talk to your friends and family this week about something you found interesting in the digest.
 
-
 This weekly personal development playbook is a labor of love, so if you enjoy reading it each week, please share it with your friends to assist us in reaching our goal of helping the world achieve a better human experience :)
-

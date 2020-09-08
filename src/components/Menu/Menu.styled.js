@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: var(--color-text);
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   height: 100vh;
   text-align: left;
   padding: 2rem;
@@ -14,8 +14,8 @@ export const StyledMenu = styled.nav`
   right: 0;
   transition: transform 0.3s ease-in-out;
   @media (max-width: 990px) {
-      width: 300px;
-    }
+    width: 300px;
+  }
   a {
     font-size: 1.3rem;
     text-transform: uppercase;

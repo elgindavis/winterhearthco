@@ -1,28 +1,27 @@
 ---
 title: "DMH: Anorexia Nervosa"
-date:  "2019-08-11"
+date: "2019-08-11"
 imageUrl: "/img/blog/anorexia.jpg"
 imageAltText: "Anorexia Nervosa"
-contentType: 'newsletter'
-newsletterVolume: '2'
+contentType: "newsletter"
+newsletterVolume: "2"
 featured: false
 tags: ["Anorexia Nervosa"]
 keywords: "Anorexia Nervosa"
 description: "What is it about Anorexia that makes it so powerful, and how does it work?"
-author: {
+author:
+  {
     name: "Elgin Davis",
     role: "Main Content Writer",
     summary: "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.",
-    imageUrl: "/img/profile-200p.jpg" 
-}
-unsplashBadgeInfo: {
-    artistUrl: "",
-    artistName: "",
-}
+    imageUrl: "/img/profile-200p.jpg",
+  }
+unsplashBadgeInfo: { artistUrl: "", artistName: "" }
 ---
+
 <br/>
 
-### What's New This Week  
+### What's New This Week
 
 Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, seeking to spark positive, empathetic, and meaningful conversation around mental and emotional health.
 
@@ -31,10 +30,9 @@ With only a few editions left to go in Volume 2, you've come such a long way in 
 <br/>
 
 ### What is Anorexia Nervosa?
- 
-Anorexia Nervosa (usually shortened to 'Anorexia') is a crossover between mental health disorder and eating disorder, which is characterized by self-starvation and excessive weight loss in an individual.  People with this disorder have a fear of 'becoming fat', and struggle a lot with appearance issues, much like individuals struggling with Body Dysmorphia Disorder (which we covered last week). There are a number of possible causes for the disorder, but no definite causes have been identified as of yet. Research suggests that it may be linked to heredity, feelings of anxiety, loneliness, and inadequacy, and possibly even toxic relationships. In any case, the disorder is defined by an extreme fixation on weight loss and severe restrictions on the amount of food eaten. People with anorexia often equate 'thinness' with self-worth, and this is often a major root of the disorder.
 
- 
+Anorexia Nervosa (usually shortened to 'Anorexia') is a crossover between mental health disorder and eating disorder, which is characterized by self-starvation and excessive weight loss in an individual. People with this disorder have a fear of 'becoming fat', and struggle a lot with appearance issues, much like individuals struggling with Body Dysmorphia Disorder (which we covered last week). There are a number of possible causes for the disorder, but no definite causes have been identified as of yet. Research suggests that it may be linked to heredity, feelings of anxiety, loneliness, and inadequacy, and possibly even toxic relationships. In any case, the disorder is defined by an extreme fixation on weight loss and severe restrictions on the amount of food eaten. People with anorexia often equate 'thinness' with self-worth, and this is often a major root of the disorder.
+
  <br />
 
 ![Anorexia Nervosa, created and owned by Toby Allen](/img/blog/anorexia.jpg)
@@ -42,29 +40,29 @@ Anorexia Nervosa (usually shortened to 'Anorexia') is a crossover between mental
 <div class="photo-credit"> 
     Anorexia Nervosa, created and owned by Toby Allen
 </div>
-<br /> 
+<br />
 
 ### Anorexia Nervosa Abstracted
- 
+
 "As a parasitic assassin, Anorexia Nervosa slowly kills its victims from the inside. This monster is almost invisible, thanks to its translucent body, but it casts its shadow on those it inhabits, causing its victims to see a warped image of themselves. It manipulates and controls its victim, convincing them to maintain a minimal body weight by restricting food intake and encouraging excessive exercise to lose what it perceives as 'extra' weight.
 
 The ultimate goal of Anorexia Nervosa is to make its victims destroy themselves through starvation and other health complications that arise due to its manipulation. The main powers of this monster are control and secrecy which cause its victims to try and hide their extreme habits. In order to defeat Anorexia Nervosa, its existence must be acknowledged, only then can its powers be rendered useless. It is common for Anorexia and Body Dysmorphia to work together."
 
 This week's creature is very visually interesting, and also very insidious. Anorexia Nervosa is one of those things that will eat away at you unless you acknowledge and address it, as noted in Allen's image. It is also definitely worth noting that Body Dysmorphia Disorder, which we covered last week, works hand-in-hand with Anorexia Nervosa. BDD you'll recall has a lot to do with fixating on a perceived flaw and going to extreme lengths to "fix" it or conceal it from sight. Anorexia Nervosa focuses mostly on weight and keeping it as low as sustainably possible. This is a sneaky one, and it doesn't always appear in a rail-thin body frame, so be sure to keep your eyes peeled to see if anyone you know exhibits any of the symptoms listed in the below section.
- 
 
 <br />
 
 ![Relevance in Global Community](https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/39d07f89-892f-4bd5-b120-0f8b55e6630c.jpg)
+
 <div class="photo-credit"> 
     Photo by Joshua Rawson-Harris on Unsplash
 </div>
 
-<br />  
+<br />
 
 ### Relevance in Our Community
 
-Looking to our community, there are a number of symptoms that can help us identify anorexia in an individual. Of course, actual diagnosis should come from a professional, but your attention to others could help someone see their need to consult a professional where they otherwise may not have done so. Some of the symptoms of anorexia include:  
+Looking to our community, there are a number of symptoms that can help us identify anorexia in an individual. Of course, actual diagnosis should come from a professional, but your attention to others could help someone see their need to consult a professional where they otherwise may not have done so. Some of the symptoms of anorexia include:
 
 - Rapid loss of weight over several weeks or months,
 - Continued dieting and/or restricted eating even when thin or light in weight,
@@ -81,10 +79,10 @@ Looking to our community, there are a number of symptoms that can help us identi
 - Feeling worthless or hopeless,
 - Social withdrawal
 
- 
 <br />
 
 ![Flowers in light bulb vases](https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/6811f08f-be0d-4024-a560-2682542e9943.jpg)
+
 <div class="photo-credit"> 
     Photo by Jagoda Kondratiuk on Unsplash  
 </div>
@@ -106,7 +104,7 @@ In order for us to remain mentally and emotionally healthy, we must breathe. To 
     Photo by Jukan Tateisi on Unsplash
 </div>
 
-<br />  
+<br />
 
 ### Weekly Challenge
 
@@ -117,5 +115,6 @@ I challenged myself a few weeks ago for a few days to comment something positive
 <br>
 
 ### Resources
+
 - [Anorexia Nervosa — WebMD](https://www.webmd.com/mental-health/eating-disorders/anorexia-nervosa/mental-health-anorexia-nervosa#1)
 - [Anorexia Nervosa — Mayo Clinic](https://www.mayoclinic.org/diseases-conditions/anorexia-nervosa/symptoms-causes/syc-20353591)

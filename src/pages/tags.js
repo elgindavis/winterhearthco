@@ -7,22 +7,20 @@ import kebabCase from "lodash/kebabCase";
 // Components
 import { Link, graphql } from "gatsby";
 
-import Layout from '../components/layout';
+import Layout from "../components/layout";
 
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
   },
-}) => 
-{
-  
+}) => {
   useEffect(() => {
     document.title = "Tags | Winter Hearth Studios";
   }, []);
-  
+
   return (
     <Layout>
-      <div className="pt-120" style={{margin: '0 40px' }}>
+      <div className="pt-120" style={{ margin: "0 40px" }}>
         <h1>Tags</h1>
         <ul>
           {group.map((tag) => (
@@ -35,7 +33,7 @@ const TagsPage = ({
         </ul>
       </div>
     </Layout>
-  )
+  );
 };
 
 TagsPage.propTypes = {
