@@ -6,7 +6,7 @@ import { getImageWithSize } from "../../utils";
 
 const Area = styled.div`
   padding: 40px 20px 0;
-  border: 4px solid var(--color- ${({ type }) => type});
+  border: 4px solid var(--color-${({ type }) => type});
   border-radius: 4px;
   margin: 20px 20px;
 
@@ -83,7 +83,7 @@ const PostGridItem = ({
       </div>
       <div>
         <p className="text-left" style={{ marginBottom: 20 }}>
-          {excerpt}
+          {excerpt.length > 65 ? `${excerpt.split(" ", 10).join(" ").trim()}...` : excerpt}
         </p>
       </div>
       <div className="pb-40">

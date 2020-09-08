@@ -37,8 +37,7 @@ export default ({
   return (
     <Layout>
       <section
-        style={{ padding: "12% 0" }}
-        className="newsletter-hero-image section-gap"
+        className="newsletter-hero-image"
       >
         <div className="">
           <div
@@ -83,7 +82,7 @@ export default ({
           <div className="row justify-content-center">
             <div className="col-md-8 pb-30 header-text text-center">
               <h3>
-                Epic Life Playbook Volume 2: <br /> Demystifying Mental Health
+                Demystifying Mental Health
               </h3>
               <hr className="title-line mt-20" />
               <br />

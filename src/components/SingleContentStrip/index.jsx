@@ -4,7 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Area = styled.div`
   padding: 10px 12px;
-  border: 4px solid var(--color- ${({ type }) => type});
+  border: 4px solid var(--color-${({ type }) => type});
   border-radius: 4px;
   margin: 0 12px 40px;
   max-width: 1056px;

@@ -6,7 +6,7 @@ import { getImageWithSize } from "../../utils";
 
 const Area = styled.div`
   padding: 40px 12px;
-  border: 4px solid var(--color- ${({ type }) => type});
+  border: 4px solid var(--color-${({ type }) => type});
   border-radius: 4px;
   margin: 0 12px 40px;
 `;
