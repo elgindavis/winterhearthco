@@ -63,7 +63,7 @@ export default ({
       >
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-12 pb-60 text-center header-text">
+            <div className="col-md-12 text-center header-text">
               <h1>Latest content</h1>
               <Separator />
               <SearchArea
