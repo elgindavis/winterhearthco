@@ -8,6 +8,7 @@ featured: true
 tags: ["Podcast", "Humanity", "Mental Health", "Emotional Intelligence", "Self-awareness"]
 keywords: "mental health, emotional intelligence, self-awareness"
 description: "Welcome to the More Human Podcast!"
+hidden: true
 host: {
     name: "Elgin Davis",
     role: "Main Content Writer",

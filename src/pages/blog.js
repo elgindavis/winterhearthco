@@ -23,7 +23,7 @@ export default ({ data: { allMarkdownRemark: { edges } }}) => {
     const featuredPostList = allBlogs.filter(
       (post) => post.featured === true
     );
-    const featuredColumnList = allPosts.filter(
+    const featuredColumnList = allBlogs.filter(
       (post) => post.featured === true
     );
     const newsletterVolTwoList = allPosts.filter(post => post.newsletterVolume === 2);

@@ -7,25 +7,26 @@ import {
   Separator,
 } from "../components";
 
+const Container = styled.div`
+  @media (max-width: 375px) {
+    padding: 0;
+  }
+`;
+
 const LinksDiv = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  @media (max-width: 768px) {
-    justify-content: space-around;
-  }
-  @media (max-width: 450px) {
-    justify-content: flex-start;
-  }
-  padding-top: 8px;
 `;
 
 const SingleLink = styled.a`
   font-size: 14px;
-  margin-right: 12px;
-  margin-bottom: 12px;
+  margin: 0 12px 12px;
   @media (max-width: 400px) {
     font-size: 16px;
+  }
+  img {
+    width: 28px;
   }
 `;
 
@@ -34,6 +35,10 @@ const EmbeddedEpisode = styled.div`
   @media(min-width: 991px) {
     padding-bottom: 40px
   }
+`;
+
+const IconImg = styled.img`
+  margin: 8px 4px;
 `;
 
 export default ({ 
@@ -83,63 +88,24 @@ export default ({
         getRssFeed();
     }, []);
     
-    
     return (
       <Layout>
         <section className="recent-blog-area pt-120">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-md-12 pt-30 pb-30 center">
+              <div className="col-md-12 pt-30 pb-10 center">
                 <h1>More Human Podcast</h1>
                 <Separator style={{ paddingBottom: 0 }} />
-                <LinksDiv style={{ paddingBottom: 24 }}>
-                  {anchorSupportUrl && (
-                    <SingleLink
-                      href={anchorSupportUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Support the podcast
-                    </SingleLink>
-                  )}
-                  {anchorMessageUrl && (
-                    <SingleLink
-                      href={anchorMessageUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Leave a message
-                    </SingleLink>
-                  )}
-                  {podcastFacebookShareUrl && (
-                    <SingleLink
-                      href={podcastFacebookShareUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Share on Facebook
-                    </SingleLink>
-                  )}
-                  {podcastTwitterShareUrl && (
-                    <SingleLink
-                      href={podcastTwitterShareUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Share on Twitter
-                    </SingleLink>
-                  )}
-                </LinksDiv>
                 <div>
-                  <p style={{ marginBottom: 24 }} > Available on:</p>
-                  <LinksDiv>
+                  <p style={{ marginBottom: 8 }}> Available on:</p>
+                  <LinksDiv style={{ marginBottom: 12 }}>
                     {applePodcastsUrl && (
                       <SingleLink
                         href={applePodcastsUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                         Apple Podcasts
+                        <IconImg src="/img/icons/apple-podcasts.png"/>
                       </SingleLink>
                     )}
                     {googlePodcastsUrl && (
@@ -148,7 +114,7 @@ export default ({
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                         Google Podcasts
+                        <IconImg src="/img/icons/google-podcasts.png" />
                       </SingleLink>
                     )}
                     {spotifyUrl && (
@@ -157,10 +123,10 @@ export default ({
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                         Spotify
+                        <IconImg src="/img/icons/spotify.png" />
                       </SingleLink>
                     )}
-                    {anchorUrl && (
+                    {/* {anchorUrl && (
                       <SingleLink
                         href={anchorUrl}
                         target="_blank"
@@ -168,14 +134,14 @@ export default ({
                       >
                          Anchor
                       </SingleLink>
-                    )}
+                    )} */}
                     {radioPublicUrl && (
                       <SingleLink
                         href={radioPublicUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                         Radio Public
+                        <IconImg src="/img/icons/radio-public.png" />
                       </SingleLink>
                     )}
                     {pocketCastsUrl && (
@@ -184,7 +150,7 @@ export default ({
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                         Pocket Casts
+                        <IconImg src="/img/icons/pocket-casts.png" />
                       </SingleLink>
                     )}
                     {castboxUrl && (
@@ -193,7 +159,7 @@ export default ({
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                         CastBox
+                        <IconImg src="/img/icons/castbox.png" />
                       </SingleLink>
                     )}
                     {breakerUrl && (
@@ -202,7 +168,7 @@ export default ({
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                         Breaker
+                        <IconImg src="/img/icons/breaker.png" />
                       </SingleLink>
                     )}
                     {overcastUrl && (
@@ -211,7 +177,45 @@ export default ({
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                         Overcast
+                        <IconImg src="/img/icons/overcast.png" />
+                      </SingleLink>
+                    )}
+                  </LinksDiv>
+                  <LinksDiv style={{ paddingBottom: 24 }}>
+                    {anchorSupportUrl && (
+                      <SingleLink
+                        href={anchorSupportUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Support the podcast
+                      </SingleLink>
+                    )}
+                    {anchorMessageUrl && (
+                      <SingleLink
+                        href={anchorMessageUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Leave a message
+                      </SingleLink>
+                    )}
+                    {podcastFacebookShareUrl && (
+                      <SingleLink
+                        href={podcastFacebookShareUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Share on Facebook
+                      </SingleLink>
+                    )}
+                    {podcastTwitterShareUrl && (
+                      <SingleLink
+                        href={podcastTwitterShareUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Share on Twitter
                       </SingleLink>
                     )}
                   </LinksDiv>
@@ -222,7 +226,7 @@ export default ({
         </section>
         {podcastRssFeed ? 
           <section>
-            <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
+            <Container className="container" style={{ display: 'flex', justifyContent: 'center' }}>
               <div style={{ padding: 20, width: '100%', maxWidth: 1000 }}>
                 {podcastRssFeed.map(episode => {
                     return (
@@ -240,7 +244,7 @@ export default ({
                     )
                   })}
               </div>
-            </div>
+            </Container>
           </section>
           :
           <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
@@ -258,6 +262,7 @@ export const query = graphql`
         siteMetadata {
           anchorUrl
           anchorSupportUrl
+          anchorMessageUrl
           spotifyUrl
           applePodcastsUrl
           googlePodcastsUrl
@@ -270,20 +275,20 @@ export const query = graphql`
           podcastFacebookShareUrl
         }
       }
-        allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: DESC }
-        ) {
-            totalCount
-            edges {
-                node {
-                    id
-                    excerpt
-                    fields {
-                        slug
-                    }
-                    ...PostInfo
+      allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+      ) {
+        totalCount
+        edges {
+            node {
+                id
+                excerpt
+                fields {
+                    slug
                 }
+                ...PostInfo
             }
         }
+      }
     }
 `;

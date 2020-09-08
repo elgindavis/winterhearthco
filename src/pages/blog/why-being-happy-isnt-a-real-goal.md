@@ -51,7 +51,7 @@ to guide your decisions.
 ###Being vs. Feeling
 Beyond the semantic lesson, this idea of *being vs. feeling* emotions shows us that emotions aren’t in control of our
 lives, though they can help us figure things out. Many of us live our lives as if the emotions are the goal (specifically
-the positive ones). This is a confusing way to live for several reasons. For example, if your goal is to “be feel happy”,
+the positive ones). This is a confusing way to live for several reasons. For example, if your goal is to “be/feel happy”,
 how do you get there? How do you sustain that feeling? How do you avoid the other less desirable feelings? You should
 also understand that emotions are temporary, just like any other experience. This means that anything you do to elicit a
 certain emotion would have to be repeated to continually achieve the same effect.
