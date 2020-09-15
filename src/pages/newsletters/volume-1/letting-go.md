@@ -36,7 +36,7 @@ As always, there's plenty of content here, so feel free to just take what you ne
 <br>
 
 <div class='text-center pt-20 pb-20'>
-    <a rel='noopener noreferrer' target='_blank' href='https://www.npr.org/podcasts/510298/ted-radio-hour#res686332510'>
+    <a rel='noopener noreferrer' target='_blank' href='https://www.npr.org/player/embed/683604166/683692808'>
         <img src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/0185a1b2-3704-49f3-90cd-177f8224db19.jpg' alt='TED npr logo'>
     </a>
 </div>
@@ -44,7 +44,7 @@ As always, there's plenty of content here, so feel free to just take what you ne
 
 Listen
 
-This has been without a doubt the most powerful podcast episode I have listened to so far (out of roughly 100 episodes), and if you take the time to listen to or watch one thing this week, [listen to this podcast](https://www.npr.org/podcasts/510298/ted-radio-hour#res686332510) from NPR's TED Radio Hour entitled "Forgiveness".
+This has been without a doubt the most powerful podcast episode I have listened to so far (out of roughly 100 episodes), and if you take the time to listen to or watch one thing this week, [listen to this podcast](https://www.npr.org/player/embed/683604166/683692808) from NPR's TED Radio Hour entitled "Forgiveness".
 
 **Content Warning**: The topic of this episode is forgiveness, so understandably some of the stories shared in the episode depict very terrible events that have happened to people in the past, including mass shootings, suicide, issues concerning mental health, and sexual violence.
 
@@ -52,7 +52,7 @@ The episode follows three separate stories, including stories from the mother of
 
 <br>
 <div class='text-center pt-20 pb-20'>
-    <a rel='noopener noreferrer' class='primary-btn' href='https://www.npr.org/podcasts/510298/ted-radio-hour#res686332510'>Check out the episode!</a>
+    <a rel='noopener noreferrer' class='primary-btn' href='https://www.npr.org/player/embed/683604166/683692808'>Check out the episode!</a>
 </div>
 <br>
 
