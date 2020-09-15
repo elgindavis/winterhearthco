@@ -1,24 +1,22 @@
 ---
 title: "What's in a Word?"
-date:  "2019-04-20"
+date: "2019-04-20"
 imageUrl: "/img/blog/kate-kalvach-YUyueCkd7Tk-unsplash.jpg"
 imageAltText: "What's in a Word?"
-contentType: 'newsletter'
-newsletterVolume: '1'
+contentType: "newsletter"
+newsletterVolume: "1"
 featured: false
 tags: ["Meaning", "Lifestyle"]
 keywords: "Meaning, Lifestyle"
 description: "Volume 1, Issue 12"
-author: {
+author:
+  {
     name: "Elgin Davis",
     role: "Main Content Writer",
     summary: "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.",
-    imageUrl: "/img/profile-200p.jpg" 
-}
-unsplashBadgeInfo: {
-    artistUrl: "",
-    artistName: "",
-}
+    imageUrl: "/img/profile-200p.jpg",
+  }
+unsplashBadgeInfo: { artistUrl: "", artistName: "" }
 ---
 
 Volume 1, Issue 12
@@ -26,11 +24,12 @@ Volume 1, Issue 12
 <br>
 
 ### What's New This Week
-Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, gleaning useful and practical insights to become more socially and emotionally powerful. 
 
-Following last week's digest, Under Construction, the theme of this week's content is "What's In a Word?".  Many of us grew around the phrase "sticks and stones may break my bones, but words will never hurt me." Boy, was that ever false. Every word that flows from our mouths influences the world around us, and many people tend to take this fact for granted. Whether your words influence your own mind or those of others, know that your words have power.
+Welcome back and thanks for joining us again in the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, gleaning useful and practical insights to become more socially and emotionally powerful.
 
-The idea of thinking before speaking is more difficult than many of us realize, but training this habit will take you very far in terms of developing emotional intelligence and empathy. Since this playbook deals with social and emotional learning, this week we'll take a look at how the power of words comes into play with respect to mental health and mental illness, so be sure to take your time engaging with the content as you make your way through the digest. 
+Following last week's digest, Under Construction, the theme of this week's content is "What's In a Word?". Many of us grew around the phrase "sticks and stones may break my bones, but words will never hurt me." Boy, was that ever false. Every word that flows from our mouths influences the world around us, and many people tend to take this fact for granted. Whether your words influence your own mind or those of others, know that your words have power.
+
+The idea of thinking before speaking is more difficult than many of us realize, but training this habit will take you very far in terms of developing emotional intelligence and empathy. Since this playbook deals with social and emotional learning, this week we'll take a look at how the power of words comes into play with respect to mental health and mental illness, so be sure to take your time engaging with the content as you make your way through the digest.
 
 As always, there's plenty of content here, so feel free to just take what you need.
 
@@ -41,8 +40,8 @@ As always, there's plenty of content here, so feel free to just take what you ne
 <br>
 
 ### Listen
-This week, we'll kick things off with a TED Talk that's a great start when talking about the actual process of talking about mental health. Listen carefully to the words that Delle uses to describe his situation with coming to grips with his health.  One of the most insightful quotes from the talk is this: "Being honest about how we feel doesn't make us weak -- it makes us human." Check out the rest of his talk below.
 
+This week, we'll kick things off with a TED Talk that's a great start when talking about the actual process of talking about mental health. Listen carefully to the words that Delle uses to describe his situation with coming to grips with his health. One of the most insightful quotes from the talk is this: "Being honest about how we feel doesn't make us weak -- it makes us human." Check out the rest of his talk below.
 
 <div class='text-center pt-20 pb-20'>
     <a rel='noopener noreferrer' class='primary-btn' href='https://www.ted.com/talks/sangu_delle_there_s_no_shame_in_taking_care_of_your_mental_health?referrer=playlist-the_struggle_of_mental_health'> Check out the talk!</a>
@@ -55,7 +54,7 @@ This week, we'll kick things off with a TED Talk that's a great start when talki
 <br>
 
 ### Learn
- 
+
 In this week's Learn section, I've come across a deeply moving talk from Elyn Saks, a university professor who struggles with two mental illnesses. Imagine how difficult it must be to not only have schizophrenia and psychosis, but also to then get on stage in front of hundreds of people and talk about your journey, struggles, and life managing both of them simultaneously (taking the time and energy to try to place yourself in that position will definitely increase your empathic abilities).
 
 I strongly suggest you find the time to watch this TED Talk, but if you are unable to, there are a few major highlights for you to grab:
@@ -75,7 +74,7 @@ I strongly suggest you find the time to watch this TED Talk, but if you are unab
 <br>
 
 ### Level Up
- 
+
 This week's Level Up section presents you with a quick article from NBC's Today about what really happens when you call people "crazy, OCD, pyscho," or any other variation of epithets concerning mental illness.
 
 On a personal note, I've been told on far too many occasions that I "have OCD" or that I "am OCD" due to certain nervous (as in nervous system, not the state of being nervous) mannerisms that I have. Not only does the misuse of these terms show a lack of understanding of what these mental illnesses actually are, but it actually trivializes the situations in which an individual actually does have one of these mental illnesses and weakens our potential for deeper understanding.
@@ -112,6 +111,4 @@ Two weeks ago in the Fireside Spotlight, we saw our first character — Westro, 
 
 Thanks again for joining us this week in the Winter Hearth Creative Journal! In the words of Dale Carnegie, "Knowledge isn't power until it is applied." How can you apply the ideas in this digest to your life? How can you use it to gain power in living a more epic story? Talk to your friends and family this week about something you found interesting in the digest.
 
-
 This weekly personal development playbook is a labor of love, so if you enjoy reading it each week, please share it with your friends to assist us in reaching our goal of helping the world achieve a better human experience :)
-

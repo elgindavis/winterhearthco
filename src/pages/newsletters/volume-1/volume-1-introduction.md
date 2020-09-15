@@ -1,25 +1,24 @@
 ---
 title: "New Year, New Growth"
-date:  "2019-01-29"
+date: "2019-01-29"
 imageUrl: "/img/blog/arrows-up.jpg"
 imageAltText: "Welcome to Winter Hearth Studios!"
-contentType: 'newsletter'
-newsletterVolume: '1'
+contentType: "newsletter"
+newsletterVolume: "1"
 featured: false
 tags: ["Winter Hearth", "Introduction"]
 keywords: "Winter Hearth"
 description: "Volume 1, Issue 1"
-author: {
+author:
+  {
     name: "Elgin Davis",
     role: "Main Content Writer",
     summary: "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.",
-    imageUrl: "/img/profile-200p.jpg" 
-}
-unsplashBadgeInfo: {
-    artistUrl: "",
-    artistName: "",
-}
+    imageUrl: "/img/profile-200p.jpg",
+  }
+unsplashBadgeInfo: { artistUrl: "", artistName: "" }
 ---
+
 Volume 1, Issue 1
 <br>
 
@@ -38,12 +37,13 @@ This is an exciting week, as it's the first official weekly newsletter for the W
 </div>
 
 ### Listen
+
 [Charlotte Day Wilson](https://charlottedaywilson.com/) is an up-and-coming artist from Toronto whose music paints more than your average picture. Her artistic process is driven by her real, raw human experiences, and not derived from any fad or trend. The song "[Funeral](https://www.youtube.com/watch?v=cRxgXG-crKo&feature=youtu.be)" from her 2018 EP [Stone Woman](https://www.thefader.com/2018/02/23/charlotte-day-wilson-stone-woman-ep-stream) is actually the song I played on repeat that allowed me to process and create the Medium-featured piece [A Hope Undone](https://medium.com/winter-hearth-studios/somber-clouds-engulfed-the-formerly-cheerful-sky-swirling-slowly-like-ravenous-birds-of-the-night-6a4e6de49dd2) which itself is, as you may have noted, about a funeral. The song opens,
-       
-> *"I went to a funeral, so I could feel something. Don't know what I'm living for, if I don't feel nothing."*
+
+> _"I went to a funeral, so I could feel something. Don't know what I'm living for, if I don't feel nothing."_
 
 Take a moment to just imagine the state of mind, the emotions, and the experiences (really stretching those empathy muscles today!) that must have all been present and mixing together for someone to create a work of art, dripping with such raw emotion as this piece. Check out her [full interview with The FADER](https://www.thefader.com/2018/03/20/charlotte-day-wilson-stone-woman-interview-cdw-toronto) and the rest of her EP [Stone Woman](https://www.thefader.com/2018/02/23/charlotte-day-wilson-stone-woman-ep-stream), and look out for her soulful music on Spotify or Apple Music in the near future.
- 
+
 <br>
 
 <div class='text-center pt-20 pb-20'>
@@ -64,7 +64,7 @@ This week's insights come from the thought-provoking podcast Hurry Slowly, hoste
 There is tons of wisdom in this episode, but the idea that struck me most profoundly was the idea that conversation is an art. It is a craft that, like every other craft or skill, must be developed with time and intentional, diligent practice. This idea really challenged me to reconsider how often my own conversations happen so naturally and without deep thought, and how much of another person's experiences and life story I fail to tap into and learn from by asking surface-level questions or opting to talk about myself instead.
 
 This is a subtly powerful episode that I definitely recommend and, being about 8 episodes into Hurry Slowly so far, I would 9.5/10 recommend you check it out on whatever podcast app you use to improve yourself in 2019 (I use [Castbox](https://castbox.fm/) if you're looking for suggestions).
- 
+
 <br>
 
 <div class='text-center pt-20 pb-20'>
@@ -76,7 +76,6 @@ This is a subtly powerful episode that I definitely recommend and, being about 8
 <br>
 
 ### Level Up
-
 
 This week's level up section comes from a personal observation in redesigning my rhythm of life - my system of existence, if you will. One of the best things that I have found in terms of <u>leveling up my productivity, attention span, and overall control over stress</u>, is **silence**.
 
@@ -96,7 +95,6 @@ For the past week, I have silenced my phone's notifications from 9am to 5:15pm e
 ### Fireside Spotlight
 
 For this week's Fireside Spotlight, I would like to feature a book I read recently called "[Art & Fear - Observations On The Perils (and Rewards) of Artmaking](https://www.amazon.com/Art-Fear-Observations-Rewards-Artmaking/dp/0961454733/ref=sr_1_1/145-6200674-5800037?ie=UTF8&qid=1548472266&sr=8-1&keywords=art+and+fear)", by David Bayles and Ted Orland. The book explores the way art gets made, the reasons it often doesn't get made, and the nature of the difficulties that cause so many artist to give up along the way.
- 
 
 <br>
 
@@ -111,7 +109,7 @@ Among the things that I learned from this book is the idea that we are all artis
 
 Those who really succeed are those who practice relentlessly, even when their work is not spectacular, learning and growing more competent with each engagement until they develop a command of that skill. They are not afraid to make mistakes and are likely much less self-conscious about these mistakes than others, and given a supportive and nurturing environment (or an iron will and unbreakable determination), "the sky's the limit" is even too small to describe their potential.
 
-They live in a growth mindset, understanding that any skill can be learned, and that the perceived advantages of innate talent can always be overcome by diligent effort and focused, intentional learning. Overall, the ideas presented in this book teach us precisely the mindset that we need to truly Live An Epic Story. 
+They live in a growth mindset, understanding that any skill can be learned, and that the perceived advantages of innate talent can always be overcome by diligent effort and focused, intentional learning. Overall, the ideas presented in this book teach us precisely the mindset that we need to truly Live An Epic Story.
 
 <br>
 

@@ -5,7 +5,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 export default () => {
   useEffect(() => {
     document.title = "About | Winter Hearth Studios";
-  }, [])
+  }, []);
   return (
     <Layout
       keywords={
@@ -37,8 +37,8 @@ export default () => {
               <p style={{ paddingTop: "3%" }}>
                 Hey there! I'm Elgin and I'm the human behind Winter Hearth
                 Studios. I started this creative studio back in 2018 as a place
-                for me to dream— to dream of ways that we can connect better with
-                each other as humans and ways for us to live deeper,
+                for me to dream— to dream of ways that we can connect better
+                with each other as humans and ways for us to live deeper,
                 hyper-meaningful, and greatly fulfilling lives for ourselves.
               </p>
             </div>
@@ -74,14 +74,15 @@ export default () => {
               </h1>
               <p style={{ paddingTop: "3%" }}>
                 Winter Hearth Studios is about being socially, mentally and
-                emotionally aware, being energized for change, and showing love in
-                creative and impactful ways. Our mission to is create warm,
+                emotionally aware, being energized for change, and showing love
+                in creative and impactful ways. Our mission to is create warm,
                 encouraging and insightful content to empower you to be a{" "}
-                <strong style={{ color: "var(--wh-red)" }}> firestarter</strong>.
+                <strong style={{ color: "var(--wh-red)" }}> firestarter</strong>
+                .
               </p>
               <p>
-                We have a heart for change, and we will be that change we wish to
-                see.
+                We have a heart for change, and we will be that change we wish
+                to see.
               </p>
             </div>
           </div>
@@ -137,7 +138,8 @@ export default () => {
                 our shared human experience. <br /> From web comics to video
                 games, podcasts to videos, blog posts and beyond— we aim to
                 inspire, educate, and enrich people all over the world with the
-                tools they need to become more mentally and emotionally powerful.
+                tools they need to become more mentally and emotionally
+                powerful.
               </p>
               <div style={{ padding: "20px 0" }}>
                 <AniLink
@@ -147,7 +149,7 @@ export default () => {
                   to="/blog/"
                   name="see-latest-posts-button"
                   className="primary-btn text-uppercase"
-                  style={{ padding: "0 20px", fontSize: '14px' }}
+                  style={{ padding: "0 20px", fontSize: "14px" }}
                 >
                   See latest posts
                 </AniLink>
@@ -161,9 +163,9 @@ export default () => {
             <div className="col-lg-10">
               <p>
                 We want to inspire you to make a difference in the world — to
-                challenge the status quo, to be the one to lend a helping hand, to
-                create something that changes lives. We want you to live an epic
-                story.
+                challenge the status quo, to be the one to lend a helping hand,
+                to create something that changes lives. We want you to live an
+                epic story.
               </p>
 
               <h2 style={{ marginTop: "8%" }}> Behind the name </h2>
@@ -180,5 +182,5 @@ export default () => {
         </div>
       </section>
     </Layout>
-  )
+  );
 };

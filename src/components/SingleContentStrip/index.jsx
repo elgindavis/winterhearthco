@@ -39,19 +39,20 @@ const SingleLink = styled.a`
 `;
 
 const ContentDiv = styled.div`
-    display: flex;
-    flex: 3;
-    padding: 0;
-    flex-direction: column;
+  display: flex;
+  flex: 3;
+  padding: 0;
+  flex-direction: column;
 `;
 
 const PodcastEmbed = styled.iframe`
-    width: 100%;
-    height: auto;
-    margin: 12px 0;
+  width: 100%;
+  height: auto;
+  margin: 12px 0;
 `;
 
-export default ({ content: { 
+export default ({
+  content: {
     host,
     author,
     date,
@@ -62,8 +63,10 @@ export default ({ content: {
     anchorEpisodeUrl,
     spotifyEpisodeUrl,
     applePodcastEpisodeUrl,
-    googlePodcastEpisodeUrl
-  }, color }) => {
+    googlePodcastEpisodeUrl,
+  },
+  color,
+}) => {
   return (
     <Area type={color}>
       <Container>

@@ -1,20 +1,25 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from "react";
 
-import { Layout, UnsplashBadge, BlogPostMetadata, PopularPostColumn } from "../components/";
+import {
+  Layout,
+  UnsplashBadge,
+  BlogPostMetadata,
+  PopularPostColumn,
+} from "../components/";
 
 import { transformPostQueryData, getImageWithSize } from "../utils";
 
 export default (props) => {
   const postHTML = props.data.markdownRemark.html;
   const postInfo = props.data.markdownRemark.frontmatter;
-  const allPosts = 
-    transformPostQueryData(props.data.allMarkdownRemark.edges)
-    .filter(post => !post.hidden);
+  const allPosts = transformPostQueryData(
+    props.data.allMarkdownRemark.edges
+  ).filter((post) => !post.hidden);
   const featuredPostList = allPosts.filter((post) => post.featured === true);
 
   useEffect(() => {
-      document.title = postInfo.title + " | Winter Hearth Studios";
-  }, [postInfo.title])
+    document.title = postInfo.title + " | Winter Hearth Studios";
+  }, [postInfo.title]);
 
   return (
     <Layout>
@@ -88,24 +93,22 @@ export default (props) => {
 };
 
 export const query = graphql`
-         query($slug: String!) {
-           markdownRemark(fields: { slug: { eq: $slug } }) {
-             ...PostInfo
-           }
-           allMarkdownRemark(
-             sort: { fields: [frontmatter___date], order: DESC }
-           ) {
-             totalCount
-             edges {
-               node {
-                 id
-                 excerpt
-                 fields {
-                   slug
-                 }
-                 ...PostInfo
-               }
-             }
-           }
-         }
-       `;
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      ...PostInfo
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          id
+          excerpt
+          fields {
+            slug
+          }
+          ...PostInfo
+        }
+      }
+    }
+  }
+`;

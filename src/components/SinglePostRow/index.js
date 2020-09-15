@@ -1,14 +1,14 @@
 import React from "react";
-import styled from 'styled-components'
+import styled from "styled-components";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-import { getImageWithSize } from '../../utils';
+import { getImageWithSize } from "../../utils";
 
 const Area = styled.div`
-    padding: 40px 12px;
-    border:  4px solid var(--color-${({ type }) => type});
-    border-radius: 4px;
-    margin: 0 12px 40px;
+  padding: 40px 12px;
+  border: 4px solid var(--color-${({ type }) => type});
+  border-radius: 4px;
+  margin: 0 12px 40px;
 `;
 
 export default ({

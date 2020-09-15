@@ -201,7 +201,7 @@ blockquote {
 
     /* Set a specific width */
     width: 100%;
-    padding: 17% 0 !important;
+    padding: 17% 0 0 !important;
     /* Position and center the image to scale nicely on all screens */
     background-position: center !important;
     background-repeat: no-repeat !important;

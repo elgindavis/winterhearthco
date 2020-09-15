@@ -1,29 +1,28 @@
 ---
 title: "DMH: Anxiety"
-date:  "2019-06-23"
+date: "2019-06-23"
 imageUrl: "/img/blog/anxiety.jpg"
 imageAltText: "Anxiety"
-contentType: 'newsletter'
-newsletterVolume: '2'
+contentType: "newsletter"
+newsletterVolume: "2"
 featured: false
 tags: ["Anxiety"]
 keywords: "Anxiety"
 description: "Do we really know what anxiety is? What about an anxiety disorder? What's the difference? Find out here:"
-author: {
+author:
+  {
     name: "Elgin Davis",
     role: "Main Content Writer",
     summary: "Elgin Davis is the creator of Winter Hearth Studios. Driven by a passionate spirit and boundless curiosity, Davis' work seeks to explore the depths of humanity and what it might look like to live a hyper-meaningful existence here on earth.",
-    imageUrl: "/img/profile-200p.jpg" 
-}
-unsplashBadgeInfo: {
-    artistUrl: "",
-    artistName: "",
-}
+    imageUrl: "/img/profile-200p.jpg",
+  }
+unsplashBadgeInfo: { artistUrl: "", artistName: "" }
 ---
 
 <br>
 
 ### What's New This Week
+
 Welcome back and thanks for joining us in Volume 2 of the Winter Hearth Epic Life Playbook, where each week we explore the human experience through different mediums, seeking to spark positive, empathetic, and meaningful conversation around mental and emotional health.
 
 This is the first week of Volume 2, and I'm beyond excited for all of the content that we'll explore together throughout the series. As I noted in the introductory message to this series, lots of misunderstanding,
@@ -33,25 +32,23 @@ I want people to understand that "mental health" is just as important as physica
 
 I put a lot of elbow grease into this edition and it's packed with information, so be sure to save it for later reference.
 
-
 ### What is Anxiety?
- 
+
 Nearly 40 million people in the U.S. (about 18% of the population) experience an anxiety disorder in a given year, and that figure is based only on information that has been reported. Imagine how many people suffer with anxiety disorders that go undocumented, undiagnosed, and unaddressed. In fact, only 1 out of 3 people who suffer from an anxiety disorder receive treatment, though the disorders are highly treatable. The World Health Organization reports that anxiety disorders are the most common and pervasive mental disorders worldwide ([ADAA 2018](https://adaa.org/understanding-anxiety)), but they are so widely misunderstood.
 
-***So what exactly is anxiety?*** The dictionary defines anxiety as ***"a feeling of worry, nervousness, or unease about something with an uncertain outcome"***. Anxiety is a fairly misused term in our society, which in turn actually leads to invalidation of the experiences that so many people actually suffer from every day. People who say things like "I have anxiety" or "I'm having an anxiety attack" must be careful not to confuse the two, because most people do not understand that being anxious and having an anxiety disorder are not the same thing. Anxiety disorders are specific psychiatric disorders that tend to involve crippling fear, worry, or apprehension, typically accompanied by compulsive behavior or panic attacks.
+**_So what exactly is anxiety?_** The dictionary defines anxiety as **_"a feeling of worry, nervousness, or unease about something with an uncertain outcome"_**. Anxiety is a fairly misused term in our society, which in turn actually leads to invalidation of the experiences that so many people actually suffer from every day. People who say things like "I have anxiety" or "I'm having an anxiety attack" must be careful not to confuse the two, because most people do not understand that being anxious and having an anxiety disorder are not the same thing. Anxiety disorders are specific psychiatric disorders that tend to involve crippling fear, worry, or apprehension, typically accompanied by compulsive behavior or panic attacks.
 
-***So what's the difference?*** Basically, common anxiety is something that we all feel, as when we are about to perform in front of a crowd, or a deadline is coming up soon at work that we are worried we might not meet, or there's a cute girl in our math class that we're too afraid to talk to. You might also fear certain things, like spiders or learning that you sat in gum and have been walking around sporting your new saliva-and-sugar-stained jeans all day. 
-
+**_So what's the difference?_** Basically, common anxiety is something that we all feel, as when we are about to perform in front of a crowd, or a deadline is coming up soon at work that we are worried we might not meet, or there's a cute girl in our math class that we're too afraid to talk to. You might also fear certain things, like spiders or learning that you sat in gum and have been walking around sporting your new saliva-and-sugar-stained jeans all day.
 
 <div class='text-center pb-20 pt-20'>
     <img height=300 src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/e72995b4-4d0c-492c-bdbe-46010b057141.gif' alt='Anxious cartoon animation'/>
 </div>
 
-###### *Take a moment here to note how anxiety is usually characterized by a worry about future/impending events, while fear is often a reaction to current events.*
+###### _Take a moment here to note how anxiety is usually characterized by a worry about future/impending events, while fear is often a reaction to current events._
 
 <br>
 
-Okay, so we all get a little anxious from time to time. That is not quite an anxiety disorder. An anxiety disorder is usually debilitating, paralyzing, or crippling, and can leave the victim unable to carry on in their every day life. 
+Okay, so we all get a little anxious from time to time. That is not quite an anxiety disorder. An anxiety disorder is usually debilitating, paralyzing, or crippling, and can leave the victim unable to carry on in their every day life.
 
 Examples include:
 
@@ -60,13 +57,12 @@ Examples include:
 - people who have irrational fear of an object, place, person, or situation that in reality poses little or no threat of actual danger;
 - and people who suffer from recurring nightmares, flashbacks or emotional numbing related to a traumatic event that happened months or even years before.
 
-
 <div class='text-center pb-20 pt-20'>
     <img height=300 src='https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/5479a144-e2d5-4beb-9345-0e723b4fbe14.gif' alt='Anxious eyes darting back and forth'/>
 </div>
 
 Hopefully this was a helpful (and sufficiently brief) overview of anxiety, anxiety disorders, and the stark differences between the two. There are actually 5 commonly classified types of anxiety disorders: Generalized Anxiety Disorder, Obsessive-Compulsive Disorder, Panic Disorder, Post-Traumatic Stress Disorder, and Social Anxiety Disorder (also known as Social Phobia). If you are familiar with any of these disorders, you may have recognized some of the characteristics in the above examples. We'll leave those definitions for another time, but this section should give you a pretty good insight as to what exactly comes into play when we speak of "anxiety" as a whole.
- 
+
 <br>
 
 ### Real Creatures by Toby Allen
@@ -79,32 +75,33 @@ Hopefully this was a helpful (and sufficiently brief) overview of anxiety, anxie
     Anxiety, created and owned by Toby Allen
 </div>
 
-<br /> 
+<br />
 
 ### Anxiety Abstracted
- 
+
 When I first started researching for the content of Volume 2, I came across the work of Toby Allen. Allen is an illustrator who has created depictions of these different mental health disorders in order to make mental illness appear "more manageable".
 
-> *"The project originated from imagining my own anxieties as inner demons and finding it to be a cathartic and healing process to draw them... It made them feel weaker, and I was able to look at my own anxiety comically with the help of these monster drawings... I hope it helps [people] see their illness in a different light, make it appear more manageable”.*
+> _"The project originated from imagining my own anxieties as inner demons and finding it to be a cathartic and healing process to draw them... It made them feel weaker, and I was able to look at my own anxiety comically with the help of these monster drawings... I hope it helps [people] see their illness in a different light, make it appear more manageable”._
 
-This idea intrigued me from the beginning, as I thought it was very interesting and also very effective to represent mental health disorders as being separate from the human, because as someone living with a mental illness, **you are not your mental illness**, nor are you defined by it, unless you choose to be. I loved the idea of giving life to these seemingly intangible concepts, giving us an easier, more accessible, and more *visual empathy entry point*. 
+This idea intrigued me from the beginning, as I thought it was very interesting and also very effective to represent mental health disorders as being separate from the human, because as someone living with a mental illness, **you are not your mental illness**, nor are you defined by it, unless you choose to be. I loved the idea of giving life to these seemingly intangible concepts, giving us an easier, more accessible, and more _visual empathy entry point_.
 
 Playing with these characters in my mind personally makes it much easier to imagine what life experiences might look like for people struggling with various disorders. He has illustrated a number of these conditions, and there is an illustration that pairs with each one of the disorders we'll be covering in this volume.
 
 The description for the anxiety character represented above reads as follows:
 
-> *"The anxiety monster is small enough to sit on its victim's shoulder and whisper things in to their unconscious, eliciting fearful thoughts and irrational worries. The anxiety monster is often seen as weak in comparison to others, but it is one of the most common and is very hard to get rid of.*
+> _"The anxiety monster is small enough to sit on its victim's shoulder and whisper things in to their unconscious, eliciting fearful thoughts and irrational worries. The anxiety monster is often seen as weak in comparison to others, but it is one of the most common and is very hard to get rid of._
 
-> *They often carry small objects linked to their victim's anxieties such as clocks which represent a common but irrational fear of things that might never happen. No one has ever seen the face of the anxiety monster for it always wears a skull as a mask."*
+> _They often carry small objects linked to their victim's anxieties such as clocks which represent a common but irrational fear of things that might never happen. No one has ever seen the face of the anxiety monster for it always wears a skull as a mask."_
 
 <br />
 
 ![Relevance in Global Community](https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/39d07f89-892f-4bd5-b120-0f8b55e6630c.jpg)
+
 <div class="photo-credit"> 
     Photo by Joshua Rawson-Harris on Unsplash
 </div>
 
-<br />  
+<br />
 
 ### Relevance in Our Community
 
@@ -117,6 +114,7 @@ Step three is to learn to recognize how anxiety disorder manifests itself in oth
 <br />
 
 ![Flowers in light bulb vases](https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/6811f08f-be0d-4024-a560-2682542e9943.jpg)
+
 <div class="photo-credit"> 
     Photo by Jagoda Kondratiuk on Unsplash  
 </div>
@@ -125,7 +123,7 @@ Step three is to learn to recognize how anxiety disorder manifests itself in oth
 ### This Week's Mental Health Hack
 
 This week was loaded with content, so we'll keep it light with our Mental Health Hack of the Week: [Drink more water](https://www.aifc.com.au/how-important-is-water-hydration-to-mental-health/)! It's very easy to never drink straight H2O, since we usually get "enough" water to survive from our other nutritional sources, but drinking more water can substantially improve our mental health. For the sake of brevity, drinking more water allows more oxygen to reach our brain, which in turn allows us to think more clearly, make better judgements, and better assess our mental and emotional states.
- 
+
 <br />
 
 ![Child looking at stairs](https://gallery.mailchimp.com/82935dc1a750f772912d12316/images/f1cb78de-9b26-4bbf-80de-b64f00028e4c.jpg)
@@ -134,24 +132,24 @@ This week was loaded with content, so we'll keep it light with our Mental Health
     Photo by Jukan Tateisi on Unsplash
 </div>
 
-<br />  
+<br />
 
 ### Weekly Challenge
 
 This is a huge, and I mean HUGE, opportunity for building empathy right here. I challenge you to [watch this video](https://www.newshub.co.nz/home/lifestyle/2019/06/how-to-cope-when-the-person-you-love-has-anxiety.html) and choose one of the 1st-person accounts of life with an anxiety disorder. Pause the video after they have finished their story, close your eyes, and imagine living a day in their life as they just described. What do you hear? What do you see? How do you feel? Take note of this experience and use it to better understand what it's like to live with an anxiety disorder. You'll get out of it what you put into it, of course :)
- 
+
 <br>
 
 ### Walk It, Talk it
 
 Thanks again for joining us this week in the Winter Hearth Epic Life Playbook! In the words of Dale Carnegie, "Knowledge isn't power until it is applied." How can you apply the ideas in this digest to your life? How can you use it to gain power in living a more epic story? Talk to your friends and family this week about something you found interesting in the digest.
 
-
 This weekly personal development playbook is a labor of love, so if you enjoy reading it each week, please share it with your friends to assist us in reaching our goal of helping the world achieve a better human experience :)
 
 <br>
 
 ### Resources
+
 - [How to Cope When the Person You Love Has Anxiety](https://www.newshub.co.nz/home/lifestyle/2019/06/how-to-cope-when-the-person-you-love-has-anxiety.html)
 - [Summer Anxiety in Youth](https://www.washingtonpost.com/lifestyle/2019/06/20/kids-anxiety-can-spike-during-summer-heres-why-what-parents-can-do-help/?utm_term=.eddb6f299b1e)
 - [Toby Allen](https://www.boredpanda.com/mental-illnesses-illustrated-by-monsters-by-toby-allen/)
@@ -167,4 +165,3 @@ This weekly personal development playbook is a labor of love, so if you enjoy re
 - [More On Anxiety Disorders](https://www.nami.org/learn-more/mental-health-conditions/anxiety-disorders)
 - [Signs & Symptoms of Anxiety](https://www.valleybehavioral.com/anxiety/signs-symptoms-causes/)
 - [Effects of Water on Mental Health](https://www.aifc.com.au/how-important-is-water-hydration-to-mental-health/)
-
